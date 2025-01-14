@@ -1,0 +1,520 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "computer_programming_nyi"
+	group: "575079378E827F8C"
+	icon: "thermal:ruby_gear"
+	id: "5060CB512B950FD4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "335C32B754AFB2DE"
+			rewards: [{
+				id: "3E6EDCD89D3DA5CF"
+				item: "integrateddynamics:on_the_dynamics_of_integration"
+				type: "item"
+			}]
+			subtitle: "Unique tree that you'll want to have in order to start using Integrated Dynamics."
+			tasks: [{
+				id: "690FC9ABE2EBF213"
+				item: "integrateddynamics:menril_sapling"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["335C32B754AFB2DE"]
+			description: [
+				"Let's harvest that menril now."
+				""
+				"Go ahead and place these blocks next to each other. Now, place a menril log in the squeezer."
+				""
+				"You're just going to want to compress the menril log by jumping on it a lot."
+				""
+				"Voilà, you have made crystalized menril!"
+				""
+				"Supply a redstone signal to the squeezer to reset its position."
+			]
+			icon: "integrateddynamics:squeezer"
+			id: "5CBB6EA7FB333EA6"
+			tasks: [
+				{
+					id: "6AC7429C4E24AF8D"
+					item: "integrateddynamics:squeezer"
+					type: "item"
+				}
+				{
+					id: "31B17077EFE2B305"
+					item: "integrateddynamics:drying_basin"
+					type: "item"
+				}
+				{
+					id: "791DF45BF0399C2B"
+					item: "integrateddynamics:menril_log"
+					type: "item"
+				}
+				{
+					id: "5AE32FBD8CD3A28F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_pressure_plates"
+						}
+					}
+					title: "Any #minecraft:wooden_pressure_plates"
+					type: "item"
+				}
+			]
+			title: "Squeezer + Basin"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5CBB6EA7FB333EA6"]
+			description: ["These items can do what you just did, but on their own using energy."]
+			id: "03ED299282E5C76A"
+			optional: true
+			subtitle: "(recommended)"
+			tasks: [
+				{
+					id: "68EE0CB38ABB0E22"
+					item: "integrateddynamics:mechanical_squeezer"
+					type: "item"
+				}
+				{
+					id: "474D9C8FFCB3C414"
+					item: "integrateddynamics:mechanical_drying_basin"
+					type: "item"
+				}
+			]
+			title: "Mechanical Squeezer / Drying Basin"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5CBB6EA7FB333EA6"]
+			description: [
+				"Place the interfaces on inventories you want to link to the terminal."
+				""
+				"Connect both of these to the terminal."
+				""
+				"You now have a storage system akin to the ones from Simple Storage Network and Pretty Pipes!"
+				""
+				"Interacting with the terminal, you can press the chest tab to see stored items and the crafting tab to make things with them."
+				""
+				"It doesn't need any energy."
+			]
+			id: "44E53A8A061B85E9"
+			tasks: [
+				{
+					count: 2L
+					id: "0B031F77136BECD6"
+					item: "integratedtunnels:part_interface_item"
+					type: "item"
+				}
+				{
+					id: "727B9551576ABADC"
+					item: "integrateddynamics:cable"
+					type: "item"
+				}
+				{
+					id: "768F35775D2297D8"
+					item: "integratedterminals:part_terminal_storage"
+					type: "item"
+				}
+			]
+			title: "Link 2+ Chests to a Terminal"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44E53A8A061B85E9"]
+			description: [
+				"Hook the exporter to the container you'd like to export FROM. It's a little bit tricky."
+				""
+				"Variable cards store variables used by logical blocks."
+				""
+				"Now, i want you to click the exporter."
+				""
+				"Hope you passed Computer Science in high school!"
+				""
+				"... I wonder what types of automation you can do using this mod?"
+			]
+			id: "4B407F60FF0D3AA2"
+			tasks: [
+				{
+					id: "31A1171C4657205D"
+					item: "integratedtunnels:part_interface_fluid"
+					type: "item"
+				}
+				{
+					id: "53FD2D7A94A0028C"
+					item: "integratedtunnels:part_exporter_fluid"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6591410963256424"
+					item: "integrateddynamics:variable"
+					type: "item"
+				}
+			]
+			title: "Integrated Dynamics goes liquid!"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4B407F60FF0D3AA2"]
+			description: [
+				"{image:kubejs:textures/item/fluid_exporter.png width:377 height:273 align:1 fit:true}"
+				"You will be greeted by this screen when interacting with the Fluid Exporter."
+				""
+				"Hovering over the blue things on the left and holding shift tells you what the \"types\" mean. This knowledge mostly carries into programming; a \"boolean\" is always either true or false in every programming language (that I've used, at least)."
+			]
+			id: "56DFDF7FC0E86387"
+			tasks: [{
+				id: "140641B3DE13D4EA"
+				title: "Fluid Exporter GUI"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44E53A8A061B85E9"]
+			description: [
+				"Try a simple example of the display panel's power."
+				""
+				"Hook up (with cables) the redstone reader to something that has a redstone value, like a block of redstone."
+				""
+				"Now, Shift Rclick on the reader and scroll down to the first orange one that is an integer. You can set it if you'd like."
+				""
+				"You will now have a card for that level of redstone power. Shift rclick the display panel and slot in the variable card."
+				""
+				"Pretty cool, right?"
+			]
+			id: "2268E46AD333F9CD"
+			rewards: [{
+				id: "5864258634DAA9C2"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "1BD378ADB28E7531"
+					item: "integrateddynamics:part_redstone_reader"
+					type: "item"
+				}
+				{
+					id: "0345E3E361156671"
+					item: "integrateddynamics:cable"
+					type: "item"
+				}
+				{
+					id: "45CCF6D589CEE7B1"
+					item: "integrateddynamics:part_display_panel"
+					type: "item"
+				}
+				{
+					advancement: "integrateddynamics:aspects/redstone_observement"
+					criterion: ""
+					id: "393174908CC690CE"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2268E46AD333F9CD"]
+			description: [
+				"What if, in some foreign, mystical world, you could consider not just one value (like you just did before), but two?"
+				""
+				"Regardless of what programmer you're using, right click it to open a menu. "
+				""
+				"Find the operator that says \"Integer.\" You might need to scroll down. Click on it and set the number that appears."
+				""
+				"Do that again, for another integer."
+				""
+				"Now, find the Addition operator. Insert your two variable cards, which will bind them into a new one."
+			]
+			id: "054A34E6B912C042"
+			tasks: [
+				{
+					id: "0CEA0F9E3F03ABFF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "integrateddynamics:logic_programmer"
+								}
+								{
+									Count: 1b
+									id: "integrateddynamics:portable_logic_programmer"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6BA2826E371E8C3A"
+					item: "integrateddynamics:variable"
+					type: "item"
+				}
+			]
+			title: "Logic Programmer"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["054A34E6B912C042"]
+			description: [
+				"As Integrated Dynamics evaluates variables in a lazy manner, this Addition Variable Card does not contain the addition of these Integers directly, but the addition will only be performed when the value is needed in the network, based on the variable references. For this, the network has to be able to find these referenced Variable Card. For this, you will need to craft and place a Variable Store. Insert the two Integer Variable Cards into this store to make them available to the network."
+				""
+				"Finally, you can now connect a cable to the Variable Store, attach a Display Panel, and insert the Addition Variable Card to display the addition."
+				""
+				"The Logic Programmer and Variable Stores are going to be your best friends when you want to do more complex automation."
+			]
+			id: "2BCF1DA646EB606E"
+			subtitle: "*description taken from Integrated Dynamics guidebook because I don't understand this item*"
+			tasks: [
+				{
+					id: "37D7226A46A8D057"
+					item: "integrateddynamics:variablestore"
+					type: "item"
+				}
+				{
+					advancement: "integrateddynamics:logic_operations/arithmetic_addition"
+					criterion: ""
+					id: "28563B4F34F5B26F"
+					type: "advancement"
+				}
+			]
+			title: "Variable Store                                                                                              "
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["35FEED7EF4C10A3E"]
+			description: [
+				"Welcome to your computer! First off, if you're looking for help outside your quest book, you can type &7&nhelp&r on the computer for some more detailed information."
+				""
+				"Notice that, when you type something into the computer, it will provide autocomplete suggestions like you're searching the Internet."
+				""
+				"You can use the vertical arrow keys to scroll through these suggestions alphabetically, or the right arrow key to accept it."
+				""
+				"{@pagebreak}"
+				"You can see what programs come pre-installed on your machine by typing &n&7programs&r&r. If one catches your eye, type &n&7help [program name]&r&r to see what it does."
+				""
+				"If the preloaded programs can do whatever you're looking for with CC, great! But if you'd rather make something yourself, you've come to the right place."
+				""
+				"Today, I'm going to show you how to use Lua to make custom programs."
+			]
+			disable_toast: true
+			id: "28108ED01F368BC5"
+			subtitle: "Credit to Direwolf20 for his YT tutorial"
+			tasks: [{
+				id: "508E532188806EBD"
+				item: "computercraft:computer_normal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["28108ED01F368BC5"]
+			description: [
+				"&7&nls&r / &7&ndir&r"
+				""
+				"Prints the files in the folder you're currently in. If you type this without making or entering any folders (meaning you're in the root), you will see &2rom&r."
+				""
+				"&7&ncd [folder]&r"
+				""
+				"Short for &ochange directory&r. Moves you into the folder, if it exists."
+				""
+				"&7&nmkdir [name]&r"
+				""
+				"Creates a folder with the specified name."
+				""
+				"&7&n(up or down arrow)&r"
+				""
+				"Cycles through your command history. Useful if you need to do the same thing several times."
+			]
+			id: "01B25CE562E88913"
+			tasks: [{
+				id: "64B60001F38D840F"
+				title: "Basic Terminal Commands"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["01B25CE562E88913"]
+			description: [
+				"&7&nhelp apis&r"
+				""
+				"The preinstalled APIs on your computer all provide commands which, in short, do things. If an API interests you, type &7&nhelp [api name]&r to see what it brings to the table."
+				""
+				"For your first program, you'll want to use &2term&r. As such, why not type &7&nhelp term&r and see what it offers?"
+				""
+				"&7&nedit MyFirstProgram&r"
+				""
+				"This command will create a new program, &2MyFirstProgram&r, and open the editor for you to write code."
+				"{@pagebreak}"
+				"Now, in the editor, type:"
+				""
+				"&7&nterm.write(\"Hello World!\")&r"
+				""
+				"Let's dissect that. First off, &2term&r is the library, or container, that we are accessing."
+				""
+				"&2write&r is a method that is provided by term. That is to say, it's an action, part of term, that is being performed."
+				""
+				"The &2parenthesis&r are what we put our arguments in. We only have one argument right now:"
+				""
+				"&2\"Hello world!\"&r -- the quotation marks are there to tell the computer where the string starts and ends."
+				"{@pagebreak}"
+				"To get analogous, this is a lot like a TV. &2term&r is the remote itself. It doesn't do much on its own, but it provides a lot of useful actions, which are the buttons on the remote."
+				""
+				"&2write&r is one of the buttons on the remote. Maybe it's the \"voice repeat\" button, which repeats something that you say on the screen. "
+				""
+				"When we press the &2write&r button, the remote wants a phrase. This is represented by &2\"Hello world!&r."
+				""
+				"In short, you press a button on the TV remote, say \"Hello world!\", and the TV shows \"Hello world!\""
+				"{@pagebreak}"
+				"Finalize your program by pressing &2control&r to bring up the menu, and then pressing enter to save the file as a .lua program."
+				""
+				"Then, press &2control&r again, press &2right arrow&r to select Exit, then press enter."
+				""
+				"You can now run your program by typing &7&nMyFirstProgram&r in the computer. It should autocomplete if you did it properly."
+				""
+				"Bonus: by using the &7&nprint()&r command instead of &7&nterm.write&r, you'll get a new line at the end of the message, so the >_ is not right after the \"!\" in \"Hello world!\""
+			]
+			id: "19498CFC6FBE3FAC"
+			tasks: [{
+				id: "4CCB1282EE3EB057"
+				title: "Hello World"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19498CFC6FBE3FAC"]
+			description: [
+				"Alright, now let's go back into &2MyFirstProgram.lua&r or whatever you may have called it by typing &7&nedit MyFirstProgram&r."
+				""
+				"If you don't remember the name, type &7&nls&r to see a list of files, yours should be whatever one is not called &2rom&r."
+				""
+				"Let's make MyFirstProgram do multiple things. Move the cursor to the end of the file, then press enter. Then, type &n&7term.clear()&r. Now, save and exit the way you did the first time."
+				""
+				"Your file might now say:"
+				"&7&nprint(\"Hello world!\")"
+				"&7&nterm.clear()&r"
+				"{@pagebreak}"
+				"Type &7&nMyFirstProgram&r to run the file. It should clear all the text in the terminal but not print anything."
+				""
+				"This is because computers read code from top to bottom. If we were to put &n&7term.clear()&r at the beginning of the file, it would clear the terminal and then print \"Hello world!\""
+				""
+				"Now, let's fix the issue with the text clearing by &2commenting out&r &7&nterm.clear()&r. Type the edit command in again and move the cursor to the beginning of the line and type &7&n--&r."
+				""
+				"This is referred to as a &2comment&r. The computer will treat everything after a &7&n--&r on a line as if it doesn't exist."
+				""
+				"If you put &7&n--&r in the middle of a line, the computer will still see the contents of that line before the &7&n--&r. &2Comments&r are useful for labelling parts of your code so that you, or programmer, knows what it does."
+				""
+				"If you were to save and run the code again, you'd notice that the terminal no longer clears itself."
+			]
+			id: "16AB43A8ADA45CAF"
+			tasks: [{
+				id: "65C391455A129742"
+				title: "Math"
+				type: "checkmark"
+			}]
+			title: "Comments and Multiple Lines"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["19498CFC6FBE3FAC"]
+			description: [
+				"Let's start this off by creating a new file called &2Variables&r. Do you remember what command is used for this? If not, can you figure it out without looking at previous quests?"
+				""
+				"In the editor for &2Variables&r, type in &7&nlocal x&r."
+				""
+				"This creates a variable called &2x&r which is inaccessible to other files, hence the word &2local&r. Usually you will want to use local unless other files need access to the value."
+				""
+				"Give &2x&r a value by typing &7&nx = \"Hello world!\"&r. Afterwards, type &n&7print(x)&r. Seem familiar?"
+				"{@pagebreak}"
+				"Save and exit &2Variables&r, and then run it. You should see the same thing you got from your initial runs of &2MyFirstProgram&r."
+				""
+				"Go back into the editor and change &2x&r's value from &2\"Hello world!\"&r to &22&r, without quotation marks."
+				""
+				"Also, change the second line to"
+				"&7&nprint(x + 3)&r."
+				""
+				"If you save and run, you will see the number &25&r. How cool is that?"
+				""
+				"Now, add &7&nprint(x)&r to the bottom of &2Variables&r. You'll see that this returns 2, meaning the first &2print&r doesn't actually change &2x&r's value."
+				"{@pagebreak}"
+				"You may ask then, \"How do I change the value of &2x&r?\" Well, in the same way you set it originally: with an equals sign."
+				""
+				"Add &7&nx = x + 4&r to the end. Then, add another &7&nprint(x)&r after that. You'll see that the value of &2x&r has increased to 6. "
+				""
+				"Note that you can have multiple variables, and they can have any names you'd like so long as they don't already mean something else (for instance, you can't have a variable called \"print\")."
+				""
+				"Set a variable, called whatever you want, to &2x * 12&r. Then, print this variable. Interesting, right? I wonder if subtracting and dividing work this way too. Maybe even exponents?"
+				""
+				"Bonus: define a variable in one line like this: &7&nlocal x = 2&r"
+			]
+			id: "159DC1FED1B5C4CA"
+			tasks: [{
+				id: "6F143E88040F2E4E"
+				title: "Variables"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["159DC1FED1B5C4CA"]
+			description: [
+				"Boolean values are special in that they can be &2true&r or &2false&r (no quotation marks, they are not strings!)"
+				""
+				"Strings can be combined with the double-dot operator:"
+				""
+				"&7&nprint(\"Hello\"..\" World\"..\"!\")&r&r"
+				""
+				"Try typing &7&nhelp read&r"
+			]
+			id: "46C754C8EDE4EB54"
+			tasks: [{
+				id: "246AAC73A746D8AF"
+				title: "Booleans"
+				type: "checkmark"
+			}]
+			title: "More Basics"
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["159DC1FED1B5C4CA"]
+			id: "48D2DEAD9FB62EF3"
+			tasks: [{
+				id: "6FB54FD9BECC8F5E"
+				item: "computercraft:turtle_normal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+	]
+	subtitle: ["This is CC50, Mincemeat's introduction to Computer Science"]
+	title: "Computer Programming (WIP)"
+}

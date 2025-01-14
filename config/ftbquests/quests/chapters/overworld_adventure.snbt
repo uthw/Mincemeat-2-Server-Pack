@@ -1,0 +1,1689 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overworld_adventure"
+	group: "357B296D74E0575E"
+	icon: "minecraft:grass_block"
+	id: "6855AEB6DE78FCD3"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["00294FF7CDCA91F0"]
+			description: ["Found in the &5Theatre&r."]
+			hide_dependent_lines: true
+			id: "4493D9650B5D1F71"
+			subtitle: "Kill the &5Conjurer"
+			tasks: [{
+				entity: "conjurer_illager:conjurer"
+				icon: {
+					Count: 1
+					id: "conjurer_illager:conjurer_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "02C951936916A7B7"
+				title: "Illagin' for a Pillagin'"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: ["Found in the &5Hunter's House&r, or in the wild."]
+			icon: {
+				Count: 1
+				id: "hunters_return:boomerang"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67EDF8A2B69A158D"
+			subtitle: "Kill the &5Hunter"
+			tasks: [{
+				entity: "hunters_return:hunter"
+				icon: "hunters_return:spawnegg_hunter"
+				id: "6B1957C06EE38BD9"
+				title: "Wild Hunt"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: ["You'll be back in the Overworld before long..."]
+			icon: "forbidden_arcanus:whirlwind_prism"
+			id: "18D1EA8E41311823"
+			rewards: [{
+				auto: "no_toast"
+				id: "3194D1EFED4F6662"
+				ignore_reward_blocking: true
+				stage: "dimension_access"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Dimensional Adventure Unlocked"
+			tasks: [{
+				id: "76A95517361039B9"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "Ready for Dimensional Adventures"
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"The tower can be found using &bSoul Stars&r."
+				""
+				"You'll then need to put 4, one on each &baltar&r to spawn the &9Night Lich&r."
+				""
+				"Be sure to bring a &branged weapon&r!"
+			]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "0579360EE0F0D4AD"
+			rewards: [{
+				id: "6C6C4C139AC23996"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7A1E3F0D2492CFC4"
+					structure: "bosses_of_mass_destruction:lich_tower"
+					type: "structure"
+				}
+				{
+					count: 4L
+					id: "483BCC1ACECD25F2"
+					item: "bosses_of_mass_destruction:soul_star"
+					type: "item"
+				}
+				{
+					entity: "bosses_of_mass_destruction:lich"
+					id: "1F9F1BAA3250D23E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Night Lich"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			icon: "bosses_of_mass_destruction:void_lily"
+			id: "21D6AB95329A4EEF"
+			rewards: [{
+				id: "7C65CB1D5B64E7F1"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2E2EEA7E34DC9762"
+					structure: "bosses_of_mass_destruction:void_blossom"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:void_blossom"
+					id: "5341E9DB541C10B2"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Void Blossom"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			hide_dependent_lines: true
+			icon: "aquamirae:ship_graveyard_echo"
+			id: "1808E3ABC3AF6D82"
+			invisible: true
+			tasks: [{
+				id: "38F2586A4F22A244"
+				structure: "aquamirae:ice_maze/common"
+				type: "structure"
+			}]
+			title: "Ice Maze"
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				""
+				"    Collect the three bone staff pieces (Ominous Bone Staff Fragment) from the Ruins structure."
+				"Every Ruin has a unique fragment (upper, middle and lower bone staff fragment). These structures spawn in forests and are 1) a broken tower (head fragment) 2) a bloody hill (middle fragment) and 3) a campsite (lower fragment)"
+				""
+				"    All three staff pieces can also sometimes be bought by the Nameless Hanged located at the Dead Tree structure for a price of 64 Corruption."
+				""
+				"    Obtain a bone dagger from an Acolyte, or craft it yourself."
+				""
+				"    Hold a glass bottle in your offhand and start killing villagers with the bone dagger. You'll get a Vial of Blood. Fill the vial to the limit."
+				""
+				"    Find the Lich Prison structure, a large floating island above the oceans."
+				""
+				"    Wait until it is night, place the bone staff pieces (from upper to lower) on the dark corrupted deepslate blocks in front of the altar (they should fairly stand out)."
+				""
+				"    Pour the Vial of Blood into the altar."
+			]
+			icon: "minecells:skeleton"
+			id: "5FD7C7EDDE0E119C"
+			rewards: [{
+				id: "334BB7C32ED77C91"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "descrption from Graveyard Mod GitHub Wiki for now"
+			tasks: [{
+				entity: "graveyard:lich"
+				id: "14138C08BFD56EC6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Corrupted Champion"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"An easy setup is to dig a 2x2 tunnel more than 15 blocks long and then start using ranged attacks on the Warden. This is because it will only use its sonic shriek if you're within 15 blocks of it."
+				""
+				"{@pagebreak}"
+				"You can also dig 2x2 pit in front of the tunnel covered in open trapdoors to trap the Warden. In case you didn't know, open trapdoors are seen as solid blocks by Minecraft mobs, making them useful in vanilla mob farms which require trapping."
+				""
+				"You can use the Warden's drops to upgrade netherite gear. Upgrading the helmet makes you immune to the Darkness effect. Be cautious though, as you can't upgrade Warden gear into Ignitium."
+			]
+			icon: "deeperdarker:heart_of_the_deep"
+			id: "71358BBA8D60E6CD"
+			invisible: true
+			optional: true
+			tasks: [
+				{
+					id: "59DD6C6431563EBB"
+					structure: "minecraft:ancient_city"
+					type: "structure"
+				}
+				{
+					advancement: "deeperdarker:main/kill_warden"
+					criterion: ""
+					id: "0A4FA129A659813C"
+					type: "advancement"
+				}
+			]
+			title: "Kill the Warden"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"&lNote:&r you would have to be &2very lucky&r to stumble upon a cave biome considering how rare they are."
+				""
+				"Also, your &2Nature's Compass&r isn't able to detect them, so there's no easy way of finding cave biomes without &athese quests&r."
+			]
+			id: "391AAC02FA3ADE08"
+			rewards: [{
+				id: "59EA64E725A43E50"
+				item: "alexscaves:cave_book"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6DEAD7909CB17C80"
+					structure: "alexscaves:underground_cabin"
+					type: "structure"
+				}
+				{
+					id: "7902E6A0305E09D4"
+					item: {
+						Count: 1
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:forlorn_hollows"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Loot an Underground Cabin"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["391AAC02FA3ADE08"]
+			description: [
+				"Place a &2cave tablet&r and &2paper&r in the table and then play the minigame."
+				""
+				"&lHint:&r the words on the tablet are in the &2Standard Galactic Alphabet, &rwhich is also what the cryptic letters from the enchanting table uses."
+				"&7"
+				"&o[Go to the next page for an easy way of solving the puzzle]&r&r "
+				"{@pagebreak}"
+				"You can use"
+				""
+				"https://lingojam.com/StandardGalacticAlphabet "
+				""
+				"and enter the word it wants you to find, then look for something resembling what the website gives you in the tablet."
+			]
+			id: "56DDF65F9F368790"
+			tasks: [
+				{
+					icon: "alexscaves:spelunkery_table"
+					id: "43B40DCC97FFCF9F"
+					observe_type: 0
+					timer: 0L
+					to_observe: "alexscaves:spelunkery_table"
+					type: "observation"
+				}
+				{
+					id: "71BC577A28229B66"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			title: "Decode a Tablet"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56DDF65F9F368790"]
+			description: [
+				"When you're done, you'll receive a &2cave codex&r. Surround it with paper for a &2cave biome map&r."
+				""
+				"As these caves can be &2far away&r, make sure you gear up and brace yourself for &2highly scaled-up enemies&r &7&o(which haven't been playtested yet and may be unbalanced)&r."
+				""
+				"The subsequent quests will be revealed as you locate the various caves."
+			]
+			id: "2287726086131598"
+			tasks: [{
+				id: "4C1ACBAB4DA4BFDB"
+				item: {
+					Count: 1
+					id: "alexscaves:cave_map"
+					tag: {
+						BiomeTargetResourceKey: "alexscaves:magnetic_caves"
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			description: [
+				"Welcome to the &1magnetic&r &ccaves&r!"
+				""
+				"Your &cmetal armor&r may be hazardous to you due to the abundance of &1powerful magnets&r."
+			]
+			icon: "alexscaves:scarlet_magnet"
+			id: "0A6104C04414F37B"
+			invisible: true
+			subtitle: "Yeah, (dog)! Magnets!"
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				id: "1004FCE1585BE694"
+				type: "biome"
+			}]
+			title: "Magnetic Caves"
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			icon: "alexscaves:dinosaur_nugget"
+			id: "114699FC353B18CE"
+			invisible: true
+			tasks: [{
+				biome: "alexscaves:primordial_caves"
+				id: "6A447A8AD0C94510"
+				type: "biome"
+			}]
+			title: "Primordial Caves"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			description: [
+				"Being in the caves or having radioactive items in your inventory may give you the &2irradiated&r effect, which prevents you from healing."
+				""
+				"More potent sources of radiation can cause damage over time, like withering."
+			]
+			icon: "alexscaves:nuclear_bomb"
+			id: "6202F882D0377E6B"
+			invisible: true
+			subtitle: "War. War never changes."
+			tasks: [{
+				biome: "alexscaves:toxic_caves"
+				id: "3A8D9805EA1EFAB3"
+				type: "biome"
+			}]
+			title: "Toxic Caves"
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			icon: "alexscaves:copper_valve"
+			id: "403B8F4A5838932B"
+			invisible: true
+			subtitle: "Don't use your Rod of Discord :)"
+			tasks: [{
+				biome: "alexscaves:abyssal_chasm"
+				id: "4A1D983D8F1D4D95"
+				type: "biome"
+			}]
+			title: "Abyssal chasm"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			icon: "alexscaves:darkened_apple"
+			id: "06D8CD953FBEE3D2"
+			invisible: true
+			tasks: [{
+				biome: "alexscaves:forlorn_hollows"
+				id: "0BDB0115785CD6F0"
+				type: "biome"
+			}]
+			title: "Forlorn Hollows"
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"Found in &7wrought lairs&r below the ground."
+				""
+				"The Wroughtnaut's armor is powerful enough to nullify all attacks most of the time. "
+				""
+				"It can be hit once while pulling its axe out of the ground, so you should be ready to deal a lot of damage in one attack. I would suggest using an Iron Blacksmith Gavel since it's easy to make and deals more than 18 damage on a critical."
+				""
+				"You'll also want at least iron-tier armor. Any less and you risk being one-tapped by the Wroughtnaut's shockwave or 3-hit combo attacks."
+				""
+				"The Wroughtnaut drops its axe and helmet. You also get a heart container when you beat it the first time. You'll get a heart container every time you kill a major boss."
+			]
+			id: "00294FF7CDCA91F0"
+			rewards: [{
+				id: "4D4711C3B9B55805"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: "mowziesmobs:wrought_helmet"
+				id: "5E886F22456D9A83"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill the Ferrous Wroughtnaut"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"Frostmaws are monsters found in snowy biomes. Their size grants them great strength, so it's best to avoid them until you've prepared sufficiently."
+				""
+				"They're typically found sleeping initially. If you're confident, you can sneak right up to them and snatch their ice crystal, making the fight easier."
+				""
+				"The Frostmaw has a swipe attack and a frost breath attack capable of freezing foes, giving it an opportunity to attack."
+				""
+				"Frostmaw also has a second phase in which it uses a powerful ground slam, which does enough damage to wipe out 2 rows of hearts before accounting for armor and difficulty scaling. This is telegraphed by the beast standing upright for a while."
+			]
+			icon: {
+				Count: 1
+				id: "mowziesmobs:ice_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F9A7DCBF8CE1DCB"
+			rewards: [{
+				id: "7619D1539550902F"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				id: "199F0F3977DD1D20"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Frostmaw"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"Found in mountains and beaches, sometimes in groups."
+				""
+				"Its weakness is being hit out of the air with an arrow."
+				""
+				"However, since it's very good at dodging arrows, you should bring an Infinity bow so you don't need to worry about running out."
+			]
+			icon: "mowziesmobs:naga_fang"
+			id: "40108CC36E0CA635"
+			tasks: [{
+				entity: "mowziesmobs:naga"
+				id: "60DFE07C939A6C44"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a Naga"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"He can be found &6on his throne&r in savannas."
+				""
+				"Umvuthi has harnessed the power of the sun and can rain down solar flares on those who approach him. He can summon followers, which should be taken care of quickly lest they overwhelm you."
+				""
+				"Umvuthi doesn't move and is somewhat defenseless when you actually get to his throne. Even before you get diamonds, this fight can end favorably in a matter of seconds if you consider this."
+			]
+			icon: {
+				Count: 1
+				id: "mowziesmobs:umvuthana_mask_faith"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "09F0100DAEDAD582"
+			rewards: [{
+				id: "0F089986D6233EAB"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				id: "34857EEFF05576C1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Umvuthi, The Sunbird"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["06D8CD953FBEE3D2"]
+			description: [
+				"Summoned when a Vesper is sacrificed by Underzealots."
+				""
+				"This is a truly formidable foe with multiple phases and many attacks."
+			]
+			hide_dependency_lines: true
+			icon: "alexscaves:pure_darkness"
+			id: "6B15B902E71DC308"
+			rewards: [{
+				id: "51DEF85D6877E65C"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscaves:forsaken"
+				id: "7562AFA6DBE112F7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Forsaken"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			icon: "botania:elementium_ingot"
+			id: "3DA23607574A2168"
+			rewards: [{
+				id: "27DF93B98445B622"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "botania:doppleganger"
+				id: "11C0973C74F195D3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Guardian of Gaia"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"An Abyssal Sacrifice is necessary to fight the boss."
+				""
+				"You need to get to The Nether before fighting The Leviathan. It's one of the hardest bosses in Mincemeat 2, so prepare sufficiently."
+				""
+				"You can use Blessed Amethyst Crab Meat, dropped by Amethyt Crabs in lush caves, to nullify the debuffs this boss gives."
+			]
+			icon: "cataclysm:abyssal_sacrifice"
+			id: "05765DE630B7CDC2"
+			rewards: [{
+				id: "22DE1515C3B2CA2A"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1DDC078C6D091C79"
+					structure: "cataclysm:sunken_city"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "72E1AD4B8BA5F853"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "35CA98792D926FB8"
+					item: "cataclysm:abyssal_sacrifice"
+					type: "item"
+				}
+			]
+			title: "Leviathan"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"These structures stick out in the desert like sore thumbs, you'll know it when you see it."
+				""
+				"Make sure you bring some Koboleton Bones back with you to make the Heart of the Golem if nothing else."
+				""
+				"Find the Necklace of the Desert by brushing blocks called \"suspicious sand.\" To wake up the Remnant, right click it with the Necklace."
+			]
+			icon: "cataclysm:necklace_of_the_desert"
+			id: "4C66466F73102684"
+			rewards: [{
+				id: "1BFC650C1CAECCB1"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2E23C2AF514C1561"
+					structure: "cataclysm:cursed_pyramid"
+					type: "structure"
+				}
+				{
+					id: "7E0DC1D573B5072B"
+					item: "cataclysm:necklace_of_the_desert"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "368111B28F939589"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ancient Remnant"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			icon: "cataclysm:wither_assault_shoulder_weapon"
+			id: "690AAE1274B3821D"
+			rewards: [{
+				id: "585D0B46B9D01F75"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "58877D004CD49D45"
+					structure: "cataclysm:ancient_factory"
+					type: "structure"
+				}
+				{
+					id: "269D2E96EE4F4619"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "135F59F7707AEA3D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Harbringer"
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			icon: "minecraft:ender_eye"
+			id: "0522653117110CC8"
+			tasks: [{
+				id: "182AF139AFB5C642"
+				structure: "integrated_stronghold:stronghold"
+				type: "structure"
+			}]
+			title: "Find the Stronghold"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"The Chimera is encountered by completing the Ritual of Summon Wilden with body parts of all three Wilden enemies, as well as an Arcane Crystal Block and Vexing Archwood Log."
+				""
+				"This quest requires following the Ars Nouveau quest line in Supernatural Magic."
+				""
+				"The Chimera is up there for the highest-HP boss in the modpack and complements this with three attacks."
+			]
+			icon: "ars_nouveau:ritual_wilden_summon"
+			id: "732BF9F02A4D0E26"
+			rewards: [{
+				id: "3C844E038C348FC4"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "ars_nouveau:wilden_boss"
+				id: "22CECCE6030A1AA8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Wilden Chimera"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			description: [
+				"An underwater society who is willing to trade pearls (sometimes obtained from breaking mussels) for valuables."
+				""
+				"Place a pearl or heart of the sea on an abyssal altar to round them in."
+				""
+				"The item you put on the altar will be exchanged for a random item like how piglin bartering works."
+			]
+			id: "06D1991EE22CF1B3"
+			tasks: [
+				{
+					icon: "alexscaves:gazing_pearl"
+					id: "5D4DB5EAAEB5E528"
+					observe_type: 0
+					timer: 0L
+					title: "Deep One"
+					to_observe: "minecraft:air"
+					type: "observation"
+				}
+				{
+					id: "2AB928FA3E63FA0D"
+					item: "alexscaves:abyssal_altar"
+					type: "item"
+				}
+				{
+					id: "0181AD7B93D5C30B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "alexscaves:pearl"
+								}
+								{
+									Count: 1b
+									id: "minecraft:heart_of_the_sea"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Deep One Bartering"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["114699FC353B18CE"]
+			description: [
+				"Sometimes, when mining &6amber&r, you may find an &eamber curiosity&r."
+				""
+				"Fortune increases your likelihood."
+			]
+			id: "0958E22D0265B1EF"
+			tasks: [
+				{
+					icon: "alexscaves:amber"
+					id: "7BEDBF8D47DCA614"
+					observe_type: 0
+					timer: 0L
+					to_observe: "alexscaves:amber"
+					type: "observation"
+				}
+				{
+					id: "1D46975F8E3D9896"
+					item: "alexscaves:amber_curiosity"
+					type: "item"
+				}
+			]
+			title: "Amber Curiosity"
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0958E22D0265B1EF"]
+			description: ["Spawns mobs from the primordial caves."]
+			id: "08813A660A2B1A5A"
+			tasks: [{
+				id: "4F3B3866EAABEEDD"
+				item: "alexscaves:amber_monolith"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["114699FC353B18CE"]
+			id: "5B149E24369F09ED"
+			tasks: [{
+				id: "176DCD4BEB888685"
+				item: "alexscaves:heavy_bone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5B149E24369F09ED"]
+			description: ["This armor lets your body absorb more nutrients from raw meat."]
+			id: "56792465EBD9F4C1"
+			tasks: [
+				{
+					id: "26E06A3165BB4B1E"
+					item: {
+						Count: 1
+						id: "alexscaves:primordial_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "759B62C331E48AC3"
+					item: {
+						Count: 1
+						id: "alexscaves:primordial_tunic"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07E6FDD75CD9BA9B"
+					item: {
+						Count: 1
+						id: "alexscaves:primordial_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Primordial Style"
+			x: 3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5B149E24369F09ED"]
+			description: [
+				"If you've been to the Nether and found a dragon corpse while exploring (in the Overworld), these tools may be for you."
+				""
+				"Dragonbone tools deal the same damage as netherite tools, but have more enchantability."
+				""
+				"You can also coat swords to increase their damage and give them special effects if you've killed a dragon; see how in the Mythical Creatures quests."
+			]
+			id: "4FBF403602D611F5"
+			tasks: [
+				{
+					id: "75CAFF8D6B85DC67"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonbone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30AC9C4FD806A9A3"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonbone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79DEB580ABFC645B"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonbone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Dragon Bone Set"
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"5B149E24369F09ED"
+				"0958E22D0265B1EF"
+			]
+			description: ["You can summon a boss, the Luxtructosaururs, by dropping an Ominous Catalyst into an active Volcanic Core."]
+			id: "365E0C8A9768664A"
+			tasks: [
+				{
+					id: "190500731F261980"
+					item: {
+						Count: 1
+						id: "alexscaves:extinction_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45FF87018B24ACF1"
+					item: "alexscaves:ominous_catalyst"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["0A6104C04414F37B"]
+			description: ["You can use the gauntlet to shoot netherite tools and use them from afar. That means you can remotely mine blocks and attack mobs."]
+			id: "7491B85F3E282774"
+			tasks: [{
+				id: "0B65521BD75CBAA8"
+				item: {
+					Count: 1
+					id: "alexscaves:galena_gauntlet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A6104C04414F37B"]
+			description: [
+				"It will not work unless you mark a rectangular area with Magnetic Lights. The radius of this rectangle can reach 20 blocks."
+				""
+				"Place the smasher in the center and the quarry can go wherever."
+				""
+				"This does not need any sort of energy or fuel; magnetic energy is the source of power."
+			]
+			id: "66A3D9F944D1965A"
+			subtitle: "Tunneling Machine"
+			tasks: [
+				{
+					id: "64CF4806EEECDC02"
+					item: "alexscaves:quarry_smasher"
+					type: "item"
+				}
+				{
+					id: "63E112C8EEADDB1C"
+					item: "alexscaves:quarry"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A6104C04414F37B"]
+			id: "104229AD939B60C2"
+			tasks: [{
+				id: "6F9B0FCA3CF4DDDC"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "alexscaves:magnetizing"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0A6104C04414F37B"
+				"146B68D99E7A92FE"
+			]
+			description: [
+				"One of the best shields in the modpack."
+				""
+				"Blocks attacks while doing damage in a radius."
+				""
+				"If the red pole is on the bottom, the shield pushes surrounding mobs away. If the blue pole is on the bottom, it pulls them closer."
+				""
+				"Has unique enchantments."
+			]
+			id: "66379C8C9AB2C51B"
+			tasks: [{
+				id: "00E0E23D5315CB9D"
+				item: {
+					Count: 1
+					id: "alexscaves:resistor_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0A6104C04414F37B"]
+			id: "665D577C17F2A23D"
+			tasks: [{
+				id: "4B6AF53561189609"
+				item: "alexscaves:seeking_arrow"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["06D8CD953FBEE3D2"]
+			description: [
+				"Drops from underzealots."
+				""
+				"For every attack, another blade burrows itself inside the target."
+			]
+			id: "7ABBA605B0C18FBD"
+			subtitle: "Sephiroth Side Special Simulator"
+			tasks: [{
+				id: "103A46F89C568BBF"
+				item: {
+					Count: 1
+					id: "alexscaves:desolate_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6B15B902E71DC308"]
+			hide_dependency_lines: true
+			id: "65853019D72D1C19"
+			tasks: [{
+				id: "263695347D478A8D"
+				item: {
+					Count: 1
+					id: "alexscaves:dreadbow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["06D8CD953FBEE3D2"]
+			description: [
+				"A helmet-and-chestpiece set that has a powerful set bonus."
+				""
+				"When both are equipped, being in darker areas charges a meter, shown on screen. When this meter is full, press a hotkey to get a powerful effect."
+				""
+				"The effect will only activate if you're in a dark or dim area."
+			]
+			id: "14912F7215D1DA76"
+			tasks: [
+				{
+					id: "47647906649384DC"
+					item: {
+						Count: 1
+						id: "alexscaves:hood_of_darkness"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "530EFFB449F49BE8"
+					item: {
+						Count: 1
+						id: "alexscaves:cloak_of_darkness"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["06D8CD953FBEE3D2"]
+			description: [
+				"Attacking a mob with this allows you to possess them."
+				""
+				"Mobs with more than 100 HP cannot be possessed."
+				""
+				"When you have control over a mob, right clicking a mob that isn't of the same type will aggravate the controlled entity against it. "
+			]
+			id: "037FF3083AB9540A"
+			tasks: [{
+				id: "48A93391D3FE3AF1"
+				item: {
+					Count: 1
+					id: "alexscaves:totem_of_possession"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6202F882D0377E6B"]
+			description: ["Use a glass bottle on a vent to obtain this."]
+			id: "446B39B10B58282C"
+			tasks: [{
+				id: "2CEBC1A707A0A929"
+				item: "alexscaves:radon_bottle"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6202F882D0377E6B"]
+			description: ["Immunize yourself to radiation."]
+			id: "3BF2B14D3C047D6D"
+			tasks: [
+				{
+					id: "0C78AE2098A6358A"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C7AEE0F3DD25A8E"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66B6A8D3C0E6D33A"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B7D8683DBDA67CF"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hazmat Style"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6202F882D0377E6B"]
+			description: ["Food that heals you bypassing the effects of radiation."]
+			id: "3D5E13147B9022C3"
+			tasks: [
+				{
+					id: "14F1C8D328985946"
+					item: "alexscaves:slam"
+					type: "item"
+				}
+				{
+					id: "3D945ED0F8BFA0A7"
+					item: "alexscaves:spelunkie"
+					type: "item"
+				}
+				{
+					id: "1EDFC591765E2C9E"
+					item: "alexscaves:green_soylent"
+					type: "item"
+				}
+			]
+			title: "Spelunker's Foods"
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6202F882D0377E6B"]
+			id: "4F0B0E1714000C18"
+			tasks: [{
+				id: "50ED2F36C303B9A1"
+				item: "alexscaves:raygun"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6202F882D0377E6B"]
+			description: [
+				"Detonates TNT and Nuclear Bombs from any distance, even across dimensions."
+				""
+				"Interact with the explosive while holding the Detonator to link them together."
+			]
+			id: "0D24AF036EA999ED"
+			tasks: [{
+				id: "38A43D24A3AB366B"
+				item: "alexscaves:remote_detonator"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0D24AF036EA999ED"]
+			id: "6AA9EFDF2749A2FB"
+			tasks: [
+				{
+					id: "6C04BBA44F8D4C86"
+					item: "alexscaves:nuclear_bomb"
+					type: "item"
+				}
+				{
+					id: "22B5E184632CEFF5"
+					item: "alexscaves:nuclear_siren"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			id: "5DBFCD2E79D22E51"
+			subtitle: "Aquatic Ascend"
+			tasks: [{
+				id: "4F48607DA7C7868E"
+				item: "alexscaves:floater"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			description: ["Throwable explosives."]
+			id: "4E163D969F4B9C9F"
+			tasks: [{
+				id: "61C9231FA0B078F4"
+				item: "alexscaves:depth_charge"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			description: ["Helps you navigate the Chasm more easily."]
+			id: "7ACC2DAC646A3E89"
+			tasks: [
+				{
+					id: "473282FCABEC0096"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AE7A8FB69CAD2E9"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D5118B0C194B06D"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59BD7E839715696F"
+					item: {
+						Count: 1
+						id: "alexscaves:diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Diving Style"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			hide_dependency_lines: true
+			icon: "alexscaves:immortal_embryo"
+			id: "6A8DF7B095C4D714"
+			rewards: [{
+				id: "3012DB08431C490D"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				id: "7AF5F021009B11EC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Hullbreaker"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6AA9EFDF2749A2FB"
+				"6A8DF7B095C4D714"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: true
+			id: "7EB9F437E980E400"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "747CCCB94B8F8CA2"
+				item: "alexscaves:tremorzilla_egg"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["114699FC353B18CE"]
+			hide_dependency_lines: true
+			icon: "alexscaves:tectonic_shard"
+			id: "4093A51E42C29851"
+			rewards: [{
+				id: "4213B4B6B71089BA"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				id: "1FF828D8BD3EFFFF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Luxtructosaurus"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A6104C04414F37B"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "alexscaves:heart_of_iron"
+			id: "146B68D99E7A92FE"
+			tasks: [{
+				entity: "alexscaves:magnetron"
+				id: "0CE49F9151DA9229"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Magnetron"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06D1991EE22CF1B3"]
+			id: "2161A23771C7D7BC"
+			tasks: [{
+				id: "0D19FFEE5FD3F4C2"
+				item: {
+					Count: 1
+					id: "alexscaves:ortholance"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			description: [
+				"&o&7Multiblock structure&r"
+				""
+				"You will need:"
+				""
+				"20x any copper"
+				"6x depth class"
+				"enigmatic engine"
+				""
+				"to build this."
+				""
+				"Use a Schematicannon or, if preferring manually building or low on gunpowder, build it yourself referring to the Cave Compendium."
+				""
+				"If you choose the former method, manually place the last copper block in the top center to complete the multiblock."
+				""
+				"{@pagebreak}"
+				"&6SUBMARINE OWNER'S MANUAL&r"
+				""
+				"Submarines are a new way of aquatic transportation which are faster and more durable than boats while being able to go under the water."
+				""
+				"Being made of copper, your submarine is prone to oxidation. Using an axe can reverse this, if you'd like. You may wax your submarine."
+				""
+				"Submarines can take damage and start showing it after enough has built up. You can repair your submarine using copper ingots."
+			]
+			id: "6B27AAA29B087E79"
+			subtitle: "Ah, look at all the lonely people!"
+			tasks: [{
+				id: "066B08F419FD2749"
+				item: "alexscaves:submarine"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["06D1991EE22CF1B3"]
+			description: ["Distress signal-like item that lets you summon Deep Ones to aid you in battle."]
+			id: "4EBF7BC295F4BA5C"
+			tasks: [{
+				id: "6A3EE359357DA95D"
+				item: {
+					Count: 1
+					id: "alexscaves:magic_conch"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["403B8F4A5838932B"]
+			description: ["Obtained by feeding muck, mud, or clay balls to a sea pig."]
+			id: "3A5FA73FC7EBA22C"
+			tasks: [
+				{
+					id: "0D385844A1F616A3"
+					item: "alexscaves:marine_snow"
+					type: "item"
+				}
+				{
+					id: "0C4BCF1C02E5A89B"
+					observe_type: 5
+					timer: 0L
+					to_observe: "alexscaves:sea_pig"
+					type: "observation"
+				}
+			]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			icon: "minecraft:deepslate"
+			id: "30B48BBA0773D7A5"
+			tasks: [{
+				advancement: "tetra:spelunking/root"
+				criterion: ""
+				id: "49DCC1FB89942AB9"
+				type: "advancement"
+			}]
+			title: "Go Below the Surface"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06D1991EE22CF1B3"]
+			id: "482C2813DBA6D925"
+			tasks: [{
+				id: "67289A007D7D1912"
+				item: {
+					Count: 1
+					id: "alexscaves:sea_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["30B48BBA0773D7A5"]
+			description: [""]
+			id: "2E0B72762B703990"
+			subtitle: "Improvised Food for Miners"
+			tasks: [{
+				id: "3BEEA16471F9BC5C"
+				item: "miners_delight:cave_carrot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30B48BBA0773D7A5"]
+			id: "12D63FD1D98A6DB5"
+			tasks: [{
+				id: "16434BC8BF282B4E"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1808E3ABC3AF6D82"]
+			icon: "aquamirae:abyssal_amethyst"
+			id: "48F86079EE5DBE12"
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				id: "78A19B0B7F4F9068"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mother of the Maze"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1808E3ABC3AF6D82"]
+			icon: {
+				Count: 1
+				id: "aquamirae:coral_lance"
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:unbreaking"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "71BD95734E41E591"
+			rewards: [{
+				id: "5E746BC171A9046A"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				id: "1F4B16BC39F9A439"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ghost of Captain Cornelia"
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1808E3ABC3AF6D82"]
+			icon: "aquamirae:fin"
+			id: "6F93B2E920857F55"
+			tasks: [{
+				entity: "aquamirae:eel"
+				id: "79DBE0D9A652C066"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Eel"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			id: "34A83BB5D5DEFC82"
+			rewards: [{
+				id: "5B3762CB4B335DBB"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: "irons_spellbooks:blood_staff"
+				id: "229070F98AC3E71A"
+				title: "The Dead King"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"Before continuing your conquest, you should know these &9movement techniques&r that you might not be used to."
+				""
+				"The first three methods have key bindings in the settings."
+				""
+				"&9Dodge&r (left alt): perform a souls-esque &bdodge roll&r. Attacks will miss during the roll. This action uses &bfeathers&r, which regenerate naturally. Your &bmaximum feathers&r decreases if you have heavy armor."
+				""
+				"&9Crawl&r (not bound): go prone and &bbecome able to fit into one-block-tall spaces&r without any setup. You aren't able to jump as high while crawling."
+				""
+				"&9Wall cling&r (left shift): while midair and against a wall, &bsneak to cling to it&r, then release to &blaunch in the direction you're facing&r. You'll slowly slide down the wall after clinging for long enough."
+				""
+				"&9Wall jump&r: while midair and against a wall, &bjump while facing a different direction&r to propel yourself in that direction."
+				""
+				"&9Coyote time&r: &bafter falling off a surface&r (if you don't jump), there is a short window in which you can perform a &bmid-air jump&r."
+			]
+			icon: "minecraft:feather"
+			id: "650EEE24F0D72A37"
+			tasks: [{
+				id: "791DF24DE0EDF8D7"
+				title: "Advanced Movement"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2287726086131598"]
+			description: ["I had Candy Cavity quests but I accidentally deleted them when I resynced my GitHub account to Git on my laptop. I'll rewrite/restore them later."]
+			id: "7A8F28E754BB375D"
+			tasks: [{
+				biome: "alexscaves:candy_cavity"
+				icon: "alexscaves:candy_cane"
+				id: "0B2F3BAD6A93AA5C"
+				title: "Candy Cavity"
+				type: "biome"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+	]
+	title: "Overworld Adventure"
+}

@@ -1,0 +1,1607 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extraterrestrial_adventure"
+	group: "357B296D74E0575E"
+	hide_quest_until_deps_complete: true
+	icon: "minecells:wilted_grass_block"
+	id: "1AC1F4B3B76A6FAF"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4493D9650B5D1F71"]
+			description: [
+				"Across the world are houses inhabited by &9gatekeepers&r, elderly villagers who bring their &barcane powers&r and &bknowledge&r from other worlds."
+				""
+				"There's nothing to fear about these old fellows; in fact, all they want from you is &beight emeralds and a book&r and they'll trade the &bspecial flint and steel&r and &ba magically self-filling book&r containing all their notes from their time in their home dimensions, the &3Everbright&r and the &cEverdawn&r."
+			]
+			icon: "blue_skies:frostbright_vine"
+			id: "0A5059B79780A421"
+			tasks: [
+				{
+					id: "53D3117B8E33B593"
+					structure: "#blue_skies:gatekeeper_houses"
+					type: "structure"
+				}
+				{
+					count: 8L
+					id: "1FCD71B6434447E7"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "501C11DB94D94B4F"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "Find a &9Gatekeeper House"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0A5059B79780A421"]
+			description: ["You will quickly find that your Overworld tools have hampered efficiency in these dimensions. What could be causing this? A ward? Fatigue? Game design? We'll never know."]
+			id: "0063059B2778D392"
+			subtitle: "Find the portal hidden away in the Gatekeeper's house"
+			tasks: [{
+				id: "28151A690876E3FE"
+				item: {
+					Count: 1
+					id: "blue_skies:zeal_lighter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Light the Portal"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74DFDA59CB8BB00E"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "blue_skies:loot_bag_summoner"
+				tag: {
+					LootTable: "blue_skies:loot_bags/summoner/common"
+					Rarity: 0
+				}
+			}
+			id: "792A8A1D64F2208D"
+			subtitle: "Found in Blinding Towers in the Everbright"
+			tasks: [{
+				entity: "blue_skies:summoner"
+				id: "2A39856699A82545"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill the &lSummoner"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["15BB94E145146F70"]
+			icon: {
+				Count: 1
+				id: "blue_skies:loot_bag_alchemist"
+				tag: {
+					LootTable: "blue_skies:loot_bags/alchemist/common"
+					Rarity: 0
+				}
+			}
+			id: "589E89E98F33C8D7"
+			subtitle: "Found in Blinding Towers in the Everdawn"
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				id: "11F287AA29090EC6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill the &lAlchemist"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["792A8A1D64F2208D"]
+			id: "7179EC83E4723D95"
+			rewards: [{
+				id: "5D479C0FCCBEF98A"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "Found in large Nature Dungeons rarely found in the Everbright"
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				icon: {
+					Count: 1
+					id: "blue_skies:loot_bag_starlit_crusher"
+					tag: {
+						LootTable: "blue_skies:loot_bags/starlit_crusher/common"
+						Rarity: 0
+					}
+				}
+				id: "654A645AD3A8BA2A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill &lStarlit Crusher"
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["589E89E98F33C8D7"]
+			description: ["A shield may be useful in blocking its attacks."]
+			id: "354079B354E82E4E"
+			rewards: [{
+				id: "4CE0171C674FDBF7"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "Found in Poison Dungeons deep underground in the Everdawn"
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				icon: {
+					Count: 1
+					id: "blue_skies:loot_bag_arachnarch"
+					tag: {
+						LootTable: "blue_skies:loot_bags/arachnarch/common"
+						Rarity: 0
+					}
+				}
+				id: "184F56839F9D2698"
+				title: "Kill &lArachnarch"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7179EC83E4723D95"
+				"354079B354E82E4E"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You really surprised me with how easily you got through that! Well done defeating your first &bdimensional bosses&r!"
+				""
+				"Unfortunately, &othis is just the beginning.&r Your next journey will take you through the quite-familiar &bPrisoner's Quarters&r, &bRamparts&r, and some more parts of a &cmalaise-ridden castle&r."
+				""
+				"&o&7The next mod you're about to play through, Mine Cells, is in development and is adapted for Forge through Connector. Thus, you might encounter a few issues. Always let me know before contacting the mod devs!"
+			]
+			id: "722B113FC9042698"
+			rewards: [{
+				auto: "invisible"
+				id: "3DC0821D70E391C7"
+				ignore_reward_blocking: true
+				stage: "minecells_access"
+				type: "gamestage"
+			}]
+			subtitle: "&oDéjà vu!&r I've just been in this place before"
+			tasks: [{
+				id: "3B03319175DA5B92"
+				title: "Everbright/dawn Complete!"
+				type: "checkmark"
+			}]
+			title: "What's next?"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["722B113FC9042698"]
+			description: [
+				"These &bOverworld Portals&r are found scattered across the Overworld, much like the Gatekeeper Houses."
+				""
+				"No need to worry about the &bInquisitors&r!"
+				""
+				"Can you find the &bsecret boss&r?"
+			]
+			icon: {
+				Count: 1
+				id: "minecells:prison_doorway"
+				tag: {
+					BlockEntityTag: { }
+				}
+			}
+			id: "7DE5018AC92F4971"
+			tasks: [
+				{
+					id: "056BFA26821A2583"
+					structure: "minecells:overworld_portal"
+					title: "Enter the Prisoner's Quarters"
+					type: "structure"
+				}
+				{
+					dimension: "minecells:prison"
+					id: "5BE14F2CDFED225A"
+					type: "dimension"
+				}
+			]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7DE5018AC92F4971"]
+			description: [
+				"&oParrying is a combat technique in which a combatant raises their shield the instant before an attack would connect. The cancels the shield cooldown, giving an opening to strike.&r"
+				""
+				"These enemies might be recognizable. Even if they aren't, their combat patterns should become obvious without much time spent analyzing."
+			]
+			icon: "minecells:monsters_eye"
+			id: "2C19E1F08D4DA5A4"
+			subtitle: "Slaughter your fellow inmates"
+			tasks: [
+				{
+					entity: "minecells:leaping_zombie"
+					id: "149602AF0F1B96CF"
+					type: "kill"
+					value: 15L
+				}
+				{
+					entity: "minecells:grenadier"
+					id: "7D40C2097D84BB88"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecells:shieldbearer"
+					id: "58129B99D70C0B58"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecells:undead_archer"
+					id: "041FEE316AE53D94"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Boss of the Slammer"
+			x: 5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["7DE5018AC92F4971"]
+			description: [
+				"&bCells&r are important crafting ingredients that can be used to notably craft &3weapons with special effects&r, ranging from dealing bonus damage for breaking doors (?) to shooting freeze waves."
+				""
+				"You can find &bcells&r in chests scattered throughout the dimensions."
+			]
+			id: "5B9B5EE143598729"
+			tasks: [{
+				count: 4L
+				id: "2F50EC6D82DFE191"
+				item: "kubejs:cell"
+				type: "item"
+			}]
+			title: "Collect (Mine) Cells"
+			x: 3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7DE5018AC92F4971"]
+			description: [
+				"Reach the bottom of the sprawling &3Prisoners' Quarters&r, where there is a portal waiting for you."
+				""
+				"The &bPromenade &ris a mystical forest with the remnants of a town. The buildings reach deep underground."
+			]
+			id: "4525CD09B5BCCE1E"
+			tasks: [{
+				dimension: "minecells:promenade"
+				icon: {
+					Count: 1
+					id: "minecells:promenade_doorway"
+					tag: {
+						BlockEntityTag: { }
+					}
+				}
+				id: "6CBDD6D9ECC8FFB0"
+				title: "Enter the Promenade"
+				type: "dimension"
+			}]
+			x: 7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4525CD09B5BCCE1E"]
+			hide_until_deps_visible: true
+			id: "13AF06207FD0CC28"
+			tasks: [{
+				id: "3F0B848DC0BB554D"
+				item: {
+					Count: 1
+					id: "minecells:vine_rune"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Found the Vine Rune"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["13AF06207FD0CC28"]
+			icon: "alexscaves:archaic_vine"
+			id: "63BA6016847B8ECB"
+			subtitle: "You'll need to go back to the &bPrisoner's Quarters&r for this one"
+			tasks: [
+				{
+					id: "3334637F4552FFA9"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecells:runic_vine_plant"
+					type: "observation"
+				}
+				{
+					dimension: "minecells:prison"
+					id: "36D2980F1D58E3C4"
+					type: "dimension"
+				}
+			]
+			title: "Find the Runic Vine Plant"
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["63BA6016847B8ECB"]
+			icon: {
+				Count: 1
+				id: "minecells:insufferable_crypt_doorway"
+				tag: {
+					BlockEntityTag: { }
+				}
+			}
+			id: "00D6D925A67CDC78"
+			rewards: [{
+				id: "0F7B395A57E72316"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					entity: "minecells:conjunctivius"
+					id: "517FCD75B5A99463"
+					type: "kill"
+					value: 1L
+				}
+				{
+					dimension: "minecells:insufferable_crypt"
+					id: "7AE020373A7FBDBF"
+					type: "dimension"
+				}
+			]
+			title: "Defeat Conjunctivius"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4525CD09B5BCCE1E"]
+			icon: {
+				Count: 1
+				id: "minecells:ramparts_doorway"
+				tag: {
+					BlockEntityTag: { }
+				}
+			}
+			id: "0F41407DF2EDE343"
+			tasks: [{
+				dimension: "minecells:ramparts"
+				id: "3C93D5947BC56956"
+				type: "dimension"
+			}]
+			title: "Enter the Ramparts"
+			x: 9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4525CD09B5BCCE1E"]
+			icon: "minecells:monsters_eye"
+			id: "69FBB042463C4603"
+			tasks: [
+				{
+					entity: "minecells:runner"
+					id: "02583CC7F90DBFF7"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecells:mutated_bat"
+					id: "51D0132327A37894"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Slay the Denizens of the Promenade"
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0F41407DF2EDE343"]
+			icon: {
+				Count: 1
+				id: "minecells:black_bridge_doorway"
+				tag: {
+					BlockEntityTag: { }
+				}
+			}
+			id: "47F8DC09096B0991"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "506301B4F58ABC89"
+					ignore_reward_blocking: true
+					stage: "nether_access"
+					type: "gamestage"
+				}
+				{
+					id: "0CF42BDE4F4EE010"
+					item: "paraglider:heart_container"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecells:black_bridge"
+					id: "60ED30486AD20C68"
+					type: "dimension"
+				}
+				{
+					entity: "minecells:concierge"
+					id: "0EDDF195B88A2436"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Defeat the Concierge"
+			x: 10.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["47F8DC09096B0991"]
+			description: ["Here we can observe a prehistoric version of the Nether, popping with vibrant vegetation and creatures that are more dangerous than they are beautiful."]
+			icon: "minecraft:netherrack"
+			id: "086E8054D516AFF4"
+			subtitle: "&4Feel the burn!"
+			tasks: [
+				{
+					count: 10L
+					id: "4BAD7A407EB7C691"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "48A8A895B1434C0E"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "minecraft:story/enter_the_nether"
+					criterion: ""
+					id: "4150281EB0BE9E7C"
+					type: "advancement"
+				}
+			]
+			title: "Going Deeper"
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["086E8054D516AFF4"]
+			icon: "nethersdelight:propelplant_cane"
+			id: "70795731019BA757"
+			tasks: [{
+				id: "106EC453F7278477"
+				structure: "#betterfortresses:better_fortresses"
+				type: "structure"
+			}]
+			title: "Explore Nether structures"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["086E8054D516AFF4"]
+			description: [
+				"The Netherite Monstrosity is an amalgamation of blackstone, magma, and netherite. It uses its heat and massive arms to attack those who enter the Infernal Forge."
+				""
+				"Once you get the hang of it, the Monstrosity is straightforward with two simple attacks: it slams the ground if you're close and shoots lava if you're far."
+				""
+				"Come in prepared for the Monstrosity's large pool of health with the intent to always go for the head (where the Monstrosity is vulnerable). Further capitalize on this by creating an epic affix weapon, which you have unlocked access to by entering the Nether."
+			]
+			icon: {
+				Count: 1
+				id: "cataclysm:infernal_forge"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "520A629F81C286FF"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "325D23DD5A481E11"
+					ignore_reward_blocking: true
+					stage: "end_access"
+					type: "gamestage"
+				}
+				{
+					id: "647D30F09F7A93BF"
+					item: "paraglider:heart_container"
+					type: "item"
+				}
+			]
+			subtitle: "and kill the Netherite Monstrosity"
+			tasks: [
+				{
+					id: "7111BFEDF5648BB0"
+					structure: "cataclysm:soul_black_smith"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "0B0481C6526BF63B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Find the Soul Blacksmith"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["086E8054D516AFF4"]
+			description: [
+				"Take note of the &aBook of Lore&r! It'll be crucial to your success as it'll tell you lore and information about items from the dimension you wouldn't be aware of otherwise."
+				""
+				"Your tools from other dimensions won't be very useful for use in the Aether; it'd be wise to relegate them to your backpack or simply leave them behind."
+				""
+				"You can use the &6golden parachute&r to glide around the Aether. This is basically an upgrade to the Paraglider."
+			]
+			icon: "aether:aether_portal_frame"
+			id: "044D8690E93C528B"
+			subtitle: "You know what the portal looks like"
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "36813FFDCB0F989B"
+					title: "Visit The Aether"
+					type: "dimension"
+				}
+				{
+					count: 10L
+					id: "2C720E814FA1D343"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "13C5E4C1355CF24B"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Ascend Into The Aether"
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["044D8690E93C528B"]
+			icon: "ars_nouveau:glyph_slowfall"
+			id: "44CD780823E04634"
+			subtitle: "Bring slow falling and enjoy the scenery"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "64F9B223813C1297"
+				ignore_dimension: false
+				position: [I;
+					-999999
+					-1
+					-999999
+				]
+				size: [I;
+					1999998
+					1
+					1999998
+				]
+				type: "location"
+			}]
+			title: "Fall Out of The Aether"
+			x: 14.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["520A629F81C286FF"]
+			description: [""]
+			icon: {
+				Count: 1
+				id: "cataclysm:ignitium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44F41502DDB1A529"
+			invisible: true
+			rewards: [{
+				id: "66543F7B2D618AB6"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "&4&oI am Ignis, blade of Miquella."
+			tasks: [
+				{
+					id: "06D70FE581A1EDD6"
+					structure: "cataclysm:ruined_citadel"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ignis"
+					id: "32B691E329DB08C4"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Kill Ignis"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["70DBB1A58513B2DB"]
+			description: [
+				"You know it's a &6Bronze Dungeon&r if it's a big box embedded within the surrounding terrain. The creators usually hide entrances in the &asides or top&r of the dungeon, &onever&r the bottom."
+				""
+				"If you still can't find the dungeon, check the other side of the island for an entrance."
+				"{@pagebreak}"
+				"Once in the dungeon, your goal is to find and defeat the boss. It's the pesky thing that keeps making cave noises."
+				""
+				"Good luck, and don't forget to set your spawn point!"
+			]
+			icon: "aether:sentry_stone"
+			id: "43C5DFBA3E25CC38"
+			tasks: [{
+				id: "677890218910EA14"
+				structure: "aether:bronze_dungeon"
+				type: "structure"
+			}]
+			title: "Find the Bronze Dungeon"
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["044D8690E93C528B"]
+			id: "70DBB1A58513B2DB"
+			tasks: [
+				{
+					count: 4L
+					id: "42A0BF4629DABA3F"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "31EC7F90BDB51924"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "044E0D276EE24FD9"
+					item: "aether:holystone"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2F565224A305C7B2"
+					item: "aether:skyroot_planks"
+					type: "item"
+				}
+			]
+			title: "Gather Heavenly Materials"
+			x: 14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["43C5DFBA3E25CC38"]
+			description: ["Sliders drop a big cornucopia's worth of loot, which can take the form of tools and weapons or food."]
+			hide_until_deps_visible: true
+			icon: "aether:bronze_dungeon_key"
+			id: "125D0F9B857A3775"
+			rewards: [{
+				id: "366287D3F6066093"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "You must be strong. And pretty fast. Fast enough to beat me... Koopa the Quick?"
+			tasks: [{
+				entity: "aether:slider"
+				id: "64582A35EA6826DF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat a Slider"
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["125D0F9B857A3775"]
+			description: ["The Slider hides a chest with legendary items inside. To find it, look below the Slider's idling place when you find it."]
+			icon: "aether:treasure_chest"
+			id: "2D2C05585B926D8B"
+			subtitle: "Use the Bronze Key"
+			tasks: [{
+				id: "7E8705CABFC53AAA"
+				observe_type: 0
+				timer: 0L
+				to_observe: "aether:treasure_chest"
+				type: "observation"
+			}]
+			title: "Loot the Treasure Chest"
+			x: 19.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["125D0F9B857A3775"]
+			description: ["&bSilver Dungeons&r are large buildings resembling the Pantheon. You can't miss them."]
+			icon: "aether:angelic_stone"
+			id: "09E342C749BFEEC6"
+			tasks: [{
+				id: "1DA28CF5F927A6A4"
+				structure: "aether:silver_dungeon"
+				type: "structure"
+			}]
+			title: "Find a Silver Dungeon"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43C5DFBA3E25CC38"]
+			icon: "minecraft:chest"
+			id: "1BE8177C3FD3227A"
+			subtitle: "(Kill a Mimic)"
+			tasks: [{
+				entity: "aether:mimic"
+				id: "24B53855921981B1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Fool!"
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["43C5DFBA3E25CC38"]
+			description: [
+				"&bBlue aercluds&r can be found higher up in the Aether's sky. They resemble &aslime blocks&r, but they launch you &bpretty high up &rregardless of how high you fell onto them from."
+				""
+				"&oWeeeeeeeeee!"
+			]
+			icon: "aether:blue_aercloud"
+			id: "65E1148A6507E12A"
+			tasks: [{
+				id: "5F5B0196EB2567FF"
+				observe_type: 0
+				timer: 0L
+				to_observe: "aether:blue_aercloud"
+				type: "observation"
+			}]
+			title: "Blue Aerclouds"
+			x: 14.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09E342C749BFEEC6"]
+			description: ["&6Valkyries&r are neutral mobs, but even so, their &6Victory Medals&r are quite useful to you, as you'll need them to request an audience with their &bhigher-up&r."]
+			id: "350DB6A4F00CCB15"
+			subtitle: "(by killing 10x Valkyrie)"
+			tasks: [{
+				count: 10L
+				id: "54DCDFEEC32585A5"
+				item: "aether:victory_medal"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["350DB6A4F00CCB15"]
+			description: ["Once defeated, her throne will open up, revealing a treasure chest. Be sure to grab everything, since it'll be quite useful in the Gold Dungeon!"]
+			hide_until_deps_visible: true
+			icon: "aether:silver_dungeon_key"
+			id: "0FE391A15589A3C7"
+			rewards: [{
+				id: "01DCF812BAD96E29"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				id: "4EF522197084226C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the Valkyrie Queen"
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0FE391A15589A3C7"]
+			description: [
+				"&6Gold Dungeons&r are giant floating spheres with smaller spheres surrounding it."
+				""
+				"There is an opening inside."
+			]
+			icon: "aether:hellfire_stone"
+			id: "111478A19955F8BF"
+			tasks: [{
+				id: "5FFC94ED1EA20411"
+				structure: "aether:gold_dungeon"
+				title: "Find a Gold Dungeon"
+				type: "structure"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["111478A19955F8BF"]
+			description: ["The chest you're looking for is in the back wall of the arena."]
+			hide_until_deps_visible: true
+			icon: "aether:gold_dungeon_key"
+			id: "2C47A12A20C50CE6"
+			rewards: [{
+				id: "43DCB5BEB8612892"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "Don't fly too close to it"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				id: "06CA3356DE73AE64"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the Sun Spirit"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70DBB1A58513B2DB"]
+			description: ["Build a portal out of Stone Bricks as you would a Nether or Aether portal, and use the Catalyst to light it."]
+			icon: "undergarden:catalyst"
+			id: "2F0DFEA28729BEAE"
+			tasks: [
+				{
+					id: "489AF14AE6264DFF"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					dimension: "undergarden:undergarden"
+					id: "503A953E70EAF3C1"
+					type: "dimension"
+				}
+				{
+					count: 12L
+					id: "6D2E3A1D12E5D81D"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+			]
+			title: "Go to the Undergarden"
+			x: 16.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F0DFEA28729BEAE"]
+			description: ["&oSince Vanilla Overworld ores can be found in the Undergarden, and they are easier to find exposed than in the Overworld, the Undergarden is a good place to find diamonds.&r"]
+			id: "40C200D565731AC5"
+			tasks: [
+				{
+					id: "0F56AD6A97B89D8F"
+					item: "undergarden:regalium_crystal"
+					type: "item"
+				}
+				{
+					id: "3A1F1D525385B5F1"
+					item: "undergarden:cloggrum_ingot"
+					type: "item"
+				}
+				{
+					id: "2FFA7883E02FC398"
+					item: "undergarden:utheric_shard"
+					type: "item"
+				}
+				{
+					id: "4550AEAF4935851E"
+					item: "undergarden:froststeel_ingot"
+					type: "item"
+				}
+			]
+			title: "Gather Common Undergarden Materials"
+			x: 17.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["40C200D565731AC5"]
+			description: [
+				"Forgotten Guardians can be found in Undergarden Catacombs and have a straightforward moveset consisting of a simple attack."
+				""
+				"They can be dispatched easily by any attack that has more range than their arms, or any attack that kills them before they kill you."
+				""
+				"Stop overthinking it."
+			]
+			icon: "undergarden:forgotten_ingot"
+			id: "27442E9514BF4868"
+			tasks: [
+				{
+					entity: "undergarden:forgotten_guardian"
+					id: "57B65F03BB4A1BAF"
+					type: "kill"
+					value: 1L
+				}
+				{
+					count: 9L
+					id: "4F00D180EDC8E166"
+					item: "undergarden:forgotten_nugget"
+					type: "item"
+				}
+			]
+			title: "Destroy a Forgotten Guardian"
+			x: 15.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2C47A12A20C50CE6"]
+			description: ["These are &alarge islands&r with towers. The surface is around y = 170, so look for an island with &aabnormally high altitude&r."]
+			icon: "lost_aether_content:gale_stone"
+			id: "4A08523EB680EF79"
+			tasks: [{
+				id: "65224E30F844BF93"
+				structure: "lost_aether_content:platinum_dungeon"
+				type: "structure"
+			}]
+			title: "Find the Platinum Dungeon"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4A08523EB680EF79"]
+			description: [
+				"Make sure you have a ranged weapon"
+				""
+				"Click the &bsongstone&r to enrage the Aerwhale, activating a fight."
+			]
+			hide_until_deps_visible: true
+			icon: "lost_aether_content:platinum_key"
+			id: "1BA05933619C6884"
+			rewards: [{
+				id: "130A6959DB00107B"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			subtitle: "The final boss of the Aether"
+			tasks: [
+				{
+					entity: "lost_aether_content:aerwhale_king"
+					id: "14CD0C21845BF02E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					icon: "lost_aether_content:songstone"
+					id: "7434067EEA816CB7"
+					observe_type: 0
+					timer: 0L
+					to_observe: "lost_aether_content:songstone"
+					type: "observation"
+				}
+			]
+			title: "Slay the Aerwhale King"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["086E8054D516AFF4"]
+			icon: "bosses_of_mass_destruction:blazing_eye"
+			id: "1DEE7C3ED8858245"
+			rewards: [{
+				id: "4D7B26BFB87CCC4D"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C679D446B912BDB"
+					structure: "bosses_of_mass_destruction:gauntlet_arena"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:gauntlet"
+					id: "522A6665138F10F5"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "4BC18291A301A117"
+					item: "bosses_of_mass_destruction:blazing_eye"
+					type: "item"
+				}
+			]
+			title: "Nether Gauntlet"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70795731019BA757"]
+			description: ["Deals a ton of damage to undead creatures, making it a top consideration for fighting the Wither."]
+			id: "2DBDDEE400EB8E8D"
+			tasks: [{
+				id: "6C2A1E1EC18F7B03"
+				item: {
+					Count: 1
+					id: "reliquary:mercy_cross"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["71358BBA8D60E6CD"]
+			description: [
+				"{ \"text\": \"How to get a heart of the deep\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71358BBA8D60E6CD\" } }"
+				""
+				"Use the &3heart of the deep&r and light the massive portal in the middle of the &3ancient city&r."
+			]
+			icon: "deeperdarker:warden_carapace"
+			id: "2AD8DC509ABFBDCC"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "644D4CBF3BD5CB2A"
+				type: "dimension"
+			}]
+			title: "Go to the Otherside"
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2AD8DC509ABFBDCC"]
+			id: "073F296D376283A7"
+			tasks: [{
+				id: "16BE4218EEE90908"
+				item: {
+					Count: 1
+					id: "deeperdarker:soul_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["70795731019BA757"]
+			description: [
+				"The wither is unchanged from vanilla. It's so underwhelming that there's a machine made using Nether Stars that automatically kills withers."
+				""
+				"Defeating the Wither unlocks Nether Stars, which are important crafting materials."
+				""
+				"You can also take the Nether Star back into the Overworld and use it to awaken the Harbringer."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "080F3639CF9971BF"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "0FB7A3F9990809BC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Wither"
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["520A629F81C286FF"]
+			id: "29D52E88824CB90D"
+			tasks: [{
+				count: 8L
+				id: "04677A4FBA9D8B9D"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["29D52E88824CB90D"]
+			description: ["You have to use Eyes of Ender to find the Stronghold. Your Explorer's Compass won't help you here!"]
+			disable_toast: true
+			icon: "quark:tuff_bricks"
+			id: "1B06AB14ACC698BD"
+			tasks: [{
+				icon: "minecraft:stone_bricks"
+				id: "748872855160FDE2"
+				structure: "integrated_stronghold:stronghold"
+				title: "Stronghold"
+				type: "structure"
+			}]
+			title: "Find the Stronghold"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1B06AB14ACC698BD"
+				"0B5F5694881857E7"
+			]
+			dependency_requirement: "one_completed"
+			icon: "minecraft:end_portal_frame"
+			id: "112C59D69077AED4"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "533B96E2C67DBE50"
+				type: "dimension"
+			}]
+			title: "Go to the End"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["086E8054D516AFF4"]
+			description: [
+				"These Buzzwole-impersonating mosquitoes are minibosses who attack everything they see."
+				""
+				"If killed, it will drop some hemolymph sacs and warped mucus. These can be used to craft the Hemolymph Blaster, which is a gun with infinite ammo."
+				""
+				"To summon it, find a mungus in a mushroom field and place 5 warped mushrooms on it. Then, bring it into the Nether, which you can do by picking it up and going through a Nether portal."
+				""
+				"Then, have a crimson mosquito attack and kill the warped mushroom mungus."
+				""
+				"Afterwards, the warped mosco will be summoned."
+			]
+			id: "647269DF318F288C"
+			tasks: [{
+				entity: "alexsmobs:warped_mosco"
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:warped_mosco"
+					}
+				}
+				id: "2D652F6E8AD4C6B7"
+				title: "Kill a Warped Mosco"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["112C59D69077AED4"]
+			icon: "minecraft:dragon_egg"
+			id: "20B6859C7A0C1D09"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "364CBD17846C1509"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ender Dragon"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["20B6859C7A0C1D09"]
+			hide_until_deps_visible: true
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			id: "283CD42DB879C756"
+			rewards: [{
+				id: "7A346ED16339D45C"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "64A8D3A4B9EB1F5A"
+					structure: "bosses_of_mass_destruction:obsidilith_arena"
+					title: "Find Obsidilith's Arena"
+					type: "structure"
+				}
+				{
+					entity: "bosses_of_mass_destruction:obsidilith"
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:draco_arcanus_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "6F5B03CA75E94249"
+					title: "Kill Obsidilith"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Obsidilith"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20B6859C7A0C1D09"]
+			hide_until_deps_visible: true
+			icon: "cataclysm:void_core"
+			id: "70E9EE74EE5A5D7F"
+			rewards: [{
+				id: "73A9DA321D34109E"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2631BEA2EB0DCF35"
+					structure: "cataclysm:ruined_citadel"
+					title: "Find the Ruined Citadel"
+					type: "structure"
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					icon: "cataclysm:void_eye"
+					id: "3BE27C188FC168EC"
+					title: "Kill the Ender Guardian"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ender Guardian"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["20B6859C7A0C1D09"]
+			description: [
+				"The Mysterious Worm is obtained through an Enderiophage transforming Crimson Mosquito larva."
+				""
+				"Crimson Mosquito stingers are required for this. You must bring a fly into the nether, and then kill it."
+				""
+				"Maggots are found by killing flies and in some other places around the world."
+				""
+				"Then, drop the worm into the void."
+			]
+			hide_until_deps_visible: true
+			id: "07EF2C1B4D1EA725"
+			tasks: [{
+				id: "1744B9AF2B27D7E0"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["07EF2C1B4D1EA725"]
+			description: [""]
+			id: "72E1C3F859844F04"
+			rewards: [{
+				id: "2313B792D62A8F59"
+				item: "paraglider:heart_container"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: "alexsmobs:void_worm_eye"
+				id: "59AD4F3EEA68AE0F"
+				title: "Void Worm"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"74DFDA59CB8BB00E"
+				"15BB94E145146F70"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Since things from the Overworld don't work as well here, better start anew with these precious materials."
+				""
+				"Each can be made into weapons and armor."
+				""
+				"Highlights:"
+				""
+				"Horizonite has innate automatic smelting of mined items."
+				""
+				"Charoite and diopside are roughly neck-and-neck in their viability. The latter is slower but more powerful, and diopside armor trades out some protection for very high toughness."
+			]
+			id: "018BB3C2F0B47B58"
+			tasks: [
+				{
+					id: "1A987C8EE85A60EE"
+					item: "blue_skies:aquite"
+					type: "item"
+				}
+				{
+					id: "3FA9A445B0D8E2D3"
+					item: "blue_skies:pyrope_gem"
+					type: "item"
+				}
+				{
+					id: "14310D020F497314"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					id: "4863C2CC0ADE844D"
+					item: "blue_skies:diopside_gem"
+					type: "item"
+				}
+				{
+					id: "4F91432F119443C6"
+					item: "blue_skies:charoite"
+					type: "item"
+				}
+			]
+			title: "Blue Skies Metals and Gems"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["74DFDA59CB8BB00E"]
+			description: [
+				"Common shrubbery native to the Everbright. They provide nice snacks, and some of them have unique qualities that make them useful."
+				""
+				"Plain brewberries, while otherwise forgettable, can be eaten rather quickly."
+				""
+				"Pink brewberries have been observed growing on cherry grass. Its strong concentration of vitamins provide stimulation for its consumer's regenerative abilities."
+				""
+				"Black brewberries, found to grow on mycelium, act as an antidote for poisons that may be in the consumer's body."
+			]
+			id: "0CD2CCC4A4AA9472"
+			subtitle: "Berry nice!"
+			tasks: [
+				{
+					id: "4F56171A7E72D759"
+					item: "blue_skies:brewberry"
+					type: "item"
+				}
+				{
+					id: "16D86CEC99163542"
+					item: "blue_skies:pink_brewberry"
+					type: "item"
+				}
+				{
+					id: "5F46BAE321FEE3CB"
+					item: "blue_skies:black_brewberry"
+					type: "item"
+				}
+			]
+			title: "Brewberries"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0063059B2778D392"]
+			id: "74DFDA59CB8BB00E"
+			invisible: true
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				icon: "blue_skies:everbright_portal"
+				id: "240D6AD7AB1A7525"
+				title: "Enter the Everbright"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0063059B2778D392"]
+			id: "15BB94E145146F70"
+			invisible: true
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				icon: "blue_skies:everdawn_portal"
+				id: "1B9271FEA6B47CFE"
+				title: "Enter the Everdawn"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["15BB94E145146F70"]
+			description: [
+				"These pelts can be looted from deceased Cosmic Foxes. Sew them into your armor to provide heat and cold resistance."
+				""
+				"Alternatively, craft the Camel Saddle, allowing you to ride Crystal Camels."
+			]
+			id: "07DFF42EDED14F65"
+			tasks: [
+				{
+					id: "0505CE4BC8DAEB52"
+					item: "blue_skies:fox_pelt"
+					type: "item"
+				}
+				{
+					id: "5126C0B77EA9C96D"
+					item: "blue_skies:camel_saddle"
+					type: "item"
+				}
+			]
+			title: "Befriending Animals"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["15BB94E145146F70"]
+			description: ["Grows into a special tree whose wood can't be burnt, but it is not useful for things normal wood is."]
+			id: "306B76D7A00B733E"
+			tasks: [{
+				id: "5C2AD6A84BB8871F"
+				item: "blue_skies:crystal_flower"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74DFDA59CB8BB00E"]
+			id: "0CE2D21CC9D8E416"
+			tasks: [
+				{
+					id: "73A0A59B0BBF1E1C"
+					item: "blue_skies:snowcap_mushroom"
+					type: "item"
+				}
+				{
+					id: "1FC85A3C047360C6"
+					item: "blue_skies:pine_fruit"
+					type: "item"
+				}
+				{
+					id: "228B4921650B7D2C"
+					item: "blue_skies:comet_berries"
+					type: "item"
+				}
+				{
+					id: "4AC8A1E759073DA1"
+					item: "blue_skies:cryo_root"
+					type: "item"
+				}
+			]
+			title: "Everbright Foliage Collection"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["15BB94E145146F70"]
+			id: "53933AF9287F3491"
+			tasks: [
+				{
+					id: "2E0C9523A17333FE"
+					item: "blue_skies:fiery_beans"
+					type: "item"
+				}
+				{
+					id: "3F0FFB7D7B2663A9"
+					item: "blue_skies:bug_guts"
+					type: "item"
+				}
+				{
+					id: "16038DFF62364558"
+					item: "blue_skies:cooked_monitor_tail"
+					type: "item"
+				}
+			]
+			title: "Everdawn Delicacies"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["792A8A1D64F2208D"]
+			description: [
+				"These spears, when thrown at the Starlit Crusher, temporarily stun it, giving an opportunity to retaliate."
+				""
+				"The Soulbound Spear returns after landing, making it particularly useful."
+				""
+				"Unfortunately, these spears don't have much going for them outside of this boss fight."
+			]
+			id: "3F4F90454E3783AA"
+			optional: true
+			tasks: [{
+				id: "6C1D96C6286DE8C8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "blue_skies:bluebright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:starlit_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:frostbright_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:lunar_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:dusk_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:maple_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "blue_skies:soulbound_spear"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Prepare to Fight the Starlit Crusher"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["29D52E88824CB90D"]
+			id: "0B5F5694881857E7"
+			invisible: true
+			tasks: [{
+				icon: "minecraft:nether_bricks"
+				id: "0B7404D4002BBC09"
+				structure: "repurposed_structures:stronghold_nether"
+				title: "Nether Stronghold"
+				type: "structure"
+			}]
+			title: "I guess that works too"
+			x: 6.0d
+			y: 0.5d
+		}
+	]
+	title: "Dimensional Adventure"
+}

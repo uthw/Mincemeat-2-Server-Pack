@@ -570,7 +570,7 @@
 			]
 			icon: "aether:aether_portal_frame"
 			id: "044D8690E93C528B"
-			subtitle: "You know what the portal looks like"
+			subtitle: "Can we get much higher?"
 			tasks: [
 				{
 					dimension: "aether:the_aether"
@@ -873,8 +873,12 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["70DBB1A58513B2DB"]
-			description: ["Build a portal out of Stone Bricks as you would a Nether or Aether portal, and use the Catalyst to light it."]
+			dependencies: ["0A5059B79780A421"]
+			description: [
+				"The Catalyst can be constructed using Overworld materials (lumiere can be found in the Crystal Canyons), making the Undergarden a good way of dipping your toes into the dimensions."
+				""
+				"Build a portal out of Stone Bricks as you would a Nether or Aether portal, and use the Catalyst to light it."
+			]
 			icon: "undergarden:catalyst"
 			id: "2F0DFEA28729BEAE"
 			tasks: [
@@ -896,8 +900,8 @@
 				}
 			]
 			title: "Go to the Undergarden"
-			x: 16.0d
-			y: -4.5d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2F0DFEA28729BEAE"]
@@ -926,8 +930,8 @@
 				}
 			]
 			title: "Gather Common Undergarden Materials"
-			x: 17.0d
-			y: -6.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["40C200D565731AC5"]
@@ -955,8 +959,8 @@
 				}
 			]
 			title: "Destroy a Forgotten Guardian"
-			x: 15.0d
-			y: -7.5d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2C47A12A20C50CE6"]
@@ -1056,41 +1060,6 @@
 			}]
 			x: 11.0d
 			y: -1.0d
-		}
-		{
-			dependencies: ["71358BBA8D60E6CD"]
-			description: [
-				"{ \"text\": \"How to get a heart of the deep\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71358BBA8D60E6CD\" } }"
-				""
-				"Use the &3heart of the deep&r and light the massive portal in the middle of the &3ancient city&r."
-			]
-			icon: "deeperdarker:warden_carapace"
-			id: "2AD8DC509ABFBDCC"
-			tasks: [{
-				dimension: "deeperdarker:otherside"
-				id: "644D4CBF3BD5CB2A"
-				type: "dimension"
-			}]
-			title: "Go to the Otherside"
-			x: 4.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2AD8DC509ABFBDCC"]
-			id: "073F296D376283A7"
-			tasks: [{
-				id: "16BE4218EEE90908"
-				item: {
-					Count: 1
-					id: "deeperdarker:soul_elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 3.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["70795731019BA757"]
@@ -1300,6 +1269,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "A GOD DOES NOT FEAR DEATH!"
 			tasks: [{
 				entity: "alexsmobs:void_worm"
 				icon: "alexsmobs:void_worm_eye"

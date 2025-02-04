@@ -8,29 +8,47 @@ const fiftyPercent =
 const seventyFivePercent = "blacksmith_gavel|montus_strike|troll_weapon";
 const critTen = "katana|saber|dagger|rapier|magicbane|divider";
 
+let blacklist = [
+    "bosses_of_mass_destruction:earthdive_spear",
+    "galosphere:preserved_flesh",
+    "actuallyadditions:coffee_cup"
+]
+
 ItemEvents.modification((event) => {
     Item.list.forEach((item) => {
         // console.log(item.getDisplayName());
         if (item.maxDamage != 0) {
             // Double the durability of every item
             event.modify(item, (tool) => {
-                // if ()
-
-                if (Item.of(item.id).hasTag("minecraft:trimmable_armor")) {
-                    tool.maxDamage *= 4;
-                    console.log(`${tool.id} is armor`);
-                } else {
-                    tool.maxDamage *= 2;
-                    // console.log(`${tool} is not armor or shield`);
-                    // console.log(item.id);
-                    // console.log(Item.of(item.id).getTags().toString());
-                    // This causes an error for some reason
-                    // Item.of(tool)
-                    //     .getTags()
-                    //     .forEach((tag) => {
-                    //         console.log(tag);
-                    //     });
+                if (blacklist.includes(tool.id.toString())) {
+                    return;
                 }
+
+                try {
+                    let armorAttribute = Item.of(item)
+                        .getItem()
+                        .getAttributes("generic.armor");
+                    
+                    if (armorAttribute[0]) {
+                        tool.maxDamage *= 4;
+                        console.log(`${tool.id} is armor`);
+                    } else {
+                        tool.maxDamage *= 2;
+                        console.log(`${tool.id} is not armor`);
+                    }
+
+                    // let isArmor = Item.of(item).getItem().getAttributes("generic.armor")[0]["amount"] != 0;
+
+                    // if (isArmor) {
+                    //     tool.maxDamage *= 4;
+                    //     console.log(`${tool.id} is armor`);
+                    // } else {
+                    //     tool.maxDamage *= 2;
+                    // }
+                } catch (error) { 
+                    console.log("Error when applying durability to " + tool.id.toString());
+                }
+                
             });
 
             // // Hotfix lol

@@ -21,18 +21,6 @@
 			maple = false
 			comet = false
 
-		[types.leaves_type.traverse]
-			red_autumnal = true
-			brown_autumnal = true
-			orange_autumnal = true
-			yellow_autumnal = true
-			fir = true
-
-		[types.leaves_type.minecells]
-			wilted = false
-			orange_wilted = false
-			red_wilted = false
-
 		[types.leaves_type.naturesaura]
 			ancient = true
 			golden = true
@@ -59,9 +47,6 @@
 			mahogany = true
 			willow = true
 			witch_hazel = true
-
-		[types.leaves_type.ars_elemental]
-			yellow_archwood = true
 
 		[types.leaves_type.eidolon]
 			illwood = true
@@ -179,11 +164,26 @@
 			yellow_spruce = true
 			firecracker = true
 
+		[types.leaves_type.alexscaves]
+			ancient = true
+
+		[types.leaves_type.traverse]
+			red_autumnal = true
+			brown_autumnal = true
+			orange_autumnal = true
+			yellow_autumnal = true
+			fir = true
+
 		[types.leaves_type.betternether]
-			willow = false
-			rubeus = false
-			anchor_tree = false
-			nether_sakura = false
+			willow = true
+			rubeus = true
+			anchor_tree = true
+			nether_sakura = true
+
+		[types.leaves_type.minecells]
+			wilted = true
+			orange_wilted = true
+			red_wilted = true
 
 		[types.leaves_type.environmental]
 			hibiscus = true
@@ -211,8 +211,8 @@
 			currant = true
 			grimwood = true
 
-		[types.leaves_type.alexscaves]
-			ancient = true
+		[types.leaves_type.ars_elemental]
+			yellow_archwood = true
 
 	[types.cake]
 
@@ -268,12 +268,6 @@
 			azalea = true
 			ancient = true
 			blossom = true
-
-		[types.wood_type.traverse]
-			fir = true
-
-		[types.wood_type.minecells]
-			putrid = false
 
 		[types.wood_type.botania]
 			livingwood = true
@@ -369,16 +363,29 @@
 			witch_hazel = true
 			zelkova = true
 
+		[types.wood_type.iceandfire]
+			dreadwood = true
+
+		[types.wood_type.alexscaves]
+			pewen = true
+			thornwood = true
+
 		[types.wood_type.betternether]
-			anchor_tree = false
-			mushroom_fir = false
-			nether_sakura = false
-			rubeus = false
-			stalagnate = false
-			wart = false
-			willow = false
-			nether_reed = false
-			nether_mushroom = false
+			anchor_tree = true
+			mushroom_fir = true
+			nether_sakura = true
+			rubeus = true
+			stalagnate = true
+			wart = true
+			willow = true
+			nether_reed = true
+			nether_mushroom = true
+
+		[types.wood_type.traverse]
+			fir = true
+
+		[types.wood_type.minecells]
+			putrid = true
 
 		[types.wood_type.endergetic]
 			poise = true
@@ -400,13 +407,6 @@
 			laurel = true
 			kousa = true
 			grimwood = true
-
-		[types.wood_type.iceandfire]
-			dreadwood = true
-
-		[types.wood_type.alexscaves]
-			pewen = true
-			thornwood = true
 
 #Disables specific entries
 [entries]

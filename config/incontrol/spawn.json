@@ -132,8 +132,57 @@
     },
     {
         "when": "onjoin",
-        "mob": "iceandfire:cockatrice",
+        "mob": "aether:cockatrice",
         "dimension": "aether:the_aether",
+        "mincount": {
+            "amount": 6,
+            "perplayer": true
+        },
         "result": "deny"
+    },
+    {
+        "when": "onjoin",
+        "mob": "meetyourfight:swampjaw",
+        "healthmultiply": 1.5,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "meetyourfight:bellringer",
+        "healthmultiply": 1.5,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "meetyourfight:dame_fortuna",
+        "healthmultiply": 1.55,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "meetyourfight:rosalyne",
+        "healthmultiply": 1.35,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "alexsmobs:cachalot_whale",
+        "healthmultiply": 2.5,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "mowziesmobs:ferrous_wroughtnaut",
+        "structure": "integrated_stronghold:stronghold",
+        "healthmultiply": 4,
+        "damagemultiply": 3,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "graveyard:ghouling",
+        "healthmultiply": 3,
+        "damagemultiply": 3,
+        "result": "default"
     }
 ]

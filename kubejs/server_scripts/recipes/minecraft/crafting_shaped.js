@@ -307,7 +307,7 @@ ServerEvents.recipes((event) => {
             ["ABA", "BCB", "ABA"],
             {
                 A: "thermal:apatite",
-                B: "aether:ambrosium_shard",
+                B: "galosphere:lumiere_shard",
                 C: "forbidden_arcanus:rune",
             },
         ],
@@ -1221,8 +1221,8 @@ ServerEvents.recipes((event) => {
             {
                 A: "spartanweaponry:explosive_charge",
                 B: "#forge:rods/wooden",
-                C: "eidolon:enchanted_ash"
-            }
+                C: "eidolon:enchanted_ash",
+            },
         ],
         [
             "4x minecraft:arrow",
@@ -1230,8 +1230,8 @@ ServerEvents.recipes((event) => {
             {
                 A: "minecraft:flint",
                 B: "#forge:rods/wooden",
-                C: "farmersdelight:straw"
-            }
+                C: "farmersdelight:straw",
+            },
         ],
         [
             "4x caverns_and_chasms:large_arrow",
@@ -1239,8 +1239,192 @@ ServerEvents.recipes((event) => {
             {
                 A: "#forge:ingots/silver",
                 B: "#forge:rods/wooden",
-                C: "farmersdelight:straw"
-            }
+                C: "farmersdelight:straw",
+            },
+        ],
+        [
+            "cataclysm:desert_eye",
+            ["ABC", "DED", "GBH"],
+            {
+                A: "atmospheric:yellow_blossoms",
+                B: "#forge:sandstone",
+                C: "#forge:death_worm_chitins",
+                D: "yungscavebiomes:prickly_peach",
+                E: "minecraft:ender_eye",
+                G: "undergarden:regalium_crystal",
+                H: "alexscaves:pewen_sap",
+            },
+        ],
+        [
+            "cataclysm:cursed_eye",
+            ["ABA", "CDE", "AFA"],
+            {
+                A: "iceandfire:ectoplasm",
+                B: "minecraft:totem_of_undying",
+                C: "endermanoverhaul:icy_pearl",
+                D: "minecraft:ender_eye",
+                E: "minecraft:heart_of_the_sea",
+                F: "aquamirae:abyssal_amethyst",
+            },
+        ],
+        [
+            "meetyourfight:ace_of_iron",
+            [" A ", "BCB", "   "],
+            {
+                A: "#iceandfire:scales/dragon",
+                B: "irons_spellbooks:divine_pearl",
+                C: "spartanshields:iron_basic_shield",
+            },
+        ],
+        [
+            "meetyourfight:dusk_key",
+            [" AB", "CB ", "DC "],
+            {
+                A: "caverns_and_chasms:spinel",
+                B: "blue_skies:smooth_midnight_sandstone",
+                C: "forbidden_arcanus:arcane_crystal",
+                D: "aether:aechor_petal",
+            },
+        ],
+        [
+            "cold_sweat:sewing_table",
+            ["ABA", "CCC", "CCC"],
+            {
+                A: "forbidden_arcanus:cloth",
+                B: "#minecraft:wool",
+                C: "#minecraft:planks",
+            },
+        ],
+        [
+            "cold_sweat:thermometer",
+            ["ABA", " C ", " C "],
+            {
+                A: "minecraft:gold_ingot",
+                B: "minecraft:redstone",
+                C: "forbidden_arcanus:runic_glass_pane",
+            },
+        ],
+        [
+            "cataclysm:sticky_gloves",
+            ["ABA", "BCB", "ABA"],
+            {
+                A: "minecraft:slime_ball",
+                B: "aether:leather_gloves",
+                C: "#forge:dough/wheat",
+            },
+        ],
+        [
+            "cataclysm:ignitium_upgrade_smithing_template",
+            ["ABA", "BCB", "ADA"],
+            {
+                A: "betternether:cincinnasite_ingot",
+                B: "minecraft:nether_bricks",
+                C: "minecraft:netherite_upgrade_smithing_template",
+                D: "alexsmobs:straddlite",
+            },
+        ],
+        [
+            "cataclysm:cursium_upgrade_smithing_template",
+            ["AAA", "BCB", "ADA"],
+            {
+                A: "#forge:ingots/silver",
+                B: "cataclysm:black_steel_ingot",
+                C: "minecraft:netherite_upgrade_smithing_template",
+                D: "quark:soul_bead",
+            },
+        ],
+        [
+            "dragonseeker:dragonseeker",
+            ["  A", "CB ", "B  "],
+            {
+                A: "#iceandfire:dragon_skulls",
+                B: "caverns_and_chasms:necromium_ingot",
+                C: "alexscaves:bioluminessence",
+            },
+        ],
+        [
+            "iceandfire:stymphalian_bird_dagger",
+            [" A ", " B ", " C "],
+            {
+                A: "iceandfire:stymphalian_bird_feather",
+                B: "alexscaves:radiant_essence",
+                C: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "immersive_aircraft:hull",
+            ["ABA", "CCC", "ABA"],
+            {
+                A: "#minecraft:logs",
+                B: "alexscaves:ferrouslime_ball",
+                C: "#forge:ingots/aluminum",
+            },
+        ],
+        [
+            "immersive_aircraft:engine",
+            [" A ", "BCB", "DED"],
+            {
+                A: "create:copper_casing",
+                B: "#forge:storage_blocks/nickel",
+                C: "create:steam_engine",
+                D: "create_new_age:magnetite_block",
+                E: "immersive_aircraft:boiler",
+            },
+        ],
+        [
+            "immersive_aircraft:sail",
+            ["ABA", "ABA", " B "],
+            {
+                A: "create:white_sail",
+                B: "#quark:posts",
+            },
+        ],
+        [
+            "immersive_aircraft:propeller",
+            ["AA ", " B ", " AA"],
+            {
+                A: "#forge:ingots/aluminum",
+                B: "create:propeller",
+            },
+        ],
+        [
+            "immersive_aircraft:rotary_cannon",
+            [" A ", " BC", " D "],
+            {
+                A: "create:fluid_pipe",
+                B: "supplementaries:spring_launcher",
+                C: "immersive_aircraft:industrial_gears",
+                D: "create_new_age:overcharged_iron",
+            },
+        ],
+        [
+            "immersive_aircraft:telescope",
+            [" A ", " B ", " C "],
+            {
+                A: "forbidden_arcanus:runic_glass_pane",
+                B: "minecraft:spyglass",
+                C: "craete:cogwheel",
+            },
+        ],
+        [
+            "immersive_aircraft:sturdy_pipes",
+            ["  A", "BCB", "A  "],
+            {
+                A: "prettypipes:pipe",
+                B: "create:fluid_pipe",
+                C: "thermal:apatite",
+            },
+        ],
+        [
+            "scannable:scanner",
+            ["A A", "BCB", "DED"],
+            {
+                A: "createaddition:connector",
+                B: "immersiveengineering:component_steel",
+                C: "thermal:rf_coil",
+                D: "#forge:ingots/pewter",
+                E: "createaddition:capacitor",
+            },
         ],
     ];
 

@@ -76,9 +76,6 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "mcjtylib": {
-    "jadeaddons": true
-  },
   "apotheosis": {
     "adventure": true,
     "ench": true,
@@ -86,6 +83,14 @@
   },
   "lootr": {
     "info": true
+  },
+  "integrateddynamicscompat": {
+    "proxy": true,
+    "mechanical_squeezer": true,
+    "mechanical_drying_basin": true,
+    "drying_basin": true,
+    "part": true,
+    "squeezer": true
   },
   "modularrouters": {
     "router": true
@@ -138,6 +143,9 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "gravestone": {
+    "grave": true
   },
   "cookingforblockheads": {
     "fridge": true,

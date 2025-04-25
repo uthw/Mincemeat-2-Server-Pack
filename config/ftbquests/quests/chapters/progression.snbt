@@ -283,15 +283,25 @@
 		}
 		{
 			dependencies: ["080F8244C005A607"]
-			icon: "bloodmagic:altar"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "bloodmagic:altar"
+			}
 			id: "0121C2C9B72C0A54"
+			invisible: true
+			optional: true
 			tasks: [{
 				id: "068C17297478FAE0"
 				title: "Blood Magic"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -429,18 +439,6 @@
 		}
 		{
 			dependencies: ["1FFE9767A7118551"]
-			icon: "xnet:controller"
-			id: "079032B095127C14"
-			tasks: [{
-				id: "62AD961C6A4814C9"
-				title: "XNet"
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["1FFE9767A7118551"]
 			icon: "integrateddynamics:mechanical_squeezer"
 			id: "5352CFDCA42BA55D"
 			tasks: [{
@@ -568,6 +566,18 @@
 			}]
 			x: -3.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["5DE22DEFA690FDE0"]
+			icon: "hexcasting:charged_amethyst"
+			id: "6237A6738A67472B"
+			tasks: [{
+				id: "38CFF7C9FE995697"
+				title: "Hex Casting"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 3.0d
 		}
 	]
 	title: "Progression"

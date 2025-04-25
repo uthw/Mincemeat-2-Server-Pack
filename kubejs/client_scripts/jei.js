@@ -35,6 +35,18 @@ JEIEvents.information((event) => {
         {
             item: "create:limestone",
             desc: "Created when flowing lava collides with a honey source block."
+        },
+        {
+            item: "neapolitan:mint_sprout",
+            desc: "Found in savannas and similar biomes."
+        },
+        {
+            item: "neapolitan:adzuki_beans",
+            desc: "Found in hilly biomes."
+        },
+        {
+            item: "irons_spellbooks:permafrost_shard",
+            desc: "Found in impaled icebreaker shipwrecks."
         }
     ];
 

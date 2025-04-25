@@ -1,7 +1,7 @@
 {
     "startingValue": 0,
     "minValue": 0,
-    "maxValue": 300,
+    "maxValue": 180,
     "changePerSecond": 0.0012,
     "mode": {
         "type": "distance",
@@ -52,7 +52,7 @@
         "onBlightKilled": "difficulty",
         "onHostileKilled": "difficulty",
         "onPeacefulKilled": "difficulty",
-        "onPlayerKilled": "difficulty + 1",
+        "onPlayerKilled": "difficulty",
         "onPlayerDeath": "difficulty",
         "onPlayerSleep": "difficulty",
         "byEntity": [

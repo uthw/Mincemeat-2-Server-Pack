@@ -31,25 +31,25 @@ ServerEvents.recipes((event) => {
                 "naturesaura:gold_powder",
             ],
         },
-        {
-            output: "bloodmagic:blankrune",
-            reagent: "bloodmagic:blankslate",
-            inputs: [
-                "eidolon:pewter_ingot",
-                "4x minecraft:deepslate",
-                "thermal:apatite",
-            ],
-        },
-        {
-            output: "bloodmagic:alchemytable",
-            reagent: "bloodmagic:blankslate",
-            inputs: [
-                "eidolon:polished_wood_pillar",
-                "3x minecraft:deepslate",
-                "eidolon:arcane_gold_ingot",
-                "ars_nouveau:potion_flask",
-            ],
-        },
+        // {
+        //     output: "bloodmagic:blankrune",
+        //     reagent: "bloodmagic:blankslate",
+        //     inputs: [
+        //         "eidolon:pewter_ingot",
+        //         "4x minecraft:deepslate",
+        //         "thermal:apatite",
+        //     ],
+        // },
+        // {
+        //     output: "bloodmagic:alchemytable",
+        //     reagent: "bloodmagic:blankslate",
+        //     inputs: [
+        //         "eidolon:polished_wood_pillar",
+        //         "3x minecraft:deepslate",
+        //         "eidolon:arcane_gold_ingot",
+        //         "ars_nouveau:potion_flask",
+        //     ],
+        // },
         // Enigmatic Legacy recipes
 
         {
@@ -281,6 +281,15 @@ ServerEvents.recipes((event) => {
                 "4x iceandfire:scales/dragon",
             ],
         },
+        {
+            output: "actuallyadditions:coffee_beans",
+            reagent: "neapolitan:adzuki_beans",
+            inputs: [
+                "minecraft:cocoa_beans",
+                "minecraft:blaze_powder",
+                "thermal:basalz_powder"
+            ]
+        }
     ];
 
     recipes.forEach((recipe) => {

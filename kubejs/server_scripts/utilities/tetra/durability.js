@@ -255,9 +255,9 @@ ServerEvents.highPriorityData((event) => {
         { name: "socket/socket_alexscaves_occult_gem", durability: 0.0 },
         { name: "socket/socket_alexscaves_amber_curiosity", durability: 0.0 },
         { name: "skin/alexscaves_tough_hide", durability: 400 },
-        { name: "metal/iceandfire_lightning_dragonsteel", durability: 16000 },
-        { name: "metal/iceandfire_ice_dragonsteel", durability: 16000 },
-        { name: "metal/iceandfire_fire_dragonsteel", durability: 16000 },
+        { name: "metal/iceandfire_lightning_dragonsteel", durability: 16000, primary: 11 },
+        { name: "metal/iceandfire_ice_dragonsteel", durability: 16000, primary: 11 },
+        { name: "metal/iceandfire_fire_dragonsteel", durability: 16000, primary: 11 },
         { name: "metal/create_zinc", durability: 400 },
         { name: "metal/create_shadow_steel", durability: 2730 },
         { name: "metal/create_refined_radiance", durability: 1752 },
@@ -287,11 +287,13 @@ ServerEvents.highPriorityData((event) => {
         },
         {
             name: "gem/blue_skies_diopside",
-            durability: 3322,
+            durability: 3122,
             hardness: 9,
             improvements: {
                 "dimasctetracompat/fairweather": 0,
             },
+            secondary: 4.3,
+            primary: 6,
         },
         {
             name: "gem/blue_skies_charoite",
@@ -420,97 +422,87 @@ ServerEvents.highPriorityData((event) => {
         { name: "wood/livingwood", durability: 140 },
         { name: "wood/maple", durability: 140 },
 
-        // dimasc disable
+        // dimasc blue skies compat
 
         {
             name: "gem/charoite",
-            primary: 0,
-            secondary: 0,
+            durability: 3122,
+            hardness: 6,
+            magicCapacity: 60,
+            secondary: 2.6,
+            toolEfficiency: 8.0,
         },
         {
             name: "gem/diopside",
-            primary: 0,
-            secondary: 0,
+            durability: 3122,
+            hardness: 9,
+            primary: 6,
+            secondary: 4.3,
+            toolEfficiency: 6,
         },
-        // {
-        //     name: "gem/moonstone",
-        //     primary: 0,
-        //     secondary: 0,
-        // },
+        {
+            name: "gem/moonstone",
+            durability: 1000,
+        },
         {
             name: "gem/pyrope",
-            primary: 0,
-            secondary: 0,
+            durability: 400,
         },
         {
             name: "metal/aquite",
-            primary: 0,
-            secondary: 0,
+            durability: 540,
         },
         {
             name: "metal/falsite",
-            primary: 0,
-            secondary: 0,
+            durability: 900,
         },
         {
             name: "metal/horizonite",
-            primary: 0,
-            secondary: 0,
+            durability: 500,
         },
         {
             name: "metal/ventium",
-            primary: 0,
-            secondary: 0,
+            durability: 400,
         },
         {
             name: "stone/lunar_stone",
-            primary: 0,
-            secondary: 0,
+            durability: 262,
         },
         {
             name: "stone/turquoise_stone",
-            primary: 0,
-            secondary: 0,
+            durability: 262,
         },
         {
             name: "wood/bluebright",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/comet",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/dusk",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/dusk",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/frostbright",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/lunar_wood",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/maple",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
         {
             name: "wood/starlit",
-            primary: 0,
-            secondary: 0,
+            durability: 108,
         },
     ];
     tweak.forEach((material) => {

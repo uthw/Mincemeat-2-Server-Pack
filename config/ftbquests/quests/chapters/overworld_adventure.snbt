@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["00294FF7CDCA91F0"]
 			description: ["Found in the &5Theatre&r."]
 			hide_dependent_lines: true
 			id: "4493D9650B5D1F71"
@@ -64,7 +63,11 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4493D9650B5D1F71"]
+			dependencies: [
+				"4493D9650B5D1F71"
+				"00294FF7CDCA91F0"
+				"67EDF8A2B69A158D"
+			]
 			description: ["You'll be back in the Overworld before long..."]
 			icon: "forbidden_arcanus:whirlwind_prism"
 			id: "18D1EA8E41311823"
@@ -126,6 +129,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "More like Void Out of Season now, right?"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:void_blossom"
 				icon: "bosses_of_mass_destruction:void_blossom"
@@ -146,9 +150,10 @@
 			icon: "aquamirae:ship_graveyard_echo"
 			id: "1808E3ABC3AF6D82"
 			tasks: [{
-				id: "38F2586A4F22A244"
-				structure: "aquamirae:ice_maze/common"
-				type: "structure"
+				advancement: "aquamirae:adventure/find_ice_maze"
+				criterion: ""
+				id: "3E034583BD4EDEA0"
+				type: "advancement"
 			}]
 			title: "Ice Maze"
 			x: 2.0d
@@ -285,7 +290,11 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["2287726086131598"]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Welcome to the &1magnetic&r &ccaves&r!"
 				""
@@ -305,7 +314,11 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["2287726086131598"]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
 			icon: "alexscaves:dinosaur_nugget"
 			id: "114699FC353B18CE"
 			invisible: true
@@ -319,7 +332,11 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["2287726086131598"]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Being in the caves or having radioactive items in your inventory may give you the &2irradiated&r effect, which prevents you from healing."
 				""
@@ -339,7 +356,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["2287726086131598"]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
 			icon: "alexscaves:copper_valve"
 			id: "403B8F4A5838932B"
 			invisible: true
@@ -354,7 +375,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2287726086131598"]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
 			icon: "alexscaves:darkened_apple"
 			id: "06D8CD953FBEE3D2"
 			invisible: true
@@ -368,7 +393,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["67EDF8A2B69A158D"]
 			description: [
 				"Found in &7wrought lairs&r below the ground."
 				""
@@ -386,6 +410,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Double the axe, double the fun"
 			tasks: [{
 				entity: "mowziesmobs:ferrous_wroughtnaut"
 				icon: "mowziesmobs:wrought_helmet"
@@ -465,6 +490,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Most people are not okay, but they're taking siestas in the sun"
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
 				id: "34857EEFF05576C1"
@@ -530,6 +556,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Call me Ishmael."
 			tasks: [{
 				entity: "cataclysm:the_leviathan"
 				id: "72E1AD4B8BA5F853"
@@ -556,6 +583,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Come forth"
 			tasks: [{
 				entity: "cataclysm:ancient_remnant"
 				id: "368111B28F939589"
@@ -977,7 +1005,6 @@
 		}
 		{
 			dependencies: ["6B15B902E71DC308"]
-			hide_dependency_lines: true
 			id: "65853019D72D1C19"
 			tasks: [{
 				id: "263695347D478A8D"
@@ -990,8 +1017,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 11.0d
+			x: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["06D8CD953FBEE3D2"]
@@ -999,8 +1026,6 @@
 				"A helmet-and-chestpiece set that has a powerful set bonus."
 				""
 				"When both are equipped, being in darker areas charges a meter, shown on screen. When this meter is full, press a hotkey to get a powerful effect."
-				""
-				"The effect will only activate if you're in a dark or dim area."
 			]
 			id: "14912F7215D1DA76"
 			tasks: [
@@ -1424,6 +1449,7 @@
 					type: "item"
 				}
 				{
+					icon: "alexscaves:sea_pig"
 					id: "0C4BCF1C02E5A89B"
 					observe_type: 5
 					timer: 0L
@@ -1521,6 +1547,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "The cryogenic aging didn't work so well"
 			tasks: [{
 				entity: "aquamirae:captain_cornelia"
 				id: "1F4B16BC39F9A439"
@@ -1553,7 +1580,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
-			subtitle: "The King is Dead, Long Live the King"
+			subtitle: "Hee hee hee haw!"
 			tasks: [{
 				entity: "irons_spellbooks:dead_king"
 				icon: "irons_spellbooks:blood_staff"
@@ -1593,10 +1620,15 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2287726086131598"]
-			description: ["I had Candy Cavity quests but I accidentally deleted them when I resynced my GitHub account to Git on my laptop. I'll rewrite/restore them later."]
+			dependencies: [
+				"2287726086131598"
+				"2BE6B05790E5A2DE"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Immediately upon arriving, you may notice the Candy Cavity is much less foreboding than other cave biomes; there're no nuclear explosions or cultists here. Instead, you can eat every block. Each one counts towards Spice of Life, so get to work?!"]
 			id: "7A8F28E754BB375D"
 			invisible: true
+			subtitle: "Remember the texture pack?"
 			tasks: [{
 				biome: "alexscaves:candy_cavity"
 				icon: "alexscaves:candy_cane"
@@ -1693,6 +1725,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Dead in the water (or air, in this case?)"
 			tasks: [{
 				entity: "meetyourfight:swampjaw"
 				id: "6A9F40BD6792E2B8"
@@ -1713,6 +1746,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Cabron, let me see your bells"
 			tasks: [{
 				entity: "meetyourfight:bellringer"
 				id: "78B705C3C6B6B595"
@@ -1732,6 +1766,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "90% of gamblers quit before they win big"
 			tasks: [
 				{
 					entity: "meetyourfight:dame_fortuna"
@@ -1789,6 +1824,7 @@
 				type: "kill"
 				value: 1L
 			}]
+			title: "Berserker"
 			x: -6.5d
 			y: -1.0d
 		}
@@ -2196,12 +2232,14 @@
 		}
 		{
 			dependencies: ["0579360EE0F0D4AD"]
+			description: ["&7&oBut the sun is eclipsed by the moon"]
 			id: "4F0CB3BF8C85DACC"
 			rewards: [{
 				id: "506B9AEEC7FDFCA9"
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Everything under the sun is in tune"
 			tasks: [{
 				entity: "bosses_of_mass_destruction:lich"
 				icon: "bosses_of_mass_destruction:ancient_anima"
@@ -2416,6 +2454,7 @@
 				item: "paraglider:heart_container"
 				type: "item"
 			}]
+			subtitle: "Float down the Liffey"
 			tasks: [{
 				entity: "meetyourfight:rosalyne"
 				icon: "meetyourfight:violet_bloom"
@@ -2483,11 +2522,18 @@
 		{
 			dependencies: ["3C53341E4A5B1E67"]
 			id: "5EE95A37004F9F6A"
-			rewards: [{
-				id: "3F44D86043B53106"
-				item: "paraglider:heart_container"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3F44D86043B53106"
+					item: "paraglider:heart_container"
+					type: "item"
+				}
+				{
+					id: "30D907E5BA2B3249"
+					item: "enigmaticlegacy:ichor_bottle"
+					type: "item"
+				}
+			]
 			tasks: [{
 				entity: "cataclysm:maledictus"
 				icon: "traveloptics:echo_winglet"
@@ -2530,6 +2576,12 @@
 			]
 			id: "3F8C49BCA7072E50"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "4111374A4F5F9268"
+				item: "cataclysm:blessed_amethyst_crab_meat"
+				type: "item"
+			}]
 			tasks: [
 				{
 					icon: "cataclysm:altar_of_amethyst"
@@ -2566,7 +2618,7 @@
 				""
 				"At the bottom of the deep pool directly beneath the central dome is an Altar of Void. You'll want to bring the Leviathan from the Void into the Overworld by right clicking the Altar with the Sacrifice. Don't forget to eat your Blessed Meat if you got it!"
 				""
-				"To prepare, bring something that lets you move through the water more quickly, like a Riptide trident. For a more extreme measure, opt to entirely drain the water from this room. Being an aquatic foe, Impaling is actually useful for once in this fight."
+				"To prepare, bring something that lets you move through the water more quickly, like a Riptide trident. You'll be disappointed with the results if you opt to entirely drain the room of water, so don't try it. Being an aquatic foe, Impaling is actually useful for once in this fight."
 				""
 				"Also, don't use ranged attacks unless you have Tide Arrows, because water resists the arrows' movement more than air does."
 				""
@@ -2955,6 +3007,435 @@
 			}]
 			x: 14.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"A theme you might've picked up on is the more grandiose and large a dungeon is, the more formidable its ruler."
+				""
+				"The Monastery subverts your expectations. The resident Sculptor is far from being a boss, but can still offer you an adventure nonetheless."
+				""
+				"The Sculptor can be challenged by bringing him a Bluff Rod. You'll find this soon enough by exploring the Monastery. Be sure to collect some souvenirs to bring home!"
+			]
+			id: "7D847F3BACE438C7"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "mowziesmobs:sculptor_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0F0EAEECAD100D59"
+				structure: "mowziesmobs:monastery"
+				title: "Monastery"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D847F3BACE438C7"]
+			description: [
+				"You'll find another Blaze Relative, the Bluff, within the Monastery. You'll want to kill it to take its rod and bring it back to Tongbi. You can right-click him to open a trading interface."
+				""
+				"The Sculptor then rises high into the sky and creates stone boulders and swabs of dirt from the ground. You'll need to make your way up to him &cwithout doing anything that violates the spirit of the challenge&r - more on this in Tongbi's menu."
+				""
+				"Unless you have access to vast amounts of helpful items, you'll have to go about this the old-fashioned way -- you can't grapple or wall-jump onto them. You can, however, still dodge roll and coyote jump."
+				""
+				"If you're more methodical, you might bring something that has significant upwards propulsion &lwithout&r granting flight, like an Ender Staff."
+				""
+				"Right-click the Sculptor to complete his challenge. He'll reward you handsomely."
+			]
+			id: "596E627E97F6662D"
+			tasks: [{
+				id: "00D363D6CB2D69D8"
+				item: "mowziesmobs:bluff_rod"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["596E627E97F6662D"]
+			description: [""]
+			id: "58310CFA04C12176"
+			subtitle: "Only Up lives on"
+			tasks: [{
+				advancement: "mowziesmobs:sculptor_challenge"
+				criterion: ""
+				id: "42139932A53B37AB"
+				type: "advancement"
+			}]
+			title: "You Must Believe"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"71BD95734E41E591"
+				"34A83BB5D5DEFC82"
+				"21D6AB95329A4EEF"
+			]
+			description: [
+				"If you're not interested in the Everbright or Everdawn, you can instead choose to skip them entirely and progress into the Prison without leaving the Overworld."
+				""
+				"Click the little triangle on the top left of the quest to see who you need to best. Note that you'll need to kill all three bosses."
+				""
+				"Be warned, as this \"shortcut\" is much harder than taking the Blue Skies route."
+			]
+			hide_dependency_lines: true
+			icon: "forbidden_arcanus:sea_prism"
+			id: "00FC9BF5E2C82B11"
+			rewards: [{
+				auto: "invisible"
+				id: "254F7914C0A94788"
+				ignore_reward_blocking: true
+				stage: "minecells_access"
+				type: "gamestage"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "If you're tired of Blue Skies"
+			tasks: [{
+				icon: "irons_spellbooks:invisibility_ring"
+				id: "27585EA3A485E41D"
+				stat: "minecraft:play_time"
+				title: "Automatically Completes"
+				type: "stat"
+				value: 1
+			}]
+			title: "Alternative Path to Mine Cells"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A8F28E754BB375D"]
+			description: ["Can be found in dark purple towers."]
+			id: "7AB1C363FF5D6796"
+			tasks: [{
+				entity: "alexscaves:licowitch"
+				icon: "alexscaves:radiant_essence"
+				id: "7EA785EE55389E48"
+				title: "Kill a Licowitch"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7A8F28E754BB375D"]
+			description: [
+				"You can make Gelatin by killing and cooking Sweetish Fish."
+				""
+				"Gelatin can be turned into a couple of accessories, like a fun pair of boots."
+			]
+			id: "1EF60F0350C0A0CA"
+			tasks: [{
+				id: "7A951BA4E8183F6E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "alexscaves:gelatins"
+					}
+				}
+				title: "Any #alexscaves:gelatins"
+				type: "item"
+			}]
+			title: "Gelatin"
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7AB1C363FF5D6796"]
+			description: ["This furnace can summon gingerbread men when given a redstone signal."]
+			id: "41045BA55ED040FC"
+			tasks: [{
+				id: "016D3F9CFBEB0107"
+				item: "alexscaves:confection_oven"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7A8F28E754BB375D"]
+			id: "0B5B61503823E249"
+			tasks: [{
+				id: "22E9293E87882A17"
+				item: "alexscaves:shot_gum"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7AB1C363FF5D6796"]
+			id: "423BE732F25FB885"
+			tasks: [{
+				id: "63CD182F00EA38FF"
+				item: {
+					Count: 1
+					id: "alexscaves:candy_cane_hook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1EF60F0350C0A0CA"]
+			description: ["The Gobthumper, when placed, summons the massive Gum Worm. Hooking onto it with the Candy Cane Hook lets you ride it."]
+			id: "4103684D9105470C"
+			tasks: [{
+				id: "10C85DE55182D059"
+				item: "alexscaves:gobthumper"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4103684D9105470C"]
+			description: ["Crafted using the Sweet Tooth, dropped by the Gum Worm. It's able to eat any food in your inventory and automatically feed you when you get hungry."]
+			id: "557A09990960B97E"
+			tasks: [{
+				id: "366D0E99BF281806"
+				item: "alexscaves:sack_of_sating"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7AB1C363FF5D6796"]
+			description: [
+				"Perhaps one of the most useful and intriguing parts of the Candy Cavity is the ability to change parts of your world to be biomes of your choosing."
+				""
+				"You'll need to eat the Biome Treat in the biome you want duplicated, drop the treat into the cauldron, then follow the instructions (it will want blocks from that biome)."
+			]
+			id: "7E15B90CC27673C7"
+			tasks: [
+				{
+					id: "05DEB063BA914BE6"
+					item: "alexscaves:conversion_crucible"
+					type: "item"
+				}
+				{
+					id: "6990FD2E80BC3F65"
+					item: "alexscaves:biome_treat"
+					type: "item"
+				}
+			]
+			title: "Biome Conversion"
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["67EDF8A2B69A158D"]
+			description: [
+				"This is a massive dungeon filled to the brim with mobs due to the immense amount of spawners. Also noteworthy here are the Spawner Carriers, who can also spawn mobs."
+				""
+				"On the plus side, if you need Spirit Orbs to max out your stamina or something, you've come to the right place."
+				""
+				"In the heart of the Labrynth is the Chaos Spawner, whose boss description is now loading."
+			]
+			id: "61963A7E3CC5B4B6"
+			tasks: [{
+				icon: "dungeonnowloading:spikes"
+				id: "2C310BDE5E57DFE6"
+				structure: "dungeonnowloading:labyrinth"
+				title: "Labrynth"
+				type: "structure"
+			}]
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D4F147344834529"]
+			id: "48D4BF288D59E907"
+			tasks: [{
+				entity: "dungeonnowloading:chaos_spawner"
+				icon: "dungeonnowloading:chaos_spawner_barrier_center"
+				id: "6C895EABCC75710E"
+				title: "Chaos Spawner"
+				type: "kill"
+				value: 1L
+			}]
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["48D4BF288D59E907"]
+			id: "6138BDDAF5225818"
+			tasks: [
+				{
+					id: "4CF1D7533DDF66B1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "dungeonnowloading:spawner_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CD30B7FE9FE0ECF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "dungeonnowloading:spawner_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67627D05A8AF2365"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "dungeonnowloading:spawner_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16F469B27D54FA8C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "dungeonnowloading:spawner_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Spawner Gear"
+			x: -13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48D4BF288D59E907"]
+			id: "47C84B9D8A67B7E3"
+			tasks: [
+				{
+					id: "6CE2342A3BB381E8"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:life_stealer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09202E63599BD600"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:spawner_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -14.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["61963A7E3CC5B4B6"]
+			id: "4D4F147344834529"
+			tasks: [{
+				id: "29DC2526A75F48F9"
+				item: {
+					Count: 1
+					id: "dungeonnowloading:skull_of_chaos"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49975EE359AD20F3"]
+			description: [
+				"Use the Crimson or Ice Eyes to find rare arenas in your world -- you can't use the Explorer's Compass."
+				""
+				"These foreboding, midair battlegrounds host challenging battles, initiated by right-clicking the apparatus in the center. You can also find a waystone nearby."
+				""
+				"Rewards await at the end -- good luck! "
+			]
+			id: "1D12E0C4D1A02F2E"
+			subtitle: "Have you seen Meburs around here?"
+			tasks: [
+				{
+					icon: "skyarena:altar_battle"
+					id: "036088E928614C7F"
+					observe_type: 0
+					timer: 0L
+					title: "Altar of Battle"
+					to_observe: "skyarena:altar_battle"
+					type: "observation"
+				}
+				{
+					id: "0E4F07934DEBD88E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "skyarena:crimson_eye"
+								}
+								{
+									Count: 1b
+									id: "skyarena:ice_eye"
+								}
+							]
+						}
+					}
+					title: "Eye"
+					type: "item"
+				}
+			]
+			title: "Sky Arena"
+			x: 14.0d
+			y: 2.0d
 		}
 	]
 	title: "Overworld Adventure"

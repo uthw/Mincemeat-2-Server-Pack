@@ -12,7 +12,9 @@
 	#Displays a dripping water effect on-screen and/or with particles when the player is wet
 	#0: Off, 1: Particles, 2: On-Screen, 3: Both
 	#Range: 0 ~ 3
-	"Show Water Effect" = 3
+	"Show Water Effect" = 1
+	#The scale of the water droplets on-screen, in scaled "pixels"
+	"Water Droplet Scale" = [40, 48]
 
 ["UI Options"]
 	"Custom hotbar layout" = true
@@ -35,7 +37,7 @@
 
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold
-	"Distortion Effects" = true
+	"Distortion Effects" = false
 	#Enables high contrast mode for UI elements
 	"High Contrast" = false
 

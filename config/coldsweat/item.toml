@@ -3,7 +3,7 @@
 	#Defines items that can be used as fuel
 	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
 	Boiler = [["#minecraft:planks", 50], ["minecraft:coal", 185], ["#forge:coal_coke", 925], ["minecraft:charcoal", 185], ["#minecraft:logs_that_burn", 185], ["minecraft:coal_block", 1665], ["minecraft:magma_block", 1665], ["minecraft:lava_bucket", 5000]]
-	Icebox = [["minecraft:snowball", 50], ["minecraft:clay_ball", 185], ["minecraft:snow_block", 500], ["minecraft:ice", 1250], ["minecraft:clay", 1665], ["minecraft:powder_snow_bucket", 500], ["minecraft:packed_ice", 5000]]
+	Icebox = [["minecraft:snowball", 50], ["minecraft:clay_ball", 185], ["minecraft:snow_block", 500], ["minecraft:ice", 1250], ["minecraft:clay", 1665], ["minecraft:powder_snow_bucket", 500], ["minecraft:packed_ice", 5000], ["minecraft:blue_ice", 10000]]
 	#Negative values indicate cold fuel
 	Hearth = [["#minecraft:planks", 50], ["minecraft:coal", 185], ["minecraft:charcoal", 185], ["#minecraft:logs_that_burn", 185], ["minecraft:coal_block", 1665], ["minecraft:magma_block", 1665], ["minecraft:lava_bucket", 5000], ["minecraft:snowball", -50], ["minecraft:clay_ball", -185], ["minecraft:snow_block", -500], ["minecraft:ice", -1250], ["minecraft:clay", -1665], ["minecraft:powder_snow_bucket", -500], ["minecraft:packed_ice", -5000]]
 	#Potions containing any of these effects will not be allowed in the hearth
@@ -53,7 +53,7 @@
 	#Exponential: Number of slots increases rapidly with protection
 	#Logarithmic: Number of slots increases with protection, with diminishing returns
 	#- Format: [number, max-slots] (a positive integer or decimal; the rate of increase)
-	"Insulation Slots" = ["static", 4, 6, 5, 4]
+	"Insulation Slots" = ["static", 18, 18, 18, 18]
 	#Defines the effectiveness of insulating items in protecting against temperature
 	#Range: 0.0 ~ 1.7976931348623157E308
 	"Insulation Strength" = 1.0
@@ -77,7 +77,7 @@
 	"Soulspring Lamp Strength" = 0.6
 	#Defines items that can be used to dry the player
 	#Format: [["item_id", "turns_into"], ["item_id", "turns_into"], ...etc]
-	"Drying Items" = [["minecraft:sponge", "minecraft:wet_sponge"]]
+	"Drying Items" = []
 
 [Misc]
 	#Defines items that affect the player's temperature when in the inventory

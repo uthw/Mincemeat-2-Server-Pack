@@ -1,6 +1,6 @@
 # How to set up and run a Mincemeat 2 server
 
-Last updated for v0.4.12 (January 8, 2025)
+Last updated for v0.4.15 (April 2025)
 
 You need Java 17 (21 might work but untested) to run the server.
 
@@ -11,13 +11,13 @@ You need Java 17 (21 might work but untested) to run the server.
 3. Delete the following files from the `mods` folder on the server (the new one in this folder). These are client-side mods that do not disable themselves on the server and therefore crash the server if left untouched:
    Mods in **bold** are newly-added mods in the most recent version of the pack.
 
+-   continuity
 -   EuphoriaPatcher
--   explosiveenhancement
 -   LegendaryTooltips
 -   make_bubbles_pop
 -   NekosEnchantedBooks
+-   nolijium
 -   oculus
--   oculus-flywheel-compat
 -   YungsMenuTweaks
 
 4. Set the JVM arguments as desired, you will probably need more RAM than the amount I set. `-Xmx`_(NUMBER GOES HERE)_`G` to set maximum allocated memory.

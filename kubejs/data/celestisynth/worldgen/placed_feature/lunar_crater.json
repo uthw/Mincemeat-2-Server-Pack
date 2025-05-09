@@ -1,0 +1,9 @@
+{
+    "feature": "celestisynth:lunar_crater",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

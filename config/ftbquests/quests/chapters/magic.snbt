@@ -1,0 +1,5521 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic"
+	group: "1D1CECCF47A202B0"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "irons_spellbooks:diamond_spell_book"
+		tag: {
+			ISB_spellbook: {
+				activeSpellIndex: -1
+				spellSlots: 8
+				spells: [ ]
+			}
+		}
+	}
+	id: "151DB3F06C437377"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5B64E6EE42B87A90"]
+			description: [
+				"Ars Nouveau provides spell crafting, magical devices, powerful trinkets, and magical entity automation."
+				""
+				"*Ars Nouveau quests still follow the 1.16 progression which has changed, so some things might not make sense."
+				""
+				"*These quests have limited coverage of Ars Nouveau addons which were not in Mincemeat 1, or may mention glyphs from mods which aren't in Mincemeat 2."
+			]
+			id: "49079A4790CE0545"
+			rewards: [{
+				id: "3D248D0F1FB059D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:source_berry_pie"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "78EC8A83512193B4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:novice_spell_book"
+				}
+				type: "item"
+			}]
+			title: "Ars Nouveau"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"51D2D5057356DD35"
+				"65C258505EBC649E"
+			]
+			description: ["You've become quite powerful! But not enough to just Wish bosses to die. You'll have to play a different game for that."]
+			id: "085A157C19E990CC"
+			shape: "hexagon"
+			tasks: [{
+				id: "2F6B64234DB2367D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:archmage_spell_book"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["129CAC4D971CBAD8"]
+			id: "51D2D5057356DD35"
+			shape: "hexagon"
+			tasks: [{
+				id: "6C27AE32A679D581"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:apprentice_spell_book"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"1428E0A6A540FBBD"
+				"3B0E94580CB1B0E6"
+				"01D420E633271E2E"
+				"63F5A75BE447ED8C"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Crafting glyphs requires a glyph press."
+				"You need a few things to get pressing: magical clay, a reagent for the spell, and source in a nearby source jar."
+				""
+				"Once this is done, you can right click with the glyph in your hand to learn it."
+				""
+				"There are too many different glyphs to include them all here, so I've conjured a few examples of combos for you."
+				""
+				"JEI will be your friend."
+			]
+			id: "335E26285D11AB8A"
+			shape: "square"
+			tasks: [{
+				id: "640B7C7E652AB74A"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49079A4790CE0545"]
+			description: [
+				"An imbuement chamber can turn items into other items."
+				""
+				"Place Arcane Crystals or Amethyst inside to turn them into source gems."
+				""
+				"Later, mana from Source Jars can speed up this process."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "72096F084142B453"
+			rewards: [
+				{
+					count: 4
+					id: "7368B311119E1647"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "07F20528623DBBED"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:glass"
+					}
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4FECDACFC154AE4F"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dowsing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "568BD6111024F305"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "2BD7321AF7BD01A3"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			title: "How to Get Source Gems"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["335E26285D11AB8A"]
+			description: [
+				"This combination sets a target on fire with the Projectile and then launches them away from you."
+				""
+				"A useful \"get off me\" tool, and bonus points if the enemy dies of fall damage. Very useful in the early game."
+				""
+				"NOTE: Projectile goes before Ignite but I don't feel like changing it."
+			]
+			id: "3F26B85438995EC9"
+			rewards: [{
+				count: 3
+				id: "0A9406CCF25B0A7D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strong_swiftness"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "343AEA0BE3A45DF2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_ignite"
+					}
+					type: "item"
+				}
+				{
+					id: "2F0B66E0397D1F0F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_projectile"
+					}
+					type: "item"
+				}
+				{
+					id: "10BBA86DE5772BC6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_launch"
+					}
+					type: "item"
+				}
+			]
+			title: "Tier 1 Combo #1"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["335E26285D11AB8A"]
+			description: ["This one is useful for breaking blocks like obsidian. It shoots a projectile with a more powerful edition of Break due to the 2 Amplifies."]
+			id: "00F69E6D876D325E"
+			rewards: [
+				{
+					count: 14
+					id: "17BDDD82ECC35404"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+				{
+					id: "09E0D270BC8581B2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					id: "7D137586E06100C3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_projectile"
+					}
+					type: "item"
+				}
+				{
+					id: "444885DB9D714DC2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_break"
+					}
+					type: "item"
+				}
+				{
+					id: "5DBAB197A872C1FF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_amplify"
+					}
+					type: "item"
+				}
+			]
+			title: "Tier 1 combo #2"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72096F084142B453"]
+			description: ["Creates source gems over time. It can work without player interaction, but is very slow. Having a filled Source Jar nearby is much better."]
+			id: "0EBFA78A91488E92"
+			rewards: [{
+				count: 5
+				id: "276E64672F80A017"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ars_nouveau:source_gem"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FFE96D33CA75C86"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EBFA78A91488E92"]
+			description: ["Collects Source from nearby generators. See the 5 quests that depend on this one for examples."]
+			icon: "ars_nouveau:source_jar"
+			id: "3D4F3D27DC68EEF3"
+			shape: "square"
+			tasks: [{
+				id: "33C15D1E2AD0E135"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["Generates a large amount of source when potions are brewed close to it."]
+			id: "1428E0A6A540FBBD"
+			tasks: [{
+				id: "39C4B14665ACACBA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:alchemical_sourcelink"
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["Generates source when animals are bred or mobs are killed close to it."]
+			id: "3B0E94580CB1B0E6"
+			tasks: [{
+				id: "4174FA9861C763F3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:vitalic_sourcelink"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["It decomposes food dropped nearby and turns it into source. More source is generated for using food crafted from source berries."]
+			id: "01D420E633271E2E"
+			tasks: [{
+				id: "5BAC948FA9B0343F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:mycelial_sourcelink"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["Creates a small amount of source when blocks are burned near it, but Archwood Logs can increase this."]
+			id: "63F5A75BE447ED8C"
+			tasks: [{
+				id: "06B7D473FF45D2B5"
+				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: [
+				"Source relays are the premier method of moving source from place to place. To do this, you can link them using Dominion Wands."
+				""
+				"You'll want to right click the source jar, and then the relay."
+			]
+			id: "44B343DA2BAED7E9"
+			rewards: [{
+				id: "3CE0676DDCBB010E"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "337221D32446D126"
+				item: "ars_nouveau:relay"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"\"The world is full of magic things, patiently waiting for our senses to grow sharper.\" - William Butler Yeats"
+				""
+				"* This chapter is ripped from Mincemeat 1. The Eidolon, Ars Nouveau, and Blood Magic quests have few changes from it."
+				""
+				"And don't forget: if you find a problem with a quest, it's actually your fault and you definitely shouldn't post it to GitHub or DM me."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:tattered_tome"
+				tag: { }
+			}
+			id: "2A2B25F44A4AE27B"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "So glad you've come here!"
+			tasks: [{
+				icon: "supplementaries:clock_block"
+				id: "7FD71E4503CE7C3D"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "Magic of the Supernatural Variety"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["628CC62A51D9176C"]
+			description: [
+				"When certain items are placed on the eight surrounding pedestols with the Arcane Core below it, you can place a tool or armor of choice on the apparatus to enchant it."
+				""
+				"This supports all vanilla enchants as well as those added by Ars Nouveau by default. If this modpack ever becomes successful, I will add support for all modded enchants."
+			]
+			id: "013CDE87A0D999C3"
+			rewards: [
+				{
+					id: "53A6DECBDEF2D6EF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "4A9D0C8B13D24A71"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:stick"
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "7837E28CA94263B4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:enchanting_apparatus"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["Place an enchanted item on this for use with an Enchanting Apparatus."]
+			id: "5DB7162A1CF3DB61"
+			rewards: [{
+				count: 3
+				id: "29310C67BDA4EE13"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:source_berry_roll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EA6704D9E2FB5D9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:arcane_pedestal"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5DB7162A1CF3DB61"]
+			description: ["Place this below an Enchanting Apparatus"]
+			id: "628CC62A51D9176C"
+			rewards: [{
+				count: 4
+				id: "5EBB0E7D367520CC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "environmental:truffle"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FFBA156567B866F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:arcane_core"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44B343DA2BAED7E9"]
+			id: "053936FA1B6E8E5B"
+			tasks: [{
+				id: "6E713F43C6FF7173"
+				item: "ars_nouveau:relay_splitter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["44B343DA2BAED7E9"]
+			id: "4A86AA1B158B6FD8"
+			tasks: [{
+				id: "26CA7B14EC6CF6E7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:relay_warp"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44B343DA2BAED7E9"]
+			id: "6F5FA76D7E90EF95"
+			tasks: [{
+				id: "3534495B81422AFE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:relay_deposit"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["013CDE87A0D999C3"]
+			description: [
+				"This is a plant made of source that, when mature, allows the creation of 4 magebloom fiber."
+				""
+				"Magebloom Fiber can be woven into armor which can extend your maximum mana. It does this while providing protection, which is invaluable in this modpack."
+			]
+			id: "07E655DC37EF5CF5"
+			tasks: [{
+				id: "60D8E87EB135D658"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["07E655DC37EF5CF5"]
+			id: "129CAC4D971CBAD8"
+			tasks: [{
+				id: "49175EC38E34EC38"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["129CAC4D971CBAD8"]
+			description: [
+				"Each type of armor has its own unique set of Thread Slots. Upgrading the armor to a new tier will unlock and add additional slots to the armor. The Sorcerors set provides the least amount of defence while providing the most powerful slots, while the Battlemage's set provides defence but much weaker slots. For recipes on upgrading your armor to the next tier, see the section in the Armor and Perks category."
+				""
+				"* TODO replace with original text source: https://www.arsnouveau.wiki/category/armor/entry/armor"
+			]
+			id: "7C4AECE18FE4A6A1"
+			rewards: [{
+				count: 3
+				id: "7D8CC260CBA05C29"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "minecraft:potion"
+					tag: {
+						Potion: "apotheosis:resistance"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7AD4CB423DF79331"
+					item: {
+						Count: 1
+						id: "ars_nouveau:sorcerer_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "024EC1EBA7C2F9D2"
+					item: {
+						Count: 1
+						id: "ars_nouveau:sorcerer_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26B739D87EAAAA6E"
+					item: {
+						Count: 1
+						id: "ars_nouveau:sorcerer_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "35CB445E21D1D112"
+					item: {
+						Count: 1
+						id: "ars_nouveau:sorcerer_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Novice Armor"
+			x: 6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["129CAC4D971CBAD8"]
+			description: [
+				"It lets you store spells for use later.  Keep it somewhere valuable!"
+				""
+				"*Do this by placing it on a scribe table and then shift RMBing it with a spell book with the spell you want."
+			]
+			id: "5842453086405007"
+			tasks: [{
+				id: "46EB022834DF23D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:spell_parchment"
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["44061A57BC1657E2"]
+			id: "7D3CA5C984F11D23"
+			shape: "circle"
+			subtitle: "Pewter blend is made by mixing iron and lead."
+			tasks: [{
+				count: 8L
+				id: "3C620F05A879A80A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "eidolon:pewter_ingot"
+							}
+							{
+								Count: 1b
+								id: "eidolon:pewter_blend"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Pewter"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["44061A57BC1657E2"]
+			description: [
+				"You may find it lain across the ground. It is tainted, making undead mobs unwilling to cross it."
+				""
+				"This may be useful in mob farms and in the rituals required to progress in this mod."
+			]
+			id: "678985968A3B206E"
+			tasks: [{
+				id: "3E689B0C75E2B603"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:enchanted_ash"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D3CA5C984F11D23"]
+			description: [
+				"Used to initiate magic rituals. Rituals start by placing an item on top of the brazier, and then using flint and steel to light it."
+				""
+				"If the ritual you want to use requires additional materials, place them on receptacles around the brazier."
+				""
+				"Can be extinguished with an empty hand by right-clicking. This cancels the ritual."
+				""
+				"{image:kubejs:item/ritual_setup width:960 height:540 align:center fit:true}"
+				""
+				"&oExample of ritual setup. The positions and orientations of the stone hands don't really matter, as long as they're near the brazier."
+			]
+			icon: "eidolon:brazier"
+			id: "0F8FDFCE19B5216D"
+			rewards: [
+				{
+					count: 2
+					id: "77F663A2C203C6FB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:stone_hand"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0A99DCCC7D6BA43B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:enchanted_ash"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "59777E4AD9AD5358"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:brazier"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7965ACA8BE54CE4A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:stone_hand"
+					}
+					type: "item"
+				}
+			]
+			title: "Ritual Preparation"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7017FB66F6F3B2DE"]
+			description: ["Similar to a normal crafting table, but provides four extra slots on each side to assist with magic recipes."]
+			id: "11F9FFCB87A791C5"
+			subtitle: "Not like the other girls"
+			tasks: [{
+				id: "1E19527FBACB3114"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:worktable"
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0F8FDFCE19B5216D"]
+			description: ["Some rituals require special necrotic items to be used as foci. You will be notified if this item is needed in a ritual. Otherwise, it operates in the same way as a brazier."]
+			id: "4AE0AEE8B7153385"
+			tasks: [{
+				id: "684792F02A22856B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:necrotic_focus"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F8FDFCE19B5216D"]
+			description: [
+				"First, you must trap some hostile mobs close to your brazier. It can be moved if necessary. Maybe find one of the abundant zombie spawners?"
+				""
+				"You should consider making your room 2 blocks tall so the zombies can't use parrots to escape; if they do, they will simply suffocate."
+				""
+				"Place the bone meal on the brazier and redstone dust on the stone hands. The ritual involves killing all undead mobs nearby and turning their drops into soul shards."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+				id: "eidolon:soul_shard"
+			}
+			id: "31302C25EFA8B097"
+			rewards: [
+				{
+					count: 12
+					id: "6F710BE93C727F5F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "19E1353376FD64FC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "162CC88871FCD98B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "076A37E2E9B54FAD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:bone_meal"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "75CEB5B7F80EC631"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2B75F857DB56D3D1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+			]
+			title: "Crystallization Ritual"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4AE0AEE8B7153385"
+				"31302C25EFA8B097"
+			]
+			description: [
+				"Brazier: Charcoal"
+				"Necrotic Focus: Rotten Flesh"
+				"Stone Hands: 1x Rotten Flesh, 1x Soul Shard"
+				""
+				"Variants of this ritual exist for common undead mobs in Vanilla Minecraft and Eidolon. Use the Ars Ecclesia for more info."
+			]
+			icon: "reliquary:zombie_heart"
+			id: "736EBC7EB7CDD0CF"
+			rewards: [
+				{
+					count: 8
+					id: "774FD6EFCDB23411"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "5F4FAE3D90FE1F9F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Was he the scientist or the monster?"
+			tasks: [
+				{
+					count: 2L
+					id: "53FBCDD3C33F1FE1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:rotten_flesh"
+					}
+					type: "item"
+				}
+				{
+					id: "1FDA685DD887D30E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "03BFC9B1C0BAF424"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:charcoal"
+					}
+					type: "item"
+				}
+			]
+			title: "Summon Undead Mob"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["31302C25EFA8B097"]
+			description: ["Turns nearby zombie villagers into villagers. Once again, trap them using enchanted ash or an item that serves a similar purpose."]
+			icon: "easy_villagers:villager"
+			id: "719E06D8C8D21E5B"
+			rewards: [
+				{
+					id: "40BF6ED48FF1B976"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:lectern"
+					}
+					type: "item"
+				}
+				{
+					id: "731D897F864B1927"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:fletching_table"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Free my boys"
+			tasks: [
+				{
+					count: 2L
+					id: "550C876872B5B49C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "34E5944302E1E0B5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:enchanted_ash"
+					}
+					type: "item"
+				}
+				{
+					id: "4084BAD9BBDB0738"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A81CAFF55ACD642"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:glistering_melon_slice"
+					}
+					type: "item"
+				}
+			]
+			title: "Purifying Ritual"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7D3CA5C984F11D23"]
+			description: [
+				"Have you boiled water before? No? Well, I'm going to show you how."
+				""
+				"You must place the crucible above a source of heat, such as fire. Then, fill the crucible with water and let it boil."
+				""
+				"Crucibles are unique because their recipes have multiple steps, like real-life recipes. Also similarly to real life, you must execute the steps in order."
+				""
+				"Sometimes, the pestle must be used to stir the ingredients, which can be done by right-clicking the crucible with an empty hand. This is indicated by a slash in the recipe shown in JEI."
+				""
+				"When you insert the ingredients for one step, it will make a sound to indicate when ready for the insertion of new items."
+				""
+				"*If you drop items in bulk into a crucible, it will not try to make multiple batches of the output!!!"
+			]
+			id: "7017FB66F6F3B2DE"
+			rewards: [
+				{
+					id: "45635648EEC95BBD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "53193869D38FDB69"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "72FBB911BDA71647"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Try this at home"
+			tasks: [{
+				id: "0C51E9EC8A192A3E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:crucible"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7017FB66F6F3B2DE"]
+			description: [
+				"Step 1: 1 Soul Shard and 2 Redstone (any order). The pot must be boiling."
+				"Step 2: 2 gold ingots. The crucible changes color and makes a brewing sound when it's ready."
+				"Output: 2 arcane gold ingots."
+				""
+				"Useful in crafting recipes involving magic."
+				""
+				"You may also use Forbidden \\& Arcanus's arcane gold ingot for Eidolon recipes. This is actually suggested since they are more straightforward, not requiring a special workstation."
+			]
+			id: "77D7C0FA8A37671F"
+			rewards: [
+				{
+					id: "75B9D41E463CBAD5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:zombie_heart"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "049C4B5D5A7335EC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:arcane_gold_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D6D2009BE0E1358"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:death_essence"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Cooking by the book"
+			tasks: [{
+				count: 2L
+				id: "09C54FC9787A9BCB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:arcane_gold_ingot"
+				}
+				type: "item"
+			}]
+			title: "Arcane Gold Ingots"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7017FB66F6F3B2DE"]
+			description: [
+				"Step 1: Coal"
+				"Step 2: Ectoplasm and Essence of Death"
+				"Step 3: 2 Soul Gems and Essence of Death"
+				"Step 4: Diamond"
+				""
+				"Shadow gems are useful in multiple ways. You may want to consult JEI or your Ars Ecclesia."
+				""
+				"This will be the last recipe you will be guided through step-by-step. From here on, use your Ars Ecclesia's crucible recipes to create new items."
+			]
+			icon: "eidolon:shadow_gem"
+			id: "5099A90FA346D626"
+			rewards: [{
+				count: 4
+				id: "37E2BA4C77B11E86"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:shadow_gem"
+				}
+				type: "item"
+			}]
+			subtitle: "No life stories here"
+			tasks: [
+				{
+					id: "573D8BB46CA4C18D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:coal"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "069260C492CE2577"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:death_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "38EDD594F70DB76D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:soul_shard"
+					}
+					type: "item"
+				}
+				{
+					id: "34972D131DD0F4E6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "2B20F18A25661303"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:shadow_gem"
+					}
+					type: "item"
+				}
+				{
+					id: "39FCC357A7598E8E"
+					item: "iceandfire:ectoplasm"
+					type: "item"
+				}
+			]
+			title: "Shadow Gem Recipe"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2A2B25F44A4AE27B"]
+			description: ["Eidolon is a dark magic mod."]
+			id: "44061A57BC1657E2"
+			rewards: [{
+				count: 8
+				id: "76C9B4507B0DE9D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:lead_ore"
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "69AF9F54C7E36941"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:codex"
+				}
+				type: "item"
+			}]
+			title: "Eidolon"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D3CA5C984F11D23"]
+			description: [
+				"A workstation which may brew potions without needing blaze powder. This means potions aren't gated behind killing Blazes (or other methods of getting blaze powder)."
+				""
+				"It must be placed atop a crucible."
+				""
+				"It lacks the feature of turning potions into splash potions or amplifying their effects."
+				""
+				"Instead of nether wart, you can use sprouting fungus. Check your Ars Ecclesia."
+			]
+			id: "25A28CD32C92DEA1"
+			rewards: [{
+				count: 15
+				id: "6FF12C0E3C7EC057"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:fungus_sprouts"
+				}
+				type: "item"
+			}]
+			subtitle: "Smuggle potions from the Nether"
+			tasks: [{
+				id: "6C28BDDB8824332F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:wooden_brewing_stand"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3AD5F54906DEF6B4"]
+			description: ["Besides the soul enchanter this may be the most useful item to you in Eidolon."]
+			id: "7362296699DA8EFE"
+			rewards: [
+				{
+					count: 3
+					id: "34F30DDE56C1B0A5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43DC11F18780CA7E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 3
+					id: "37984B5077236DFD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4C4E7CA00F44C36F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:sanguine_amulet"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3AD5F54906DEF6B4"]
+			id: "0FBF6E244FB39AC1"
+			rewards: [
+				{
+					count: 3
+					id: "525F7330E12A8FE8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "17D4830F0FCB3A0B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "07D37AF2D44FD214"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:sapping_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["77D7C0FA8A37671F"]
+			id: "3AD5F54906DEF6B4"
+			rewards: [
+				{
+					count: 2
+					id: "7EE9E7E809421B73"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:harming"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47DC9A8AE258DE20"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:redstone"
+					}
+					type: "item"
+				}
+				{
+					id: "7405372678ADC6BE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:lesser_soul_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "139DA0091FC115C7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:basic_ring"
+					}
+					type: "item"
+				}
+				{
+					id: "75C5BA14A4BFE8AE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:basic_amulet"
+					}
+					type: "item"
+				}
+				{
+					id: "25073A0321181D65"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:basic_belt"
+					}
+					type: "item"
+				}
+			]
+			title: "Baubles"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5099A90FA346D626"
+				"2D8BA0A7766C58D9"
+				"11F9FFCB87A791C5"
+			]
+			id: "5B64E6EE42B87A90"
+			subtitle: "Be like the cool kids"
+			tasks: [{
+				count: 20L
+				id: "373C6764BCEB9097"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:wicked_weave"
+				}
+				type: "item"
+			}]
+			title: "Wicked Weave"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["44061A57BC1657E2"]
+			description: [
+				"Most signs are beyond the capabilities of your mortal brain, but some can be learned if you give a good enough attempt."
+				""
+				"To start, find a magician who may know some and give them your Ars Ecclesia (hint hint *witch* wink wink)"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+				id: "minecraft:oak_sign"
+			}
+			id: "441A75FB80582637"
+			subtitle: "Opposite over hypotenuse"
+			tasks: [{
+				advancement: "eidolon:wicked_path"
+				criterion: ""
+				id: "497910741FEFDBEC"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["441A75FB80582637"]
+			description: [
+				"You will need a means of communicating with the dark powers. Though rudimentary, the simple wood-straw combination works fine."
+				""
+				"Place the straw effigy atop the wooden altar."
+				""
+				"When done, when close to the altar, click on your sign's portrait in your Ars Ecclesia to add it as a component of your chant. This menu can be foudn under the tab with the pentacle icon. "
+				""
+				"When your book looks like the image below, click the green button."
+				""
+				"{image:kubejs:item/chant_selection width:707 height:418 align:center fit:true}"
+				""
+				"If you did it right, thunder will be heard and the effigy's eyes will light up. You'll also see a progress meter at the top of your screen."
+				""
+				"Continue doing this ritual until the Dark Lord gives you knowledge of a new one. Note that only 1 ritual can be effective per in-game day."
+				""
+				"optional: Eidolon's Candles can enhance your altar."
+			]
+			id: "0D59972E42B4D7A5"
+			subtitle: "Fus ro dah!"
+			tasks: [
+				{
+					id: "7F96FF166085C028"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:wooden_altar"
+					}
+					type: "item"
+				}
+				{
+					id: "17D29AFABC6FB9D4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:straw_effigy"
+					}
+					type: "item"
+				}
+			]
+			title: "Build an Altar"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D59972E42B4D7A5"]
+			description: [
+				"Eventually, you'll learn the Blood Sign. First, craft a Goblet. This one is different in that it demands a blood sacrifice. Kill a mob near the altar and watch the goblet fill with blood. Then, you're good to use your new chant."
+				""
+				"The composition of this chant should be Wicked --> Blood --> Wicked, as shown below. Make sure the goblet has blood before you use the chant, and the effigy is still somewhere near the altar."
+				""
+				"{image:kubejs:item/blood_chant width:247 height:98 align:center fit:true}"
+				""
+				"This chant should always be used over your other option due to it being more impressive to the Dark Lord."
+			]
+			id: "6C5B6D095B56A8A2"
+			rewards: [
+				{
+					id: "61E4B4AF5F5FA7C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:pewter_inlay"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2286FB2047224D3B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "iceandfire:ectoplasm"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Ow!"
+			tasks: [
+				{
+					id: "6E092F039AFF42EE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:goblet"
+					}
+					type: "item"
+				}
+				{
+					advancement: "eidolon:sacrifice"
+					criterion: ""
+					id: "6428C2E8214FF0B9"
+					type: "advancement"
+				}
+			]
+			title: "Second Chant"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C5B6D095B56A8A2"]
+			description: [
+				"After dropping a Pewter Inlay on the ground, use your new chant. The Dark Lord will give you an Unholy Symbol, which is a crafting ingredient used often with the Magic Workbench."
+				""
+				"The Unholy Symbol is not consumed in recipes, so there's no reason to lose it."
+				""
+				""
+				"{image:kubejs:item/touch_of_darkness width:276 height:95 align:center fit:true}"
+			]
+			id: "2D8BA0A7766C58D9"
+			rewards: [{
+				count: 16
+				id: "539A45349EAA1D9F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "spartanweaponry:dynamite"
+				}
+				type: "item"
+			}]
+			subtitle: "Casual Demon Hexing"
+			tasks: [{
+				id: "08A369CCA0F08076"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:unholy_symbol"
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B64E6EE42B87A90"]
+			description: [
+				"Helmet: 50% increase to magic and wither damage from the player. Wither damage also has a lifesteal property now."
+				""
+				"Chestplate: halved magic and wither damage taken by the wearer."
+				""
+				"Boots: obstacles in movement caused by blocks are only half as effective. Also grants immunity to the slowness effect."
+			]
+			icon: {
+				Count: 1
+				id: "eidolon:warlock_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4FABA141C0F4BCE4"
+			rewards: [{
+				id: "27A8F5FB4DDB53B8"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+			subtitle: "Get dripped out"
+			tasks: [
+				{
+					id: "7AB3752FF09DB10F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:warlock_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C42B633B9FE31AD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:warlock_cloak"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1700AE091788F8E0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:warlock_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5B64E6EE42B87A90"]
+			description: ["This makes a nasty combination with the Spectre's Grasp from Meet Your Fight."]
+			id: "2DB4D7ECD26EE49E"
+			rewards: [{
+				id: "6B5DF42E07145A74"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "meetyourfight:haunted_bell"
+				}
+				type: "item"
+			}]
+			subtitle: "Jigglypuff's B-air for all your attacks"
+			tasks: [{
+				id: "03F76DB3FA956D6F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:prestigious_palm"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D8BA0A7766C58D9"]
+			description: ["Enemies killed by the blade of this weapon will have their remains crystallized and turned into soul shards."]
+			id: "6C1618F02FE2E04C"
+			rewards: [
+				{
+					id: "753F87CC0EA5B189"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FBFBFA80E8E9FFF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:thorns"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "He needs your help!"
+			tasks: [{
+				id: "0D82F9FAC1599FA5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:reaper_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["77D7C0FA8A37671F"]
+			description: [
+				"This item has a unique premise: there is no level requirement and even already enchanted items can be upgraded, but it can only do this in increments of 1 level. It also requires soul shards instead of lapis."
+				""
+				"Also, it is very costly."
+				""
+				"The total number of enchantment levels available on an item is limited, so use the soul enchanter wisely."
+			]
+			id: "4CA96CEC9C42B665"
+			rewards: [{
+				id: "0FB19C63A28D2E8E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			tasks: [{
+				id: "0E976DA078A19DE1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "eidolon:soul_enchanter"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["49079A4790CE0545"]
+			description: [
+				"You need mana to cast spells. Now, how do you get mana? A few ways:"
+				"Potions increase your max mana and regen."
+				"Wearing mage armor does this too."
+				"Unlocking new glyphs increases your max mana/regen, and this effect increases with your mage tier (1/2/3)."
+			]
+			id: "2D0099A31E9D747D"
+			tasks: [{
+				id: "29A0529EAF45D8F3"
+				title: "Mana"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["129CAC4D971CBAD8"]
+			description: ["A flask that can store 8 charges of a potion effect. Filled using a Potion Jar or combining them on a crafting grid."]
+			id: "7F40EB23D1F8F1DB"
+			rewards: [{
+				count: 8
+				id: "122443051EE90BA6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "minecraft:potion"
+					tag: {
+						Potion: "ars_nouveau:spell_damage"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D299A0668869ECE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:potion_flask"
+					tag: {
+						Damage: 8
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["013CDE87A0D999C3"]
+			description: ["The enchanting apparatus can also create trinkets like this one."]
+			id: "52AAFFDAAB15AE28"
+			tasks: [
+				{
+					id: "03796C6024E79A55"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:ring_of_lesser_discount"
+					}
+					type: "item"
+				}
+				{
+					id: "2FCEB85B0318F8E0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:belt_of_levitation"
+					}
+					type: "item"
+				}
+				{
+					id: "706589A1E9B67EFC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:amulet_of_mana_boost"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5DB7162A1CF3DB61"]
+			description: [
+				"You can perform rituals using this, provided you have enough source nearby (6 blocks)."
+				""
+				"First, interact with the brazier using a stone tablet. Then, augment the ritual by dropping items on the brazier while it's glowing. When you're done augmenting, right click the brazier with an empty hand."
+			]
+			id: "0AA8E8253E201B38"
+			rewards: [{
+				id: "4F02ED5CCDE9DCA9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:ritual_flight"
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Better get used to it!"
+			tasks: [{
+				id: "640948738EAF6152"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0AA8E8253E201B38"]
+			description: ["Gives creative flight for a short time. Useful when you're doing things like building and excavating. Every time your flight is replenished, some source is used."]
+			id: "5E79EE36DB5F353A"
+			optional: true
+			tasks: [{
+				id: "1E31C9C060CE72CB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:ritual_flight"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5E79EE36DB5F353A"
+				"0AA8E8253E201B38"
+			]
+			description: ["When amplified with one of each wilden drop and a lapis block, the Wilden Guardian is summoned, a moderately difficult boss. Killing it and taking its trophy allows you to craft the Archmage's Spellbook."]
+			id: "65C258505EBC649E"
+			rewards: [{
+				count: 3
+				id: "62072D1B4F19E9BF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "minecraft:potion"
+					tag: {
+						Potion: "apotheosis:long_resistance"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AC59EAE90527847"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:ritual_wilden_summon"
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["51D2D5057356DD35"]
+			description: ["A strong combination that shoots a projectile that does around 13 damage to an unprotected foe. This makes it good for crowd control."]
+			id: "4CEC8C1B47838DCD"
+			rewards: [{
+				count: 3
+				id: "6B787315E9E75EA1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "minecraft:potion"
+					tag: {
+						Potion: "ars_nouveau:mana_regen_potion_strong"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1606690F3857A857"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_projectile"
+					}
+					type: "item"
+				}
+				{
+					id: "31217027CA413D00"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_ignite"
+					}
+					type: "item"
+				}
+				{
+					id: "2FA3C33C3BA31E52"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_flare"
+					}
+					type: "item"
+				}
+				{
+					id: "165DC8CA719834A2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_amplify"
+					}
+					type: "item"
+				}
+			]
+			title: "Tier 2 Combo"
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0AA8E8253E201B38"]
+			description: [
+				"This ritual converts nearby capable entities into bound scripts, which can be used to summon familiars."
+				""
+				"Try this ritual near a carbuncle. They're found in forested areas and look kind of like squirrels."
+				""
+				"Familiars are summoned from your spell book, and dismissed by casting Dispel."
+			]
+			id: "40A4602377E4E3F2"
+			rewards: [
+				{
+					count: 27
+					id: "11DB56D42E5EFD72"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:gold_nugget"
+					}
+					random_bonus: 36
+					type: "item"
+				}
+				{
+					id: "5936537C271262C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:glyph_dispel"
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Sign the contract"
+			tasks: [{
+				id: "6B0492DB9FCA3C20"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:ritual_binding"
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["40A4602377E4E3F2"]
+			description: ["Bookwyrms pick up items and experience."]
+			id: "2626C487E7BA6230"
+			rewards: [{
+				id: "5A96D9567714D478"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			tasks: [{
+				id: "6FF248D0BDC1B2E5"
+				item: "ars_nouveau:bookwyrm_charm"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["40A4602377E4E3F2"]
+			description: [
+				"Drygmys like Wilden Horns (drop it in front of them) and can be found anywhere in the Overworld. You can use the Summon Drygmy ritual to create one yourself or just stumble across one."
+				""
+				"Interact with Mossy Cobblestone while holding a Drygmy Charm to summon it. Within 10 blocks of this block, the Drygmy will peacefully cause nearby entities to drop their loot tables as if they were killed."
+				""
+				"More information about Drygmys is in the Worn Notebook."
+			]
+			id: "62A650D0391A90B5"
+			rewards: [{
+				count: 2
+				id: "3F2A298D78BEE6BE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "quark:ancient_tome"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:looting"
+							lvl: 7s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D60DD44917FB295"
+				item: "ars_nouveau:drygmy_charm"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["40A4602377E4E3F2"]
+			description: [
+				"Right click the Wixie Charm on a Cauldron to summon it."
+				""
+				"Summoned wixies seek to assist mages in combat, tossing their concoctions at adversaries."
+				""
+				"Wixies are skilled in crafting, and can spend their owner's source to craft items for them."
+				""
+				"They can also cook by placing them on a furnace to smelt items, or a cooking pot or crucible. The can cut too by means of a stonecutter or cutting board."
+			]
+			id: "0FC6F8A814D4DF45"
+			tasks: [{
+				id: "3B080D1B8D24D16D"
+				item: "ars_nouveau:wixie_charm"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["013CDE87A0D999C3"]
+			description: ["Can be used for a plethora of things in Ars Nouveau. Coming soon."]
+			id: "47E4D3920AB4A17C"
+			tasks: [{
+				id: "78F1CE0546CF4B51"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+					id: "ars_nouveau:dominion_wand"
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3AD5F54906DEF6B4"]
+			id: "18C67A9D50E018CA"
+			tasks: [{
+				id: "61BA9FA92AF1FFCA"
+				item: "eidolon:resolute_belt"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0129870BD87086C9"]
+			description: [
+				"1. break grass until you find yourself some Demon's Dream seeds"
+				""
+				"2. grow the seeds into fruit"
+				""
+				"3. drop the fruit on a block and ignite it with a Flint and Steel. This creates a special, purple fire. You must ignite the fruit, and not throw the fruit into an existing fire."
+				""
+				"This special fire doesn't have most properties of fire. It is only used for converting items. It also won't burn out, so you won't need netherrack for this."
+				""
+				"*The dictionary of spirits is a better source of learning about Occultism. It has a similar node-like structure to what you see here and contains complete documentation on the mod."
+			]
+			id: "77219718DABB8F62"
+			rewards: [{
+				id: "5138AC9FD55AD793"
+				item: {
+					Count: 1
+					id: "occultism:dictionary_of_spirits"
+					tag: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+				}
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0B63A88F3A14F5BE"
+					item: "occultism:datura_seeds"
+					type: "item"
+				}
+				{
+					id: "5CC20C888242545B"
+					item: "occultism:datura"
+					type: "item"
+				}
+				{
+					id: "5E36E004482DCE4C"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Beginning of Occultism"
+			x: 1.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["77219718DABB8F62"]
+			description: [
+				"This can detect blocks from the Otherworld."
+				""
+				"It must be attuned to a chosen block in order to see its otherworld variant. For example, andesite corresponds to otherstone. Do this by shift-interacting with a valid block."
+			]
+			id: "498A2873A812881A"
+			tasks: [{
+				id: "526B8D9E3F9AF3BA"
+				item: {
+					Count: 1
+					id: "occultism:divination_rod"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["421227890C2EBBA4"]
+			id: "404967192EF51704"
+			subtitle: "Generate Create power using Ars Nouveau source!"
+			tasks: [{
+				id: "71A890C19CC4FFC6"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["40A4602377E4E3F2"]
+			description: [
+				"Starbuncles are elusive rodents found in forests who aren't so fond of players, but love golden nuggets. They will not flee if you're holding one while approaching."
+				""
+				"Give your golden nugget to the Starbuncle and it will turn into a charm. You can use the Charm on the ground to summon the Starbuncle."
+				""
+				"{@pagebreak}"
+				"The Starbuncle, like the hoarder it is, will pick up items from the ground and can move items across storage containers. Right click the Starbuncle with the Dominion Wand and then right click the container to tell it to place items into it."
+				""
+				"To take from the container, interact with the container and then the Starbuncle."
+				""
+				"You can get much more precise with these little critters. Refer to your Worn Notebook for more."
+			]
+			id: "421227890C2EBBA4"
+			subtitle: "My precious!"
+			tasks: [{
+				id: "07EFB57A97A4FE84"
+				item: {
+					Count: 1
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2A2B25F44A4AE27B"]
+			description: [
+				"Have you ever said: \"I want a break from all these magic mods which are really just Thinly Veiled Tech Mods!\""
+				""
+				"Well, you're in for a treat."
+				""
+				"Iron's Spellbooks is nothing but spellcasting and adventure. It's the closest thing in the modpack to playing a &5Wizard in DnD&r (just replace Spell Slots with a mana bar). You'll see what I mean in due time."
+				""
+				"&l&dFirst&r,&r you'll want to find a &dScroll.&r These are single use spells, so it's best to save them for emergencies or wait until you can subscribe them to use as much as you'd like."
+				""
+				"&dScrolls&r can be found by adventuring or made using a &5Scroll Forge&r later."
+			]
+			id: "1FAF889506FFFF18"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Iron's Spellbooks"
+			tasks: [{
+				id: "16FE80F0EF1DA4D1"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_spell: {
+							id: "irons_spellbooks:starfall"
+							level: 1
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Wizardry"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1FAF889506FFFF18"]
+			description: ["An &dinscription table&r is commonly found in &5villages&r and many &5towers&r you can come across in your world. Early-game, it may be easier to get one from one of these structures instead of crafting it. &5Complete the task by looking at a table.&r"]
+			id: "5390B26927C70B16"
+			tasks: [
+				{
+					id: "60445CC001C2CBA4"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:copper_spell_book"
+						tag: {
+							ISB_spellbook: {
+								activeSpellIndex: -1
+								spellSlots: 4
+								spells: [ ]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					icon: "irons_spellbooks:inscription_table"
+					id: "03562DA064CD9706"
+					observe_type: 0
+					timer: 0L
+					title: "Inscription Table"
+					to_observe: "irons_spellbooks:inscription_table"
+					type: "observation"
+				}
+			]
+			title: "Become a Wizard"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: [
+				"The &dscroll forge&r lets you &5make scrolls&r. This lets you have replenishable spells when you put them in your &5spell book&r, which is quite nice!"
+				""
+				"Right click on the &dscroll forge&r in EMI to see how to make various scrolls. This requires a special material known as &dink&r, some of which has been given to you as a reward."
+			]
+			id: "26748536E1E41168"
+			rewards: [{
+				count: 2
+				id: "45ACB22902C0BA21"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61A082E1108A94EB"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["26748536E1E41168"]
+			description: ["This armor increases your &5max mana&r."]
+			id: "21D71721976F43DF"
+			tasks: [
+				{
+					id: "28D35839409F8D33"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "207163FE66C07617"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17516C91DEEBB33C"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B6345FC40133CF3"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["21D71721976F43DF"]
+			id: "79E576D1E1E0FAF9"
+			tasks: [
+				{
+					id: "672FFA8EBDD06A4D"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:pumpkin_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "779531112D34A582"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:pumpkin_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0149C3960D8954BF"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:pumpkin_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62D8977FAF2F6742"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:pumpkin_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Scarecrow Armor"
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			id: "4B5EDE809F39C8C3"
+			tasks: [{
+				id: "26BBB1425AFC6E41"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:gold_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 6
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B5EDE809F39C8C3"]
+			id: "16E74E12B4D36077"
+			tasks: [{
+				id: "5198B58D1A84342C"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:diamond_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 8
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B5EDE809F39C8C3"]
+			id: "7D167F34F9FD733E"
+			tasks: [{
+				id: "6CF460331293FAC8"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 5
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26748536E1E41168"]
+			description: ["An anvil that can &5level up spells&r, &5imbue weapons with spells&r, &5and upgrade equipment and scrolls&r."]
+			id: "7592DBF9E856537A"
+			tasks: [{
+				id: "2096D5D9EF3964CC"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["16E74E12B4D36077"]
+			description: [
+				"Base ingredient found in &5certain large underground structures&r."
+				""
+				"You can't cast spells with this."
+			]
+			id: "0BE3BABC55E29686"
+			tasks: [{
+				id: "3CDA0DD07ACD188F"
+				item: "irons_spellbooks:ruined_book"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0BE3BABC55E29686"]
+			description: ["This &6legendary&r spellbook requires killing the &5Netherite Monstrosity&r."]
+			id: "7CE105C023F3D7F6"
+			tasks: [{
+				id: "3ABE1373234AEC93"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:netherite_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 10
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0BE3BABC55E29686"]
+			description: ["This &6legendary&r spell book requires making trips to the &5End&r and &5Forlorn Hollows&r."]
+			id: "64F63A2CD21B12F4"
+			tasks: [{
+				id: "6680EAADCC8AC8B3"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:dragonskin_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 10
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7592DBF9E856537A"]
+			description: ["You can find this anywhere in the Overworld, but you'll need to have obtained a &5Netherite Pickaxe&r to mine it."]
+			icon: "irons_spellbooks:arcane_debris"
+			id: "2D7950B773192E15"
+			tasks: [{
+				id: "52921442C69593D7"
+				observe_type: 0
+				timer: 0L
+				to_observe: "irons_spellbooks:arcane_debris"
+				type: "observation"
+			}]
+			title: "Arcane Salvage"
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"2D7950B773192E15"
+				"6ED5AF6D7BFF56E8"
+			]
+			description: ["The &dUpgrade Orb&r has use as a base for &5school-based upgrades&r for your &5spell books&r, and also as an ingredient in other recipes."]
+			id: "77F900C79C669ABD"
+			tasks: [{
+				id: "38160B66490DB9FB"
+				item: "irons_spellbooks:upgrade_orb"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1FAF889506FFFF18"]
+			description: [
+				"These minibosses can be found in the &5Nether&r - more specifically, &5Ancient Battlegrounds&r. Watch out for &5piles of armor&r."
+				""
+				"You can also find one lying around in &5Pyromancer Towers&r in the overworld."
+				""
+				"To summon the Ancient Knight, break the pile of armor with a &5diamond pickaxe&r."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "irons_spellbooks:armor_pile"
+			}
+			id: "6ED5AF6D7BFF56E8"
+			tasks: [{
+				entity: "irons_spellbooks:citadel_keeper"
+				id: "23B2D9A849732458"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: ["Some of these can be more powerful than what you have access to at the point in the game where they're accessible, so it might be worth finding and using these books."]
+			id: "55537BACC41D8793"
+			tasks: [{
+				id: "297C2145E81BC355"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "irons_spellbooks:rotten_spell_book"
+								tag: {
+									ISB_spellbook: {
+										activeSpellIndex: -1
+										spellSlots: 3
+										spells: [ ]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:villager_spell_book"
+								tag: {
+									ISB_spellbook: {
+										activeSpellIndex: -1
+										spellSlots: 6
+										spells: [ ]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:blaze_spell_book"
+								tag: {
+									ISB_spellbook: {
+										activeSpellIndex: -1
+										spellSlots: 5
+										spells: [ ]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:evoker_spell_book"
+								tag: {
+									ISB_spellbook: {
+										activeSpellIndex: 0
+										spellSlots: 3
+										spells: [
+											{
+												level: 6
+												sid: "irons_spellbooks:fang_strike"
+												slot: 0
+											}
+											{
+												level: 4
+												sid: "irons_spellbooks:fang_ward"
+												slot: 1
+											}
+											{
+												level: 4
+												sid: "irons_spellbooks:summon_vex"
+												slot: 2
+											}
+										]
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Unique Spell Book"
+				type: "item"
+			}]
+			title: "Unique Named Spell Books"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: [
+				"These items have innate arcane powers that allow them to cast pre-loaded spells."
+				""
+				"They can be found on corpses of powerful foes."
+			]
+			id: "6BF860E9308621F0"
+			tasks: [
+				{
+					id: "7DEB09EF71F0A05B"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:evoker_spell_book"
+						tag: {
+							ISB_spellbook: {
+								activeSpellIndex: 0
+								spellSlots: 3
+								spells: [
+									{
+										level: 6
+										sid: "irons_spellbooks:fang_strike"
+										slot: 0
+									}
+									{
+										level: 4
+										sid: "irons_spellbooks:fang_ward"
+										slot: 1
+									}
+									{
+										level: 4
+										sid: "irons_spellbooks:summon_vex"
+										slot: 2
+									}
+								]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A72E57D0BC4DB36"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:blood_staff"
+						tag: {
+							ISB_spellbook: {
+								activeSpellIndex: 0
+								spellSlots: 5
+								spells: [
+									{
+										level: 6
+										sid: "irons_spellbooks:wither_skull"
+										slot: 0
+									}
+									{
+										level: 6
+										sid: "irons_spellbooks:ray_of_siphoning"
+										slot: 1
+									}
+									{
+										level: 3
+										sid: "irons_spellbooks:blood_step"
+										slot: 2
+									}
+									{
+										level: 6
+										sid: "irons_spellbooks:blood_slash"
+										slot: 3
+									}
+									{
+										level: 6
+										sid: "irons_spellbooks:blaze_storm"
+										slot: 4
+									}
+								]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Magical Items"
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["55537BACC41D8793"]
+			id: "3ECBC57536CBC4FA"
+			tasks: [{
+				id: "2D34331515140220"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:druidic_spell_book"
+					tag: {
+						ISB_spellbook: {
+							activeSpellIndex: -1
+							spellSlots: 6
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			dependency_requirement: "one_completed"
+			description: [
+				"A refined version of the material dropped by squids."
+				""
+				"Can craft magical scrolls."
+				""
+				"Obtained from certain mobs, or from an &5alchemist cauldron&r."
+			]
+			id: "4D32ADEC0EEDD66A"
+			tasks: [{
+				advancement: "irons_spellbooks:irons_spellbooks/ink_root"
+				criterion: ""
+				id: "0A08E7679FC2CAB6"
+				type: "advancement"
+			}]
+			title: "Ink"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: [
+				"The Alchemist Cauldron is a versatile tool which should be prioritized by every wizard. Among its uses are for brewing of potions and elixirs, ink upgrades, and turning scrolls into ink."
+				""
+				"To obtain blood vials, get a mob into the cauldron (easier for small ones like chickens and banana slugs) while there is a fire or campfire burning below it. If there is no water in the cauldron, the mob takes damage and the cauldron fills with blood."
+			]
+			id: "5961EDE9C0C037F8"
+			tasks: [{
+				id: "22D4EB001261882D"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31302C25EFA8B097"]
+			description: [
+				"Hexerei is a mod about witchery."
+				""
+				"The Mixing Cauldron is where you'll do lots of crafting if you plan to progress through this mod."
+				""
+				"It can be filled with water. Each recipe uses a little water (or lava sometimes), so you might want to hook a pump up to the cauldron."
+				""
+				"Crafting using the Cauldron can be done by right clicking on it or dropping/throwing items on top of it. The latter method might be useful if you're interested in automation."
+			]
+			id: "19E62F587AB8AB1D"
+			rewards: [
+				{
+					id: "06AF114F18AE4992"
+					item: "hexerei:book_of_shadows_altar"
+					type: "item"
+				}
+				{
+					id: "7543D98A0F9D7835"
+					item: {
+						Count: 1
+						id: "hexerei:book_of_shadows"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "36A3B52104E7C949"
+					item: "hexerei:dowsing_rod"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "It's witching hour"
+			tasks: [{
+				id: "43909B0EF1260721"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "Hexerei"
+			x: 1.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			id: "710393BF8AD587A8"
+			tasks: [{
+				count: 8L
+				id: "0E6D9AAC9929BF1B"
+				item: "hexerei:infused_fabric"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["710393BF8AD587A8"]
+			description: [
+				"Does not have leggings. Guess witches are too good for them."
+				""
+				"Provides partial and full set bonuses."
+			]
+			id: "13AAAAA5402CB031"
+			tasks: [
+				{
+					id: "5591266FBB2AE9B1"
+					item: {
+						Count: 1
+						id: "hexerei:witch_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05A8F80AC23A9F59"
+					item: {
+						Count: 1
+						id: "hexerei:witch_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5099D9E4A5B54CF3"
+					item: {
+						Count: 1
+						id: "hexerei:witch_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Witch Set"
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			description: [
+				"Obtained from killing animals with a low chance."
+				""
+				"You can drop this in the Mixing Cauldron to convert the water inside into liquid tallow."
+				""
+				"This also works with honey or candles."
+			]
+			id: "5FB569C730DF2C0B"
+			tasks: [{
+				id: "73BE718D1AA4F8FB"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:honeycomb"
+							}
+							{
+								Count: 1b
+								id: "hexerei:animal_fat"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Tallow"
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5FB569C730DF2C0B"]
+			description: ["The &ddipper&r provides a more atmospheric way of making candles, much like real life by dipping string in tallow."]
+			id: "23EFBC312E339635"
+			tasks: [{
+				id: "7182E0CBB09E856E"
+				item: "hexerei:candle_dipper"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			description: [
+				"1. Get a &ddrying rack&r and hang it under a block."
+				""
+				"2. Hang the &dsage bundles&r on the &ddrying rack&r and wait."
+				""
+				"3. Place the dried &dsage bundles&r on a &dsage burning plate&r."
+				""
+				"4. Immolate the &dsage bundle&r with flint and steel to prevent hostile mobs from spawning in a large radius (it's better and prettier than the Mega Torch)."
+			]
+			id: "2F3578061762DC8C"
+			tasks: [
+				{
+					id: "04B1D3E4796E1B64"
+					item: "hexerei:herb_drying_rack"
+					type: "item"
+				}
+				{
+					id: "76407F1FAE9F80AC"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+				{
+					id: "15C2EC1D429F1195"
+					item: {
+						Count: 1
+						id: "hexerei:dried_sage_bundle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			id: "0DF34F2A925C8A0C"
+			tasks: [{
+				id: "5CA434AFC4647EF0"
+				item: "hexerei:coffer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			description: ["Mahogany brooms are fire resistant and overall superior, but much harder to make!"]
+			id: "565166C1F792A623"
+			tasks: [{
+				id: "524BE6405A9F81A4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:witch_hazel_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:mahogany_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_broom"
+								tag: {
+									broomUUID: [I;
+										-922599469
+										37701033
+										-1625664279
+										-1060097313
+									]
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Broom"
+			x: 3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["565166C1F792A623"]
+			id: "63721096865F10AD"
+			tasks: [{
+				id: "4CF39D86C102EF08"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "hexerei:all_satchels"
+					}
+				}
+				title: "Any #hexerei:all_satchels"
+				type: "item"
+			}]
+			title: "Satchel"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["565166C1F792A623"]
+			id: "7F50583D85346B23"
+			tasks: [{
+				id: "5FB487E88C73A640"
+				item: {
+					Count: 1
+					id: "hexerei:herb_enhanced_broom_brush"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["19E62F587AB8AB1D"]
+			description: [
+				"This bird may seem like a simple creature, but don’t be deceived—it’s the most complex pet in Mincemeat."
+				""
+				"First, it doesn’t drop anything when killed and can be found flying around swamps or in raised villages. You can tame it using a seed mixture made from wheat, pumpkin, melon, beetroot, and sunflower seeds, created in a mortar and pestle. The seed mixture can also be eaten."
+				""
+				"Once tamed, crows have six modes that you can switch between by shift-right-clicking on them. They also have three equipment slots: Hand (a weapon slot), Hat (an armor slot), and Misc (which can be anything)."
+				"{@pagebreak}"
+				"Here are the six modes explained:"
+				""
+				"Follow: The crow will follow the player, usually perching on their shoulder. While on your shoulder, it can attack other mobs, essentially dual-wielding. It’s best to equip the crow with a high-damage weapon since swing speed doesn’t affect them."
+				""
+				"Sit: This mode keeps the crow in place, nothing more."
+				""
+				"Wander: In this mode, the crow will follow the player in the air. However, this is risky, as it can easily get hit by enemies due to its low HP."
+				""
+				"(continued on next page)"
+				"{@pagebreak}"
+				"Gather: When in help mode and set to gather, crows will pick up any items on the ground that match items in a nearby coffer. For example, if a coffer contains gold ingots, the crow will collect those from the ground and return them to the coffer, ignoring items like dirt."
+				""
+				"Harvest: When set to harvest in help mode, crows will find fully grown crops, break them, and replant the seeds. It’s beneficial to have another crow in gather mode to collect the harvested items."
+				""
+				"Pickpocket: Crows will fly to villagers and steal items from them, typically items that the villager would be selling. The crow will then return the stolen items to the player."
+			]
+			id: "0129870BD87086C9"
+			tasks: [
+				{
+					id: "41A5ED8F7AE28314"
+					item: "hexerei:pestle_and_mortar"
+					type: "item"
+				}
+				{
+					id: "0CDB95A149492688"
+					item: "hexerei:seed_mixture"
+					type: "item"
+				}
+			]
+			title: "To Tame a Crow"
+			x: 0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["565166C1F792A623"]
+			description: ["Search \"broom attachment\" in EMI for more possibilities."]
+			id: "1C36656D4E915F5C"
+			tasks: [{
+				id: "11688AE329474759"
+				item: {
+					Count: 1
+					id: "hexerei:broom_keychain"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["565166C1F792A623"]
+			id: "57464EC4F262D535"
+			tasks: [{
+				id: "2E0F45941A9BEBBC"
+				item: {
+					Count: 1
+					id: "hexerei:broom_whistle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["0129870BD87086C9"]
+			description: ["Right click a block with the flute to set a crow's perch position."]
+			id: "28704D846601B79A"
+			tasks: [{
+				id: "0D00E24CA39214B6"
+				item: {
+					Count: 1
+					id: "hexerei:crow_flute"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["335E26285D11AB8A"]
+			description: [
+				"You can inscribe spells onto these items using the Scribe's Table."
+				""
+				"Instead of placing parchment on the table, place one of these items. Many of them exist, such as a crossbow, sword, and wand."
+				""
+				"You will cast the spell when using the item for mana, instead of using your spell book."
+				""
+				"&7&oBows with Explosion are perfectly balanced and have no issues&r"
+			]
+			id: "5D8B655C8EFB7A7F"
+			tasks: [{
+				id: "0C9E0CB697315E26"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_bow"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_mirror"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:spell_crossbow"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:enchanters_eye"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:spell_horn"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:base_bangle"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:wand"
+								tag: { }
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Enchanter's Items"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0AA8E8253E201B38"]
+			hide_dependency_lines: true
+			id: "70F5B2D7182D151B"
+			tasks: [{
+				id: "4A98D19B285DE87D"
+				item: "ars_nouveau:ritual_disintegration"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5DB7162A1CF3DB61"]
+			description: ["You can spy on locations far away using the Oculus and Crystal."]
+			id: "65CE4F118890E6C5"
+			tasks: [
+				{
+					id: "7353D63E7C37C3EB"
+					item: "ars_nouveau:scryers_crystal"
+					type: "item"
+				}
+				{
+					id: "40DC82497315D005"
+					item: "ars_nouveau:scryers_oculus"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7C4AECE18FE4A6A1"]
+			description: ["Ars Nouveau armors can be woven using threads with this workbench. Place armor on the table, then interact with the tablet portion of the table to give and take threads."]
+			id: "7F0031ACDB5F570C"
+			tasks: [{
+				id: "5F82B96F51BF4F04"
+				item: "ars_nouveau:alteration_table"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0BE3BABC55E29686"]
+			description: ["This &6legendary&r spell book requires killing a &5stage 4 or 5 dragon&r and raising its baby. "]
+			id: "278697F3FE8A0F06"
+			tasks: [{
+				id: "687DDB882779A6EE"
+				item: {
+					Count: 1
+					id: "ice_and_fire_spellbooks:dragonmancers_oathbook"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 12
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"11F9FFCB87A791C5"
+				"5099A90FA346D626"
+			]
+			id: "5BAF880232295138"
+			tasks: [{
+				id: "312656167FCF7325"
+				item: {
+					Count: 1
+					id: "eidolon:soulfire_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["11F9FFCB87A791C5"]
+			id: "2148AB511DED55B7"
+			tasks: [{
+				id: "01F1DF60BBFC9D47"
+				item: "eidolon:soulbone_amulet"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2148AB511DED55B7"]
+			id: "55291A04C1D9D4D9"
+			tasks: [
+				{
+					id: "529F45767B360C1B"
+					item: {
+						Count: 1
+						id: "eidolon:bonelord_helm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47303E5E8497626F"
+					item: {
+						Count: 1
+						id: "eidolon:bonelord_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6638FF9E00448557"
+					item: {
+						Count: 1
+						id: "eidolon:bonelord_greaves"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bone Paladin Style"
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6C1618F02FE2E04C"]
+			id: "7C71D16AF35627AD"
+			tasks: [{
+				id: "2560F35C9AC77235"
+				item: {
+					Count: 1
+					id: "eidolon:deathbringer_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["77219718DABB8F62"]
+			description: [
+				"The &dgolden sacrifical bowl&r acts as the centerpiece for rituals. All the regular &dsacrifical bowls&r are to be placed within 8 blocks horizontally in positions of your choice."
+				""
+				"A &5special item&r, usually a &dbound book of binding&r is used to &5activate rituals&r by interacting with the &dgolden bowl&r."
+				""
+				"To make such a book, you'll need the &dlast three materials in this quest&r. Combine them with &5specific combinations of dyes&r to make a book that's bound to the chosen spirit."
+				""
+				"Lastly, &5bind the book&r using your &5dictionary of spirits&r in the crafting grid."
+				""
+				"Some spirits will give you a &5book of calling&r, which gives you &5extra control&r over some of their parameters when applicable."
+			]
+			id: "2B7322DA59369ED9"
+			tasks: [
+				{
+					id: "7E4732DD8A2C484D"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "021FA1AF51519F71"
+					item: "occultism:sacrificial_bowl"
+					type: "item"
+				}
+				{
+					id: "0B009CC796C29898"
+					item: "occultism:taboo_book"
+					type: "item"
+				}
+				{
+					id: "0DDACA560D40307C"
+					item: "occultism:purified_ink"
+					type: "item"
+				}
+				{
+					id: "424F8D6B23C492C3"
+					item: "occultism:awakened_feather"
+					type: "item"
+				}
+			]
+			title: "Rituals (Occultism)"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2B7322DA59369ED9"]
+			description: [
+				"&dChalk &ris required to draw a pretty &5pentacle around the candles and brazier&r and attract otherworldly spirits."
+				""
+				"The picture the &dchalk&r paints is not important, you should instead pay attention to the &5placement and color&r of those pictures. Use &dwhite chalk&r for now, and you'll see different colors later on."
+				""
+				"&cUse the &r&5dictionary of spirits&r&c to visualize what you should be drawing!&r If you haven't checked it out yet, a) you're missing out, b) you'll need to click through until you find the \"&5First Ritual&r\" entry in Getting Started."
+				""
+				"This setup is available as a Create schematic, but it's a lot easier to just use the dictionary you already have."
+			]
+			id: "655371F26CD8B6A6"
+			tasks: [
+				{
+					id: "1A0F4F82B16226FE"
+					item: {
+						Count: 1
+						id: "occultism:chalk_white"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A4C101578DAD360"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:candles"
+						}
+					}
+					title: "Any #minecraft:candles"
+					type: "item"
+				}
+				{
+					id: "2D710930B3AC11A9"
+					item: "occultism:brush"
+					type: "item"
+				}
+			]
+			title: "Actually Set Up the Ritual and Get On with It"
+			x: -1.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["655371F26CD8B6A6"]
+			description: [
+				"You'll want to get those &54 sacrifical bowls&r you were holding onto earlier and place them &5each within 8 blocks of the golden bowl&r."
+				""
+				"Place one &draw ore&r on each of the bowls. This will be standard for rituals going forward."
+				""
+				"Lastly, grab your &5bound book&r and &5place it on the golden pedestal&r, then watch the magic happen."
+				""
+				"This abstract procedure is the basis of all rituals. You can view a ritual in EMI, apply these steps, and boom."
+				""
+				"One caveat to the above claim: sometimes, you'll need to &5sacrifice a mob&r or &5use an item&r to get the rituals off the ground."
+			]
+			id: "5E59A279F3B70397"
+			subtitle: "and more general information about rituals"
+			tasks: [
+				{
+					id: "4EB9F09223C9D802"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					id: "1D9AD158A1E3E6BD"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					id: "0303B91EE4E4E020"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "449CACF2C0418CDF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/silver"
+						}
+					}
+					title: "Any #forge:raw_materials/silver"
+					type: "item"
+				}
+			]
+			title: "Foliot Crusher Ritual / ore doubling"
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["655371F26CD8B6A6"]
+			description: [
+				"Any item transportation device can insert items into bowls."
+				""
+				"The golden bowl has a redstone signal which is stronger depending on the status of the ritual."
+			]
+			id: "7B716800A27B76CB"
+			tasks: [{
+				id: "0C27AB93CC4AF2E2"
+				title: "Use Your Machines to Set Up the Ritual Instead"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["498A2873A812881A"]
+			id: "76E83F45B1B5A48F"
+			tasks: [{
+				id: "55DD8AE6D04D6503"
+				item: {
+					Count: 1
+					id: "occultism:otherworld_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["655371F26CD8B6A6"]
+			description: [
+				"This is a piece of what could be a &5powerful storage system&r that runs on &5Occultism&r."
+				""
+				"The creation of a &dbase&r requires the use of a &5ritual&r, the specifics of which are seen in EMI."
+				""
+				"You'll then need &5another ritual&r to create the &ddimensional matrix&r, and combine the two for your &ddimensional storage controller&r."
+			]
+			id: "46EE028444CE9A9C"
+			tasks: [{
+				id: "77FBCF4AEA944EEF"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["46EE028444CE9A9C"]
+			description: [
+				"TODO"
+				""
+				"For now, use the dictionary of spirits, and/or watch video that comes from the dictionary of spirits."
+			]
+			id: "32618A6CEC3E5664"
+			tasks: [{
+				id: "3365F0D923807329"
+				type: "checkmark"
+			}]
+			title: "Summon Djinni Machine Operator"
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["46EE028444CE9A9C"]
+			description: [
+				"Summoners have multiple choices for instances in which they want to access their storage without travelling to their controller."
+				""
+				"The wormhole uses interdimensional magic to permit accessing your Occultism storage network remotely."
+				""
+				"While holding the portal, shift-interact with your storage controller to bind it, then place it wherever you want."
+				""
+				"The remote is a handheld device which can be bound and access storage from anywhere."
+			]
+			id: "6CB937C49C373B4C"
+			tasks: [
+				{
+					id: "4242212F41D6DF53"
+					item: {
+						Count: 1
+						id: "occultism:stable_wormhole"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5560C53D48567B2C"
+					item: {
+						Count: 1
+						id: "occultism:storage_remote"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Remote Storage"
+			x: -0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["46EE028444CE9A9C"]
+			description: [
+				"&dDimensional storage stabilizers&r are your way of increasing the &5amount of storage slots&r in your system."
+				""
+				"To connect the &dstabilizers&r, you'll want to set them up by &cvisualizing them with the dictionary&r or &cautobuilding them with a schematicannon&r."
+				""
+				"They come in &5four distinct tiers&r. At tier 1 with 4 &dstabilizers&r, you'll get 1152 storage slots. To upgrade a &dstabilizer&r, destroy it (this will not delete your items) and use the appropriate ritual."
+				""
+				"&5Each upgrade&r increases the amount of slots &5exponentially&r, so have fun with all your slots!"
+			]
+			id: "7412689623386137"
+			tasks: [{
+				id: "35E1A2AF9855E52A"
+				item: "occultism:storage_stabilizer_tier1"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["655371F26CD8B6A6"]
+			description: [
+				"Following this quest is every ritual in Occultism."
+				""
+				"Until quest coverage is more complete, this section of the Occultism quests will remain WIP. Check back in a later update!"
+				""
+				"For now, see your Dictionary of Spirits for thorough documentation on every ritual."
+			]
+			id: "28F725C0615E1C80"
+			tasks: [{
+				id: "06CAC992A43B22B2"
+				title: "Too Many Rituals?"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["28F725C0615E1C80"]
+			description: [""]
+			id: "2EE444C59B1CB7E6"
+			tasks: [{
+				id: "10B0EBF1F6C49BDB"
+				title: "Summoning"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"7017FB66F6F3B2DE"
+				"77219718DABB8F62"
+			]
+			description: [
+				"&cYou'll want to build a multiblock using the Schematicannon.&r"
+				""
+				"The Hephaestus Forge is a late-game ritual setup from Forbidden \\& Arcanus."
+				""
+				"You'll want to shift-click the Smithing Table using Mundabitur Dust, which is a substance made of 6 powders you must collect from different dimensions and biomes."
+				""
+				"You'll witness lightning strike the table, and the Hephaestus Forge will take its place."
+				""
+				"The Forge has a GUI with five slots. The central slot is where the main item goes, and the four other slots are reserved for augments."
+				""
+				"There are also four meters in this menu, representing how much of several different essences the Forge has stored."
+			]
+			hide_dependency_lines: true
+			id: "327956F91CB77A0F"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "WIP"
+			tasks: [
+				{
+					count: 48L
+					id: "4FA04DA2562A97A9"
+					item: "forbidden_arcanus:polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "1D99F573FA61C9F3"
+					item: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "29197F05620EA00E"
+					item: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+					type: "item"
+				}
+				{
+					id: "48F8179103FB7886"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+				{
+					id: "2BFA156F0C7854EF"
+					item: "forbidden_arcanus:mundabitur_dust"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7687E1691404F38B"
+					item: "forbidden_arcanus:darkstone_pedestal"
+					type: "item"
+				}
+			]
+			title: "Forbidden \\& Arcanus - Hephaestus Forge"
+			x: 6.75d
+			y: 7.5d
+		}
+		{
+			dependencies: ["710393BF8AD587A8"]
+			description: [
+				"Let's get started with some more logical magic: Theurgy. I'm sure the hardcore alchemists would put my head on a pike for categorizing it as \"supernatural magic,\" but I've no other choice for the sake of organization."
+				""
+				"We're going to use some carefully calculated actions to convert one raw ore into three raw ingots."
+				""
+				"Start by crafting and placing all the blocks you need to complete this quest. It doesn't make a difference where, except the sal ammoniac accumulator needs to be on top of the tank."
+				"{@pagebreak}"
+				"Wait, what do all these unfamiliar blocks do? Let me briefly explain:"
+				""
+				"- Pyromantic Brazier: generates power by burning fuels"
+				"- Calcination Oven: creates mineral salt"
+				"- Sal Ammoniac Accumulator: fills the tank with sal ammoniac"
+				"- Sal Ammoniac Tank: stores the Sal Ammoniac for the cauldron"
+				"- Liquefaction Cauldron: extracts Alchemical Sulfur from sal ammoniac"
+				""
+				"Once you're done setting up and putting something like coal on the braziers, it's time to move on to the next quest."
+			]
+			id: "7D0E6CC8E50E7DC5"
+			invisible: true
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "207F20706E6C6262"
+					item: "theurgy:pyromantic_brazier"
+					type: "item"
+				}
+				{
+					id: "28A5F701A6258B97"
+					item: "theurgy:calcination_oven"
+					type: "item"
+				}
+				{
+					id: "3791741B56CF2149"
+					item: "theurgy:sal_ammoniac_tank"
+					type: "item"
+				}
+				{
+					id: "6BB25179690A0370"
+					item: "theurgy:sal_ammoniac_accumulator"
+					type: "item"
+				}
+				{
+					id: "7132A720CF059A00"
+					item: "theurgy:liquefaction_cauldron"
+					type: "item"
+				}
+				{
+					id: "0BAFEEB39DF1F55A"
+					item: "theurgy:distiller"
+					type: "item"
+				}
+			]
+			title: "Theurgy"
+			x: -3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2A2B25F44A4AE27B"]
+			description: [
+				"&7The main allure of Hex Casting is drawing pretty pictures in the grid because you don't have the slightest clue of what you're doing.&r"
+				""
+				"&d&lThe Basics&r&r"
+				""
+				"You can start this process by seeking out your nearest Amethyst Geode. Sometimes, breaking the Amethyst there will yield Charged Amethyst, which you'll need to craft the staff."
+				""
+				"Right-clicking with the staff will open a dot grid of sorts, where you can click and drag to create shapes. The shapes you create correspond to certain commands. "
+				""
+				"The rotation of the shape doesn't matter, but the angular direction (clockwise or counterclockwise) does."
+				"{@pagebreak}"
+				"&d&lSpellcasting"
+				"To quote from the Hex Notebook:"
+				""
+				"• Patterns will execute..."
+				"• Actions, which manipulate..."
+				"• The Stack, which is a list of…."
+				"• Iotas, which are simply"
+				"units of information."
+				""
+				"That's a lot of stuff, but I'll elaborate. A pattern is basically any shape you can draw in the hex grid, even if it turns red and produces a bunch of garbage."
+				""
+				"An action is something caused by one of the shapes turning blue. Invalid patterns turn red and create garbage data on the Stack."
+				"{@pagebreak}"
+				"&d&lIotas"
+				"Now, let's learn about the Stack and Iotas. These are the systems Hex Casting uses to store data, and this may be familiar if you've dabbled in programming before."
+				""
+				"An iota is a unit of data. Types include:"
+				"• numbers, like 5.2"
+				"• vectors (coordinates in the world), like [10, 64, -30]"
+				"• booleans: true or false"
+				"• entities: players or mobs"
+				"• patterns: stored for advanced spells"
+				"• lists: groups of other iotas"
+				""
+				"A stack is a temporary list of iotas used during a Hex. Actions manipulate the top (most recently added element) of the Stack."
+				"{@pagebreak}"
+				"&d&lMedia"
+				"Let's not get ahead of ourselves. We still have a major factor to consider, one that almost every magic mod features: mana -- or media for hex casters."
+				""
+				"Every time you use an action, it consumes media. In Mincemeat 2, Amethyst Dust is the only item you need to cast spells, just make sure you have a good amount of it. If you run out before finishing your spell, it gets cancelled."
+				""
+				"&d&lRange"
+				"Up to 30 blocks from your position. However, if you have a reference to an entity, it works at any distance."
+			]
+			id: "173A561DF4516DC0"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Wait, I Wasn't Expecting Computer Science, I Want To Go Home"
+			tasks: [{
+				id: "2994B43DA3974496"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "hexcasting:staves"
+					}
+				}
+				title: "Any #hexcasting:staves"
+				type: "item"
+			}]
+			title: "Hex Casting"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["173A561DF4516DC0"]
+			description: [
+				"The Stack is a core part of hex casting (and computer science as a whole). We can use a stack of plates as an analogy."
+				""
+				"The last item that gets added to the stack is the first one you can interact with. This principle is called \"LIFO\" (last in, first out). "
+				""
+				"&d&lStack operations:"
+				"- Push: add an iota to the top of the stack."
+				"- Pop: remove the top iota."
+				"- Peek: examine or modify the top iota, but don't remove it."
+				""
+				"Many actions involve themselves with the Stack, which is why it's good to know how it works.."
+				"- After processing, actions may push new iotas onto the stack."
+				"  &oMind's Reflection pushes your entity iota.&r"
+				"- Most actions pop iotas from the top of the stack to use as inputs."
+				"  &oCompass Purification pops an entity iota and pushes its location vector."
+				"- Some actions rearrange or duplicate the top iotas."
+				"{@pagebreak}"
+				"Here are some specific examples of how some actions might change your stack:"
+				""
+				"&dMind's Reflection"
+				"Stack: [ ] --> [Caster Entity]"
+				""
+				"&dJester's Gambit"
+				"&oPops the top 2 iotas, then pushes them in reverse order."
+				"Stack: [A, B] --> [B, A]"
+				""
+				"&dGemini Decomposition"
+				"&oPeeks the top iota, then pushes a copy."
+				"Stack: [X] --> [X, X]"
+				""
+				"&l&dReminders:"
+				"- The stack is empty when you start a hex."
+				"- Actions fail if there aren't enough iotas (example: casting Jester's Gambit with only 1 iota)"
+				"- Order matters."
+			]
+			icon: "beautify:bookstack"
+			id: "2878EB75598EB9F3"
+			subtitle: "Storing Data"
+			tasks: [{
+				id: "1887C19527D180A0"
+				title: "Stack"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["173A561DF4516DC0"]
+			description: [
+				"Hold the lens in your hand and look at specific blocks (like redstone) to view hidden data."
+				""
+				"While casting with a staff, use it to shrink the spacing between dots, letting you draw more patterns in a single hex."
+			]
+			id: "37D8BB814A62EDD0"
+			tasks: [{
+				id: "66017451876271BB"
+				item: "hexcasting:lens"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2878EB75598EB9F3"]
+			description: [
+				"The Thought-Knot allows for storing iotas without the Stack."
+				""
+				"To store an iota, hold the Thought-Knot in your off-hand and use Scribe's Gambit to remove the top iota and store it in the Thought-Knot."
+				""
+				"When you need the iota again, cast Scribe's Reflection to push the data in the Thought-Knot to the Stack."
+				""
+				"Once data is read to the Thought-Knot, it can be written to the stack multiple times but cannot be erased or overwritten. As such, it's best to craft multiple if planning on using these innovations."
+			]
+			id: "374CF15A2D92A76F"
+			tasks: [{
+				id: "647CB278A237744F"
+				item: "hexcasting:thought_knot"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2878EB75598EB9F3"]
+			description: [
+				"Functionally, Foci are Thought-Knots but reusable. Casting Scribe's Gambit will write over whatever's in the Focus with the top iota."
+				""
+				"Reading from the Focus is identical to the Thought-Knot; just use Scribe's Reflection."
+				""
+				"To ensure your Focus is not overwritten, craft it with a Honeycomb. This process is reversibe by casting Erase Item."
+			]
+			id: "7FDBD1DBCB67C51B"
+			tasks: [{
+				id: "34C0AEBE25FEA677"
+				item: "hexcasting:focus"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["173A561DF4516DC0"]
+			description: [
+				"If you don't want to use patterns to draw numbers, the Abacus can provide them instead."
+				""
+				"First, set the number using the Abacus, then read the value using Scribe's Reflection like you would for pushing from the Thought-Knot."
+				""
+				"To set the number, hold the Abacus, sneak, and scroll. The conditions under which you're holding the Abacus determine the amount the number will change by."
+				""
+				"In main hand: 1 per scroll or 10 if you're also holding your sprint key."
+				"In your off hand: 0.1 per scroll, or 0.001 if sprint held."
+			]
+			id: "2AB05698910D0F06"
+			tasks: [{
+				id: "49F325EB96697F53"
+				item: "hexcasting:abacus"
+				type: "item"
+			}]
+			title: "Abacus (Hex Casting)"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7FDBD1DBCB67C51B"]
+			description: [
+				"The Spellbook works like 64 foci in one neat little item. It has the honeycomb functionality and can be interacted with using Scribe's Gambit and Erase Item."
+				""
+				"Select a page to be active by sneak-scrolling while holding it. Individual pages can be renamed in an anvil if you'd like."
+			]
+			id: "1A72B8860BC5021C"
+			tasks: [{
+				id: "0D0C2E01161AF3A7"
+				item: "hexcasting:spellbook"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2878EB75598EB9F3"]
+			description: [
+				"The Scroll can be used to store, share, or show off your patterns. To save a spell to a scroll, hold it on your off-hand and cast Scribe's Gambit."
+				""
+				"Place the scroll and then use amethyst dust on it to see the drawing pattern."
+				""
+				"Like thought-knots, scrolls are immutable (can't be edited after being set)."
+			]
+			id: "08F8C73B341758EB"
+			tasks: [{
+				id: "7CE9243797868598"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:scroll_small"
+				}
+				type: "item"
+			}]
+			title: "Scroll"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08F8C73B341758EB"]
+			description: [
+				""
+				"{@pagebreak}"
+			]
+			id: "32EA7C65CF2E685A"
+			subtitle: "It's not that deep"
+			tasks: [{
+				id: "42C36F6EC090A912"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:slate"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7FDBD1DBCB67C51B"]
+			description: [
+				"The Cypher is a way of storing and casting spells without needing to start from scratch each time."
+				""
+				"To infuse a hex, cast the spell while holding the empty Cypher in your off-hand. This operation needs one of the amethyst fuel items."
+				""
+				"Cyphers are single-used and are destroyed when their internal media depletes."
+			]
+			id: "0FA753544E253EE0"
+			tasks: [{
+				id: "35779D9A40350DBB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:cypher"
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0FA753544E253EE0"]
+			description: [
+				"Trinkets are rechargeable versions of Cyphers. They're functionally the same, but you can give them more media and continue using them."
+				""
+				"[add how it is recharged here]"
+			]
+			id: "3D732B8FB583DA91"
+			tasks: [{
+				id: "574EF0E3C6C8AE27"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:trinket"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D732B8FB583DA91"]
+			description: [
+				"Artifacts are the most featureful casting items. After their internal media bank is gone, they will automatically spend your media sources, and cut into your HP if necessary."
+				""
+				"This is very cool, just make sure you don't knock yourself out."
+			]
+			id: "5085F816AFE89B97"
+			subtitle: "Not the ones dropped by Mimics"
+			tasks: [{
+				id: "7627C0AEA2D7E6B4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:artifact"
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["173A561DF4516DC0"]
+			description: [
+				"Stores excess media that would originally be lost if you use a media item that contains more than you need."
+				""
+				"Check your hex book for the necessary pattern."
+			]
+			id: "5CC1EE5B8695D37A"
+			tasks: [{
+				id: "0E7B3A357FFE44D1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "hexcasting:battery"
+					tag: {
+						"hexcasting:media": 640000L
+						"hexcasting:start_media": 640000L
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["173A561DF4516DC0"]
+			description: [
+				"Hold the pigment in your offhand, then cast Internalize Pigment (check the hex book) to apply the color to all of your hexes."
+				""
+				"There are many different options to choose from. Some notable ones are the Soulglimmer Pigment (unique to your user ID) and Vacant Pigment (resets to the default)."
+				""
+				"Pigments don't affect the quality of your spells."
+			]
+			id: "5E1643F7BAB92599"
+			tasks: [{
+				id: "5C7A9CC4F7956330"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:id_regex"
+					tag: {
+						value: ".*colorizer.*"
+					}
+				}
+				title: "Pigment"
+				type: "item"
+			}]
+			title: "Pigment"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5E1643F7BAB92599"
+				"2AB05698910D0F06"
+				"37D8BB814A62EDD0"
+				"374CF15A2D92A76F"
+				"5085F816AFE89B97"
+				"1A72B8860BC5021C"
+				"3D732B8FB583DA91"
+				"2878EB75598EB9F3"
+				"5CC1EE5B8695D37A"
+				"173A561DF4516DC0"
+				"0FA753544E253EE0"
+				"32EA7C65CF2E685A"
+				"7FDBD1DBCB67C51B"
+				"08F8C73B341758EB"
+			]
+			description: ["There's all the basics of the mod. You can continue your journey by opening the Hex Book and starting at The Great Work. You might need to click on a ton of other entries to reveal the spoilers."]
+			hide_dependency_lines: true
+			id: "47555C3A88BF4A20"
+			invisible: true
+			tasks: [{
+				id: "4CCD7D863AD65561"
+				title: "I'm Done Writing Hex Casting Quests"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7D0E6CC8E50E7DC5"]
+			description: [
+				"Mercury is an energy that can be extracted from matter. The amount of mercury yielded is based on how valuable it is."
+				""
+				"Right-click your Distiller using a mercury-yielding item. This means any crop, food, ore, raw metal, stone, sand, or glass. Depending on the quality of item, one might not be enough."
+				""
+				"Next, start the brazier below the distiller by giving it fuel. Afterwards, give the Distiller its time, then right-click it with an empty hand when it's done."
+			]
+			id: "18E1A2415EA939F2"
+			subtitle: "+1 level to Pair"
+			tasks: [{
+				id: "2CAD2355D62CCA62"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "theurgy:mercury_shard"
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7D0E6CC8E50E7DC5"]
+			description: [
+				"Solvents erode the salt and mercury of objects, exposing their alchemical sulfur."
+				""
+				"Liquid Sal Ammoniac can be extracted from water. The first step is to set up your accumulator with a tank under it. Then, simply fill the accumulator with water and wait for it to turn purple."
+				""
+				"If you've been on a mining expedition already (which is quite likely), you can instead use Sal Ammoniac Crystals to make this process faster."
+			]
+			id: "54D236299353D26C"
+			tasks: [{
+				id: "3CB3C0744A2FE858"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "theurgy:sal_ammoniac_bucket"
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["54D236299353D26C"]
+			description: [
+				"Now, it's time to start using some of the devices you haven't touched yet. You're going to want to start the process of creating sulfur by filling the Liquefaction Cauldron with a Sal Ammoniac Bucket."
+				""
+				"Right click the cauldron with an item you want to get the sulfur of (multiply), outlined in the previous quest."
+				""
+				"Next, heat the braziers using fuel."
+				""
+				"Do something else for a minute or two, then right click the cauldron with an empty hand to finish the process of making sulfur."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "jaopca:theurgy_alchemical_sulfurs.aluminum"
+				tag: {
+					"theurgy:sulfur.source.id": "#forge:ingots/aluminum"
+				}
+			}
+			id: "2D004AB130DD67BE"
+			tasks: [{
+				id: "3F4FD6C530CB0290"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "theurgy:alchemical_sulfurs"
+					}
+				}
+				title: "Any #theurgy:alchemical_sulfurs"
+				type: "item"
+			}]
+			title: "Sulfur"
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7D0E6CC8E50E7DC5"]
+			description: [
+				"Another thing you'll need to make items with Sulfur is Salt. Right click the Calcination Oven with an item to make its category's salt. Just make sure you use something that'll make the right type of salt for what you're doing."
+				""
+				"For example, if you want to triple your recently-mined silver, use ores, raw metals, or ingots."
+				""
+				"As you did before, heat up the oven with your brazier, wait, and right click it."
+			]
+			id: "758086B8C6ACC276"
+			tasks: [{
+				id: "35AD6B2F569B81C5"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "theurgy:alchemical_salts"
+					}
+				}
+				title: "Any Salt"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2D004AB130DD67BE"
+				"758086B8C6ACC276"
+				"18E1A2415EA939F2"
+			]
+			description: [
+				"Right click your Incubator Sulfur Vessem Incubator Salt Vessel, and Incubator Mercury Vessel with the respective materials to fill them."
+				""
+				"Make sure your Incubator has a Brazier below it. Then, the last thing to do is heat it up and watch the magic happen."
+				""
+				"Good work! Enjoy this treat as a reward for doing all that."
+			]
+			id: "0A0DF712573BD444"
+			rewards: [{
+				id: "175BB792D93FB28E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "farmersdelight:chocolate_pie"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "792D3A4A155176F8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:incubator_mercury_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "1671DCC34D1A370B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:incubator_salt_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "311EC98D5D7E4F56"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:incubator_sulfur_vessel"
+					}
+					type: "item"
+				}
+			]
+			title: "Incubation"
+			x: -8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["18E1A2415EA939F2"]
+			description: [
+				"Through theurgy, you can also turn one material into another. The three types of transformation are:"
+				""
+				"- Reformation: the Sulfur changes, but not the type or tier"
+				"- Transmutation: the type changes, but not the tier"
+				"- Exaltation: the tier changes, but not the type"
+				""
+				"These practices build upon each other to create a powerful tool in your arsenal."
+				"{@pagebreak}"
+				"Since Sulfur is too mundane to be transformed directly, we'll need to make it into niter. No, neither of these are referring to the ores you find underground."
+				""
+				"There is a key difference between Sulfur and Niter: each material has a unique Sulfur, while Niter is instead sorted into broad categories. This allows it to be easily manipulated."
+				""
+				"For example, if you have a Precious Metal Niter, you can turn it into the Sulfur for any Precious Metal, then follow the steps in the Sulfur quest to turn it into a material you can use for other things."
+				""
+				"Keep that in mind for now, but the next quest doesn't concern Niter."
+				"{@pagebreak}"
+				"Now that you've passed Introduction to Alchemy, we can get to the fun part. You're going to build something called a Reformation Array."
+				""
+				"First, obtain a Target Pedestal, which will hold the sulfur you want more of."
+				""
+				"Then obtain a Result Pedestal, which will hold the duplicated sulfur."
+				""
+				"Next, obtain at least one Source Pedestal, will hold the sulfur you want to be converted into what's on the Target."
+				""
+				"Place the pedestals close to each other. There is no specific structure you need to build with them."
+				""
+				"Lastly, get a Sulfuric Flux Emitter, which supplies the energy this conversion needs. Make sure the emitter is linked to the other pedestals by right clicking it."
+			]
+			id: "77D2B63352A1CDD6"
+			tasks: [
+				{
+					id: "2614C70D57A0657A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:reformation_target_pedestal"
+					}
+					type: "item"
+				}
+				{
+					id: "4FF714CC75ECE9EF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:reformation_result_pedestal"
+					}
+					type: "item"
+				}
+				{
+					id: "03FB430ED81C75FD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:reformation_source_pedestal"
+					}
+					type: "item"
+				}
+				{
+					id: "62756F21E2C60E04"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:sulfuric_flux_emitter"
+					}
+					type: "item"
+				}
+				{
+					id: "3CD9A9A51AB4B0C5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "theurgy:mercury_catalyst"
+					}
+					type: "item"
+				}
+			]
+			title: "Introduction to Reformation"
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["18E1A2415EA939F2"]
+			id: "0A3CD5DF147C240B"
+			tasks: [{
+				id: "1A40D416B6F5183D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "theurgy:caloric_flux_emitter"
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["77D2B63352A1CDD6"]
+			description: [
+				"You'll need to supply one of the target sulfur and at least one of the source sulfur. You should plan to bring multiple sources for convenience, though."
+				""
+				"Make sure the target and source are the same tier (use JEI/EMI for this). You can't just convert rotten flesh into netherite, even though it'd be cool if you could. An example of a valid conversion is emerald to diamond."
+				""
+				"Put your source and target into the right pedestal, when wait. If you've done everything right up to this point, a glowing orb will appear over the pedestals."
+				""
+				"Remember to power your array using a Mercury Catalyst. The ritual should start automatically."
+				"{@pagebreak}"
+				"Once you're done, an orb will appear over the Result Pedestal, which you can take a copy of the target from."
+				""
+				"You'll notice the target is still there, but the source disappeared. You've now duplicated a material - well done!"
+			]
+			id: "247ACED8E76DD567"
+			subtitle: "&7This quest completes easily, but make sure to read the description"
+			tasks: [{
+				id: "0B64933F9ADC9A00"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "theurgy:alchemical_sulfurs"
+					}
+				}
+				title: "Any #theurgy:alchemical_sulfurs"
+				type: "item"
+			}]
+			title: "Sulfur Reformation"
+			x: -6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["335E26285D11AB8A"]
+			description: [
+				"You can use Artificing to automatically cast spells when a certain event happens."
+				""
+				"You'll want to start by getting the required workbench and obtaining at least one of the four artificing-related glyphs."
+				""
+				"Then, place one of the spell-storing curios on the workbench to program when to activate the spell."
+				""
+				"After you've got that, inscribe the spell you want to put on the curio using a Scribe's Table."
+			]
+			id: "58819519A5C03F43"
+			tasks: [
+				{
+					id: "6C6F9C2776D62ADF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ars_artifice:artificers_workbench"
+					}
+					type: "item"
+				}
+				{
+					id: "32D3C215C7D9694C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:spell_storing_ring"
+									tag: { }
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:spell_storing_amulet"
+									tag: { }
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:spell_storing_belt"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "Curio of Spell Storing"
+					type: "item"
+				}
+				{
+					id: "2014DCDDF1711489"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:glyph_anguish"
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:glyph_falling"
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:glyph_interval"
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"celestisynth:celestisynthitemstackcapabilities": {
+											cs.aquaSkin: 0
+										}
+									}
+									id: "ars_artifice:glyph_landing"
+								}
+							]
+						}
+					}
+					title: "Artifice Glyphs"
+					type: "item"
+				}
+			]
+			title: "Enchanter's Curiosities"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: ["This upgraded Source Jar does exactly what you think: each one's contents are synced with all others, much like an Ender Chest."]
+			id: "0B9B5B73CB26F0D2"
+			tasks: [{
+				id: "546A009481C7C697"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ars_additions:ender_source_jar"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2626C487E7BA6230"]
+			description: [
+				"The Storage Lectern is an advanced storage option that uses Bookwyrms! "
+				""
+				"It works like an Inventory Connector, where external inventories can be connected to the Lectern. To link an inventory, use a Bookwyrm Charm on it. Then, configure access using a Dominion Wand. Any inventory can be linked as long as it's at most 30 blocks away."
+				""
+				"You can also connect multiple lecterns to each other. In this case, one lectern still serves the role of the root, while another acts as an access point which can extract and insert but not connect directly to inventories."
+			]
+			id: "46E96E799794ACFF"
+			tasks: [{
+				id: "3D9989667CCD2135"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ars_nouveau:storage_lectern"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["46E96E799794ACFF"]
+			description: ["This smart TV remote can grant remote access to your Storage Lecterns. You can even make the &dStabilized Warp Index&r, a premium version that allows access across dimensions."]
+			id: "5C9E93678F670C09"
+			tasks: [{
+				id: "6E775C460081DAA7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ars_additions:warp_index"
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["421227890C2EBBA4"]
+			description: [
+				"If you would rather have cute little workers running around your factory instead of boring pipes, these are your items!"
+				""
+				"The StarbAttery lets a Starbuncle carry energy from your batteries or generators to other machines."
+				""
+				"The Wyrm Degree lets a Starbuncle input/output items, but only from a specific face of a container. Use Direction Scrolls to configure this."
+				""
+				"With the Starbucket, the Starbuncle is able to transport fluids. Use a Dominion Wand to set this up."
+				""
+				"Lastly, the Starballoon is for all you Mekanists out there who need a way of moving gasses around."
+			]
+			id: "26032919253271BD"
+			tasks: [
+				{
+					id: "2B6D6E084EDEA108"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:star_battery"
+					}
+					type: "item"
+				}
+				{
+					id: "179FADF5CB909E23"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:wyrm_degree"
+					}
+					type: "item"
+				}
+				{
+					id: "4DB126E4A75EE2E9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:star_bucket"
+					}
+					type: "item"
+				}
+				{
+					id: "5FE6BD998023C64C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:star_balloon"
+					}
+					type: "item"
+				}
+			]
+			title: "Advanced Item/Fluid/Energy Transport"
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["421227890C2EBBA4"]
+			description: ["This accessory lets Starbuncles void any item they find on the ground."]
+			id: "4FCFEBE953717DD2"
+			tasks: [{
+				id: "3010986D9F7E0521"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "starbunclemania:star_bin"
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D4F3D27DC68EEF3"]
+			description: [
+				"The Fluid Sourcelink consumes fluids to generate source."
+				""
+				"To get a Source Bucket, you'll need a Source Condenser with a tank below it to liquify source in Source Jars."
+			]
+			id: "38B7D96BA216B588"
+			tasks: [
+				{
+					id: "17648BDBE6F75065"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:fluid_sourcelink"
+					}
+					type: "item"
+				}
+				{
+					id: "47B2DE57EA483C96"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "starbunclemania:source_condenser"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+	]
+	title: "Supernatural Magic"
+}

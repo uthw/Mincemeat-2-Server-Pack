@@ -1,0 +1,71 @@
+
+["guard stuff"]
+	#This lets Guards open doors.
+	"Have Guards open doors?" = true
+	#This will make guards raise their shields all the time, on default they will only raise their shields under certain conditions
+	"Have Guards raise their shield all the time?" = false
+	#Range: -9999 ~ 9999
+	"How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?" = -100
+	"Allow players to give guards stuff only if they have the hero of the village effect?" = false
+	"Have guards only follow the player if they have hero of the village?" = true
+	#Range: -500.0 ~ 900.0
+	"Guard speed" = 0.5
+	#This is the range in which the guards will be aggroed to mobs that are attacking villagers. Higher values are more resource intensive, and setting this to zero will disable the goal.
+	#Range: -500.0 ~ 500.0
+	Range = 50.0
+	#Range: > -2147483648
+	"Minimum reputation requirement for guards to give you access to their inventories" = 9999
+	"Have guards attempt to avoid firing into other friendlies?" = true
+	#How much health a guard regenerates.
+	#Range: -500.0 ~ 500.0
+	"Guard health regeneration amount" = 1.5
+	#Range: 0.0 ~ 900.0
+	"Guard follow range" = 20.0
+	"Allow players to set guard patrol points only if they have hero of the village" = false
+	#This makes Guards run from polar bears, as anyone with common sense would.
+	"Have Guards have some common sense?" = false
+	"Allow guard arrows to damage villagers, iron golems, or other guards? The i-frames will still be shown for them but they won't lose any health if this is set to false" = true
+	#Range: -999.9000244140625 ~ 999.0
+	"Chance to drop equipment" = 0.0
+	#This makes guards form a phalanx
+	"Have guards form a phalanx?" = true
+	#Range: -500.0 ~ 900.0
+	"Guard health" = 50.0
+	"Allow the player to right click on bells to mass order guards to follow them?" = true
+	"Have guards patrol the village regularly?" = false
+	"Allow guards to teleport if following the player" = true
+	#Range: -999.9000244140625 ~ 999.0
+	"Chance for guards to lose durability" = 1.0
+
+["raids and illagers"]
+	#This makes Illagers run from polar bears, as anyone with common sense would.
+	"Have Illagers have some common sense?" = true
+	#Witches Attack Villagers?
+	"Witches attack villagers?" = true
+	#Illagers In Raids Attack Animals?
+	"Illagers in raids attack animals?" = false
+	#This will make Illusioners get involved in raids
+	"Have Illusioners in raids?" = false
+
+["mob ai in general"]
+	#Guards will attack all hostiles with this option, when set to false guards will only attack zombies and illagers.
+	"Guards attack all mobs?" = true
+	#Guards won't attack mobs in this list at all, for example, putting "minecraft:creeper" in this list will make guards ignore creepers.
+	"Mob Blacklist" = ["minecraft:villager", "minecraft:iron_golem", "minecraft:wandering_trader", "guardvillagers:guard", "creeperoverhaul:badlands_creeper", "creeperoverhaul:bamboo_creeper", "creeperoverhaul:beach_creeper", "creeperoverhaul:cave_creeper", "creeperoverhaul:dark_oak_creeper", "creeperoverhaul:desert_creeper", "creeperoverhaul:dripstone_creeper", "creeperoverhaul:hills_creeper", "creeperoverhaul:jungle_creeper", "creeperoverhaul:mushroom_creeper", "creeperoverhaul:ocean_creeper", "creeperoverhaul:savannah_creeper", "creeperoverhaul:snowy_creeper", "creeperoverhaul:spruce_creeper", "creeperoverhaul:swamp_creeper", "graveyard:skeleton_creeper", "mekanismadditions:baby_creeper", "minecraft:creeper", "thermal:blitz", "blue_skies:artificial_golem", "blue_skies:spewter", "blue_skies:snow_owl", "blue_skies:nested_spider", "iceandfire:fire_dragon", "iceandfire:fire_dragon", "iceandfire:ice_dragon", "iceandfire:lightning_dragon", "iceandfire:hydra", "twilightforest:armored_giant", "alexsmobs:void_worm", "undergarden:forgotten_guardian", "cataclysm:ignis", "cataclysm:ender_golem", "cataclysm:ender_guardian", "cataclysm:netherite_monstrosity", "blue_skies:summoner", "blue_skies:alchemist", "blue_skies:starlit_crusher", "blue_skies:arachnarch", "botania:pink_wither", "botania:doppleganger", "meetyourfight:bellringer", "meetyourfight:dame_fortuna", "meetyourfight:swampjaw", "meetyourfight:bellringer", "meetyourfight:rosalyne", "meetyourfight:rose_spirit", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:umvuthi", "mowziesmobs:frostmaw", "ars_nouveau:wilden_boss", "aquamirae:maze_mother", "aquamirae:captain_cornelia", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:umvuthi", "minecraft:vex", "lost_aether_content:aerwhale_king", "aether:valkyrie_queen", "aether:sun_spirit", "aether:slider", "minecells:concierge", "minecells:conjunctivius", "minecells:sewers_tentacle", "mowziesmobs:umvuthana_crane", "mowziesmobs:umvuthana_raptor", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:void_blossom", "bosses_of_mass_destruction:gauntlet", "alexscaves:forsaken", "alexscaves:tremorzilla", "alexscaves:tremorsaurus", "alexscaves:hullbreaker", "graveyard:lich", "graveyard:ghoul", "cataclysm:the_prowler", "cataclysm:the_harbinger", "cataclysm:ancient_remnant", "cataclysm:the_leviathan", "cataclysm:kobolediator", "cataclysm:wadjet", "cataclysm:maledictus", "cataclysm:aptrgangr", "irons_spellbooks:dead_king", "irons_spellbooks:dead_king_corpse", "irons_spellbooks:summoned_polar_bear", "irons_spellbooks:summoned_skeleton", "irons_spellbooks:summoned_vex", "irons_spellbooks:summoned_zombie", "conjurer_illager:conjurer", "galosphere:berserker", "galosphere:preserved", "irons_spellbooks:citadel_keeper"]
+	#Guards will additionally attack mobs ids put in this list, for example, putting "minecraft:cow" in this list will make guards attack cows.
+	"Mob Whitelist" = []
+	#Hostiles attack guards, by default only illagers and zombies will attack guards, the mob blacklist below will effect this option
+	"All mobs attack guards" = false
+
+["villager stuff"]
+	#This makes villagers run from polar bears, as anyone with common sense would.
+	"Have Villagers have some common sense?" = true
+	"Have it so clerics heal guards and players with hero of the village?" = true
+	"Allow armorers and weaponsmiths repair guard items when down below half durability?" = true
+	#This will make it so villagers will only be converted into guards if the player has hero of the village
+	"Make it so players have to have hero of the village to convert villagers into guards?" = false
+	"Have it so blacksmiths heal golems under 60 health?" = true
+
+["golem stuff"]
+	"Allow Iron Golems to float on water?" = true
+

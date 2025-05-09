@@ -1,0 +1,162 @@
+// ### THE MOD REQUIRES A RESTART OF THE GAME TO APPLY CHANGES ###
+{
+  // this is the main spread factor (default is 2)
+  //
+  // tips : a spread factor can be a decimal number (such as 1.5)
+  //        a spread factor of 1 means all structure's placement are not modified (useful if you want to use only custom spread factors)
+  //        a spread factor above 1 means all structures are rarer
+  //        a spread factor below 1 means all structure are more common
+  "spreadFactor": 1.25,
+
+  // this is a list of custom spread factors
+  "customSpreadFactors": [
+    // example of the mansion being doubled in rarity (the mod's default)
+    {
+      "structure": "minecraft:mansion",
+      "factor": 1.75
+    },
+    {
+      "structure": "integrated_villages:air_villages",
+      "factor": 2.3
+    },
+    {
+      "structure": "integrated_villages:regular_villages",
+      "factor": 1.75
+    },
+    {
+      "structure": "repurposed_structures:villages_overworld",
+      "factor": 1.3
+    },
+    {
+      "structure": "ctov:villages",
+      "factor": 2.0
+    },
+    {
+      "structure": "totw_modded:aether",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:badlands",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:derelict",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:derelict_grass",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:desert",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:end",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:everbright",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:everdawn",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:ice",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:jungle",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:nether",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:ocean",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:ocean_warm",
+      "factor": 1
+    },
+    {
+      "structure": "totw_modded:regular",
+      "factor": 1
+    },
+    {
+      "structure": "alexscaves:underground_cabin",
+      "factor": 1
+    },
+    {
+      "structure": "idas:tinkers_workshop",
+      "factor": 2
+    },
+    {
+      "structure": "betterdungeons:small_dungeon",
+      "factor": 1
+    },
+    {
+      "structure": "betterdungeons:small_nether_dungeon",
+      "factor": 1
+    },
+    {
+      "structure": "bettermineshafts:mineshaft_oak",
+      "factor": 1
+    },
+    {
+      "structure": "cataclysm:frosted_prison",
+      "factor": 1.8
+    },
+    {
+      "structure": "graveyard:dead_tree",
+      "factor": 0.5
+    },
+    {
+      "structure": "graveyard:crypt",
+      "factor": 3.5
+    },
+    {
+      "structure": "graveyard:ruins",
+      "factor": 1
+    },
+    {
+      "structure": "betterdungeons:spider_dungeon",
+      "factor": 1.15
+    },
+    {
+      "structure": "betterdungeons:zombie_dungeon",
+      "factor": 1.15
+    },
+    {
+      "structure": "dungeonnowloading:labrynth",
+      "factor": 2.5
+    },
+    {
+      "structure": "integrated_villages:clockwork_village",
+      "factor": 0.5
+    },
+    {
+      "structure": "idas:pillager_fortress",
+      "factor": 0.65
+    },
+    {
+      "structure": "minecells:overworld_portal",
+      "factor": 2
+    }
+    // add the structures you want to modify in the format:
+    // {
+    //     "structure": "namespace:structure_name",
+    //     "factor": number
+    // },
+    // where "structure" is a structure_set or the name of a structure
+    // /!\ if you put the name of a structure, all structures in its set will be modified
+    // (example : "minecraft:village_plains" will modify all structures in the "villages" set)
+    // see https://minecraft.wiki/w/Tutorials/Custom_structures#Structure_Set for more info
+    //
+    // tip : the same spread factors rules apply here
+  ]
+}

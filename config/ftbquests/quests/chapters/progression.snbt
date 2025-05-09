@@ -1,0 +1,582 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "progression"
+	group: "357B296D74E0575E"
+	icon: {
+		Count: 1
+		id: "enigmaticlegacy:void_stone"
+		tag: { }
+	}
+	id: "12EFFEFA52DA688B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Here I've made a little tracker for you to easily gauge how much of the pack is left."
+				""
+				"To the bottom left and right, you can find the magic and tech progression, respectively."
+				""
+				"On top of this quest is the boss / main game progression &c(not complete)&r."
+				""
+				"You can click the checkmarks to note when you're done with tech/magic mods and ready to move on (note one mod will often require previous mods, being \"locked\" behind it)."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7DEAC972117F045B"
+			tasks: [{
+				id: "130899EEC60B93AF"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "What's this?"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7DEAC972117F045B"]
+			id: "630B1C4C9BE35418"
+			tasks: [{
+				entity: "conjurer_illager:conjurer"
+				icon: {
+					Count: 1
+					id: "conjurer_illager:conjurer_hat"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5FDF87D158E169EB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5BE15B2099714A22"]
+			icon: "create:water_wheel"
+			id: "477A58774B7737C5"
+			subtitle: "Including some of Crafts \\& Additions"
+			tasks: [{
+				id: "565BCC65BC72C7C5"
+				title: "Create Basics"
+				type: "checkmark"
+			}]
+			title: "Create, Part 1"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: {
+				Count: 1
+				id: "eidolon:warlock_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1ED85CB72D0B51D3"
+			tasks: [{
+				id: "281BC8E0C2294E67"
+				title: "Eidolon"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: "enderio:grains_of_infinity"
+			id: "4DD5BCADAEAD2D90"
+			subtitle: "Basic technology"
+			tasks: [{
+				id: "5902BE409E62E7DB"
+				title: "Ender IO"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1ED85CB72D0B51D3"]
+			icon: "ars_nouveau:creative_spell_book"
+			id: "5DE22DEFA690FDE0"
+			tasks: [{
+				id: "4403251150B4849D"
+				title: "Ars Nouveau"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7DEAC972117F045B"]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:dragonskin_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "5DC13B22A0F6AA56"
+			subtitle: "The Progression of ISS relies on exploration, and is mainly independent of other mods"
+			tasks: [{
+				id: "1F0061C77A76D959"
+				title: "Iron's Spells and Spellbooks"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["48589341ABDDAED8"]
+			icon: "naturesaura:gold_leaf"
+			id: "080F8244C005A607"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "7583259F2BF4807B"
+				title: "Nature's Aura"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5DE22DEFA690FDE0"]
+			icon: "botania:cosmetic_tiny_potato_mask"
+			id: "48589341ABDDAED8"
+			tasks: [{
+				id: "0FB9BE2C176EC9A9"
+				title: "Botania"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1ED85CB72D0B51D3"]
+			icon: "hexerei:mixing_cauldron"
+			id: "7917D72848C6458F"
+			tasks: [{
+				id: "65A1A4621ED3A3E5"
+				title: "Hexerei"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7917D72848C6458F"]
+			icon: "occultism:ritual_dummy/summon_demonic_wife"
+			id: "0BDBD76213F171EB"
+			subtitle: "Arcane Storage"
+			tasks: [{
+				id: "783383876CEFBBF6"
+				title: "Occultism"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7465B255410F6220"]
+			icon: "immersiveengineering:voltmeter"
+			id: "2740EA95B624F9C1"
+			tasks: [{
+				id: "270426A0DCFA9201"
+				title: "Immersive Engineering"
+				type: "checkmark"
+			}]
+			title: "Immersive Engineering"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: "thermal:dynamo_stirling"
+			id: "7465B255410F6220"
+			tasks: [{
+				id: "1CB93E459752893E"
+				title: "Thermal Series, Part 1"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2740EA95B624F9C1"]
+			description: [""]
+			icon: "thermal:machine_smelter"
+			id: "7EFD8A908E3EC4D3"
+			subtitle: "*The progression beyond this point is a lot less linear because I haven't finished it yet."
+			tasks: [{
+				id: "3A6DB147F206C820"
+				title: "Thermal Series, Part 2"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7EFD8A908E3EC4D3"]
+			icon: "pneumaticcraft:pressure_gauge"
+			id: "4ED97716F56566C5"
+			tasks: [{
+				id: "48917936C5AF26E2"
+				title: "PneumaticCraft: Repressurized"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7EFD8A908E3EC4D3"]
+			icon: "industrialforegoing:machine_frame_supreme"
+			id: "643EB8DE5ED19479"
+			tasks: [{
+				id: "46698547D68FBD75"
+				title: "Industrial Foregoing"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7EFD8A908E3EC4D3"]
+			icon: "create:crushing_wheel"
+			id: "1FFE9767A7118551"
+			tasks: [{
+				id: "49D1ED61420E97E0"
+				title: "Create, Part 2"
+				type: "checkmark"
+			}]
+			title: "Create, Part 2 and Most Create Addons"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1FFE9767A7118551"
+				"4DD5BCADAEAD2D90"
+			]
+			icon: "fluxnetworks:flux_plug"
+			id: "73482370DB4AAC6A"
+			tasks: [{
+				id: "2DA47F92515A595C"
+				title: "Flux Networks"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["080F8244C005A607"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "bloodmagic:altar"
+			}
+			id: "0121C2C9B72C0A54"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "068C17297478FAE0"
+				title: "Blood Magic"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"477A58774B7737C5"
+				"658305B48F9FE4DD"
+			]
+			description: ["To reach the Undergarden, progress through the Everbright or Everdawn, then go through Mine Cells's Black Bridge, defeat the boss there to unlock the Nether, then collect glowstone for an Aether portal, then gather materials from the Aether to access the Undergarden"]
+			icon: "modularrouters:modular_router"
+			id: "3CCB17E82C592741"
+			subtitle: "*Requires materials from the Undergarden"
+			tasks: [{
+				id: "68569AFE07026718"
+				title: "Modular Routers"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7DEAC972117F045B"]
+			description: [
+				"In terms of storage networks, many are available to you, even at the very beginning of the game."
+				""
+				"Take a look at the controllers from Simple Storage Network, Pretty Pipes, or Sophisticated Storage, the former of which has quests available in Getting Started."
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:diamond_chest"
+				tag: {
+					uuid: [I;
+						226805396
+						-1800581920
+						-1931309175
+						962559126
+					]
+					woodType: "oak"
+				}
+			}
+			id: "5BE15B2099714A22"
+			subtitle: "It'll be very difficult to do any tech or magic without a suitable storage network."
+			tasks: [{
+				id: "0B0CACBBFAC41EFF"
+				title: "Storage Network"
+				type: "checkmark"
+			}]
+			title: "Sophisticated Storage"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: "littlelogistics:tug"
+			id: "258A8B79765EED09"
+			subtitle: "Little boat, giant utility"
+			tasks: [{
+				id: "7BA0C4C1BAB3E174"
+				title: "Little Logistics and Contraptions"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1FFE9767A7118551"]
+			icon: {
+				Count: 1
+				id: "mekanism:robit"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "100000"
+						}]
+					}
+				}
+			}
+			id: "7155CBD5209DC8B9"
+			tasks: [{
+				id: "2F779288AFA59E4E"
+				title: "Mekanism"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1ED85CB72D0B51D3"]
+			icon: "enderstorage:ender_chest"
+			id: "075786F6FC98D4D5"
+			subtitle: "*Ars Nouveau can be used to increase the utility of EnderStorage."
+			tasks: [{
+				id: "2F5478EA6A0BE684"
+				title: "EnderStorage"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7EFD8A908E3EC4D3"]
+			icon: "refinedstorage:creative_controller"
+			id: "2ED77265C4A155B8"
+			subtitle: "Technological Storage"
+			tasks: [{
+				id: "196E50BF34AEBFD2"
+				title: "Refined Storage"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1FFE9767A7118551"]
+			icon: "computercraft:computer_normal"
+			id: "6C9C8C1539414FA3"
+			tasks: [{
+				id: "009FF2DF9FA55C80"
+				title: "CC: Tweaked and Advanced Peripherals"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1FFE9767A7118551"]
+			icon: "integrateddynamics:mechanical_squeezer"
+			id: "5352CFDCA42BA55D"
+			tasks: [{
+				id: "71E3FFB86F820F32"
+				title: "Integrated Dynamics"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A1A6CFA748EFD85"]
+			description: [""]
+			icon: "botanypots:terracotta_botany_pot"
+			id: "73CB40A884E87FF4"
+			subtitle: "Basic farming"
+			tasks: [{
+				id: "6C7633F76C16000C"
+				title: "Botany Pots and Trees"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0BDBD76213F171EB"]
+			icon: "forbidden_arcanus:hephaestus_forge"
+			id: "7E14B2ED8879963A"
+			subtitle: "*Rituals only, most other things from the mod are accessible at this point"
+			tasks: [{
+				id: "25D938BF108F04E2"
+				title: "Forbidden \\& Arcanus"
+				type: "checkmark"
+			}]
+			title: "Forbidden \\& Arcanus"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5BE15B2099714A22"]
+			icon: "prettypipes:pipe"
+			id: "658305B48F9FE4DD"
+			tasks: [{
+				id: "11A4E44D4CAA5362"
+				title: "Pretty Pipes"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: "tetra:forged_workbench"
+			id: "1BDA5058EE86F229"
+			tasks: [{
+				id: "4D94C6B143613626"
+				title: "Tetra Tier 5 Smithing and Addons"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DEAC972117F045B"]
+			description: [""]
+			icon: "apotheosis:reforging_table"
+			id: "6C465D6E497E08F1"
+			subtitle: "Interaction with Apotheosis is inevitable. Somehow or another, you'll be using its mechanics throughout your entire time in this modpack."
+			tasks: [{
+				id: "5AB5D5D70B2122C7"
+				title: "Apotheosis"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5BE15B2099714A22"]
+			icon: "farmersdelight:cooking_pot"
+			id: "7A1A6CFA748EFD85"
+			subtitle: "Adding depth to agriculture"
+			tasks: [{
+				id: "7060F3B5D34FA2CB"
+				title: "Farmer's Delight"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["477A58774B7737C5"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "toms_storage:ts.crafting_terminal"
+			}
+			id: "719958C431733A59"
+			subtitle: "The creation of a storage controller that can craft items requires mechanical mixing"
+			tasks: [{
+				id: "4CBB7751E52850BD"
+				title: "Simple Storage Network"
+				type: "checkmark"
+			}]
+			title: "Tom's Simple Storage: Crafting Terminal"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DD5BCADAEAD2D90"]
+			icon: "actuallyadditions:atomic_reconstructor"
+			id: "30079D8A1EAA4612"
+			subtitle: "or Subtractions?"
+			tasks: [{
+				id: "47E1A536EBC7AA19"
+				title: "Actually Additions"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7917D72848C6458F"]
+			icon: "theurgy:liquefaction_cauldron"
+			id: "1258E432342B30FD"
+			tasks: [{
+				id: "7580EDC2DA6290A2"
+				title: "Theurgy"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5DE22DEFA690FDE0"]
+			icon: "hexcasting:charged_amethyst"
+			id: "6237A6738A67472B"
+			tasks: [{
+				id: "38CFF7C9FE995697"
+				title: "Hex Casting"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+	]
+	title: "Progression"
+}

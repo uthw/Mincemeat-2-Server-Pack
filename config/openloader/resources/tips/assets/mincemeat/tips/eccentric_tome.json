@@ -1,0 +1,10 @@
+{
+    "title": {
+        "text": "Tip",
+        "bold": true,
+        "color": "yellow"
+    },
+    "tip": {
+        "text": "If you lose the Eccentric Tome you spawned with, you can claim another in Player Utilities near the bottom of the quest chapter list."
+    }
+}

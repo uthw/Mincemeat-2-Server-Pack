@@ -1,0 +1,5 @@
+
+[logbegone]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "feathers", "Shield Expansion", "minecraft/VeryBiasedToBottomHeight", "biomemakeover"]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels ", "feathers", "Shield Expansion", "minecraft/VeryBiasedToBottomHeight", "biomemakeover"]
+

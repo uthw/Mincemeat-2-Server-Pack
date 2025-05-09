@@ -1,0 +1,345 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "advanced_storage"
+	group: "575079378E827F8C"
+	icon: {
+		Count: 1
+		id: "quark:backpack"
+		tag: {
+			Inventory: [
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+				{ }
+			]
+		}
+	}
+	id: "6C70C966E5655A38"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The centerpiece of a storage network, and the block that all your storage pieces should connect to."
+				""
+				"*You can obtain silicon without going to the Nether and collecting quartz by using Create washing on stone."
+			]
+			id: "2B189053BCA54F8D"
+			rewards: [{
+				id: "6870F74560655BD7"
+				type: "custom"
+			}]
+			tasks: [{
+				id: "40DBD2730970C8A0"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B189053BCA54F8D"]
+			description: [
+				"You can make a higher tier of storage disk if you want. Put the disk in the drive."
+				""
+				"Then, place a grid. Lastly, connect these blocks to your controller with cables. The grid is what you'll use to edit the contents of the disks."
+				""
+				"Items must be attached to the controller somehow in order to be functional. If the item is attached properly, it will be lit up."
+			]
+			id: "5251048FABCC1731"
+			rewards: [{
+				id: "159DFEED7A2B99E7"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "2BC1FF92F203D71E"
+					item: "refinedstorage:disk_drive"
+					type: "item"
+				}
+				{
+					id: "5B1A281F017A7BDE"
+					item: "refinedstorage:1k_storage_disk"
+					type: "item"
+				}
+				{
+					id: "49BAC7FDE77F8BFF"
+					item: "refinedstorage:grid"
+					type: "item"
+				}
+				{
+					id: "387254735990A4FA"
+					item: "refinedstorage:cable"
+					type: "item"
+				}
+			]
+			title: "Setting up Storage"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			description: [""]
+			id: "72996FDB1ECB9BC4"
+			rewards: [{
+				id: "283F94980A1690DA"
+				type: "custom"
+			}]
+			subtitle: "You can connect these items to an inventory to import or export items to/from it."
+			tasks: [
+				{
+					id: "4A139F654CF6D5C2"
+					item: "refinedstorage:exporter"
+					type: "item"
+				}
+				{
+					id: "4D378A84B3E46BFE"
+					item: "refinedstorage:importer"
+					type: "item"
+				}
+			]
+			title: "Exporting and Importing"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			id: "758E2F02A79F9AE1"
+			rewards: [{
+				id: "428EB009562A4C9A"
+				type: "custom"
+			}]
+			subtitle: "Has the functionality of an importer and exporter all in one block."
+			tasks: [{
+				id: "0A6AC3DB3217794E"
+				item: "refinedstorage:interface"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			description: [""]
+			id: "581D9139E23C46AD"
+			rewards: [{
+				id: "1FC3A51CC260FFBF"
+				type: "custom"
+			}]
+			subtitle: "When you configure the filters to the block you want, these items can place/destroythat block in the world, depending on which one you're using."
+			tasks: [
+				{
+					id: "2BDD8D2A44E8057D"
+					item: "refinedstorage:constructor"
+					type: "item"
+				}
+				{
+					id: "255E97D78315FBEE"
+					item: "refinedstorage:destructor"
+					type: "item"
+				}
+			]
+			title: "Constructor and Destructor"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			description: [""]
+			id: "706D796AEB59679E"
+			rewards: [{
+				id: "0CF5B5B1F3BE6244"
+				type: "custom"
+			}]
+			subtitle: "This block aids with moving items between disks. You can configure it to have a whitelist or blacklist, and choose whether it should import or export."
+			tasks: [{
+				id: "3E0EC8CAD5C0DFB7"
+				item: "refinedstorage:disk_manipulator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			description: [""]
+			id: "198EA622D8755FF5"
+			subtitle: "Import, export, view, and search items, all in one block."
+			tasks: [{
+				id: "393AD7D56665B538"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["198EA622D8755FF5"]
+			id: "319BD115367B8096"
+			rewards: [{
+				id: "33690918821D1B74"
+				type: "custom"
+			}]
+			tasks: [{
+				id: "34C99F41E993734F"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["198EA622D8755FF5"]
+			id: "5E0C50ED9E9A6BA0"
+			rewards: [{
+				id: "5DE975D24344044E"
+				type: "custom"
+			}]
+			subtitle: "Shift clicking buckets causes them to empty their fluids into the fluid grid. This item requires a special disk type for fluids."
+			tasks: [{
+				id: "55F5DF5FB65F9292"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["198EA622D8755FF5"]
+			id: "017618231F84986C"
+			rewards: [{
+				id: "40EA7D1739E68BEE"
+				type: "custom"
+			}]
+			subtitle: "Make patterns which make your storage system automatically craft items"
+			tasks: [{
+				id: "20DFAE59590D8851"
+				item: "refinedstorage:pattern_grid"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5251048FABCC1731"]
+			description: ["This is useful if you'd like to use something like Storage Drawers."]
+			id: "5F978FBCC74F902E"
+			rewards: [
+				{
+					id: "1F383EE5C3A9CDAA"
+					type: "custom"
+				}
+				{
+					id: "195579200560DF4A"
+					item: "storagedrawers:controller"
+					type: "item"
+				}
+			]
+			subtitle: "Connect other inventories to your storage system, right click and set its priority above 0 for it to favor the inventory over the disks"
+			tasks: [{
+				id: "6F4A6343F3907C99"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Did you know these Ender Chests existed before the vanilla item did, and it may be true that EnderStorage inspired vanilla ender chests?"
+				""
+				"Chests can be color coded and claimed (using a Key from Supplementaries). Color them with dye."
+				""
+				"Any two chests with the same color will be linked, containing the same items."
+				""
+				"The pouch acts as an EnderStorage chest, but it's portable. You can set the Pouch's color to be the same as the Ender Chest you shift + Rclick while holding the pouch."
+			]
+			id: "3B8312D8718DC5B4"
+			subtitle: "Not to be confused with vanilla Ender Chests"
+			tasks: [
+				{
+					id: "5B1BE9F7FD08E550"
+					item: "enderstorage:ender_chest"
+					type: "item"
+				}
+				{
+					id: "1655AA6DC68DA29B"
+					item: "enderstorage:ender_pouch"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3B8312D8718DC5B4"]
+			description: [
+				"The linking mechanics of tanks are the same as they are for chests."
+				""
+				"These tanks are powerful in that they can transfer liquids between dimensions!"
+			]
+			id: "313E61ACD510E3B2"
+			tasks: [{
+				id: "7CFFF0F0CC95F579"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B8312D8718DC5B4"]
+			id: "0CD280401B8BF9BC"
+			subtitle: "You can use an Ars Nouveau spellbook as an Ender Pouch instead!"
+			tasks: [{
+				id: "4532A2D84CC89D32"
+				item: "ars_nouveau:glyph_ender_inventory"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Right click a &evanilla storage container&r with this to make it &6sophisticated&r."
+				""
+				"This adds some settings using the tabs on the right as well as an &eupgrade slot&r."
+			]
+			id: "7AB039C4BFD81737"
+			tasks: [{
+				count: 8L
+				id: "2870D2F67968781D"
+				item: "sophisticatedstorage:basic_tier_upgrade"
+				type: "item"
+			}]
+			title: "Sophisticated Storage"
+			x: 3.0d
+			y: 2.0d
+		}
+	]
+	title: "Advanced Storage"
+}

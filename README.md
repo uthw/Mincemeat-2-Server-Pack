@@ -1,6 +1,6 @@
 # How to set up and run a Mincemeat 2 server
 
-Last updated for v0.4.15 (May 2025)
+Last updated for v0.5.0 (May 2025)
 
 You need Java 17 (21 might work but untested) to run the server.
 
@@ -11,8 +11,8 @@ You need Java 17 (21 might work but untested) to run the server.
 3. Delete the following files from the `mods` folder on the server (the new one in this folder). These are client-side mods that do not disable themselves on the server and therefore crash the server if left untouched:
    Mods in **bold** are newly-added mods in the most recent version of the pack.
 
+-   better_smithing_ui
 -   continuity
--   EuphoriaPatcher
 -   LegendaryTooltips
 -   make_bubbles_pop
 -   NekosEnchantedBooks

@@ -154,6 +154,17 @@
         "value": 1
       }
     },
+    "stardew_fishing:line_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "minecraft:generic.luck": {
       "enabled": true,
       "min": {
@@ -163,6 +174,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "stardew_fishing:exp_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "eidolon:persistent_soul_hearts": {
@@ -251,6 +273,17 @@
       "max": {
         "default": 5,
         "value": 5
+      }
+    },
+    "stardew_fishing:bar_size": {
+      "enabled": false,
+      "min": {
+        "default": 4,
+        "value": 4
+      },
+      "max": {
+        "default": 142,
+        "value": 142
       }
     },
     "feathers:feathers.feather_regen": {
@@ -669,6 +702,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "stardew_fishing:treasure_chance_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:horse.jump_strength": {

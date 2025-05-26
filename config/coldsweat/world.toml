@@ -82,7 +82,7 @@
 		"Automatic Hearth" = false
 		#The distance the hearth's air will travel from a source, like the hearth itself or the end of a pipe
 		#Range: > 0
-		"Hearth Range" = 20
+		"Hearth Range" = 64
 		#The maximum distance that air can be piped away from the hearth
 		#Range: > 0
 		"Max Hearth Range" = 96
@@ -91,14 +91,14 @@
 		"Hearth Volume" = 12000
 		#The time it takes for the hearth to be fully functional after being placed
 		#Range: > 0
-		"Hearth Warm-Up Time" = 1200
+		"Hearth Warm-Up Time" = 150
 		#The maximum amount of insulation that the hearth can provide
 		#Range: 0 ~ 10
 		"Hearth Effect Strength" = 10
 		#How often the hearth consumes fuel (in ticks)
 		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
-		"Hearth Fuel Consumption Interval" = 40
+		"Hearth Fuel Consumption Interval" = 0
 
 	["Thermal Sources".Boiler]
 		#Allows the boiler to automatically turn on/off based on nearby players' temperature
@@ -106,23 +106,23 @@
 		"Automatic Boiler" = false
 		#The distance the boiler's air will travel from a source, like the boiler itself or the end of a pipe
 		#Range: > 0
-		"Boiler Range" = 16
+		"Boiler Range" = 32
 		#The maximum distance that air can be piped away from the boiler
 		#Range: > 0
-		"Max Boiler Range" = 96
+		"Max Boiler Range" = 48
 		#The maximum volume of the boiler's area of effect
 		#Range: > 1
 		"Boiler Volume" = 2000
 		#The time it takes for the boiler to be fully functional after being placed
 		#Range: > 0
-		"Boiler Warm-Up Time" = 1200
+		"Boiler Warm-Up Time" = 300
 		#The maximum amount of insulation that the boiler can provide
 		#Range: 0 ~ 10
 		"Boiler Warmth Strength" = 5
 		#How often the boiler consumes fuel (in ticks)
 		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
-		"Boiler Fuel Consumption Interval" = 40
+		"Boiler Fuel Consumption Interval" = 0
 
 	["Thermal Sources".Icebox]
 		#Allows the icebox to automatically turn on/off based on nearby players' temperature
@@ -130,21 +130,21 @@
 		"Automatic Icebox" = false
 		#The distance the icebox's air will travel from a source, like the icebox itself or the end of a pipe
 		#Range: > 0
-		"Icebox Range" = 16
+		"Icebox Range" = 32
 		#The maximum distance that air can be piped away from the icebox
 		#Range: > 0
-		"Max Icebox Range" = 96
+		"Max Icebox Range" = 48
 		#The maximum volume of the icebox's area of effect
 		#Range: > 1
 		"Icebox Volume" = 2000
 		#The time it takes for the icebox to be fully functional after being placed
 		#Range: > 0
-		"Icebox Warm-Up Time" = 1200
+		"Icebox Warm-Up Time" = 300
 		#The maximum amount of insulation that the icebox can provide
 		#Range: 0 ~ 10
 		"Icebox Chill Strength" = 5
 		#How often the icebox consumes fuel (in ticks)
 		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
 		#Range: > 0
-		"Icebox Fuel Consumption Interval" = 40
+		"Icebox Fuel Consumption Interval" = 0
 

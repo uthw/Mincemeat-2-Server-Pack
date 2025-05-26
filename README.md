@@ -1,6 +1,6 @@
 # How to set up and run a Mincemeat 2 server
 
-Last updated for v0.5.0 (May 2025)
+Last updated for v0.5.3 (May 2025)
 
 You need Java 17 (21 might work but untested) to run the server.
 
@@ -13,6 +13,7 @@ You need Java 17 (21 might work but untested) to run the server.
 
 -   better_smithing_ui
 -   continuity
+-   EuphoriaPatcher
 -   LegendaryTooltips
 -   make_bubbles_pop
 -   NekosEnchantedBooks

@@ -274,7 +274,7 @@
 			description: [
 				"Do you like vexes? Of course, you don't! And if you do, then you might need help."
 				""
-				"The Reaper is a vex, but it has more HP, making it a creature that should not exist—but sadly, it does."
+				"The Reaper is a vex, but it has more HP, making it a creature that should not exist, but sadly, it does."
 				""
 				"The only good thing about this stronger vex is that it provides an easy way to get soul sand before heading to the Nether, as it rarely drops it."
 			]
@@ -492,7 +492,7 @@
 				""
 				"These creatures appear in caves, usually at deepslate levels, and hold an item while screaming. They tend to disappear when you get too close, but they have a chance to hold a Heart of Diamond, which can be used to craft the Pickrang."
 				""
-				"However, defeating one is tricky since they vanish as soon as they see a player—unless you're holding a Glow Shroom, which can be found in underground Glimmering Wield biomes. "
+				"However, defeating one is tricky since they vanish as soon as they see a player - that is, unless you're holding a Glow Shroom, which can be found in underground Glimmering Wield biomes."
 				""
 				"When you have a Glow Shroom, Stonelings will sense your presence and won't flee, allowing you to defeat them &o&7(I don't know why you would do that but this is a sandbox game so do what you want)&r&r."
 			]
@@ -808,8 +808,8 @@
 				to_observe: "cataclysm:the_watcher"
 				type: "observation"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			description: [
@@ -1310,7 +1310,7 @@
 		}
 		{
 			description: [
-				"This little axolotl-chinese dragon hybrid can be found in bodies of water in crystal canyons. They can be right clicked with a pickaxe to get a crystal from them. Using a silk touch pickaxe will give you a cluster of crystals instead of normal crystals. "
+				"This little axolotl hybrid can be found in bodies of water in crystal canyons. They can be right clicked with a pickaxe to get a crystal from them. Using a silk touch pickaxe will give you a cluster of crystals instead of normal crystals. "
 				""
 				"The clusters can be mixed with a enchanting setup to improve the Rectification. After ~10 mins it will grow another crystal."
 			]
@@ -1391,8 +1391,8 @@
 				to_observe: "cataclysm:amethyst_crab"
 				type: "observation"
 			}]
-			x: -4.5d
-			y: 3.5d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -1460,6 +1460,153 @@
 				type: "observation"
 			}]
 			x: 1.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"The Prowler is a mechanical miniboss found in the Ancient Factory. It's effectively a larger, grounded Watcher. It fires homing missiles at intruders and has a laser beam to hit far-away targets. It also attacks in melee range with its sawblade."
+				""
+				"The Prowler's ranged attacks are harder to avoid than its melee ones, so stay close to it. Shields are also ineffective against the Prowler because most of its attacks are multi-hits, so the first hit disables your shield and then the subsequent hits go through it."
+			]
+			id: "74C4A0FE452A2BC6"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:the_prowler"
+					}
+				}
+				id: "2ED465F1F0A9DB31"
+				observe_type: 5
+				timer: 0L
+				title: "The Prowler"
+				to_observe: "cataclysm:the_prowler"
+				type: "observation"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Found in Echo Shrines underground, the Fading Mage is a peaceful spirit who tells you their life story while wardens come out of the ground to annoy you. Make sure you destroy the sculk shriekers nearby before talking to them."
+				""
+				"After it's done monologuing, talk to it again to trade with it like most other mages. The Fading Mage is knowledgeable in the Eldritch magic school. "
+				""
+				"If you just stumbled upon this bestiary entry, you almost certainly lack the void manuscripts required to trade with him yet -- you'll have to make a trip to the Outer End to find those."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexsmobs:tab_icon"
+				tag: {
+					DisplayEntityType: "traveloptics:fading_mage"
+				}
+			}
+			id: "21080DFF9602FCAF"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "traveloptics:fading_mage"
+					}
+				}
+				id: "4E4E931B4FB39CA5"
+				observe_type: 5
+				timer: 0L
+				title: "Fading Mage"
+				to_observe: "traveloptics:fading_mage"
+				type: "observation"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"You discovered this mob because you failed one of the puzzles in the Temple of Duality. How naïve! Real adventurers like myself would never."
+				""
+				"This foe spews fire in pinwheels around itself. Use fire resistance or platforming prowess to avoid this."
+				""
+				"Scuttles have high armor and health, so you might be here a while if your weapon isn't up for the task. Hint: bows and arrows are not up for the task either."
+				""
+				"You can avoid the hassle of scuttles by Silk Touching their shoddy statues. When killed, they drop basic resources you already have hundreds to thousands of. Yay."
+			]
+			id: "0AECF67328A2FB5E"
+			invisible: true
+			subtitle: "Entity Model Now Loading"
+			tasks: [{
+				icon: "dungeonnowloading:scuttle_statue"
+				id: "4DA4F46EBCB23500"
+				observe_type: 5
+				timer: 0L
+				title: "Scuttle"
+				to_observe: "dungeonnowloading:scuttle"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"Found in the deepest layer of the Temple of Duality, Ballista Golems are elaborate cubes of stone that fire explosive arrows at their targets. When it reloads, it does so in place, giving you the change to strike."
+				""
+				"You can collect it while it sleeps with Silk Touch, like its smaller relative."
+			]
+			id: "62712FAF13E9A217"
+			invisible: true
+			tasks: [{
+				icon: "dungeonnowloading:ballista_golem_statue"
+				id: "516898E8D6E9F4D3"
+				observe_type: 5
+				timer: 0L
+				title: "Ballista Golem"
+				to_observe: "dungeonnowloading:ballista_golem"
+				type: "observation"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			description: [
+				"So, you've found yourself in the Deepslate layer. Now that you're here, you should get acquaintanced with the explosively popular Evendeeper."
+				""
+				"These are effectively slower and frailer Deepers, but watch out, as what really sets them apart is how they can ignite their fuse without stopping, making it a little trickier than usual to take them out!"
+			]
+			id: "47C82C1E604F6E1A"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "caverns_and_chasms:evendeeper"
+					}
+				}
+				id: "371670DDD5EA6A6A"
+				observe_type: 5
+				timer: 0L
+				title: "Evendeeper"
+				to_observe: "caverns_and_chasms:evendeeper"
+				type: "observation"
+			}]
+			x: -4.5d
 			y: -4.5d
 		}
 	]

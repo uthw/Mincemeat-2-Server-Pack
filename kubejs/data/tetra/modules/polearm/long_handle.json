@@ -1,0 +1,48 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": ["polearm/handle"],
+    "renderLayer": "lower",
+    "improvements": [
+        "tetra:polearm/long_handle/",
+        "tetra:polearm/shared_handle/",
+        "tetra:polearm/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:metal/",
+                "tetra:bone/",
+                "tetra:rod/"
+            ],
+            "key": "long_handle/",
+            "attributes": {
+                "generic.attack_speed": -1.0,
+                "forge:reach_distance": 1.5,
+                "forge:attack_range": 1.5
+            },
+            "aspects": {
+                "blockBreaker": 1,
+                "breakable": 2,
+                "pointy_weapon": 2
+            },
+            "extract": {
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.15
+                },
+                "durability": 0.25,
+                "integrity": 1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 16
+                },
+                "availableTextures": ["default", "metal", "bone", "bright"],
+                "models": [
+                    { "location": "tetra:item/module/polearm/handle/long/" }
+                ]
+            }
+        }
+    ]
+}

@@ -95,14 +95,6 @@ ServerEvents.recipes((event) => {
             },
         ],
         [
-            "paraglider:heart_container",
-            ["ABA", "BAB", "ABA"],
-            {
-                A: "scalinghealth:heart_crystal",
-                B: "paraglider:spirit_orb",
-            },
-        ],
-        [
             "sophisticatedbackpacks:pickup_upgrade",
             [" A ", "BCB", "DED"],
             {
@@ -190,7 +182,7 @@ ServerEvents.recipes((event) => {
             "sophisticatedbackpacks:battery_upgrade",
             ["ABA", "BCB", "ABA"],
             {
-                A: "createaddition:copper_wire",
+                A: "#forge:wires/copper",
                 B: "thermal:rf_potato",
                 C: "sophisticatedbackpacks:upgrade_base",
             },
@@ -210,7 +202,7 @@ ServerEvents.recipes((event) => {
             ["ABA", "BCB", "ABA"],
             {
                 A: "#forge:ingots/tin",
-                B: "paraglider:spirit_orb",
+                B: "farmersdelight:canvas",
                 C: "#forge:leather",
             },
         ],
@@ -263,11 +255,11 @@ ServerEvents.recipes((event) => {
             },
         ],
         [
-            "thermal:xp_crystal",
+            "enigmaticlegacy:xp_scroll",
             ["BA ", "C  ", "   "],
             {
                 A: "alexscaves:sea_glass_shards",
-                B: "minecraft:book",
+                B: "enigmaticlegacy:thicc_scroll",
                 C: "aether:zanite_gemstone",
             },
         ],
@@ -275,7 +267,7 @@ ServerEvents.recipes((event) => {
             "undergarden:catalyst",
             ["ABA", "BCB", "ABA"],
             {
-                A: "thermal:apatite",
+                A: "thermal:cinnabar",
                 B: "galosphere:lumiere_shard",
                 C: "forbidden_arcanus:rune",
             },
@@ -298,9 +290,7 @@ ServerEvents.recipes((event) => {
                 A: "artifacts:golden_hook",
                 B: "thermal:xp_crystal",
                 C: "#forge:heads",
-                D: Item.of("minecraft:enchanted_book")
-                    .enchant("minecraft:looting", 3)
-                    .strongNBT(),
+                D: Item.of("minecraft:enchanted_book").enchant("minecraft:looting", 3).strongNBT(),
             },
         ],
         [
@@ -400,7 +390,7 @@ ServerEvents.recipes((event) => {
             {
                 A: "minecraft:gunpowder",
                 B: "minecraft:glow_berries",
-                C: Item.of("minecraft:potion", '{Potion:"minecraft:water"}'),
+                C: Item.of("minecraft:potion", '{Potion:"minecraft:water"}').strongNBT(),
             },
         ],
         [
@@ -569,9 +559,9 @@ ServerEvents.recipes((event) => {
             "waystones:warp_stone",
             ["ABA", "BCB", "ABA"],
             {
-                A: "aether:zanite_gemstone",
+                A: "netherexp:phasmo_shard",
                 B: "forbidden_arcanus:arcane_crystal",
-                C: "alexscaves:pearl",
+                C: "netherexp:wisp_bottle",
             },
         ],
         [
@@ -628,11 +618,12 @@ ServerEvents.recipes((event) => {
         ],
         [
             "irons_spellbooks:gold_spell_book",
-            ["ABB", "ACC", "ABB"],
+            ["ABB", "DCC", "ABB"],
             {
-                A: "forbidden_arcanus:rune",
+                A: "minecraft:diamond",
                 B: "irons_spellbooks:arcane_essence",
                 C: "forbidden_arcanus:cloth",
+                D: "forbidden_arcanus:rune",
             },
         ],
         [
@@ -663,7 +654,7 @@ ServerEvents.recipes((event) => {
             {
                 A: "eidolon:gold_inlay",
                 B: "forbidden_arcanus:cloth",
-                C: "#forge:gems/mana",
+                C: "ars_nouveau:source_gem",
                 D: "#thermal:rockwool",
             },
         ],
@@ -720,7 +711,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;6,15,4,7],intricate:0b,key:"tetra/flamberge_blade",material:2,ribbon:"ff9612",schematics:["tetra:sword/flamberge_blade"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;6,15,4,7],intricate:0b,key:"tetra/flamberge_blade",material:2,ribbon:"ff9612",schematics:["tetra:sword/flamberge_blade"]}]}}',
             ),
             [" A ", "BC ", " D "],
             {
@@ -733,7 +724,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,1,4,5],intricate:0b,key:"single/head/halberd_head/halberd_head",material:1,ribbon:"444aff",schematics:["tetra:single/head/halberd_head/halberd_head"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,1,4,5],intricate:0b,key:"single/head/halberd_head/halberd_head",material:1,ribbon:"444aff",schematics:["tetra:single/head/halberd_head/halberd_head"]}]}}',
             ),
             [" A ", "BC ", "   "],
             {
@@ -745,7 +736,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;0,1,9,4],intricate:0b,key:"sword/key_guard",material:1,ribbon:"fae409",schematics:["tetra:sword/key_guard"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;0,1,9,4],intricate:0b,key:"sword/key_guard",material:1,ribbon:"fae409",schematics:["tetra:sword/key_guard"]}]}}',
             ),
             [" A ", " BC", " C "],
             {
@@ -757,7 +748,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;9,3,6,2],intricate:0b,key:"single/head/mace_head/mace_head",material:1,ribbon:"560060",schematics:["tetra:single/head/mace_head/mace_head"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;9,3,6,2],intricate:0b,key:"single/head/mace_head/mace_head",material:1,ribbon:"560060",schematics:["tetra:single/head/mace_head/mace_head"]}]}}',
             ),
             [" A ", "DBD", " C "],
             {
@@ -770,7 +761,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;5,10,13,2],intricate:0b,key:"sword/katana/katana_blade",material:2,ribbon:"dbff10",schematics:["tetra:sword/katana/katana_blade","tetra:sword/tsuba_guard"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;5,10,13,2],intricate:0b,key:"sword/katana/katana_blade",material:2,ribbon:"dbff10",schematics:["tetra:sword/katana/katana_blade","tetra:sword/tsuba_guard"]}]}}',
             ),
             [" A ", "BCB", " D "],
             {
@@ -783,12 +774,12 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,7,9,2],intricate:0b,key:"tetra/crucible_blade",material:2,ribbon:"ff1e00",schematics:["tetra:sword/crucible_blade"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,7,9,2],intricate:0b,key:"tetra/crucible_blade",material:2,ribbon:"ff1e00",schematics:["tetra:sword/crucible_blade"]}]}}',
             ),
             [" A ", "BCB", " D "],
             {
                 A: "art_of_forging:enigmatic_construct",
-                B: "nethersdelight:propelplant_cane",
+                B: "mynetheresdelight:powder_cannon",
                 C: "enigmaticlegacy:thicc_scroll",
                 D: "apotheosis:epic_material",
             },
@@ -796,7 +787,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{glyphs:[I;15,14,15,15],intricate:1b,key:"hone/gild_1",material:2,ribbon:"c9ae69",schematics:["tetra:hone/gild_1"]}]}}'
+                '{BlockEntityTag:{data:[{glyphs:[I;15,14,15,15],intricate:1b,key:"hone/gild_1",material:2,ribbon:"c9ae69",schematics:["tetra:hone/gild_1"]}]}}',
             ),
             [" A ", "BCB", " D "],
             {
@@ -900,7 +891,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,1,9,5],intricate:0b,key:"bow/stave/dreadnought_stave",material:1,ribbon:"f3b31f",schematics:["tetra:bow/stave/dreadnought_stave","tetra:bow/stave/dreadnought_cross_stave"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;8,1,9,5],intricate:0b,key:"bow/stave/dreadnought_stave",material:1,ribbon:"f3b31f",schematics:["tetra:bow/stave/dreadnought_stave","tetra:bow/stave/dreadnought_cross_stave"]}]}}',
             ),
             [" A ", "BCB", " D "],
             {
@@ -913,7 +904,7 @@ ServerEvents.recipes((event) => {
         [
             Item.of(
                 "tetra:scroll_rolled",
-                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;15,13,12,14],intricate:0b,key:"bow/string/compound_string",material:1,ribbon:"19e588",schematics:["tetra:bow/string/compound_string","tetra:crossbow/string/compound_cross_string"]}]}}'
+                '{BlockEntityTag:{data:[{details:"art_of_forging",glyphs:[I;15,13,12,14],intricate:0b,key:"bow/string/compound_string",material:1,ribbon:"19e588",schematics:["tetra:bow/string/compound_string","tetra:crossbow/string/compound_cross_string"]}]}}',
             ),
             [" A ", "BCB", " D "],
             {
@@ -959,7 +950,7 @@ ServerEvents.recipes((event) => {
             [" A ", "BCB", "DED"],
             {
                 A: "createaddition:connector",
-                B: "upgrade_aquatic:embedded_ammonite",
+                B: "create:ochrum",
                 C: "thermal:machine_frame",
                 D: "#forge:plates/zinc",
                 E: "thermal:rf_coil",
@@ -1320,7 +1311,7 @@ ServerEvents.recipes((event) => {
             ["ABA", "CCC", "ABA"],
             {
                 A: "#minecraft:logs",
-                B: "alexscaves:ferrouslime_ball",
+                B: "environmental:mud_ball",
                 C: "#forge:ingots/aluminum",
             },
         ],
@@ -1376,7 +1367,7 @@ ServerEvents.recipes((event) => {
             {
                 A: "prettypipes:pipe",
                 B: "create:fluid_pipe",
-                C: "thermal:apatite",
+                C: "thermal:cinnabar",
             },
         ],
         [
@@ -1388,14 +1379,6 @@ ServerEvents.recipes((event) => {
                 C: "thermal:rf_coil",
                 D: "#forge:ingots/pewter",
                 E: "createaddition:capacitor",
-            },
-        ],
-        [
-            "dungeonnowloading:spawner_fragment",
-            [" A ", "ABA", " A "],
-            {
-                A: "forbidden_arcanus:darkstone",
-                B: "paraglider:spirit_orb",
             },
         ],
         [
@@ -1444,7 +1427,7 @@ ServerEvents.recipes((event) => {
                 A: "forbidden_arcanus:arcane_crystal",
                 B: "apotheosis:gem_dust",
                 C: "enigmaticlegacy:thicc_scroll",
-                D: "thermal:apatite",
+                D: "caverns_and_chasms:spinel",
             },
         ],
         [
@@ -1454,7 +1437,7 @@ ServerEvents.recipes((event) => {
                 A: "ars_nouveau:source_gem",
                 B: "theurgy:mercury_shard",
                 C: "enigmaticlegacy:thicc_scroll",
-                D: "thermal:apatite",
+                D: "caverns_and_chasms:spinel",
             },
         ],
         [
@@ -1508,7 +1491,131 @@ ServerEvents.recipes((event) => {
                 A: "minecraft:redstone",
                 B: "#minecraft:planks",
                 C: "prettypipes:pipe",
-                D: "thermal:apatite",
+                D: "thermal:cinnabar",
+            },
+        ],
+        [
+            "thermal:xp_crystal",
+            [" A ", "ABA", "CDC"],
+            {
+                A: "forbidden_arcanus:xpetrified_orb",
+                B: "forbidden_arcanus:arcane_crystal",
+                C: "create:experience_nugget",
+                D: "alexsmobs:skreecher_soul",
+            },
+        ],
+        [
+            "enigmaticlegacy:enchantment_transposer",
+            [" A ", "ABA", " A "],
+            {
+                A: "apotheosis:improved_scrap_tome",
+                B: "reliquary:glowing_water",
+            },
+        ],
+        [
+            "l2artifacts:random_1",
+            [" A ", "A A", " A "],
+            {
+                A: "traveloptics:celestial_fragment",
+            },
+        ],
+        [
+            "l2artifacts:random_2",
+            [" A ", "ABA", "AAA"],
+            {
+                A: "traveloptics:celestial_fragment",
+                B: "apotheosis:common_material",
+            },
+        ],
+        [
+            "l2artifacts:random_3",
+            ["AAA", "ABA", "AAA"],
+            {
+                A: "traveloptics:celestial_fragment",
+                B: "apotheosis:uncommon_material",
+            },
+        ],
+        [
+            "l2artifacts:random_4",
+            ["ABA", "AAA", "ABA"],
+            {
+                A: "traveloptics:celestial_fragment",
+                B: "apotheosis:rare_material",
+            },
+        ],
+        [
+            "l2artifacts:random_5",
+            ["AAA", "ABA", "AAA"],
+            {
+                A: "traveloptics:celestial_fragment",
+                B: "apotheosis:epic_material",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_sword",
+            [" A ", " A ", " B "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "mowziesmobs:bluff_rod",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_pickaxe",
+            ["AAA", " B ", " B "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_axe",
+            ["AA ", "AB ", " B "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_shovel",
+            [" A ", " B ", " B "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_hoe",
+            ["AA ", " B ", " B "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "forbidden_arcanus:reinforced_deorum_blacksmith_gavel",
+            ["ABA", "ACA", " C "],
+            {
+                A: "forbidden_arcanus:deorum_ingot",
+                B: "forbidden_arcanus:blacksmith_gavel_head",
+                C: "#forge:rods/wooden",
+            },
+        ],
+        [
+            "cataclysm:storm_eye",
+            ["ABA", "CDC", "ACA"],
+            {
+                A: "minecraft:prismarine_crystals",
+                B: "upgrade_aquatic:mulberry",
+                C: "#forge:scales/sea_serpent",
+                D: "minecraft:ender_eye",
+            },
+        ],
+        [
+            "dungeonnowloading:spawner_fragment",
+            [" A ", "ABA", " A "],
+            {
+                A: "forbidden_arcanus:darkstone",
+                B: "caverns_and_chasms:zirconia",
             },
         ],
     ];
@@ -1516,7 +1623,7 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe, index) => {
         if (!Array.isArray(recipe) || recipe.length !== 3) {
             console.error(
-                `Invalid recipe at index ${index}: expected [output, pattern, mapping], got ${recipe}`
+                `Invalid recipe at index ${index}: expected [output, pattern, mapping], got ${recipe}`,
             );
             return;
         }

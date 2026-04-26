@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
             inputs: ["AAA", "BCD", "AAA"],
             keys: {
                 A: "minecraft:nether_bricks",
-                B: "nethersdelight:propelplant_cane",
+                B: "mynetheresdelight:powder_cannon",
                 C: "#c:bookshelves",
                 D: "iceandfire:witherbone",
             },
@@ -154,7 +154,7 @@ ServerEvents.recipes((event) => {
             inputs: [" A ", "BCB", " D "],
             keys: {
                 A: "farmersdelight:diamond_knife",
-                B: "thermal:apatite",
+                B: "#forge:ingots/silver",
                 C: "minecraft:smithing_table",
                 D: "apotheosis:gem_dust",
             },

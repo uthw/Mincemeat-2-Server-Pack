@@ -38,7 +38,7 @@ primitiveClubRandomExtraStunTime = 150
 # Whether to revert the End Story back to its original form when beating Minecraft.
 # Alex's Caves replaces this story with their own. This config puts it back to normal if enabled.
 #
-restoreEndStory = false
+restoreEndStory = true
 #----------------------------------
 #
 # If enabled, this config makes the Compendium have all biomes and their info unlocked immediately on log-in.
@@ -402,4 +402,26 @@ subterranodonFlightMeterUsageSpeed = 1.0
 	#
 	#Range: 0.0 ~ 1000000.0
 	desolateDaggersAbilityImpendingStabDamage = 2.0
+
+["Gobthumper Options"]
+	#----------------------------------
+	#
+	# Will only spawn a Gum Worm in a Candy Cavity biome.
+	# Attracting nearby Gum Worm behavior is unchanged.
+	#
+	gobthumperSpawnsWormsFromCandyCavityBiome = false
+	#----------------------------------
+	#
+	# Disabled the Gum Worm spawning ability of Gobthumper.
+	# Attracting nearby Gum Worm behavior is unchanged.
+	#
+	gobthumperDisableWormSpawning = false
+
+["Biome Treat Options"]
+	#----------------------------------
+	#
+	# Whether Biome Treat can be eaten while player is not hungry.
+	# Might help allowing Biome Treat to be eaten when hunger overhaul mods are on.
+	#
+	CanEatBiomeTreatWhenNotHungry = false
 

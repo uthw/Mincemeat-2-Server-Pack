@@ -4,7 +4,7 @@ pushd "%~dp0mods" || (
   exit /b 1
 )
 
-set patterns=better_smithing_ui continuity EuphoriaPatcher LegendaryTooltips make_bubbles_pop NekosEnchantedBooks nolijium oculus YungsMenuTweaks
+set patterns=BadOptimizations better_smithing_ui colorwheel continuity EuphoriaPatcher LegendaryTooltips make_bubbles_pop NekosEnchantedBooks oculus screenshot_viewer YungsMenuTweaks
 
 for %%P in (%patterns%) do (
   for %%F in (*%%P*.jar) do (

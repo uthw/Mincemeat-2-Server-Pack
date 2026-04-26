@@ -28,15 +28,15 @@
         "when": "onjoin",
         "dimension": "minecells:black_bridge",
         "result": "allow",
-        "healthmultiply": 4,
-        "damagemultiply": 3
+        "healthmultiply": 5.5,
+        "damagemultiply": 4
     },
     {
         "hostile": true,
         "when": "onjoin",
         "dimension": "minecells:insufferable_crypt",
         "result": "allow",
-        "healthmultiply": 4,
+        "healthmultiply": 4.5,
         "damagemultiply": 3.5
     },
     {
@@ -104,7 +104,7 @@
     },
     {
         "when": "onjoin",
-        "mob": "environmental:yak",
+        "mob": ["environmental:yak", "environmental:zebra"],
         "result": "default",
         "damagemultiply": 10
     },
@@ -113,7 +113,7 @@
         "mob": "galosphere:berserker",
         "result": "default",
         "healthmultiply": 2.25,
-        "damagemultiply": 1.5
+        "damagemultiply": 0
     },
     {
         "when": "onjoin",
@@ -135,21 +135,21 @@
     {
         "when": "onjoin",
         "mob": "meetyourfight:bellringer",
-        "healthmultiply": 1.5,
+        "healthmultiply": 1.75,
         "damagemultiply": 1.5,
         "result": "default"
     },
     {
         "when": "onjoin",
         "mob": "meetyourfight:dame_fortuna",
-        "healthmultiply": 1.55,
+        "healthmultiply": 2,
         "damagemultiply": 2,
         "result": "default"
     },
     {
         "when": "onjoin",
         "mob": "meetyourfight:rosalyne",
-        "healthmultiply": 1.35,
+        "healthmultiply": 2,
         "damagemultiply": 1.75,
         "result": "default"
     },
@@ -313,8 +313,8 @@
     {
         "when": "onjoin",
         "dimension": "aether:the_aether",
-        "healthmultiply": 3,
-        "damagemultiply": 3,
+        "healthmultiply": 4,
+        "damagemultiply": 4,
         "result": "default"
     },
     {
@@ -416,12 +416,6 @@
         "result": "deny"
     },
     {
-        "when": "finalize",
-        "mob": "minecraft:skeleton",
-        "healthmultiply": 2,
-        "result": "default"
-    },
-    {
         "when": "position",
         "mob": "biomeswevegone:man_o_war",
         "result": "deny"
@@ -441,9 +435,64 @@
     },
     {
         "when": "finalize",
-        "mob": ["irons_spellbooks:cryomancer", "irons_spellbooks:pyromancer", "irons_spellbooks:archevoker", "irons_spellbooks:apothecarist", "traveloptics:aquamancer", "traveloptics:aqua_grandmaster", "irons_spellbooks:priest"],
+        "mob": [
+            "irons_spellbooks:cryomancer",
+            "irons_spellbooks:pyromancer",
+            "irons_spellbooks:archevoker",
+            "irons_spellbooks:apothecarist",
+            "traveloptics:aquamancer",
+            "traveloptics:aqua_grandmaster",
+            "irons_spellbooks:priest"
+        ],
         "healthmultiply": 3,
         "damagemultiply": 1.5,
         "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "eidolon:wraith",
+        "damagemultiply": 0.5,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "aquamirae:maw",
+        "random": 0.35,
+        "result": "deny"
+    },
+    {
+        "when": "onjoin",
+        "mob": [
+            "cataclysm:drowned_host",
+            "cataclysm:symbiocto",
+            "cataclysm:hippocamtus",
+            "cataclysm:cindaria",
+            "cataclysm:urchinkin"
+        ],
+        "healthmultiply": 2.25,
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "traveloptics:the_nightwarden",
+        "healthmultiply": 0.65,
+        "result": "default"
+    },
+    {
+        "when": "finalize",
+        "mob": "rottencreatures:frostbitten",
+        "customevent": "replace_with_chilled",
+        "result": "deny_with_actions"
+    },
+    {
+        "when": "finalize",
+        "mob": "rottencreatures:burned",
+        "potionnoparticles": "minecraft:fire_resistance,-1,0",
+        "result": "default"
+    },
+    {
+        "when": "onjoin",
+        "mob": "eidolon:slimy_slug",
+        "result": "deny"
     }
 ]

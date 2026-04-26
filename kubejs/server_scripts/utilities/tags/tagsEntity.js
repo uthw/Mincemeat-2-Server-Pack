@@ -7,7 +7,10 @@ ServerEvents.tags("entity_type", (event) => {
     event.add("alexsmobs:cachalot_whale_targets", "cataclysm:deepling_warlock");
     event.add("alexsmobs:cachalot_whale_targets", "cataclysm:lionfish");
     // event.add("alexsmobs:cachalot_whale_targets", "biomeswevegone:man_o_war");
-    event.add("alexsmobs:cachalot_whale_targets", "creeperoverhaul:ocean_creeper");
+    event.add(
+        "alexsmobs:cachalot_whale_targets",
+        "creeperoverhaul:ocean_creeper"
+    );
 
     event.add("alexsmobs:orca_targets", "cataclysm:deepling");
     // event.add("alexsmobs:orca_targets", "cataclysm:deepling_brute");
@@ -122,17 +125,27 @@ ServerEvents.tags("entity_type", (event) => {
         "irons_spellbooks:dead_king",
         "irons_spellbooks:dead_king_corpse",
         "irons_spellbooks:citadel_keeper",
+        "irons_spellbooks:fire_boss",
 
         "conjurer_illager:conjurer",
 
         "galosphere:berserker",
         "galosphere:preserved",
+
+        "cataclysm:scylla",
+        "cataclysm:clawdian",
+
+        "traveloptics:the_nightwarden",
+
+        "dungeonnowloading:fairkeeper_ouros",
+        "dungeonnowloading:fairkeeper_boros",
     ];
 
     bossesAndMinions.forEach((boss) => {
-        event.add("heal_on_player_death", boss);
+        event.add("mincemeat:heal_on_player_death", boss);
     });
 
     event.add("respawninganimals:persistent_animals", "quark:toretoise");
-    
+
+    event.add("forge:endermen", "traveloptics:the_nightwarden"); // don't know if it'll work but i'm trying to make endermen not aggro onto the nightwarden
 });

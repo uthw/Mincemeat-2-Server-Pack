@@ -176,7 +176,7 @@
 				type: "observation"
 			}]
 			x: 1.0d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -184,7 +184,7 @@
 				""
 				"The Icy Quadruped is not as friendly as it might seem and will actually run at people, shoot spikes of ice in their face, and bite unsuspecting targets. "
 				""
-				"This beast lives in the mountains—not the normal windy ones or large hills, but the frigid ones that feature in documentaries about how hard they are to climb."
+				"This beast lives in the mountains - not the normal windy ones or large hills, but the frigid ones that feature in documentaries about how hard they are to climb."
 				""
 				"If you show the Icy Quadruped who's boss and kill it, especially when it is covered in spikes, it will drop its horn and a lot of ice. The horns can be made into a Froststalker Helmet, which makes all icy quadrupeds not fight you anymore. Plus, it looks cool."
 			]
@@ -285,8 +285,8 @@
 				to_observe: "ecologics:penguin"
 				type: "observation"
 			}]
-			x: 1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			description: [
@@ -319,7 +319,7 @@
 		}
 		{
 			description: [
-				"These green dragons fly around Jagged Peaks, Black Ice Glaciers, and Dead Seas and will attack any player who dares come close. They can dodge projectiles that come their way."
+				"These green dragons are native to mountainous biomes like Stony Peaks, Jagged Peaks, and Dead Seas. They have adapted to both cold and hot climates and will attack any player who dares come close. They can dodge projectiles that come their way."
 				""
 				"They have two attacks: one in which they shoot a poisonous ball at you, and another where they divebomb you, which is unblockable and deals a lot of damage."
 				""
@@ -408,14 +408,14 @@
 				to_observe: "environmental:pinecone_golem"
 				type: "observation"
 			}]
-			x: 0.0d
-			y: 3.5d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			description: [
 				"These wizards are experts of the Ice school, and you'll want to kill them to advance the ranks. Cryomancers live isolated lives in their towers which they build in cold and mountainous biomes."
 				""
-				"Acting in line with the nature of their area of expertise, cryomancers are shut-in and will attack any player that enters their house on sight."
+				"Acting in line with the nature of their area of expertise, cryomancers are shut-in and will attack any player that opens their chests on sight."
 				""
 				"Cryomancers attack their foes using spells like Ice Block, Summon Polar Bear, and Icicle. They can also cast Frost Step to pursue evasive players, so don't outrun them unless you have a very fast method of transportation like a Teleport spell or roller skates."
 				""
@@ -476,6 +476,173 @@
 			}]
 			x: 1.0d
 			y: -0.5d
+		}
+		{
+			description: ["Draugrs are the basic lowly grunts of the Frosted Prison. These frozen undead use basic attacks with either swords or axes and are nothing to worry about."]
+			id: "7B0B5D6A620391B9"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:draugr"
+					}
+				}
+				id: "2DC73D877BF3CEDE"
+				observe_type: 5
+				timer: 0L
+				title: "Draugr"
+				to_observe: "cataclysm:draugr"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"The Royal Draugr is a further-upgraded Draugr, and is a skilled shield user. It's not any better at melee combat than their basic counterparts, but they hide behind their shield whenever they're not attacking."
+				""
+				"If you're fast enough, you can dodge roll behind the Royal Draugr and backstab them while their shield is up. Otherwise, wait until they attack, block the hit, and answer with your own weapon."
+			]
+			id: "7A53CD136DC2713E"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:royal_draugr"
+					}
+				}
+				id: "37E56FD2EA9EC955"
+				observe_type: 5
+				timer: 0L
+				title: "Royal Draugr"
+				to_observe: "cataclysm:royal_draugr"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"The Elite Draugr has been promoted, and uses a crossbow. It's not entirely a pushover though, since it fires arrows more quickly than most other crossbow-wielding foes in the game. "
+				""
+				"You should focus on them first in a group of enemies so they don't hit you with a constant stream of damage."
+			]
+			id: "2711B6F7EDB56344"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:elite_draugr"
+					}
+				}
+				id: "6269ED2208E32B03"
+				observe_type: 5
+				timer: 0L
+				title: "Elite Draugr"
+				to_observe: "cataclysm:elite_draugr"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"These massive arachnids can be found by foolishly breaking the eggs in their chest. They are also very rarely seen patrolling snowy biomes at night, but despite their scarcity, they still make me never want to live in a tundra."
+				""
+				"They are better than ordinary spiders in every way - bigger, stronger, quicker, and more durable. They sport several attacks, including a bite, leg swipe, grab, and ice cube lob."
+				""
+				"If you manage to take out one of these monstrosities, you will be rewarded with arcane essence and string. I wish they'd drop a beer instead so I could forget this mob exists."
+			]
+			id: "3D8991AAB1B54EFF"
+			invisible: true
+			tasks: [{
+				icon: "thermal:ice_charge"
+				id: "6675CC5991C62D2F"
+				observe_type: 5
+				timer: 0L
+				title: "Ice Spider"
+				to_observe: "irons_spellbooks:ice_spider"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"These heartless monkeys just hang out in peaceful meadows."
+				""
+				"When they get bored, they start to rip up the grass for valueless objects, making the area look untidy. If they get into a fight, these monkeys will abandon their friends mid-fight."
+				""
+				"Worst of all, if given wheat, they will run around and start destroying all the tall grass."
+			]
+			id: "35B1C875E8F5240D"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "alexsmobs:gelada_monkey"
+					}
+				}
+				id: "4A9923A78C3E738E"
+				observe_type: 5
+				timer: 0L
+				title: "Gelada Monkey"
+				to_observe: "alexsmobs:gelada_monkey"
+				type: "observation"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"Frostbiters come off as intimidating. You may think they're hostile at a first glance, especially given the track record of large mobs in cold biomes thus far. But don't be alarmed! These are gentle giants."
+				""
+				"You can tame a frostbiter with holly berries, which grow on bushes in tundras, and trees in groves and chestnut forests."
+				""
+				"Once tamed, your frostbiter can be ridden and controlled with holly berries on a stick. They also shed their horns, which are used in a variety of recipes ranging from decorations to equipment."
+			]
+			id: "4F2E0C92F0ED3A8F"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "windswept:frostbiter"
+					}
+				}
+				id: "7649E96AFBDC70E7"
+				observe_type: 5
+				timer: 0L
+				title: "Frostbiter"
+				to_observe: "windswept:frostbiter"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: 0.5d
 		}
 	]
 	title: "Cold Biomes"

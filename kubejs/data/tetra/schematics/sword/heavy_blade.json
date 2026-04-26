@@ -1,0 +1,37 @@
+{
+  "displayType": "major",
+  "glyph": {
+    "textureX": 48
+  },
+  "materialSlotCount": 1,
+  "outcomes": [
+    {
+      "countFactor": 3,
+      "materials": [
+        "tetra:wood/",
+        "tetra:stone/",
+        "tetra:metal/",
+        "tetra:gem/"
+      ],
+      "moduleKey": "sword/heavy_blade",
+      "moduleVariant": "heavy_blade/"
+    }
+  ],
+  "replace": true,
+  "slots": ["sword/blade"],
+  "translation": {
+    "durability": 3,
+    "integrity": -3,
+    "magicCapacity": 3,
+    "primaryAttributes": {
+      "generic.attack_damage": 2
+    },
+    "primaryEffects": {
+      "sweeping": 2
+    },
+    "secondaryAttributes": {
+      "generic.attack_damage": 1,
+      "generic.attack_speed": -1
+    }
+  }
+}

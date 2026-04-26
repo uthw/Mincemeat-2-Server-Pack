@@ -49,7 +49,6 @@ ServerEvents.recipes((event) => {
         "enderio:sag_mill",
         "smallships:cannon",
         "ars_nouveau:basic_spell_turret",
-        "computercraft:cable",
         "iceandfire:ghost_sword",
         "pneumaticcraft:fluid_mixer",
         "pneumaticcraft:manual_compressor",
@@ -153,7 +152,25 @@ ServerEvents.recipes((event) => {
         "forbidden_arcanus:aurum_fence_gate",
         "forbidden_arcanus:edelwood_fence_gate",
         "apotheosis:augmenting_table",
-        "apotheosis:sigil_of_enhancement"
+        "apotheosis:sigil_of_enhancement",
+        "celestisynth:celestial_spell_book",
+        "cataclysm:storm_eye",
+        "industrialforegoing:iron_gear",
+        "industrialforegoing:gold_gear",
+        "industrialforegoing:diamond_gear",
+        "irons_restrictions:ender_manuscript",
+        "irons_restrictions:lightning_manuscript",
+        "irons_restrictions:fire_manuscript",
+        "irons_restrictions:aqua_manuscript",
+        "irons_restrictions:evocation_manuscript",
+        "irons_restrictions:ice_manuscript",
+        "irons_restrictions:nature_manuscript",
+        "irons_restrictions:holy_manuscript",
+        "neapolitan:chocolate/chocolate_bar",
+        "create:milling/wheat",
+        "malum:spirit_infusion/brilliant_obelisk",
+        "malum:spirit_infusion/ring_of_arcane_prowess",
+        "malum:spirit_infusion/hex_ash"
     ];
 
     toRemove.forEach((recipeId) => {

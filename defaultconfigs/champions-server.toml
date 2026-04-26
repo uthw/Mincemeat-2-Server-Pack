@@ -50,7 +50,6 @@ entitiesList = [
 	"ars_nouveau:wilden_boss",
 	"aquamirae:maze_mother",
 	"aquamirae:captain_cornelia",
-	"mowziesmobs:ferrous_wroughtnaut",
 	"mowziesmobs:frostmaw",
 	"mowziesmobs:umvuthi",
 	"minecraft:vex",
@@ -95,11 +94,23 @@ entitiesList = [
 	"irons_spellbooks:summoned_skeleton",
 	"irons_spellbooks:summoned_vex",
 	"irons_spellbooks:summoned_zombie",
+	"irons_spellbooks:fire_boss",
 
 	"conjurer_illager:conjurer",
 
 	"galosphere:berserker",
 	"galosphere:preserved",
+
+	"minecraft:ender_dragon",
+	"minecraft:wither",
+
+	"cataclysm:scylla",
+	"cataclysm:clawdian",
+	"traveloptics:the_nightwarden",
+
+	"dungeonnowloading:fairkeeper_ouros",
+	"dungeonnowloading:fairkeeper_boros",
+
 ]
 #Set whether the entities list is a blacklist or whitelist
 #Allowed Values: BLACKLIST, WHITELIST

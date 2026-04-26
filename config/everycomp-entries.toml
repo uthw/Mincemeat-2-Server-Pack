@@ -23,6 +23,18 @@
 			mint_cake = true
 			adzuki_cake = true
 
+		[types.cake.collectorsreap]
+			lime_cake = true
+			pomegranate_cake = true
+			pink_dragon_fruit_cake = true
+			lucuma_cake = true
+
+		[types.cake.mynethersdelight]
+			magma_cake = true
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
+
 	[types.wood_type]
 
 		[types.wood_type.ars_nouveau]
@@ -163,6 +175,34 @@
 			conberry = true
 			sunroot = true
 
+		[types.wood_type.netherexp]
+			claret = true
+			smokestalk = true
+
+		[types.wood_type.minecells]
+			putrid = true
+
+		[types.wood_type.dungeonnowloading]
+			azuro_oak = true
+
+		[types.wood_type.infernalexp]
+			luminous = true
+
+		[types.wood_type.collectorsreap]
+			lucuma = true
+
+		[types.wood_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+
+		[types.wood_type.mynethersdelight]
+			powdery = true
+
+		[types.wood_type.malum]
+			runewood = true
+			soulwood = true
+
 		[types.wood_type.aether_redux]
 			fieldsproot = true
 			blightwillow = true
@@ -170,12 +210,6 @@
 			jellyshroom = true
 			crystal = true
 			glacia = true
-
-		[types.wood_type.netherexp]
-			claret = true
-
-		[types.wood_type.minecells]
-			putrid = true
 
 	[types.leaves_type]
 
@@ -346,14 +380,6 @@
 			crystal_fruit = true
 			skyroot = true
 
-		[types.leaves_type.aether_redux]
-			fieldsproot = true
-			gilded_oak = true
-			blighted_skyroot = true
-			purple_glacia = true
-			blightwillow = true
-			glacia = true
-
 		[types.leaves_type.deep_aether]
 			flowering_roseroot = true
 			blue_roseroot = true
@@ -376,6 +402,35 @@
 			wilted = true
 			orange_wilted = true
 			red_wilted = true
+
+		[types.leaves_type.dungeonnowloading]
+			azuro = true
+
+		[types.leaves_type.collectorsreap]
+			lucuma = true
+
+		[types.leaves_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+			flowering_acacia = true
+
+		[types.leaves_type.galosphere]
+			opal = true
+
+		[types.leaves_type.malum]
+			runewood = true
+			azure_runewood = true
+			soulwood = true
+			budding_soulwood = true
+
+		[types.leaves_type.aether_redux]
+			blightwillow = true
+			glacia = true
+			purple_glacia = true
+			gilded_oak = true
+			blighted_skyroot = true
+			fieldsproot = true
 
 	[types.cut_block_type]
 
@@ -442,8 +497,6 @@
 			otherstone = true
 
 		[types.cut_block_type.galosphere]
-			silver_tiles = true
-			silver_panel = true
 			smooth_amethyst = true
 			smooth_allurite = true
 			smooth_lumiere = true
@@ -459,6 +512,9 @@
 			pink_salt_brick = true
 			rose_pink_salt_brick = true
 			pastel_pink_salt_brick = true
+			palladium_tiles = true
+			palladium_panel = true
+			opal_brick = true
 
 		[types.cut_block_type.cataclysm]
 			polished_end_stone = true
@@ -469,6 +525,8 @@
 			azure_seastone = true
 			azure_seastone_brick = true
 			polished_azure_seastone = true
+			purpur_tile = true
+			polished_obsidian = true
 
 		[types.cut_block_type.undergarden]
 			depthrock = true
@@ -697,6 +755,18 @@
 			willow = true
 			witch_hazel = true
 			zelkova = true
+			cracked_dacite_brick = true
+			mossy_dacite_brick = true
+			chiseled_dacite_brick = true
+			white_dacite = true
+			white_dacite_brick = true
+			cracked_white_dacite_brick = true
+			mossy_white_dacite_brick = true
+			chiseled_white_dacite_brick = true
+			white_dacite_cobblestone = true
+			white_dacite_tile = true
+			polished_red_rock = true
+			red_rock_tile = true
 
 		[types.cut_block_type.ars_nouveau]
 			sourcestone = true
@@ -953,6 +1023,45 @@
 			dripstone_shingle = true
 			cut_amethyst_brick = true
 			azalea = true
+			turquoise_tile = true
+			granite_brick = true
+			granite_tile = true
+			diorite_brick = true
+			diorite_tile = true
+			andesite_brick = true
+			andesite_tile = true
+			calcite_brick = true
+			tuff_brick = true
+			smooth_tuff = true
+			sugilite_brick = true
+			smooth_cylindrite = true
+			cylindrite_brick = true
+			polished_cylindrite = true
+			cassiterite = true
+			smooth_cassiterite = true
+			cassiterite_brick = true
+			polished_cassiterite = true
+			rhyolite = true
+			polished_rhyolite = true
+			rhyolite_brick = true
+			magmatic_rhyolite = true
+			polished_magmatic_rhyolite = true
+			magmatic_rhyolite_brick = true
+			smooth_dripstone = true
+			polished_dripstone = true
+			dripstone_brick = true
+			iron_brick = true
+			tin_brick = true
+			gold_brick = true
+			silver_brick = true
+			copper_brick = true
+			exposed_copper_brick = true
+			weathered_copper_brick = true
+			oxidized_copper_brick = true
+			waxed_copper_brick = true
+			waxed_exposed_copper_brick = true
+			waxed_weathered_copper_brick = true
+			waxed_oxidized_copper_brick = true
 
 		[types.cut_block_type.buzzier_bees]
 			honeycomb_brick = true
@@ -1058,22 +1167,6 @@
 			blightmoss_holystone_brick = true
 			gilded_holystone_tile = true
 			blightmoss_holystone_tile = true
-
-		[types.cut_block_type.aether_redux]
-			polished_driftshale = true
-			divinite = true
-			sentrite = true
-			sentrite_brick = true
-			shell_shingle = true
-			enchanted_shell_shingle = true
-			gilded_holystone = true
-			blightmoss_holystone = true
-			fieldsproot = true
-			blightwillow = true
-			cloudcap = true
-			jellyshroom = true
-			crystal = true
-			glacia = true
 
 		[types.cut_block_type.quark]
 			ancient_planks = true
@@ -1231,6 +1324,132 @@
 			bloomrock_tile = true
 			putrid_board = true
 
+		[types.cut_block_type.dungeonnowloading]
+			coiling_stone_pillar = true
+			stone_tile = true
+			azuro_oak_plank = true
+
+		[types.cut_block_type.delightful]
+			glow_jam_cookie_tile = true
+			source_berry_cookie_tile = true
+
+		[types.cut_block_type.infernalexp]
+			shimmer_stone = true
+			shimmer_stone_bricks = true
+			basalt = true
+			polished_basalt_bricks = true
+			polished_basalt = true
+			luminous_planks = true
+
+		[types.cut_block_type.collectorsreap]
+			lucuma = true
+			urchin_test_brick = true
+			urchin_test_tile = true
+
+		[types.cut_block_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+			lavender_thatch = true
+			pinecone_shingle = true
+			white_pinecone_shingle = true
+			light_gray_pinecone_shingle = true
+			gray_pinecone_shingle = true
+			black_pinecone_shingle = true
+			brown_pinecone_shingle = true
+			red_pinecone_shingle = true
+			orange_pinecone_shingle = true
+			yellow_pinecone_shingle = true
+			lime_pinecone_shingle = true
+			green_pinecone_shingle = true
+			cyan_pinecone_shingle = true
+			light_blue_pinecone_shingle = true
+			blue_pinecone_shingle = true
+			purple_pinecone_shingle = true
+			magenta_pinecone_shingle = true
+			pink_pinecone_shingle = true
+			shale = true
+			polished_shale = true
+			polished_shale_brick = true
+			packed_ice = true
+			packed_ice_brick = true
+			blue_ice = true
+			blue_ice_brick = true
+			snow = true
+			snow_brick = true
+			gingerbread_brick = true
+			glazed_gingerbread_brick = true
+			lunalite = true
+			cut_lunalite = true
+			cut_lunalite_brick = true
+			smooth_lunalite = true
+			dry_mossy_cobblestone = true
+			dry_mossy_stone_brick = true
+			dry_mossy_cobblestone_brick = true
+			dry_mossy_cobblestone_tile = true
+
+		[types.cut_block_type.mynethersdelight]
+			powdery = true
+			powdery_mosaic = true
+
+		[types.cut_block_type.philipsruins]
+			obsidian_brick = true
+			bone_bricks = true
+			sculk_bone_bricks = true
+
+		[types.cut_block_type.malum]
+			tainted_rock = true
+			smooth_tainted_rock = true
+			polished_tainted_rock = true
+			tainted_rock_bricks = true
+			tainted_rock_tiles = true
+			small_tainted_rock_bricks = true
+			runic_tainted_rock_bricks = true
+			runic_tainted_rock_tiles = true
+			runic_small_tainted_rock_bricks = true
+			twisted_rock = true
+			smooth_twisted_rock = true
+			polished_twisted_rock = true
+			twisted_rock_bricks = true
+			twisted_rock_tiles = true
+			small_twisted_rock_bricks = true
+			runic_twisted_rock_bricks = true
+			runic_twisted_rock_tiles = true
+			runic_small_twisted_rock_bricks = true
+			runewood_boards = true
+			vertical_runewood_boards = true
+			runewood_planks = true
+			rustic_runewood_planks = true
+			vertical_runewood_planks = true
+			vertical_rustic_runewood_planks = true
+			runewood_tiles = true
+			rustic_runewood_tiles = true
+			soulwood_boards = true
+			vertical_soulwood_boards = true
+			soulwood_planks = true
+			rustic_soulwood_planks = true
+			vertical_soulwood_planks = true
+			vertical_rustic_soulwood_planks = true
+			soulwood_tiles = true
+			rustic_soulwood_tiles = true
+
+		[types.cut_block_type.aether_redux]
+			polished_driftshale = true
+			divinite = true
+			sentrite = true
+			sentrite_brick = true
+			shell_shingle = true
+			enchanted_shell_shingle = true
+			gilded_holystone = true
+			blightmoss_holystone = true
+			fieldsproot = true
+			blightwillow = true
+			cloudcap = true
+			jellyshroom = true
+			crystal = true
+			glacia = true
+			polished_sentrite = true
+
 #Disables specific entries
 [entries]
 
@@ -1330,6 +1549,12 @@
 			bookshelf = true
 			stripped_post = true
 			vertical_slab = true
+
+		[entries.wood_type.lightmanscurrency]
+			auction_stand = true
+			shelf_2x2 = true
+			bookshelf_trader = true
+			shelf = true
 
 	[entries.leaves_type]
 

@@ -1,7 +1,4 @@
 {
-  "framedblocks": {
-    "framed_item_frame": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -54,6 +51,73 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
+  "enigmaticgraves": {
+    "grave": true
+  },
+  "immersiveengineering": {
+    "multiblock_icon": true
+  },
+  "collectorsreap": {
+    "crop_progress": true
+  },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": true
+  },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
+  },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
+  "reliquary": {
+    "pedestal": true,
+    "altar": true,
+    "mortar": true,
+    "cauldron": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "cookingforblockheads": {
+    "fridge": true,
+    "oven": true,
+    "sink": true,
+    "preservation_chamber": true,
+    "milk_jar": true,
+    "toaster": true
+  },
+  "framedblocks": {
+    "framed_item_frame": true
+  },
+  "lightmanscurrency": {
+    "model_variant": true,
+    "model_variant.locked": false,
+    "paygate": true
+  },
   "champions": {
     "enable_affix_compact": true
   },
@@ -65,24 +129,10 @@
     "camo": true,
     "semiblock": true
   },
-  "immersiveengineering": {
-    "multiblock_icon": true
-  },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": true
-  },
   "apotheosis": {
     "adventure": true,
     "ench": true,
     "spawner": true
-  },
-  "lootr": {
-    "info": true
   },
   "balm": {
     "jade": true
@@ -104,55 +154,22 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
   },
-  "easy_villagers": {
-    "villager": true,
-    "converter": true,
-    "breeder": true
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "aether_redux": {
+    "logicator": true
   },
   "delightful": {
     "crop_progress": true,
     "pie_icons": true,
     "mushroom_colony": true
   },
-  "reliquary": {
-    "pedestal": true,
-    "altar": true,
-    "mortar": true,
-    "cauldron": true
-  },
   "supplementaries": {
     "hat_stand": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
-  "waystones": {
-    "waystone": true
-  },
-  "cookingforblockheads": {
-    "fridge": true,
-    "oven": true,
-    "sink": true,
-    "preservation_chamber": true,
-    "milk_jar": true,
-    "toaster": true
   }
 }

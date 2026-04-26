@@ -15,7 +15,7 @@ ServerEvents.recipes((event) => {
         {
             top_left_triangle: { item: "iceandfire:ectoplasm" },
             top_right_triangle: {
-                item: "iceandfire:ectoplasm",
+                item: "netherexp:phasmo_shard",
             },
             bottom_triangle: {
                 item: "bosses_of_mass_destruction:ancient_anima",
@@ -34,17 +34,17 @@ ServerEvents.recipes((event) => {
             bottom_triangle: { item: "quark:bottled_cloud" },
             right_bottom: { item: "celestisynth:celestial_core_heated" },
             right_middle: { item: "undergarden:cloggrum_ingot" },
-            right_top: { item: "undergarden:cloggrum_ingot" },
+            right_top: { item: "netherexp:banshee_powder" },
             forging_time: 500,
             result: "celestisynth:solaris",
         },
         {
-            top_left_triangle: { item: "irons_spellbooks:lightning_bottle" },
+            top_left_triangle: { item: "caverns_and_chasms:zirconia" },
             top_right_triangle: {
                 item: "irons_spellbooks:lightning_bottle",
             },
             bottom_triangle: { item: "celestisynth:supernal_netherite_ingot" },
-            right_bottom: { item: "aether_redux:gravitite_ingot" },
+            right_bottom: { item: "deep_aether:stratus_ingot" },
             right_middle: { item: "aether_redux:gravitite_ingot" },
             right_top: { item: "thermal:blitz_rod" },
             forging_time: 500,
@@ -97,6 +97,34 @@ ServerEvents.recipes((event) => {
             right_top: { item: "yungscavebiomes:rare_ice" },
             forging_time: 500,
             result: "celestisynth:frostbound",
+        },
+        {
+            top_left_triangle: {
+                item: "celestisynth:celestial_netherite_ingot",
+            },
+            top_right_triangle: {
+                item: "undergarden:forgotten_ingot",
+            },
+            bottom_triangle: { item: "deep_aether:stratus_ingot" },
+            right_bottom: { item: "irons_spellbooks:upgrade_orb" },
+            right_middle: { item: "irons_spellbooks:ruined_book" },
+            right_top: { item: "traveloptics:resonant_scrap" },
+            forging_time: 500,
+            result: "celestisynth:celestial_spell_book",
+        },
+        {
+            top_left_triangle: {
+                item: "irons_spellbooks:cinder_essence",
+            },
+            top_right_triangle: {
+                item: "alexscaves:pure_darkness",
+            },
+            bottom_triangle: { item: "cataclysm:cursium_ingot" },
+            right_bottom: { item: "minecraft:totem_of_undying" },
+            right_middle: { item: "minecells:metal_shards" },
+            right_top: { item: "cataclysm:essence_of_the_storm" },
+            forging_time: 500,
+            result: "celestisynth:keres",
         },
     ];
 

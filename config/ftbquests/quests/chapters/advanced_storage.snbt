@@ -39,7 +39,7 @@
 		}
 	}
 	id: "6C70C966E5655A38"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -49,10 +49,18 @@
 				"*You can obtain silicon without going to the Nether and collecting quartz by using Create washing on stone."
 			]
 			id: "2B189053BCA54F8D"
-			rewards: [{
-				id: "6870F74560655BD7"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "75AED304C523429D"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "6870F74560655BD7"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				id: "40DBD2730970C8A0"
 				item: "refinedstorage:controller"
@@ -71,10 +79,18 @@
 				"Items must be attached to the controller somehow in order to be functional. If the item is attached properly, it will be lit up."
 			]
 			id: "5251048FABCC1731"
-			rewards: [{
-				id: "159DFEED7A2B99E7"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "7E2872C6939F2E20"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "159DFEED7A2B99E7"
+					type: "custom"
+				}
+			]
 			tasks: [
 				{
 					id: "2BC1FF92F203D71E"
@@ -105,10 +121,18 @@
 			dependencies: ["5251048FABCC1731"]
 			description: [""]
 			id: "72996FDB1ECB9BC4"
-			rewards: [{
-				id: "283F94980A1690DA"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "689BCE4DC17F9C9A"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "283F94980A1690DA"
+					type: "custom"
+				}
+			]
 			subtitle: "You can connect these items to an inventory to import or export items to/from it."
 			tasks: [
 				{
@@ -129,10 +153,18 @@
 		{
 			dependencies: ["5251048FABCC1731"]
 			id: "758E2F02A79F9AE1"
-			rewards: [{
-				id: "428EB009562A4C9A"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "6F5BE07EDE4DF9B2"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "428EB009562A4C9A"
+					type: "custom"
+				}
+			]
 			subtitle: "Has the functionality of an importer and exporter all in one block."
 			tasks: [{
 				id: "0A6AC3DB3217794E"
@@ -146,10 +178,18 @@
 			dependencies: ["5251048FABCC1731"]
 			description: [""]
 			id: "581D9139E23C46AD"
-			rewards: [{
-				id: "1FC3A51CC260FFBF"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "74893E1D69CD5BE8"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "1FC3A51CC260FFBF"
+					type: "custom"
+				}
+			]
 			subtitle: "When you configure the filters to the block you want, these items can place/destroythat block in the world, depending on which one you're using."
 			tasks: [
 				{
@@ -171,10 +211,18 @@
 			dependencies: ["5251048FABCC1731"]
 			description: [""]
 			id: "706D796AEB59679E"
-			rewards: [{
-				id: "0CF5B5B1F3BE6244"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "6827EB208F590A69"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "0CF5B5B1F3BE6244"
+					type: "custom"
+				}
+			]
 			subtitle: "This block aids with moving items between disks. You can configure it to have a whitelist or blacklist, and choose whether it should import or export."
 			tasks: [{
 				id: "3E0EC8CAD5C0DFB7"
@@ -188,6 +236,12 @@
 			dependencies: ["5251048FABCC1731"]
 			description: [""]
 			id: "198EA622D8755FF5"
+			rewards: [{
+				count: 4
+				id: "592C155E9E35A78A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Import, export, view, and search items, all in one block."
 			tasks: [{
 				id: "393AD7D56665B538"
@@ -200,10 +254,18 @@
 		{
 			dependencies: ["198EA622D8755FF5"]
 			id: "319BD115367B8096"
-			rewards: [{
-				id: "33690918821D1B74"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "4446C0FEB09367A7"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "33690918821D1B74"
+					type: "custom"
+				}
+			]
 			tasks: [{
 				id: "34C99F41E993734F"
 				item: "refinedstorage:crafting_grid"
@@ -215,10 +277,18 @@
 		{
 			dependencies: ["198EA622D8755FF5"]
 			id: "5E0C50ED9E9A6BA0"
-			rewards: [{
-				id: "5DE975D24344044E"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7650EECD89805893"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "5DE975D24344044E"
+					type: "custom"
+				}
+			]
 			subtitle: "Shift clicking buckets causes them to empty their fluids into the fluid grid. This item requires a special disk type for fluids."
 			tasks: [{
 				id: "55F5DF5FB65F9292"
@@ -231,10 +301,18 @@
 		{
 			dependencies: ["198EA622D8755FF5"]
 			id: "017618231F84986C"
-			rewards: [{
-				id: "40EA7D1739E68BEE"
-				type: "custom"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "4B3229F5A081610E"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "40EA7D1739E68BEE"
+					type: "custom"
+				}
+			]
 			subtitle: "Make patterns which make your storage system automatically craft items"
 			tasks: [{
 				id: "20DFAE59590D8851"
@@ -249,6 +327,12 @@
 			description: ["This is useful if you'd like to use something like Storage Drawers."]
 			id: "5F978FBCC74F902E"
 			rewards: [
+				{
+					count: 4
+					id: "0E9BF382F229CF78"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "1F383EE5C3A9CDAA"
 					type: "custom"
@@ -279,6 +363,12 @@
 				"The pouch acts as an EnderStorage chest, but it's portable. You can set the Pouch's color to be the same as the Ender Chest you shift + Rclick while holding the pouch."
 			]
 			id: "3B8312D8718DC5B4"
+			rewards: [{
+				count: 3
+				id: "1F0186FE464AAD1D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Not to be confused with vanilla Ender Chests"
 			tasks: [
 				{
@@ -303,6 +393,12 @@
 				"These tanks are powerful in that they can transfer liquids between dimensions!"
 			]
 			id: "313E61ACD510E3B2"
+			rewards: [{
+				count: 3
+				id: "0536685627AD3997"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7CFFF0F0CC95F579"
 				item: "enderstorage:ender_tank"
@@ -314,6 +410,12 @@
 		{
 			dependencies: ["3B8312D8718DC5B4"]
 			id: "0CD280401B8BF9BC"
+			rewards: [{
+				count: 6
+				id: "0A745DD14B2C4CDE"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "You can use an Ars Nouveau spellbook as an Ender Pouch instead!"
 			tasks: [{
 				id: "4532A2D84CC89D32"
@@ -330,6 +432,12 @@
 				"This adds some settings using the tabs on the right as well as an &eupgrade slot&r."
 			]
 			id: "7AB039C4BFD81737"
+			rewards: [{
+				count: 3
+				id: "12D55E1F4EC36A52"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "2870D2F67968781D"
@@ -339,6 +447,345 @@
 			title: "Sophisticated Storage"
 			x: 3.0d
 			y: 2.0d
+		}
+		{
+			id: "335C32B754AFB2DE"
+			rewards: [
+				{
+					count: 4
+					id: "68705BBCA59CD200"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "3E6EDCD89D3DA5CF"
+					item: "integrateddynamics:on_the_dynamics_of_integration"
+					type: "item"
+				}
+			]
+			subtitle: "Unique tree that you'll want to have in order to start using Integrated Dynamics."
+			tasks: [{
+				id: "690FC9ABE2EBF213"
+				item: "integrateddynamics:menril_sapling"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["335C32B754AFB2DE"]
+			description: [
+				"Let's harvest that menril now."
+				""
+				"Go ahead and place these blocks next to each other. Now, place a menril log in the squeezer."
+				""
+				"You're just going to want to compress the menril log by jumping on it a lot."
+				""
+				"Voilà, you have made crystalized menril!"
+				""
+				"Supply a redstone signal to the squeezer to reset its position."
+			]
+			icon: "integrateddynamics:squeezer"
+			id: "5CBB6EA7FB333EA6"
+			rewards: [{
+				count: 6
+				id: "760510B213E877CE"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6AC7429C4E24AF8D"
+					item: "integrateddynamics:squeezer"
+					type: "item"
+				}
+				{
+					id: "31B17077EFE2B305"
+					item: "integrateddynamics:drying_basin"
+					type: "item"
+				}
+				{
+					id: "791DF45BF0399C2B"
+					item: "integrateddynamics:menril_log"
+					type: "item"
+				}
+				{
+					id: "5AE32FBD8CD3A28F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_pressure_plates"
+						}
+					}
+					title: "Any #minecraft:wooden_pressure_plates"
+					type: "item"
+				}
+			]
+			title: "Squeezer + Basin"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5CBB6EA7FB333EA6"]
+			description: ["These items can do what you just did, but on their own using energy."]
+			id: "03ED299282E5C76A"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "6049A14C6B966899"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "(recommended)"
+			tasks: [
+				{
+					id: "68EE0CB38ABB0E22"
+					item: "integrateddynamics:mechanical_squeezer"
+					type: "item"
+				}
+				{
+					id: "474D9C8FFCB3C414"
+					item: "integrateddynamics:mechanical_drying_basin"
+					type: "item"
+				}
+			]
+			title: "Mechanical Squeezer / Drying Basin"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5CBB6EA7FB333EA6"]
+			description: [
+				"Place the interfaces on inventories you want to link to the terminal."
+				""
+				"Connect both of these to the terminal."
+				""
+				"You now have a storage system akin to the ones from Tom's Simple Storage and Pretty Pipes!"
+				""
+				"Interacting with the terminal, you can press the chest tab to see stored items and the crafting tab to make things with them."
+				""
+				"It doesn't need any energy."
+			]
+			id: "44E53A8A061B85E9"
+			rewards: [{
+				count: 6
+				id: "30762B2718060CF4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "0B031F77136BECD6"
+					item: "integratedtunnels:part_interface_item"
+					type: "item"
+				}
+				{
+					id: "727B9551576ABADC"
+					item: "integrateddynamics:cable"
+					type: "item"
+				}
+				{
+					id: "768F35775D2297D8"
+					item: "integratedterminals:part_terminal_storage"
+					type: "item"
+				}
+			]
+			title: "Link 2+ Chests to a Terminal"
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["44E53A8A061B85E9"]
+			description: [
+				"Hook the exporter to the container you'd like to export FROM. It's a little bit tricky."
+				""
+				"Variable cards store variables used by logical blocks."
+				""
+				"Now, i want you to click the exporter."
+				""
+				"Hope you passed Computer Science in high school!"
+				""
+				"... I wonder what types of automation you can do using this mod?"
+			]
+			id: "4B407F60FF0D3AA2"
+			rewards: [{
+				count: 6
+				id: "756562452075ED25"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31A1171C4657205D"
+					item: "integratedtunnels:part_interface_fluid"
+					type: "item"
+				}
+				{
+					id: "53FD2D7A94A0028C"
+					item: "integratedtunnels:part_exporter_fluid"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6591410963256424"
+					item: "integrateddynamics:variable"
+					type: "item"
+				}
+			]
+			title: "Integrated Dynamics goes liquid!"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4B407F60FF0D3AA2"]
+			description: [
+				"{image:kubejs:textures/item/fluid_exporter.png width:377 height:273 align:1 fit:true}"
+				"You will be greeted by this screen when interacting with the Fluid Exporter."
+				""
+				"Hovering over the blue things on the left and holding shift tells you what the \"types\" mean. This knowledge mostly carries into programming; a \"boolean\" is always either true or false in every programming language (that I've used, at least)."
+			]
+			id: "56DFDF7FC0E86387"
+			tasks: [{
+				id: "140641B3DE13D4EA"
+				title: "Fluid Exporter GUI"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["44E53A8A061B85E9"]
+			description: [
+				"Try a simple example of the display panel's power."
+				""
+				"Hook up (with cables) the redstone reader to something that has a redstone value, like a block of redstone."
+				""
+				"Now, Shift Rclick on the reader and scroll down to the first orange one that is an integer. You can set it if you'd like."
+				""
+				"You will now have a card for that level of redstone power. Shift rclick the display panel and slot in the variable card."
+				""
+				"Pretty cool, right?"
+			]
+			id: "2268E46AD333F9CD"
+			rewards: [{
+				count: 6
+				id: "7C3F4C4A711FDCFF"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1BD378ADB28E7531"
+					item: "integrateddynamics:part_redstone_reader"
+					type: "item"
+				}
+				{
+					id: "0345E3E361156671"
+					item: "integrateddynamics:cable"
+					type: "item"
+				}
+				{
+					id: "45CCF6D589CEE7B1"
+					item: "integrateddynamics:part_display_panel"
+					type: "item"
+				}
+				{
+					advancement: "integrateddynamics:aspects/redstone_observement"
+					criterion: ""
+					id: "393174908CC690CE"
+					type: "advancement"
+				}
+			]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2268E46AD333F9CD"]
+			description: [
+				"What if, in some foreign, mystical world, you could consider not just one value (like you just did before), but two?"
+				""
+				"Regardless of what programmer you're using, right click it to open a menu. "
+				""
+				"Find the operator that says \"Integer.\" You might need to scroll down. Click on it and set the number that appears."
+				""
+				"Do that again, for another integer."
+				""
+				"Now, find the Addition operator. Insert your two variable cards, which will bind them into a new one."
+			]
+			id: "054A34E6B912C042"
+			rewards: [{
+				count: 6
+				id: "3513B48E2E5C9B86"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0CEA0F9E3F03ABFF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "integrateddynamics:logic_programmer"
+								}
+								{
+									Count: 1b
+									id: "integrateddynamics:portable_logic_programmer"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6BA2826E371E8C3A"
+					item: "integrateddynamics:variable"
+					type: "item"
+				}
+			]
+			title: "Logic Programmer"
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["054A34E6B912C042"]
+			description: [
+				"As Integrated Dynamics evaluates variables in a lazy manner, this Addition Variable Card does not contain the addition of these Integers directly, but the addition will only be performed when the value is needed in the network, based on the variable references. For this, the network has to be able to find these referenced Variable Card. For this, you will need to craft and place a Variable Store. Insert the two Integer Variable Cards into this store to make them available to the network."
+				""
+				"Finally, you can now connect a cable to the Variable Store, attach a Display Panel, and insert the Addition Variable Card to display the addition."
+				""
+				"The Logic Programmer and Variable Stores are going to be your best friends when you want to do more complex automation."
+			]
+			id: "2BCF1DA646EB606E"
+			rewards: [{
+				count: 5
+				id: "28FFE96A59EF7F43"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "*description taken from Integrated Dynamics guidebook because I don't understand this item*"
+			tasks: [
+				{
+					id: "37D7226A46A8D057"
+					item: "integrateddynamics:variablestore"
+					type: "item"
+				}
+				{
+					advancement: "integrateddynamics:logic_operations/arithmetic_addition"
+					criterion: ""
+					id: "28563B4F34F5B26F"
+					type: "advancement"
+				}
+			]
+			title: "Variable Store                                                                                              "
+			x: 11.0d
+			y: 7.0d
 		}
 	]
 	title: "Advanced Storage"

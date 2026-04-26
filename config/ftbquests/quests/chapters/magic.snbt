@@ -20,7 +20,7 @@
 		}
 	}
 	id: "151DB3F06C437377"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -33,19 +33,27 @@
 				"*These quests have limited coverage of Ars Nouveau addons which were not in Mincemeat 1, or may mention glyphs from mods which aren't in Mincemeat 2."
 			]
 			id: "49079A4790CE0545"
-			rewards: [{
-				id: "3D248D0F1FB059D3"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "ars_nouveau:source_berry_pie"
+			rewards: [
+				{
+					count: 12
+					id: "398178B87E589928"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "3D248D0F1FB059D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:source_berry_pie"
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
@@ -62,8 +70,8 @@
 				type: "item"
 			}]
 			title: "Ars Nouveau"
-			x: 8.0d
-			y: -2.0d
+			x: 13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -72,6 +80,12 @@
 			]
 			description: ["You've become quite powerful! But not enough to just Wish bosses to die. You'll have to play a different game for that."]
 			id: "085A157C19E990CC"
+			rewards: [{
+				count: 14
+				id: "2ABB80D47C85FB56"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2F6B64234DB2367D"
@@ -86,12 +100,18 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 15.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["129CAC4D971CBAD8"]
 			id: "51D2D5057356DD35"
+			rewards: [{
+				count: 12
+				id: "53D480295DC38274"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6C27AE32A679D581"
@@ -106,7 +126,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -6.0d
 		}
 		{
@@ -128,13 +148,19 @@
 				"JEI will be your friend."
 			]
 			id: "335E26285D11AB8A"
+			rewards: [{
+				count: 16
+				id: "5F8240559AB86891"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "640B7C7E652AB74A"
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 10.5d
 			y: -1.0d
 		}
 		{
@@ -149,6 +175,12 @@
 			icon: "ars_nouveau:source_gem"
 			id: "72096F084142B453"
 			rewards: [
+				{
+					count: 14
+					id: "6070D907BC8FE975"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 4
 					id: "7368B311119E1647"
@@ -203,7 +235,7 @@
 				}
 			]
 			title: "How to Get Source Gems"
-			x: 6.0d
+			x: 11.0d
 			y: -3.0d
 		}
 		{
@@ -216,23 +248,31 @@
 				"NOTE: Projectile goes before Ignite but I don't feel like changing it."
 			]
 			id: "3F26B85438995EC9"
-			rewards: [{
-				count: 3
-				id: "0A9406CCF25B0A7D"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 16
+					id: "7A61E75E947145C9"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0A9406CCF25B0A7D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:strong_swiftness"
 						}
 					}
-					id: "minecraft:potion"
-					tag: {
-						Potion: "minecraft:strong_swiftness"
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [
 				{
 					id: "343AEA0BE3A45DF2"
@@ -275,7 +315,7 @@
 				}
 			]
 			title: "Tier 1 Combo #1"
-			x: 6.0d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -283,6 +323,12 @@
 			description: ["This one is useful for breaking blocks like obsidian. It shoots a projectile with a more powerful edition of Break due to the 2 Amplifies."]
 			id: "00F69E6D876D325E"
 			rewards: [
+				{
+					count: 16
+					id: "67FE1021DF82A83F"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 14
 					id: "17BDDD82ECC35404"
@@ -345,7 +391,7 @@
 				}
 			]
 			title: "Tier 1 combo #2"
-			x: 6.5d
+			x: 11.5d
 			y: -1.0d
 		}
 		{
@@ -370,7 +416,7 @@
 				id: "0FFE96D33CA75C86"
 				type: "checkmark"
 			}]
-			x: 4.5d
+			x: 9.5d
 			y: -3.0d
 		}
 		{
@@ -378,19 +424,31 @@
 			description: ["Collects Source from nearby generators. See the 5 quests that depend on this one for examples."]
 			icon: "ars_nouveau:source_jar"
 			id: "3D4F3D27DC68EEF3"
+			rewards: [{
+				count: 11
+				id: "4E92EBD50C3A9D14"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "square"
 			tasks: [{
 				id: "33C15D1E2AD0E135"
 				item: "ars_nouveau:source_jar"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["Generates a large amount of source when potions are brewed close to it."]
 			id: "1428E0A6A540FBBD"
+			rewards: [{
+				count: 12
+				id: "7825E70F395A7CC8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "39C4B14665ACACBA"
 				item: {
@@ -404,13 +462,19 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
+			x: 8.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["Generates source when animals are bred or mobs are killed close to it."]
 			id: "3B0E94580CB1B0E6"
+			rewards: [{
+				count: 12
+				id: "366740333333A933"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4174FA9861C763F3"
 				item: {
@@ -424,13 +488,19 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
+			x: 7.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["It decomposes food dropped nearby and turns it into source. More source is generated for using food crafted from source berries."]
 			id: "01D420E633271E2E"
+			rewards: [{
+				count: 12
+				id: "002C0D00CA5C9A1C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BAC948FA9B0343F"
 				item: {
@@ -444,19 +514,25 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["Creates a small amount of source when blocks are burned near it, but Archwood Logs can increase this."]
 			id: "63F5A75BE447ED8C"
+			rewards: [{
+				count: 11
+				id: "783790BC1B2C4F9D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "06B7D473FF45D2B5"
 				item: "ars_nouveau:volcanic_sourcelink"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 9.0d
 			y: -1.0d
 		}
 		{
@@ -467,17 +543,25 @@
 				"You'll want to right click the source jar, and then the relay."
 			]
 			id: "44B343DA2BAED7E9"
-			rewards: [{
-				id: "3CE0676DDCBB010E"
-				type: "xp_levels"
-				xp_levels: 2
-			}]
+			rewards: [
+				{
+					count: 11
+					id: "047664317E956BEC"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "3CE0676DDCBB010E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
 			tasks: [{
 				id: "337221D32446D126"
 				item: "ars_nouveau:relay"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -491,15 +575,16 @@
 			disable_toast: true
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"celestisynth:celestisynthitemstackcapabilities": {
-						cs.aquaSkin: 0
-					}
-				}
 				id: "enigmaticlegacy:tattered_tome"
 				tag: { }
 			}
 			id: "2A2B25F44A4AE27B"
+			rewards: [{
+				count: 5
+				id: "65D91D8DB0F751DA"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "So glad you've come here!"
@@ -523,6 +608,12 @@
 			]
 			id: "013CDE87A0D999C3"
 			rewards: [
+				{
+					count: 12
+					id: "47BD71F9232E7EEE"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "53A6DECBDEF2D6EF"
 					item: {
@@ -564,27 +655,35 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["Place an enchanted item on this for use with an Enchanting Apparatus."]
 			id: "5DB7162A1CF3DB61"
-			rewards: [{
-				count: 3
-				id: "29310C67BDA4EE13"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "ars_nouveau:source_berry_roll"
+			rewards: [
+				{
+					count: 12
+					id: "4A1F1E01875F0B2C"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 3
+					id: "29310C67BDA4EE13"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:source_berry_roll"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6EA6704D9E2FB5D9"
 				item: {
@@ -598,27 +697,35 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["5DB7162A1CF3DB61"]
 			description: ["Place this below an Enchanting Apparatus"]
 			id: "628CC62A51D9176C"
-			rewards: [{
-				count: 4
-				id: "5EBB0E7D367520CC"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "environmental:truffle"
+			rewards: [
+				{
+					count: 12
+					id: "22CA72E199315D15"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "5EBB0E7D367520CC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "environmental:truffle"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4FFBA156567B866F"
 				item: {
@@ -632,23 +739,35 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
+			x: 8.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["44B343DA2BAED7E9"]
 			id: "053936FA1B6E8E5B"
+			rewards: [{
+				count: 11
+				id: "7D953383C724EB2A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E713F43C6FF7173"
 				item: "ars_nouveau:relay_splitter"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 5.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["44B343DA2BAED7E9"]
 			id: "4A86AA1B158B6FD8"
+			rewards: [{
+				count: 12
+				id: "344A8B76A4812F78"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "26CA7B14EC6CF6E7"
 				item: {
@@ -662,12 +781,18 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 5.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["44B343DA2BAED7E9"]
 			id: "6F5FA76D7E90EF95"
+			rewards: [{
+				count: 12
+				id: "64E8BB40F339B3CD"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3534495B81422AFE"
 				item: {
@@ -681,7 +806,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -692,23 +817,35 @@
 				"Magebloom Fiber can be woven into armor which can extend your maximum mana. It does this while providing protection, which is invaluable in this modpack."
 			]
 			id: "07E655DC37EF5CF5"
+			rewards: [{
+				count: 11
+				id: "63096121A6DC4F11"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "60D8E87EB135D658"
 				item: "ars_nouveau:magebloom"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 9.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["07E655DC37EF5CF5"]
 			id: "129CAC4D971CBAD8"
+			rewards: [{
+				count: 11
+				id: "6A7A25B0EAD4F7AE"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "49175EC38E34EC38"
 				item: "ars_nouveau:magebloom_fiber"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 9.5d
 			y: -6.0d
 		}
 		{
@@ -719,23 +856,31 @@
 				"* TODO replace with original text source: https://www.arsnouveau.wiki/category/armor/entry/armor"
 			]
 			id: "7C4AECE18FE4A6A1"
-			rewards: [{
-				count: 3
-				id: "7D8CC260CBA05C29"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 18
+					id: "6B8051EA474F6055"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7D8CC260CBA05C29"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:resistance"
 						}
 					}
-					id: "minecraft:potion"
-					tag: {
-						Potion: "apotheosis:resistance"
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [
 				{
 					id: "7AD4CB423DF79331"
@@ -783,7 +928,7 @@
 				}
 			]
 			title: "Novice Armor"
-			x: 6.0d
+			x: 11.0d
 			y: -6.5d
 		}
 		{
@@ -794,6 +939,12 @@
 				"*Do this by placing it on a scribe table and then shift RMBing it with a spell book with the spell you want."
 			]
 			id: "5842453086405007"
+			rewards: [{
+				count: 12
+				id: "1DE6B2A0654D2D33"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "46EB022834DF23D3"
 				item: {
@@ -807,14 +958,20 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
+			x: 10.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["44061A57BC1657E2"]
 			id: "7D3CA5C984F11D23"
+			rewards: [{
+				count: 7
+				id: "5D4FEC06257F35EC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "circle"
-			subtitle: "Pewter blend is made by mixing iron and lead."
+			subtitle: "Pewter blend is made by mixing iron, copper, and tin."
 			tasks: [{
 				count: 8L
 				id: "3C620F05A879A80A"
@@ -848,6 +1005,12 @@
 				"This may be useful in mob farms and in the rituals required to progress in this mod."
 			]
 			id: "678985968A3B206E"
+			rewards: [{
+				count: 6
+				id: "2BDD1A5B289E3D77"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3E689B0C75E2B603"
 				item: {
@@ -880,6 +1043,12 @@
 			icon: "eidolon:brazier"
 			id: "0F8FDFCE19B5216D"
 			rewards: [
+				{
+					count: 7
+					id: "3006DE2FFBECC2A5"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 2
 					id: "77F663A2C203C6FB"
@@ -946,6 +1115,12 @@
 			dependencies: ["7017FB66F6F3B2DE"]
 			description: ["Similar to a normal crafting table, but provides four extra slots on each side to assist with magic recipes."]
 			id: "11F9FFCB87A791C5"
+			rewards: [{
+				count: 6
+				id: "5C2BBD290C0930B4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Not like the other girls"
 			tasks: [{
 				id: "1E19527FBACB3114"
@@ -967,6 +1142,12 @@
 			dependencies: ["0F8FDFCE19B5216D"]
 			description: ["Some rituals require special necrotic items to be used as foci. You will be notified if this item is needed in a ritual. Otherwise, it operates in the same way as a brazier."]
 			id: "4AE0AEE8B7153385"
+			rewards: [{
+				count: 6
+				id: "01994D7D8E09BA7F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "684792F02A22856B"
 				item: {
@@ -1003,6 +1184,12 @@
 			}
 			id: "31302C25EFA8B097"
 			rewards: [
+				{
+					count: 8
+					id: "25E06AFBA109D92F"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 12
 					id: "6F710BE93C727F5F"
@@ -1102,6 +1289,12 @@
 			id: "736EBC7EB7CDD0CF"
 			rewards: [
 				{
+					count: 9
+					id: "5CCD4861D1AF4D10"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
 					count: 8
 					id: "774FD6EFCDB23411"
 					item: {
@@ -1182,6 +1375,12 @@
 			icon: "easy_villagers:villager"
 			id: "719E06D8C8D21E5B"
 			rewards: [
+				{
+					count: 9
+					id: "52D0100CFBD402E2"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "40BF6ED48FF1B976"
 					item: {
@@ -1291,6 +1490,12 @@
 			id: "7017FB66F6F3B2DE"
 			rewards: [
 				{
+					count: 6
+					id: "2DBA9D37886828AA"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
 					id: "45635648EEC95BBD"
 					item: {
 						Count: 1
@@ -1362,6 +1567,12 @@
 			]
 			id: "77D7C0FA8A37671F"
 			rewards: [
+				{
+					count: 6
+					id: "3A5D843331D67A72"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "75B9D41E463CBAD5"
 					item: {
@@ -1437,20 +1648,28 @@
 			]
 			icon: "eidolon:shadow_gem"
 			id: "5099A90FA346D626"
-			rewards: [{
-				count: 4
-				id: "37E2BA4C77B11E86"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "eidolon:shadow_gem"
+			rewards: [
+				{
+					count: 13
+					id: "6833FD73B00AC127"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "37E2BA4C77B11E86"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:shadow_gem"
+					}
+					type: "item"
+				}
+			]
 			subtitle: "No life stories here"
 			tasks: [
 				{
@@ -1534,20 +1753,28 @@
 			dependencies: ["2A2B25F44A4AE27B"]
 			description: ["Eidolon is a dark magic mod."]
 			id: "44061A57BC1657E2"
-			rewards: [{
-				count: 8
-				id: "76C9B4507B0DE9D2"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "eidolon:lead_ore"
+			rewards: [
+				{
+					count: 6
+					id: "2BD6EDF401F9340F"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 8
+					id: "76C9B4507B0DE9D2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:lead_ore"
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
@@ -1579,20 +1806,28 @@
 				"Instead of nether wart, you can use sprouting fungus. Check your Ars Ecclesia."
 			]
 			id: "25A28CD32C92DEA1"
-			rewards: [{
-				count: 15
-				id: "6FF12C0E3C7EC057"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "eidolon:fungus_sprouts"
+			rewards: [
+				{
+					count: 6
+					id: "0466C9553BDB22B1"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 15
+					id: "6FF12C0E3C7EC057"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "eidolon:fungus_sprouts"
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Smuggle potions from the Nether"
 			tasks: [{
 				id: "6C28BDDB8824332F"
@@ -1615,6 +1850,12 @@
 			description: ["Besides the soul enchanter this may be the most useful item to you in Eidolon."]
 			id: "7362296699DA8EFE"
 			rewards: [
+				{
+					count: 6
+					id: "1ACDEF17DFA64A06"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 3
 					id: "34F30DDE56C1B0A5"
@@ -1673,6 +1914,12 @@
 			id: "0FBF6E244FB39AC1"
 			rewards: [
 				{
+					count: 6
+					id: "312987E0E9227E31"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
 					count: 3
 					id: "525F7330E12A8FE8"
 					item: {
@@ -1727,6 +1974,12 @@
 			dependencies: ["77D7C0FA8A37671F"]
 			id: "3AD5F54906DEF6B4"
 			rewards: [
+				{
+					count: 8
+					id: "6F5A714F230A888A"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 2
 					id: "7EE9E7E809421B73"
@@ -1824,6 +2077,12 @@
 				"11F9FFCB87A791C5"
 			]
 			id: "5B64E6EE42B87A90"
+			rewards: [{
+				count: 7
+				id: "664EABDB7D69BC47"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Be like the cool kids"
 			tasks: [{
 				count: 20L
@@ -1840,7 +2099,7 @@
 				type: "item"
 			}]
 			title: "Wicked Weave"
-			x: 8.0d
+			x: 9.0d
 			y: 3.5d
 		}
 		{
@@ -1860,6 +2119,12 @@
 				id: "minecraft:oak_sign"
 			}
 			id: "441A75FB80582637"
+			rewards: [{
+				count: 5
+				id: "7A38D474F9A08515"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Opposite over hypotenuse"
 			tasks: [{
 				advancement: "eidolon:wicked_path"
@@ -1890,6 +2155,12 @@
 				"optional: Eidolon's Candles can enhance your altar."
 			]
 			id: "0D59972E42B4D7A5"
+			rewards: [{
+				count: 7
+				id: "3399C67B91019A22"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Fus ro dah!"
 			tasks: [
 				{
@@ -1926,7 +2197,7 @@
 		{
 			dependencies: ["0D59972E42B4D7A5"]
 			description: [
-				"Eventually, you'll learn the Blood Sign. First, craft a Goblet. This one is different in that it demands a blood sacrifice. Kill a mob near the altar and watch the goblet fill with blood. Then, you're good to use your new chant."
+				"Eventually, you'll learn the Blood Sign. First, craft a Goblet. This one is different in that it demands a blood sacrifice. Kill a sheep near the altar and watch the goblet fill with blood. Then, you're good to use your new chant."
 				""
 				"The composition of this chant should be Wicked --> Blood --> Wicked, as shown below. Make sure the goblet has blood before you use the chant, and the effigy is still somewhere near the altar."
 				""
@@ -1936,6 +2207,12 @@
 			]
 			id: "6C5B6D095B56A8A2"
 			rewards: [
+				{
+					count: 6
+					id: "726E2B266FA1BF0D"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "61E4B4AF5F5FA7C6"
 					item: {
@@ -2001,20 +2278,28 @@
 				"{image:kubejs:item/touch_of_darkness width:276 height:95 align:center fit:true}"
 			]
 			id: "2D8BA0A7766C58D9"
-			rewards: [{
-				count: 16
-				id: "539A45349EAA1D9F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "spartanweaponry:dynamite"
+			rewards: [
+				{
+					count: 6
+					id: "5319E4B6F4B5DFA4"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 16
+					id: "539A45349EAA1D9F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "spartanweaponry:dynamite"
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Casual Demon Hexing"
 			tasks: [{
 				id: "08A369CCA0F08076"
@@ -2029,7 +2314,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
+			x: 8.5d
 			y: 2.0d
 		}
 		{
@@ -2049,11 +2334,19 @@
 				}
 			}
 			id: "4FABA141C0F4BCE4"
-			rewards: [{
-				id: "27A8F5FB4DDB53B8"
-				type: "xp_levels"
-				xp_levels: 6
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "39982ABA8DBEEC3B"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "27A8F5FB4DDB53B8"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
 			subtitle: "Get dripped out"
 			tasks: [
 				{
@@ -2112,19 +2405,27 @@
 			dependencies: ["5B64E6EE42B87A90"]
 			description: ["This makes a nasty combination with the Spectre's Grasp from Meet Your Fight."]
 			id: "2DB4D7ECD26EE49E"
-			rewards: [{
-				id: "6B5DF42E07145A74"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "meetyourfight:haunted_bell"
+			rewards: [
+				{
+					count: 7
+					id: "242533F19A96A74D"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6B5DF42E07145A74"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "meetyourfight:haunted_bell"
+					}
+					type: "item"
+				}
+			]
 			subtitle: "Jigglypuff's B-air for all your attacks"
 			tasks: [{
 				id: "03F76DB3FA956D6F"
@@ -2147,6 +2448,12 @@
 			description: ["Enemies killed by the blade of this weapon will have their remains crystallized and turned into soul shards."]
 			id: "6C1618F02FE2E04C"
 			rewards: [
+				{
+					count: 6
+					id: "0C7BD6228FF90D8E"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "753F87CC0EA5B189"
 					item: {
@@ -2203,8 +2510,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 3.0d
+			x: 9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["77D7C0FA8A37671F"]
@@ -2216,11 +2523,19 @@
 				"The total number of enchantment levels available on an item is limited, so use the soul enchanter wisely."
 			]
 			id: "4CA96CEC9C42B665"
-			rewards: [{
-				id: "0FB19C63A28D2E8E"
-				type: "xp_levels"
-				xp_levels: 10
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "1423B0DC7364CAA5"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "0FB19C63A28D2E8E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
 			tasks: [{
 				id: "0E976DA078A19DE1"
 				item: {
@@ -2251,30 +2566,38 @@
 				title: "Mana"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: -1.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["129CAC4D971CBAD8"]
 			description: ["A flask that can store 8 charges of a potion effect. Filled using a Potion Jar or combining them on a crafting grid."]
 			id: "7F40EB23D1F8F1DB"
-			rewards: [{
-				count: 8
-				id: "122443051EE90BA6"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 12
+					id: "6162AA12485EE446"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "122443051EE90BA6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:spell_damage"
 						}
 					}
-					id: "minecraft:potion"
-					tag: {
-						Potion: "ars_nouveau:spell_damage"
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [{
 				id: "2D299A0668869ECE"
 				item: {
@@ -2291,13 +2614,19 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
+			x: 11.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["013CDE87A0D999C3"]
 			description: ["The enchanting apparatus can also create trinkets like this one."]
 			id: "52AAFFDAAB15AE28"
+			rewards: [{
+				count: 16
+				id: "0026489B6188E6A8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "03796C6024E79A55"
@@ -2339,7 +2668,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 9.0d
 			y: -8.5d
 		}
 		{
@@ -2350,19 +2679,27 @@
 				"First, interact with the brazier using a stone tablet. Then, augment the ritual by dropping items on the brazier while it's glowing. When you're done augmenting, right click the brazier with an empty hand."
 			]
 			id: "0AA8E8253E201B38"
-			rewards: [{
-				id: "4F02ED5CCDE9DCA9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
-						}
-					}
-					id: "ars_nouveau:ritual_flight"
+			rewards: [
+				{
+					count: 11
+					id: "7C5AF3CF25C20025"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "4F02ED5CCDE9DCA9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "ars_nouveau:ritual_flight"
+					}
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Better get used to it!"
 			tasks: [{
@@ -2370,7 +2707,7 @@
 				item: "ars_nouveau:ritual_brazier"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 9.5d
 			y: -4.5d
 		}
 		{
@@ -2378,6 +2715,12 @@
 			description: ["Gives creative flight for a short time. Useful when you're doing things like building and excavating. Every time your flight is replenished, some source is used."]
 			id: "5E79EE36DB5F353A"
 			optional: true
+			rewards: [{
+				count: 12
+				id: "4EE33515F46A6FCC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E31C9C060CE72CB"
 				item: {
@@ -2391,7 +2734,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -4.5d
 		}
 		{
@@ -2401,23 +2744,31 @@
 			]
 			description: ["When amplified with one of each wilden drop and a lapis block, the Wilden Guardian is summoned, a moderately difficult boss. Killing it and taking its trophy allows you to craft the Archmage's Spellbook."]
 			id: "65C258505EBC649E"
-			rewards: [{
-				count: 3
-				id: "62072D1B4F19E9BF"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 14
+					id: "0C84139E654528B3"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "62072D1B4F19E9BF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:long_resistance"
 						}
 					}
-					id: "minecraft:potion"
-					tag: {
-						Potion: "apotheosis:long_resistance"
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [{
 				id: "1AC59EAE90527847"
 				item: {
@@ -2431,30 +2782,38 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
+			x: 13.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["51D2D5057356DD35"]
 			description: ["A strong combination that shoots a projectile that does around 13 damage to an unprotected foe. This makes it good for crowd control."]
 			id: "4CEC8C1B47838DCD"
-			rewards: [{
-				count: 3
-				id: "6B787315E9E75EA1"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 18
+					id: "560CAC639B616CF9"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6B787315E9E75EA1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:mana_regen_potion_strong"
 						}
 					}
-					id: "minecraft:potion"
-					tag: {
-						Potion: "ars_nouveau:mana_regen_potion_strong"
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [
 				{
 					id: "1606690F3857A857"
@@ -2510,7 +2869,7 @@
 				}
 			]
 			title: "Tier 2 Combo"
-			x: 10.0d
+			x: 15.0d
 			y: -6.0d
 		}
 		{
@@ -2524,6 +2883,12 @@
 			]
 			id: "40A4602377E4E3F2"
 			rewards: [
+				{
+					count: 12
+					id: "5A9196377E86116D"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					count: 27
 					id: "11DB56D42E5EFD72"
@@ -2567,24 +2932,32 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
+			x: 12.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["40A4602377E4E3F2"]
 			description: ["Bookwyrms pick up items and experience."]
 			id: "2626C487E7BA6230"
-			rewards: [{
-				id: "5A96D9567714D478"
-				type: "xp_levels"
-				xp_levels: 3
-			}]
+			rewards: [
+				{
+					count: 11
+					id: "436A888F6271D3A7"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "5A96D9567714D478"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
 			tasks: [{
 				id: "6FF248D0BDC1B2E5"
 				item: "ars_nouveau:bookwyrm_charm"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 16.5d
 			y: -3.5d
 		}
 		{
@@ -2597,32 +2970,40 @@
 				"More information about Drygmys is in the Worn Notebook."
 			]
 			id: "62A650D0391A90B5"
-			rewards: [{
-				count: 2
-				id: "3F2A298D78BEE6BE"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"dungeons_libraries:built_in_enchantments": {
-							BuiltInEnchantments: [ ]
+			rewards: [
+				{
+					count: 11
+					id: "32604D82418C1E15"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3F2A298D78BEE6BE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+						id: "quark:ancient_tome"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:looting"
+								lvl: 7s
+							}]
 						}
 					}
-					id: "quark:ancient_tome"
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:looting"
-							lvl: 7s
-						}]
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [{
 				id: "4D60DD44917FB295"
 				item: "ars_nouveau:drygmy_charm"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 14.5d
 			y: -3.5d
 		}
 		{
@@ -2637,18 +3018,30 @@
 				"They can also cook by placing them on a furnace to smelt items, or a cooking pot or crucible. The can cut too by means of a stonecutter or cutting board."
 			]
 			id: "0FC6F8A814D4DF45"
+			rewards: [{
+				count: 11
+				id: "55C2AE6D13EC061E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B080D1B8D24D16D"
 				item: "ars_nouveau:wixie_charm"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 14.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["013CDE87A0D999C3"]
 			description: ["Can be used for a plethora of things in Ars Nouveau. Coming soon."]
 			id: "47E4D3920AB4A17C"
+			rewards: [{
+				count: 12
+				id: "226F3FF86B473107"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "78F1CE0546CF4B51"
 				item: {
@@ -2662,12 +3055,18 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
+			x: 10.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["3AD5F54906DEF6B4"]
 			id: "18C67A9D50E018CA"
+			rewards: [{
+				count: 5
+				id: "24344AE130B6D3A7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "61BA9FA92AF1FFCA"
 				item: "eidolon:resolute_belt"
@@ -2690,17 +3089,25 @@
 				"*The dictionary of spirits is a better source of learning about Occultism. It has a similar node-like structure to what you see here and contains complete documentation on the mod."
 			]
 			id: "77219718DABB8F62"
-			rewards: [{
-				id: "5138AC9FD55AD793"
-				item: {
-					Count: 1
-					id: "occultism:dictionary_of_spirits"
-					tag: {
-						"modonomicon:book_id": "occultism:dictionary_of_spirits"
-					}
+			rewards: [
+				{
+					count: 9
+					id: "174E9D8DA952C0BE"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5138AC9FD55AD793"
+					item: {
+						Count: 1
+						id: "occultism:dictionary_of_spirits"
+						tag: {
+							"modonomicon:book_id": "occultism:dictionary_of_spirits"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [
@@ -2738,6 +3145,12 @@
 				"It must be attuned to a chosen block in order to see its otherworld variant. For example, andesite corresponds to otherstone. Do this by shift-interacting with a valid block."
 			]
 			id: "498A2873A812881A"
+			rewards: [{
+				count: 6
+				id: "6E5C4057D5C05151"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "526B8D9E3F9AF3BA"
 				item: {
@@ -2753,13 +3166,19 @@
 		{
 			dependencies: ["421227890C2EBBA4"]
 			id: "404967192EF51704"
+			rewards: [{
+				count: 5
+				id: "2D37DF832842DDFB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Generate Create power using Ars Nouveau source!"
 			tasks: [{
 				id: "71A890C19CC4FFC6"
 				item: "ars_creo:starbuncle_wheel"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 18.5d
 			y: -3.5d
 		}
 		{
@@ -2777,6 +3196,12 @@
 				"You can get much more precise with these little critters. Refer to your Worn Notebook for more."
 			]
 			id: "421227890C2EBBA4"
+			rewards: [{
+				count: 12
+				id: "00BD61F29EA8F519"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "My precious!"
 			tasks: [{
 				id: "07EFB57A97A4FE84"
@@ -2787,7 +3212,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
+			x: 15.5d
 			y: -3.0d
 		}
 		{
@@ -2804,6 +3229,12 @@
 				"&dScrolls&r can be found by adventuring or made using a &5Scroll Forge&r later."
 			]
 			id: "1FAF889506FFFF18"
+			rewards: [{
+				count: 8
+				id: "1DC8C739BE2E37D7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Iron's Spellbooks"
@@ -2826,25 +3257,16 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1FAF889506FFFF18"]
-			description: ["An &dinscription table&r is commonly found in &5villages&r and many &5towers&r you can come across in your world. Early-game, it may be easier to get one from one of these structures instead of crafting it. &5Complete the task by looking at a table.&r"]
+			dependencies: ["27DF7D39245E5ACB"]
+			description: [
+				"An &dinscription table&r is commonly found in &5villages&r and many &5towers&r you can come across in your world. You could also craft one yourself, it isn't that hard. &5Complete the task by looking at a table.&r"
+				""
+				"Using the &dinscription table&r, you can copy &5spells&r from &5scrolls&r into a &dspell book&r. This lets you cast them as many times as you want, within limitations of cooldowns and mana of course."
+				""
+				"&o&7Note: equip the spell book as a curio to cast spells from it. If the spell book is in the inscription table and you leave the GUI, it will automatically move to your spell book curio slot for convenience."
+			]
 			id: "5390B26927C70B16"
 			tasks: [
-				{
-					id: "60445CC001C2CBA4"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:copper_spell_book"
-						tag: {
-							ISB_spellbook: {
-								activeSpellIndex: -1
-								spellSlots: 4
-								spells: [ ]
-							}
-						}
-					}
-					type: "item"
-				}
 				{
 					icon: "irons_spellbooks:inscription_table"
 					id: "03562DA064CD9706"
@@ -2854,9 +3276,46 @@
 					to_observe: "irons_spellbooks:inscription_table"
 					type: "observation"
 				}
+				{
+					id: "09779ACC591CA3E5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "irons_spellbooks:copper_spell_book"
+									tag: {
+										ISB_Spells: {
+											data: [ ]
+											maxSpells: 5
+											mustEquip: 1b
+											spellWheel: 1b
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "irons_spellbooks:iron_spell_book"
+									tag: {
+										ISB_Spells: {
+											data: [ ]
+											maxSpells: 6
+											mustEquip: 1b
+											spellWheel: 1b
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Basic Spell Book"
+					type: "item"
+				}
 			]
 			title: "Become a Wizard"
-			x: -4.5d
+			x: -5.5d
 			y: -2.0d
 		}
 		{
@@ -2867,24 +3326,38 @@
 				"Right click on the &dscroll forge&r in EMI to see how to make various scrolls. This requires a special material known as &dink&r, some of which has been given to you as a reward."
 			]
 			id: "26748536E1E41168"
-			rewards: [{
-				count: 2
-				id: "45ACB22902C0BA21"
-				item: "irons_spellbooks:common_ink"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 7
+					id: "187728FEE4AFB863"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "45ACB22902C0BA21"
+					item: "irons_spellbooks:common_ink"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "61A082E1108A94EB"
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["26748536E1E41168"]
 			description: ["This armor increases your &5max mana&r."]
 			id: "21D71721976F43DF"
+			rewards: [{
+				count: 11
+				id: "506DEBCFF5E94362"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "28D35839409F8D33"
@@ -2931,12 +3404,18 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -5.5d
+			x: -4.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["21D71721976F43DF"]
+			dependencies: ["26748536E1E41168"]
 			id: "79E576D1E1E0FAF9"
+			rewards: [{
+				count: 11
+				id: "091FB79CD72FE163"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "672FFA8EBDD06A4D"
@@ -2984,143 +3463,147 @@
 				}
 			]
 			title: "Scarecrow Armor"
-			x: -6.0d
-			y: -7.0d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5390B26927C70B16"]
-			id: "4B5EDE809F39C8C3"
-			tasks: [{
-				id: "26BBB1425AFC6E41"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:gold_spell_book"
-					tag: {
-						ISB_spellbook: {
-							activeSpellIndex: -1
-							spellSlots: 6
-							spells: [ ]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4B5EDE809F39C8C3"]
+			description: ["Here's what I recommend you start out with. All of these spell books can be created within a few hours, and none of the items you need are particularly rare."]
 			id: "16E74E12B4D36077"
-			tasks: [{
-				id: "5198B58D1A84342C"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:diamond_spell_book"
-					tag: {
-						ISB_spellbook: {
-							activeSpellIndex: -1
-							spellSlots: 8
-							spells: [ ]
-						}
-					}
-				}
+			rewards: [{
+				count: 10
+				id: "0D4CCAED99F4656C"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
-			x: -7.5d
+			tasks: [{
+				id: "29F761307C6C8648"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:copper_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 5
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:iron_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 6
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:gold_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 8
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:diamond_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 10
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Craftable Spell Books"
+				type: "item"
+			}]
+			x: -8.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["4B5EDE809F39C8C3"]
-			id: "7D167F34F9FD733E"
-			tasks: [{
-				id: "6CF460331293FAC8"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:iron_spell_book"
-					tag: {
-						ISB_spellbook: {
-							activeSpellIndex: -1
-							spellSlots: 5
-							spells: [ ]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -8.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["26748536E1E41168"]
 			description: ["An anvil that can &5level up spells&r, &5imbue weapons with spells&r, &5and upgrade equipment and scrolls&r."]
 			id: "7592DBF9E856537A"
+			rewards: [{
+				count: 7
+				id: "6A0289505F5EDB73"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2096D5D9EF3964CC"
 				item: "irons_spellbooks:arcane_anvil"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.5d
+			x: -5.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["16E74E12B4D36077"]
+			dependencies: ["5390B26927C70B16"]
 			description: [
 				"Base ingredient found in &5certain large underground structures&r."
 				""
 				"You can't cast spells with this."
 			]
 			id: "0BE3BABC55E29686"
+			rewards: [{
+				count: 7
+				id: "21321BE1D557A767"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CDA0DD07ACD188F"
 				item: "irons_spellbooks:ruined_book"
 				type: "item"
 			}]
-			x: -9.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0BE3BABC55E29686"]
-			description: ["This &6legendary&r spellbook requires killing the &5Netherite Monstrosity&r."]
-			id: "7CE105C023F3D7F6"
-			tasks: [{
-				id: "3ABE1373234AEC93"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:netherite_spell_book"
-					tag: {
-						ISB_spellbook: {
-							activeSpellIndex: -1
-							spellSlots: 10
-							spells: [ ]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -10.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["0BE3BABC55E29686"]
-			description: ["This &6legendary&r spell book requires making trips to the &5End&r and &5Forlorn Hollows&r."]
-			id: "64F63A2CD21B12F4"
-			tasks: [{
-				id: "6680EAADCC8AC8B3"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:dragonskin_spell_book"
-					tag: {
-						ISB_spellbook: {
-							activeSpellIndex: -1
-							spellSlots: 10
-							spells: [ ]
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -10.5d
-			y: -1.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7592DBF9E856537A"]
@@ -3135,8 +3618,8 @@
 				type: "observation"
 			}]
 			title: "Arcane Salvage"
-			x: -4.5d
-			y: -7.0d
+			x: -5.0d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -3145,13 +3628,19 @@
 			]
 			description: ["The &dUpgrade Orb&r has use as a base for &5school-based upgrades&r for your &5spell books&r, and also as an ingredient in other recipes."]
 			id: "77F900C79C669ABD"
+			rewards: [{
+				count: 8
+				id: "4BA7988C93E81466"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "38160B66490DB9FB"
 				item: "irons_spellbooks:upgrade_orb"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -7.0d
+			x: -3.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1FAF889506FFFF18"]
@@ -3179,77 +3668,166 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -3.0d
-			y: -5.5d
+			x: -3.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5390B26927C70B16"]
-			description: ["Some of these can be more powerful than what you have access to at the point in the game where they're accessible, so it might be worth finding and using these books."]
+			description: [
+				"Some of these can be more powerful than what you have access to at the point in the game where they're accessible, so it might be worth finding and using these books."
+				""
+				"Here's how to get each one, since they're not all straightforward:"
+				""
+				"&9Guide to Watery Whispers&r: find an aquamancer's tower on the beach and take the book on the lectern at the top. Be sure to take care of the aquamancer, since she won't be happy to see you. Then, find an aqua grandmaster wandering a beach, talk to her at night, and trade for this spell book."
+				""
+				"&dShellbound&r: dropped by amethyst crabs."
+				""
+				"&cGrimoire of Evocation&r: dropped rarely by evokers or archevokers."
+				""
+				"&2Rotten Spell Book&r: rarely found while exploring the world."
+				""
+				"&6Blaze Instruction Manual&r: dropped rarely by blazes."
+				""
+				"&aVillager Bible&r: in the evoker fort, there's a lectern with a book on it. Take it and give it to a captive wandering trader in the structure to have them translate it. Then, trade the translated book to a village priest."
+			]
 			id: "55537BACC41D8793"
+			rewards: [{
+				count: 16
+				id: "47D5954010E14D95"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Growing the Library"
 			tasks: [{
-				id: "297C2145E81BC355"
+				id: "74E4A9C4F4897E3E"
 				item: {
 					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
 					id: "itemfilters:or"
 					tag: {
 						items: [
 							{
 								Count: 1b
-								id: "irons_spellbooks:rotten_spell_book"
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:guide_to_watery_whispers"
 								tag: {
-									ISB_spellbook: {
-										activeSpellIndex: -1
-										spellSlots: 3
-										spells: [ ]
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 10
+										mustEquip: 1b
+										spellWheel: 1b
 									}
 								}
 							}
 							{
 								Count: 1b
-								id: "irons_spellbooks:villager_spell_book"
-								tag: {
-									ISB_spellbook: {
-										activeSpellIndex: -1
-										spellSlots: 6
-										spells: [ ]
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
 									}
 								}
-							}
-							{
-								Count: 1b
-								id: "irons_spellbooks:blaze_spell_book"
-								tag: {
-									ISB_spellbook: {
-										activeSpellIndex: -1
-										spellSlots: 5
-										spells: [ ]
-									}
-								}
-							}
-							{
-								Count: 1b
 								id: "irons_spellbooks:evoker_spell_book"
 								tag: {
-									ISB_spellbook: {
-										activeSpellIndex: 0
-										spellSlots: 3
-										spells: [
+									ISB_Spells: {
+										data: [
 											{
+												id: "irons_spellbooks:fang_strike"
+												index: 0
 												level: 6
-												sid: "irons_spellbooks:fang_strike"
-												slot: 0
+												locked: 1b
 											}
 											{
+												id: "irons_spellbooks:fang_ward"
+												index: 1
 												level: 4
-												sid: "irons_spellbooks:fang_ward"
-												slot: 1
+												locked: 1b
 											}
 											{
+												id: "irons_spellbooks:summon_vex"
+												index: 2
 												level: 4
-												sid: "irons_spellbooks:summon_vex"
-												slot: 2
+												locked: 1b
 											}
 										]
+										maxSpells: 10
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:rotten_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 8
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:blaze_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 10
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:villager_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 10
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:tome_of_abyssal_flora"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 8
+										mustEquip: 1b
+										spellWheel: 1b
 									}
 								}
 							}
@@ -3259,9 +3837,9 @@
 				title: "Unique Spell Book"
 				type: "item"
 			}]
-			title: "Unique Named Spell Books"
-			x: -5.5d
-			y: -0.5d
+			title: "Unique Spell Books"
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5390B26927C70B16"]
@@ -3271,8 +3849,15 @@
 				"They can be found on corpses of powerful foes."
 			]
 			id: "6BF860E9308621F0"
+			rewards: [{
+				count: 14
+				id: "7DE5ED4405DCC6D1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
+					disable_toast: true
 					id: "7DEB09EF71F0A05B"
 					item: {
 						Count: 1
@@ -3346,12 +3931,18 @@
 				}
 			]
 			title: "Magical Items"
-			x: -4.5d
-			y: -3.5d
+			x: -6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["55537BACC41D8793"]
 			id: "3ECBC57536CBC4FA"
+			rewards: [{
+				count: 7
+				id: "4B855DA31559066A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D34331515140220"
 				item: {
@@ -3367,8 +3958,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 1.0d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5390B26927C70B16"]
@@ -3381,6 +3972,12 @@
 				"Obtained from certain mobs, or from an &5alchemist cauldron&r."
 			]
 			id: "4D32ADEC0EEDD66A"
+			rewards: [{
+				count: 7
+				id: "535D5D165886CB33"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "irons_spellbooks:irons_spellbooks/ink_root"
 				criterion: ""
@@ -3388,8 +3985,8 @@
 				type: "advancement"
 			}]
 			title: "Ink"
-			x: -3.0d
-			y: -3.5d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5390B26927C70B16"]
@@ -3399,6 +3996,13 @@
 				"To obtain blood vials, get a mob into the cauldron (easier for small ones like chickens and banana slugs) while there is a fire or campfire burning below it. If there is no water in the cauldron, the mob takes damage and the cauldron fills with blood."
 			]
 			id: "5961EDE9C0C037F8"
+			rewards: [{
+				count: 7
+				id: "1E8F9DE7779C7E81"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "It demands sacrifices"
 			tasks: [{
 				id: "22D4EB001261882D"
 				item: "irons_spellbooks:alchemist_cauldron"
@@ -3420,6 +4024,12 @@
 			]
 			id: "19E62F587AB8AB1D"
 			rewards: [
+				{
+					count: 5
+					id: "32379F9B09A43987"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
 				{
 					id: "06AF114F18AE4992"
 					item: "hexerei:book_of_shadows_altar"
@@ -3455,6 +4065,12 @@
 		{
 			dependencies: ["19E62F587AB8AB1D"]
 			id: "710393BF8AD587A8"
+			rewards: [{
+				count: 5
+				id: "1E84ACAAF048D95F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "0E6D9AAC9929BF1B"
@@ -3472,6 +4088,12 @@
 				"Provides partial and full set bonuses."
 			]
 			id: "13AAAAA5402CB031"
+			rewards: [{
+				count: 8
+				id: "44C59BF8F81E82D9"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5591266FBB2AE9B1"
@@ -3521,6 +4143,12 @@
 				"This also works with honey or candles."
 			]
 			id: "5FB569C730DF2C0B"
+			rewards: [{
+				count: 7
+				id: "19487CAEC6C2F947"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "73BE718D1AA4F8FB"
 				item: {
@@ -3549,6 +4177,12 @@
 			dependencies: ["5FB569C730DF2C0B"]
 			description: ["The &ddipper&r provides a more atmospheric way of making candles, much like real life by dipping string in tallow."]
 			id: "23EFBC312E339635"
+			rewards: [{
+				count: 5
+				id: "13A09F05B51AE018"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7182E0CBB09E856E"
 				item: "hexerei:candle_dipper"
@@ -3569,6 +4203,12 @@
 				"4. Immolate the &dsage bundle&r with flint and steel to prevent hostile mobs from spawning in a large radius (it's better and prettier than the Mega Torch)."
 			]
 			id: "2F3578061762DC8C"
+			rewards: [{
+				count: 7
+				id: "0DA2E44466E6ECE8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "04B1D3E4796E1B64"
@@ -3598,6 +4238,12 @@
 		{
 			dependencies: ["19E62F587AB8AB1D"]
 			id: "0DF34F2A925C8A0C"
+			rewards: [{
+				count: 5
+				id: "6AC11350417C827C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5CA434AFC4647EF0"
 				item: "hexerei:coffer"
@@ -3610,6 +4256,12 @@
 			dependencies: ["19E62F587AB8AB1D"]
 			description: ["Mahogany brooms are fire resistant and overall superior, but much harder to make!"]
 			id: "565166C1F792A623"
+			rewards: [{
+				count: 7
+				id: "451E692B7E9D4220"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "524BE6405A9F81A4"
 				item: {
@@ -3651,6 +4303,12 @@
 		{
 			dependencies: ["565166C1F792A623"]
 			id: "63721096865F10AD"
+			rewards: [{
+				count: 6
+				id: "49029F93C07E987A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CF39D86C102EF08"
 				item: {
@@ -3670,6 +4328,12 @@
 		{
 			dependencies: ["565166C1F792A623"]
 			id: "7F50583D85346B23"
+			rewards: [{
+				count: 6
+				id: "04EF5CE3411455E7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5FB487E88C73A640"
 				item: {
@@ -3687,7 +4351,7 @@
 		{
 			dependencies: ["19E62F587AB8AB1D"]
 			description: [
-				"This bird may seem like a simple creature, but don’t be deceived—it’s the most complex pet in Mincemeat."
+				"This bird may seem like a simple creature, but don’t be deceived - it’s the most complex pet in Mincemeat."
 				""
 				"First, it doesn’t drop anything when killed and can be found flying around swamps or in raised villages. You can tame it using a seed mixture made from wheat, pumpkin, melon, beetroot, and sunflower seeds, created in a mortar and pestle. The seed mixture can also be eaten."
 				""
@@ -3710,6 +4374,12 @@
 				"Pickpocket: Crows will fly to villagers and steal items from them, typically items that the villager would be selling. The crow will then return the stolen items to the player."
 			]
 			id: "0129870BD87086C9"
+			rewards: [{
+				count: 7
+				id: "780CA88D4FE4B6C0"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "41A5ED8F7AE28314"
@@ -3730,6 +4400,12 @@
 			dependencies: ["565166C1F792A623"]
 			description: ["Search \"broom attachment\" in EMI for more possibilities."]
 			id: "1C36656D4E915F5C"
+			rewards: [{
+				count: 6
+				id: "35F4595E54CD1812"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "11688AE329474759"
 				item: {
@@ -3745,6 +4421,12 @@
 		{
 			dependencies: ["565166C1F792A623"]
 			id: "57464EC4F262D535"
+			rewards: [{
+				count: 6
+				id: "7A3B2191DF96AE58"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2E0F45941A9BEBBC"
 				item: {
@@ -3763,6 +4445,12 @@
 			dependencies: ["0129870BD87086C9"]
 			description: ["Right click a block with the flute to set a crow's perch position."]
 			id: "28704D846601B79A"
+			rewards: [{
+				count: 6
+				id: "2BD78415AF3EDFC0"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D00E24CA39214B6"
 				item: {
@@ -3787,6 +4475,12 @@
 				"&7&oBows with Explosion are perfectly balanced and have no issues&r"
 			]
 			id: "5D8B655C8EFB7A7F"
+			rewards: [{
+				count: 21
+				id: "165F6FBBA8F32EAA"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C9E0CB697315E26"
 				item: {
@@ -3846,25 +4540,37 @@
 				type: "item"
 			}]
 			title: "Enchanter's Items"
-			x: 6.0d
-			y: 0.5d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0AA8E8253E201B38"]
 			hide_dependency_lines: true
 			id: "70F5B2D7182D151B"
+			rewards: [{
+				count: 11
+				id: "6ADED8F5F1882423"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4A98D19B285DE87D"
 				item: "ars_nouveau:ritual_disintegration"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 16.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["5DB7162A1CF3DB61"]
 			description: ["You can spy on locations far away using the Oculus and Crystal."]
 			id: "65CE4F118890E6C5"
+			rewards: [{
+				count: 12
+				id: "7C1EB71ACB3F86B1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7353D63E7C37C3EB"
@@ -3877,43 +4583,26 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 6.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["7C4AECE18FE4A6A1"]
 			description: ["Ars Nouveau armors can be woven using threads with this workbench. Place armor on the table, then interact with the tablet portion of the table to give and take threads."]
 			id: "7F0031ACDB5F570C"
+			rewards: [{
+				count: 11
+				id: "04858531C763140E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F82B96F51BF4F04"
 				item: "ars_nouveau:alteration_table"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 13.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["0BE3BABC55E29686"]
-			description: ["This &6legendary&r spell book requires killing a &5stage 4 or 5 dragon&r and raising its baby. "]
-			id: "278697F3FE8A0F06"
-			tasks: [{
-				id: "687DDB882779A6EE"
-				item: {
-					Count: 1
-					id: "ice_and_fire_spellbooks:dragonmancers_oathbook"
-					tag: {
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 12
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -3921,6 +4610,12 @@
 				"5099A90FA346D626"
 			]
 			id: "5BAF880232295138"
+			rewards: [{
+				count: 7
+				id: "1032FAD9975B0D3F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "312656167FCF7325"
 				item: {
@@ -3938,6 +4633,12 @@
 		{
 			dependencies: ["11F9FFCB87A791C5"]
 			id: "2148AB511DED55B7"
+			rewards: [{
+				count: 5
+				id: "055331BED700FED7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "01F1DF60BBFC9D47"
 				item: "eidolon:soulbone_amulet"
@@ -3949,6 +4650,12 @@
 		{
 			dependencies: ["2148AB511DED55B7"]
 			id: "55291A04C1D9D4D9"
+			rewards: [{
+				count: 8
+				id: "35299ED511F70F61"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "529F45767B360C1B"
@@ -3991,6 +4698,12 @@
 		{
 			dependencies: ["6C1618F02FE2E04C"]
 			id: "7C71D16AF35627AD"
+			rewards: [{
+				count: 6
+				id: "1F778DE806CC6ED7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2560F35C9AC77235"
 				item: {
@@ -4002,8 +4715,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 3.5d
+			x: 7.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["77219718DABB8F62"]
@@ -4019,6 +4732,12 @@
 				"Some spirits will give you a &5book of calling&r, which gives you &5extra control&r over some of their parameters when applicable."
 			]
 			id: "2B7322DA59369ED9"
+			rewards: [{
+				count: 7
+				id: "135F8B202CD915A9"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7E4732DD8A2C484D"
@@ -4063,6 +4782,12 @@
 				"This setup is available as a Create schematic, but it's a lot easier to just use the dictionary you already have."
 			]
 			id: "655371F26CD8B6A6"
+			rewards: [{
+				count: 7
+				id: "2B874D81D0857C89"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1A0F4F82B16226FE"
@@ -4111,6 +4836,12 @@
 				"One caveat to the above claim: sometimes, you'll need to &5sacrifice a mob&r or &5use an item&r to get the rituals off the ground."
 			]
 			id: "5E59A279F3B70397"
+			rewards: [{
+				count: 7
+				id: "1EE2699E80F8CD39"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "and more general information about rituals"
 			tasks: [
 				{
@@ -4164,6 +4895,12 @@
 		{
 			dependencies: ["498A2873A812881A"]
 			id: "76E83F45B1B5A48F"
+			rewards: [{
+				count: 6
+				id: "182870FBED6A81E9"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "55DD8AE6D04D6503"
 				item: {
@@ -4188,6 +4925,12 @@
 				"You'll then need &5another ritual&r to create the &ddimensional matrix&r, and combine the two for your &ddimensional storage controller&r."
 			]
 			id: "46EE028444CE9A9C"
+			rewards: [{
+				count: 7
+				id: "50682A213668EDCD"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "77FBCF4AEA944EEF"
 				item: "occultism:storage_controller"
@@ -4224,6 +4967,12 @@
 				"The remote is a handheld device which can be bound and access storage from anywhere."
 			]
 			id: "6CB937C49C373B4C"
+			rewards: [{
+				count: 7
+				id: "412BD81F6FB6A44A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4242212F41D6DF53"
@@ -4260,6 +5009,12 @@
 				"&5Each upgrade&r increases the amount of slots &5exponentially&r, so have fun with all your slots!"
 			]
 			id: "7412689623386137"
+			rewards: [{
+				count: 5
+				id: "3A49881E6B8D6E8D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35E1A2AF9855E52A"
 				item: "occultism:storage_stabilizer_tier1"
@@ -4318,6 +5073,12 @@
 			]
 			hide_dependency_lines: true
 			id: "327956F91CB77A0F"
+			rewards: [{
+				count: 9
+				id: "4A765F465B9D5D7A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "WIP"
@@ -4379,8 +5140,12 @@
 				"Once you're done setting up and putting something like coal on the braziers, it's time to move on to the next quest."
 			]
 			id: "7D0E6CC8E50E7DC5"
-			invisible: true
-			optional: true
+			rewards: [{
+				count: 10
+				id: "411323C031F58F20"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [
@@ -4467,7 +5232,14 @@
 				"&d&lRange"
 				"Up to 30 blocks from your position. However, if you have a reference to an entity, it works at any distance."
 			]
+			icon: "hexcasting:staff/oak"
 			id: "173A561DF4516DC0"
+			rewards: [{
+				count: 7
+				id: "60E812642C820549"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Wait, I Wasn't Expecting Computer Science, I Want To Go Home"
@@ -4518,11 +5290,6 @@
 				"&dGemini Decomposition"
 				"&oPeeks the top iota, then pushes a copy."
 				"Stack: [X] --> [X, X]"
-				""
-				"&l&dReminders:"
-				"- The stack is empty when you start a hex."
-				"- Actions fail if there aren't enough iotas (example: casting Jester's Gambit with only 1 iota)"
-				"- Order matters."
 			]
 			icon: "beautify:bookstack"
 			id: "2878EB75598EB9F3"
@@ -4543,6 +5310,12 @@
 				"While casting with a staff, use it to shrink the spacing between dots, letting you draw more patterns in a single hex."
 			]
 			id: "37D8BB814A62EDD0"
+			rewards: [{
+				count: 5
+				id: "00C6C721D622A074"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "66017451876271BB"
 				item: "hexcasting:lens"
@@ -4563,6 +5336,12 @@
 				"Once data is read to the Thought-Knot, it can be written to the stack multiple times but cannot be erased or overwritten. As such, it's best to craft multiple if planning on using these innovations."
 			]
 			id: "374CF15A2D92A76F"
+			rewards: [{
+				count: 5
+				id: "19DBEE7812847EE6"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "647CB278A237744F"
 				item: "hexcasting:thought_knot"
@@ -4581,6 +5360,12 @@
 				"To ensure your Focus is not overwritten, craft it with a Honeycomb. This process is reversibe by casting Erase Item."
 			]
 			id: "7FDBD1DBCB67C51B"
+			rewards: [{
+				count: 5
+				id: "288AF65FB79BADB5"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "34C0AEBE25FEA677"
 				item: "hexcasting:focus"
@@ -4602,6 +5387,12 @@
 				"In your off hand: 0.1 per scroll, or 0.001 if sprint held."
 			]
 			id: "2AB05698910D0F06"
+			rewards: [{
+				count: 5
+				id: "2E14E188974018DC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "49F325EB96697F53"
 				item: "hexcasting:abacus"
@@ -4619,6 +5410,12 @@
 				"Select a page to be active by sneak-scrolling while holding it. Individual pages can be renamed in an anvil if you'd like."
 			]
 			id: "1A72B8860BC5021C"
+			rewards: [{
+				count: 5
+				id: "1080A7D361AA98DB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D0C2E01161AF3A7"
 				item: "hexcasting:spellbook"
@@ -4637,6 +5434,12 @@
 				"Like thought-knots, scrolls are immutable (can't be edited after being set)."
 			]
 			id: "08F8C73B341758EB"
+			rewards: [{
+				count: 6
+				id: "54657D8F9B3E00F0"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7CE9243797868598"
 				item: {
@@ -4661,6 +5464,12 @@
 				"{@pagebreak}"
 			]
 			id: "32EA7C65CF2E685A"
+			rewards: [{
+				count: 6
+				id: "5A14A6DDD2C33C24"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "It's not that deep"
 			tasks: [{
 				id: "42C36F6EC090A912"
@@ -4688,6 +5497,12 @@
 				"Cyphers are single-used and are destroyed when their internal media depletes."
 			]
 			id: "0FA753544E253EE0"
+			rewards: [{
+				count: 6
+				id: "00841681DD5AF74C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35779D9A40350DBB"
 				item: {
@@ -4712,6 +5527,12 @@
 				"[add how it is recharged here]"
 			]
 			id: "3D732B8FB583DA91"
+			rewards: [{
+				count: 6
+				id: "14F2931E17DE125C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "574EF0E3C6C8AE27"
 				item: {
@@ -4736,6 +5557,12 @@
 				"This is very cool, just make sure you don't knock yourself out."
 			]
 			id: "5085F816AFE89B97"
+			rewards: [{
+				count: 6
+				id: "5E2E547695629D4A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "Not the ones dropped by Mimics"
 			tasks: [{
 				id: "7627C0AEA2D7E6B4"
@@ -4761,6 +5588,12 @@
 				"Check your hex book for the necessary pattern."
 			]
 			id: "5CC1EE5B8695D37A"
+			rewards: [{
+				count: 6
+				id: "4F4AEDCA8B4A467F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E7B3A357FFE44D1"
 				item: {
@@ -4791,6 +5624,12 @@
 				"Pigments don't affect the quality of your spells."
 			]
 			id: "5E1643F7BAB92599"
+			rewards: [{
+				count: 6
+				id: "7B18BE01A3152BF2"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C7A9CC4F7956330"
 				item: {
@@ -4851,6 +5690,12 @@
 				"Next, start the brazier below the distiller by giving it fuel. Afterwards, give the Distiller its time, then right-click it with an empty hand when it's done."
 			]
 			id: "18E1A2415EA939F2"
+			rewards: [{
+				count: 6
+				id: "0F445E784560281F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "+1 level to Pair"
 			tasks: [{
 				id: "2CAD2355D62CCA62"
@@ -4878,6 +5723,12 @@
 				"If you've been on a mining expedition already (which is quite likely), you can instead use Sal Ammoniac Crystals to make this process faster."
 			]
 			id: "54D236299353D26C"
+			rewards: [{
+				count: 6
+				id: "734C29DE0E2BC210"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CB3C0744A2FE858"
 				item: {
@@ -4918,6 +5769,12 @@
 				}
 			}
 			id: "2D004AB130DD67BE"
+			rewards: [{
+				count: 6
+				id: "401E9F9E3DBAE940"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3F4FD6C530CB0290"
 				item: {
@@ -4944,6 +5801,12 @@
 				"As you did before, heat up the oven with your brazier, wait, and right click it."
 			]
 			id: "758086B8C6ACC276"
+			rewards: [{
+				count: 6
+				id: "25DA0E3DA66852D0"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35AD6B2F569B81C5"
 				item: {
@@ -4973,19 +5836,27 @@
 				"Good work! Enjoy this treat as a reward for doing all that."
 			]
 			id: "0A0DF712573BD444"
-			rewards: [{
-				id: "175BB792D93FB28E"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"celestisynth:celestisynthitemstackcapabilities": {
-							cs.aquaSkin: 0
-						}
-					}
-					id: "farmersdelight:chocolate_pie"
+			rewards: [
+				{
+					count: 9
+					id: "120A0E52B829D410"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "175BB792D93FB28E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:chocolate_pie"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "792D3A4A155176F8"
@@ -5063,6 +5934,12 @@
 				"Lastly, get a Sulfuric Flux Emitter, which supplies the energy this conversion needs. Make sure the emitter is linked to the other pedestals by right clicking it."
 			]
 			id: "77D2B63352A1CDD6"
+			rewards: [{
+				count: 12
+				id: "6462A40F1A0D9F46"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "2614C70D57A0657A"
@@ -5137,6 +6014,12 @@
 		{
 			dependencies: ["18E1A2415EA939F2"]
 			id: "0A3CD5DF147C240B"
+			rewards: [{
+				count: 6
+				id: "4018816496694456"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1A40D416B6F5183D"
 				item: {
@@ -5169,6 +6052,12 @@
 				"You'll notice the target is still there, but the source disappeared. You've now duplicated a material - well done!"
 			]
 			id: "247ACED8E76DD567"
+			rewards: [{
+				count: 6
+				id: "6D88A7922900456A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "&7This quest completes easily, but make sure to read the description"
 			tasks: [{
 				id: "0B64933F9ADC9A00"
@@ -5198,6 +6087,12 @@
 				"After you've got that, inscribe the spell you want to put on the curio using a Scribe's Table."
 			]
 			id: "58819519A5C03F43"
+			rewards: [{
+				count: 11
+				id: "0F2D7C4DD7CC24ED"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6C6F9C2776D62ADF"
@@ -5316,13 +6211,19 @@
 				}
 			]
 			title: "Enchanter's Curiosities"
-			x: 5.0d
-			y: 0.5d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D4F3D27DC68EEF3"]
 			description: ["This upgraded Source Jar does exactly what you think: each one's contents are synced with all others, much like an Ender Chest."]
 			id: "0B9B5B73CB26F0D2"
+			rewards: [{
+				count: 6
+				id: "35D6CE33146D82ED"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "546A009481C7C697"
 				item: {
@@ -5336,7 +6237,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: 7.0d
 			y: -4.0d
 		}
 		{
@@ -5349,6 +6250,12 @@
 				"You can also connect multiple lecterns to each other. In this case, one lectern still serves the role of the root, while another acts as an access point which can extract and insert but not connect directly to inventories."
 			]
 			id: "46E96E799794ACFF"
+			rewards: [{
+				count: 12
+				id: "0737465A7285DAE9"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3D9989667CCD2135"
 				item: {
@@ -5362,13 +6269,19 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 18.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["46E96E799794ACFF"]
 			description: ["This smart TV remote can grant remote access to your Storage Lecterns. You can even make the &dStabilized Warp Index&r, a premium version that allows access across dimensions."]
 			id: "5C9E93678F670C09"
+			rewards: [{
+				count: 6
+				id: "1931AFDB31CD657B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E775C460081DAA7"
 				item: {
@@ -5382,7 +6295,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 18.0d
 			y: -6.0d
 		}
 		{
@@ -5399,6 +6312,12 @@
 				"Lastly, the Starballoon is for all you Mekanists out there who need a way of moving gasses around."
 			]
 			id: "26032919253271BD"
+			rewards: [{
+				count: 9
+				id: "386455B9E005E414"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "2B6D6E084EDEA108"
@@ -5454,13 +6373,19 @@
 				}
 			]
 			title: "Advanced Item/Fluid/Energy Transport"
-			x: 13.5d
+			x: 18.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["421227890C2EBBA4"]
 			description: ["This accessory lets Starbuncles void any item they find on the ground."]
 			id: "4FCFEBE953717DD2"
+			rewards: [{
+				count: 6
+				id: "60E5FD00DCB33AF2"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3010986D9F7E0521"
 				item: {
@@ -5474,7 +6399,7 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
+			x: 17.5d
 			y: -2.0d
 		}
 		{
@@ -5485,6 +6410,12 @@
 				"To get a Source Bucket, you'll need a Source Condenser with a tank below it to liquify source in Source Jars."
 			]
 			id: "38B7D96BA216B588"
+			rewards: [{
+				count: 7
+				id: "325E29A4AD2E2C6E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "17648BDBE6F75065"
@@ -5513,8 +6444,1387 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 7.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["0BE3BABC55E29686"]
+			description: ["These spell books require an ancient codex and usually a trip to a far-off biome or dimension."]
+			id: "7A0AB9C8854E63C1"
+			rewards: [{
+				count: 10
+				id: "05D90CE03920DD8F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F4F21FD69A3B5D0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:netherite_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "irons_spellbooks:dragonskin_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "ice_and_fire_spellbooks:dragonmancers_oathbook"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "celestisynth:celestial_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 14
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Legendary Spell Books (Craftable)"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: ["Most of these selections are among the best Mincemeat 2 offers, but will take extensive adventuring to find. Most of them are rare drops from bosses."]
+			id: "390EEFD50BDBC508"
+			rewards: [{
+				count: 16
+				id: "7B801D97603E5F72"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "788471FC24717A0D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:codex_of_the_crushing_depths"
+								tag: {
+									ISBEnhance: "traveloptics:vortex_of_the_deep"
+									ISB_Spells: {
+										data: [{
+											id: "traveloptics:aqua_missiles"
+											index: 0
+											level: 6
+											locked: 1b
+										}]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:archive_of_abyssal_secrets"
+								tag: {
+									ISBEnhance: "traveloptics:cursed_minefield"
+									ISB_Spells: {
+										data: [
+											{
+												id: "traveloptics:shadowed_miasma"
+												index: 0
+												level: 3
+												locked: 1b
+											}
+											{
+												id: "traveloptics:orbital_void"
+												index: 1
+												level: 5
+												locked: 1b
+											}
+										]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:the_accused_codex"
+								tag: {
+									ISBEnhance: "traveloptics:cursed_blast"
+									ISB_Spells: {
+										data: [{
+											id: "traveloptics:halberd_horizon"
+											index: 0
+											level: 6
+											locked: 1b
+										}]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:chronicles_of_the_firelord"
+								tag: {
+									ISBEnhance: "traveloptics:burning_judgment"
+									ISB_Spells: {
+										data: [
+											{
+												id: "irons_spellbooks:flaming_strike"
+												index: 0
+												level: 5
+												locked: 1b
+											}
+											{
+												id: "traveloptics:meteor_storm"
+												index: 1
+												level: 5
+												locked: 1b
+											}
+										]
+										maxSpells: 12
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Legendary Spell Books"
+				type: "item"
+			}]
+			title: "Legendary Spell Books"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16E74E12B4D36077"]
+			id: "16438E7C24536FB5"
+			rewards: [{
+				count: 7
+				id: "010615B100A84CD5"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Should've printed a bigger book"
+			tasks: [{
+				id: "4453506E9ED6CEED"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:lesser_spell_slot_upgrade"
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["16438E7C24536FB5"]
+			id: "0A9E007FE47B959E"
+			rewards: [{
+				count: 10
+				id: "7A3DD282B10E61EA"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Who even needs this many spells anyway?"
+			tasks: [{
+				id: "4920178F61AC1591"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:spectral_spell_slot_upgrade"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"celestisynth:celestisynthitemstackcapabilities": {
+										cs.aquaSkin: 0
+									}
+								}
+								id: "traveloptics:sanctified_spell_slot_upgrade"
+							}
+						]
+					}
+				}
+				title: "Greater Spell Slot Improvement"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1FAF889506FFFF18"]
+			description: [
+				"For each magic school, there is a charm that you can spend around 12 levels to imbue with a random spell from that school."
+				""
+				"All of these charms can be found in chests, and they give a decent boost to all spells of that school, not just the imbued one!"
+				""
+				"If you don't like the spell you got or aren't interested in the school, you can smelt echoes into resonant scrap, which you can craft new echoes with and other things too."
+			]
+			id: "298A50AC6854F529"
+			rewards: [{
+				count: 9
+				id: "375185198095D282"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "I am you and what I see is me"
+			tasks: [{
+				id: "3252FE2A12C1FA7B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "traveloptics:echo_curio"
+					}
+				}
+				title: "Echo"
+				type: "item"
+			}]
+			title: "Echoes"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5390B26927C70B16"]
+			description: ["You need this passage to learn spells from the Eldritch school. Ancient Knowledge Fragments are found in Ancient Cities, or carried by wandering traders."]
+			id: "3CB524B6EF1A9F06"
+			rewards: [{
+				count: 7
+				id: "1679112C4D4441A4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "49EC6F000E0846AB"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FAF889506FFFF18"]
+			description: [
+				"As a budding wizard, most &5scrolls&r are indecipherable to you. You'll need &dmanuscripts&r to make up for this."
+				""
+				"Make your way to the &5Shop&r quests to purchase some &dmanuscripts&r in your preferred school. These will let you &5choose a spell to learn&r from the corresponding school."
+				""
+				"Still can't cast your spell? It's probably &5too high-level&r. You'll need to defeat powerful practitioners of magic and earn &5Rarity Upgrades&r."
+			]
+			id: "27DF7D39245E5ACB"
+			rewards: [{
+				count: 16
+				id: "7E51370CF2D47F72"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57FB934C9B3D3CC8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:evocation"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "traveloptics:aqua"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:fire"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:lightning"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:ice"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:holy"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:ender"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:blood"
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_restrictions:manuscript"
+								tag: {
+									SchoolId: "irons_spellbooks:nature"
+								}
+							}
+						]
+					}
+				}
+				title: "Manuscript"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27DF7D39245E5ACB"]
+			description: [
+				"The Conjurer is a boss found in the Overworld required for access to the Everbright and\" ] Everdawn and beyond. It is documented in Overworld Adventure."
+				""
+				""
+				"{ \"text\": \"The Conjurer\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4493D9650B5D1F71\" } }"
+			]
+			id: "0F812CDA5A64A236"
+			rewards: [{
+				count: 5
+				id: "1911047688917C01"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Rewarded for killing the Conjurer."
+			tasks: [{
+				id: "37A1D8978A25A883"
+				item: "irons_restrictions:rare_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0F812CDA5A64A236"]
+			description: [
+				"The Dead King is an optional boss found in the Overworld, documented in Overworld Adventure."
+				""
+				""
+				"{ \"text\": \"Dead King Questline Start\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1F9A394264C7C588\" } }"
+			]
+			id: "273512915459B65A"
+			rewards: [{
+				count: 5
+				id: "608A089641322DCF"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Rewarded for killing the Dead King."
+			tasks: [{
+				id: "2DF3752E391ED26C"
+				item: "irons_restrictions:epic_upgrade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["273512915459B65A"]
+			description: [
+				"Tyros is an optional boss found in the Nether, documented in Dimensional Adventure."
+				""
+				"{ \"text\": \"Tyros Questline Start (the link might look weird you haven't progressed far enough)\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"299A6D31CD9AF4B3\" } }"
+			]
+			id: "4BCA31307DF2D2C0"
+			rewards: [{
+				count: 5
+				id: "0BB6270FDEB7777E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Rewarded for killing Tyros."
+			tasks: [{
+				id: "6E0C1E6CA8AD4CD4"
+				item: "irons_restrictions:legendary_upgrade"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2A2B25F44A4AE27B"]
+			description: [
+				"Somewhere between light and dark lie the spirit arcana, which focus on reading (and harvesting) the souls of living creatures."
+				""
+				"To start, you'll want to head underground and find yourself some soulstone. This is a special sort of rock with the special ability to harbor souls."
+				""
+				"Your main use for soulstones at this moment is to incorporate it into a Crude Scythe, which will glean the souls from living creatures killed with it."
+				""
+				"&7Malum was recently added to the modpack and I haven't finished these quests yet. For more information, see the Encyclopedia Arcana, included in your Eccentric Tome."
+			]
+			icon: {
+				Count: 1
+				id: "malum:crude_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "31982B9D7EEA70B5"
+			rewards: [{
+				count: 6
+				id: "39896585CB620C65"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "I want your soul"
+			tasks: [
+				{
+					id: "081A5F08E086F829"
+					item: "malum:raw_soulstone"
+					type: "item"
+				}
+				{
+					id: "0A390BCE734A9D34"
+					item: {
+						Count: 1
+						id: "malum:crude_scythe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Malum"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31982B9D7EEA70B5"]
+			description: [
+				"For now, the Runic Workbench is going to be the main way of using your newly collected souls. It allows you to infuse souls into mundane items, transforming them into something entirely new."
+				""
+				"Runewood is a type of wood suitable for spirit magic. You can find it in plains and forests."
+				""
+				"Make yourself a Runic Workbench and surround it with Item Stands or Item Pedestals as you see fit - just make sure they're within 4 blocks of the workbench."
+				""
+				"You should start by crafting a Hex Ash, as this is an inexpensive and widely used material during infusion."
+				""
+				"See the next page for a diagram on how to read JEI infusion recipes."
+				"{@pagebreak}"
+				"{image:kubejs:item/malum_ritual width:262 height:333 align:center fit:true}"
+				""
+				"&c1:&r Necessary spirit. Right click the Workbench while holding this."
+				""
+				"&c2:&r The reagent. Place this upon the Workbench."
+				""
+				"&c3:&r The extra items. Place these upon the Item Pedestals or Holders."
+				""
+				"&c4:&r What you will get when the process is finished."
+			]
+			id: "304860DD2E9FA817"
+			rewards: [{
+				count: 7
+				id: "50564BB1B3889D85"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "75C15A7802BADFE6"
+					item: "malum:runic_workbench"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4C99B6B9D1AAE0E8"
+					item: {
+						Count: 4
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:runewood_item_stand"
+								}
+								{
+									Count: 1b
+									id: "malum:runewood_item_pedestal"
+								}
+							]
+						}
+					}
+					title: "Runewood Item Holder"
+					type: "item"
+				}
+			]
+			title: "Spirit Infusion"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: ["Here is your basic infused armor. It enhances Magic Proficiency, which increases the damage dealt by your magic attacks."]
+			id: "6E1AF409C5E797A5"
+			rewards: [{
+				count: 9
+				id: "209239CA17A5B57D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "225FE0C253F6A367"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_hunter_cloak"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B8CF796EDF5FD21"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_hunter_robe"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C0F02E711638449"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_hunter_leggings"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70E4E0336E3B1C19"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_hunter_boots"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Soulhunter Armor"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: ["Soulstained Steel armor is specially created for those practicing the spirit arcana. It has a mechanism known as Soul Ward, which is capable of absorbing additional damage, and is better at negating magic damage."]
+			id: "6AC04074AD62BF06"
+			rewards: [{
+				count: 11
+				id: "1D1ACF1C226D5BF8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D981110467C7B77"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_stained_steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "777420F9F8CECA43"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_stained_steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "60422BA02CAF29F7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_stained_steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D9D7361C5A4B10C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "malum:soul_stained_steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Soulstained Steel Armor"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: [
+				"Belts will improve your knowledge of explosions."
+				""
+				"Many of the rings will give various positive effects upon collecting spirit, such as experience."
+				""
+				"Arcane resonance amplifies rings that add extra effects on spirit collection."
+			]
+			id: "19DBDE0036FB953F"
+			rewards: [{
+				count: 17
+				id: "7F1590F8A8D80960"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F5FBA5408ED1F15"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:belt_of_the_magebane"
+								}
+								{
+									Count: 1b
+									id: "malum:belt_of_the_starved"
+								}
+								{
+									Count: 1b
+									id: "malum:belt_of_the_prospector"
+								}
+							]
+						}
+					}
+					title: "Belt"
+					type: "item"
+				}
+				{
+					id: "3697CE6C572369C9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:ornate_necklace"
+								}
+								{
+									Count: 1b
+									id: "malum:necklace_of_the_mystic_mirror"
+								}
+								{
+									Count: 1b
+									id: "malum:necklace_of_blissful_harmony"
+								}
+								{
+									Count: 1b
+									id: "malum:necklace_of_the_narrow_edge"
+								}
+								{
+									Count: 1b
+									id: "malum:necklace_of_tidal_affinity"
+								}
+							]
+						}
+					}
+					title: "Necklace"
+					type: "item"
+				}
+				{
+					id: "6E1FC77BF884C3AE"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:gilded_ring"
+								}
+								{
+									Count: 1b
+									id: "malum:gilded_belt"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_the_demolitionist"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_the_hoarder"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_desperate_voracity"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_alchemical_mastery"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_manaweaving"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_arcane_prowess"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_curative_talent"
+								}
+								{
+									Count: 1b
+									id: "malum:ring_of_esoteric_spoils"
+								}
+							]
+						}
+					}
+					title: "Ring"
+					type: "item"
+				}
+			]
+			title: "Magical Accessories"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			id: "1971836FA6216958"
+			rewards: [{
+				count: 6
+				id: "023A489A98F3498E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76E9526FF265AC8C"
+				item: {
+					Count: 1
+					id: "malum:soul_stained_steel_scythe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["449B29CB8C4F7A91"]
+			id: "25F68FBFCB45D031"
+			rewards: [{
+				count: 10
+				id: "1778AFDC2F94B5D1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "113220501DC4DCC4"
+					item: "malum:runic_workbench"
+					type: "item"
+				}
+				{
+					id: "69EA6B69C8271BFB"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:rune_of_idle_restoration"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_culling"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_reinforcement"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_dexterity"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_aliment_cleansing"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_reactive_shielding"
+								}
+								{
+									Count: 1b
+									id: "malum:rune_of_fervor"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Runesmithing"
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: ["The Runic and Glass Brooches are the only ways of obtaining Runes, which are explained in the next quest but essentially offer passive buffs."]
+			id: "449B29CB8C4F7A91"
+			rewards: [{
+				count: 8
+				id: "5EEBC296621CD5A6"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5107D807C1E4E562"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "malum:runic_brooch"
+							}
+							{
+								Count: 1b
+								id: "malum:elaborate_brooch"
+							}
+							{
+								Count: 1b
+								id: "malum:glass_brooch"
+							}
+							{
+								Count: 1b
+								id: "malum:gluttonous_brooch"
+							}
+						]
+					}
+				}
+				title: "Brooch"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: [
+				"By placing Runewood Logs above a Runewood Totem Base, you create a pole which can be infused with spirit to provide boons for the surrounding area, similar to a beacon."
+				""
+				"Embed spirit into a pole by right clicking the logs with spirit in hand. When you're done, right click the base to initiate the ritual."
+				""
+				" To remove spirits from a totem pole, right click them with an axe as if you were about to strip the log."
+				""
+				"The Totemic Staff is useful for seeing the area affected by a Totem."
+				""
+				"This is one of those times when I tell you to grab an Eccentric Tome, look inside the Encyclopedia Arcana, and pan the graph up to where the rituals are and see what you need. In a future update, I will include descriptions on them all here."
+			]
+			id: "73FAFBAB2CB0B74D"
+			rewards: [{
+				count: 8
+				id: "5E584E3A49462D4E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "572798F24F83E52F"
+					item: "malum:runewood_totem_base"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1BE680448C663C46"
+					item: "malum:runewood_log"
+					type: "item"
+				}
+				{
+					id: "0C0D11BFF496927E"
+					item: "malum:totemic_staff"
+					type: "item"
+				}
+			]
+			title: "Totem Rituals"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: [
+				"Runewood Obelisks help to alleviate part of the waiting involved with Spirit Infusion. Each Runewood Obelisk placed near the Workbench speeds up the process by 25%, with the maximum effect being reached at 4 obelisks."
+				""
+				"Meanwhile, Brilliant Obelisks are like condensed bookshelves, with each one adding 5 Eterna. They are made with Xpetrified Orbs instead of Hallowed Gold."
+			]
+			id: "7A57151D5D92E58A"
+			rewards: [{
+				count: 7
+				id: "4F2AB5E996CB7C4D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "491F5837CF7792B7"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "malum:runewood_obelisk"
+							}
+							{
+								Count: 1b
+								id: "malum:brilliant_obelisk"
+							}
+						]
+					}
+				}
+				title: "Obelisk"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["73FAFBAB2CB0B74D"]
+			description: [
+				"The Undirected Rite requires 5 Arcane Spirit to be infused on a pole, and will alter the surrounding area. Notably, it turns the totem pole from Runewood into purple Soulwood."
+				""
+				"The effects of the same ritual on a Runewood and Soulwood totem can be very different, so be sure to plan accordingly!"
+			]
+			id: "35F2C77F40458C22"
+			rewards: [{
+				count: 7
+				id: "1FF3F721B3D6EFFC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 5L
+					id: "515D30C61C0A15BB"
+					item: "malum:arcane_spirit"
+					type: "item"
+				}
+				{
+					id: "14BC1C3133B21D4A"
+					item: "malum:soulwood_totem_base"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3D364D44C11723A1"
+					item: { Count: 5, id: "malum:soulwood_log" }
+					type: "item"
+				}
+			]
+			title: "Corrupted Rituals"
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: [
+				"Given an impetus and the appropriate spirit (usually Earthen and Infernal), a Crucible can generate nodes which can be smelted into nuggets."
+				""
+				"Its usage is similar to the Runic Workbench, but it does not need extra items to be placed on pedestals."
+			]
+			icon: "malum:spirit_crucible"
+			id: "7E9538DE12A0B760"
+			rewards: [{
+				count: 13
+				id: "40D24E2E9A5ACDED"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "19393FF7FD88C267"
+					item: "malum:spirit_crucible"
+					type: "item"
+				}
+				{
+					id: "1FC2EEB9ED010795"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "malum:iron_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:copper_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:gold_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:lead_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:silver_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:aluminum_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:nickel_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:uranium_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:zinc_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:tin_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:cobalt_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:alchemical_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "malum:osmium_impetus"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Impetus"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["304860DD2E9FA817"]
+			description: ["The Repair Pylon can restore the durability of your favorite tools using Spirit instead of experience. Place the repair material on the pylon itself and the tool to be repaired on an item holder."]
+			id: "78780580C4B2A7A8"
+			rewards: [{
+				count: 5
+				id: "01451560E5D34564"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "495D3843415A7451"
+				item: "malum:repair_pylon"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7E9538DE12A0B760"]
+			description: ["Up to eight of these can be placed near a Crucible to accelerate its process. However, this also increases its instability, which could result in your impetus taking more of a beating."]
+			id: "6E005D2ECE3F9344"
+			rewards: [{
+				count: 5
+				id: "77639167216E9C6A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "072BC9526E73F602"
+				item: "malum:spirit_catalyzer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1971836FA6216958"]
+			description: ["Tyrving makes up for its lack of base damage with extra damage based on how much soul the target has."]
+			id: "1A2FDCB74BB74D59"
+			rewards: [{
+				count: 6
+				id: "75287BBFD57A0516"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FEDEFC8470D904F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"fallen_gems_affixes:augment_capability": {
+							Augments: [{
+								Test: "test"
+							}]
+						}
+					}
+					id: "malum:tyrving"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
 		}
 	]
 	title: "Supernatural Magic"

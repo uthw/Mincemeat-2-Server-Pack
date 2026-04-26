@@ -1,0 +1,70 @@
+{
+    "type": "minecraft:empty",
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.85
+                }
+            ],
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "lightmanscurrency:configured_item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 20.0,
+                                "min": 10.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "tier": 2,
+                    "weight": 25
+                },
+                {
+                    "type": "lightmanscurrency:configured_item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 8.0,
+                                "min": 3.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "tier": 3,
+                    "weight": 70
+                },
+                {
+                    "type": "lightmanscurrency:configured_item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1.0,
+                                "min": 1.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "tier": 4,
+                    "weight": 5
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+            }
+        }
+    ],
+    "random_sequence": "lightmanscurrency:loot_addons/chest/tier5"
+}

@@ -25,4 +25,8 @@ ServerEvents.recipes((event) => {
     recipes.forEach((recipe) => {
         event.shaped(recipe[0], recipe[1], recipe[2]);
     });
+
+    event.replaceOutput({}, "create:dough", "farmersdelight:wheat_dough")
+    event.replaceOutput({}, "miners_delight:tentacles", "rusticdelight:calamari");
+    event.replaceOutput({}, "miners_delight:baked_tentacles", "rusticdelight:cooked_calamari");
 });

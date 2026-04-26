@@ -23,6 +23,10 @@
                         },
                         { "condition": "killed_by_player" }
                     ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lightmanscurrency:loot_addons/boss/tier1"
                 }
             ]
         },
@@ -72,6 +76,10 @@
                         },
                         { "condition": "killed_by_player" }
                     ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lightmanscurrency:loot_addons/boss/tier2"
                 }
             ]
         },
@@ -124,6 +132,10 @@
                         },
                         { "condition": "killed_by_player" }
                     ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lightmanscurrency:loot_addons/boss/tier3"
                 }
             ]
         },
@@ -176,6 +188,10 @@
                         },
                         { "condition": "killed_by_player" }
                     ]
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "lightmanscurrency:loot_addons/boss/tier4"
                 }
             ]
         }

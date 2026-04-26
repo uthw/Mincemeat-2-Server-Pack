@@ -325,11 +325,7 @@
 		}
 		{
 			dependencies: ["6B0CBDB3A1614064"]
-			description: [
-				"Tamed has three variants. Tired of typing this out."
-				""
-				"Heal with flowers and breed with fermented spider eyes (spider eye + mushrooms)."
-			]
+			description: ["Heal with flowers and breed with fermented spider eyes (spider eye + mushrooms)."]
 			id: "62CDDDCE8F8A3142"
 			subtitle: "On His Hip"
 			tasks: [{
@@ -391,7 +387,7 @@
 		}
 		{
 			description: [
-				"This tornado looks like a bunch of spaghetti—a twisting, evil bunch of spaghetti. You can tell it is evil by its glowing fiery eyes."
+				"This tornado looks like a bunch of spaghetti... a twisting, evil bunch of spaghetti. You can tell it is evil by its glowing fiery eyes."
 				""
 				"Most people in deserts see this thing coming and don't fear that a tornado is approaching; instead, they wish for it to come closer so they can get free spaghetti."
 				""
@@ -1200,9 +1196,9 @@
 		}
 		{
 			description: [
-				"Zebras are neutral mobs found in Savannas. Regardless of what color you think they are, they can be tamed in the same manner as horses. "
+				"Zebras are neutral mobs found in Savannas. Regardless of what color you think they are, they can be tamed in the same manner as horses. Be careful, since the zebra will charge you if you fail to tame it first try."
 				""
-				"Zebras have the added effect of being able to commit vehicular homicide when they run into something, in case you were planning on doing that in this world. "
+				"Zebras have the added effect of being able to commit battery by proxy when they run into something, in case you were planning on doing that in this world. "
 			]
 			id: "371B71CD2C014D4D"
 			invisible: true
@@ -1223,6 +1219,136 @@
 			}]
 			x: -3.0d
 			y: 1.5d
+		}
+		{
+			description: ["TODO Add description"]
+			id: "5B16D375672BA61F"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:wadjet"
+					}
+				}
+				id: "1BA96FC0650A8A56"
+				observe_type: 5
+				timer: 0L
+				title: "Wadjet"
+				to_observe: "cataclysm:wadjet"
+				type: "observation"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			id: "7455AE3B112DFDB1"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:koboleton"
+					}
+				}
+				id: "3FF04440E4AFF539"
+				observe_type: 5
+				timer: 0L
+				title: "Koboleton"
+				to_observe: "cataclysm:koboleton"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			description: ["TODO Add description"]
+			id: "6DF39171A51A7437"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "cataclysm:kobolediator"
+					}
+				}
+				id: "4149E714B0CB1BDD"
+				observe_type: 5
+				timer: 0L
+				title: "Kobolediator"
+				to_observe: "cataclysm:kobolediator"
+				type: "observation"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"The Elokosa Howler is observed to be a primate that lives in jungles. During the day it is harmless, but becomes a fierce, carnivorous hunter at night."
+				""
+				"Elokosa Howlers traverse treetops over their prey until noticed, at which point they will scream and attack as a pack. Explorers can tell they are in the presence of Elokosa based on drool from above."
+				""
+				"When killed, Elokosa drop paws based on the current moon phase which can inflict unwanted effects on nearby foes."
+			]
+			id: "6317818DAEA5C1FF"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mowziesmobs:elokosa_howler"
+					}
+				}
+				id: "0E85B5C29B71CCEB"
+				observe_type: 5
+				timer: 0L
+				title: "Elokosa Howler"
+				to_observe: "mowziesmobs:elokosa_howler"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			description: ["These Elokosa are further down the hierarchy than Elokosa Howlers. They are similar in appearance during the day, but at night, they follow Howlers in their actions and lack the signature scythes on their tails."]
+			id: "41CB682C87830FDE"
+			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "alexsmobs:tab_icon"
+					tag: {
+						DisplayEntityType: "mowziesmobs:elokosa_follower_howler"
+					}
+				}
+				id: "51F3C2C2BA7414CC"
+				observe_type: 5
+				timer: 0L
+				title: "Elokosa"
+				to_observe: "mowziesmobs:elokosa_follower_howler"
+				type: "observation"
+			}]
+			x: 3.0d
+			y: 5.5d
 		}
 	]
 	title: "Hot/Tropical Biomes"
